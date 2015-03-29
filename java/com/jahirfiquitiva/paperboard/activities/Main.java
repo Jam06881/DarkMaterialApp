@@ -88,10 +88,10 @@ public class Main extends ActionBarActivity {
                 .withHeaderDivider(false)
                 .addDrawerItems(
                         new PrimaryDrawerItem().withName(thaHome).withIcon(GoogleMaterial.Icon.gmd_home).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(thaPreviews).withIcon(GoogleMaterial.Icon.gmd_palette).withIdentifier(2),
-                        new PrimaryDrawerItem().withName(thaApply).withIcon(GoogleMaterial.Icon.gmd_loyalty).withIdentifier(3),
+                        /*new PrimaryDrawerItem().withName(thaPreviews).withIcon(GoogleMaterial.Icon.gmd_palette).withIdentifier(2),*/
+                        /*new PrimaryDrawerItem().withName(thaApply).withIcon(GoogleMaterial.Icon.gmd_loyalty).withIdentifier(3),*/
                         new DividerDrawerItem(),
-                        new SecondaryDrawerItem().withName(thaCredits).withIdentifier(6)
+                        new SecondaryDrawerItem().withName(thaCredits).withIdentifier(3)
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
@@ -101,21 +101,21 @@ public class Main extends ActionBarActivity {
 
                             switch (drawerItem.getIdentifier()) {
                                 case 1: switchFragment(1, thaApp, "Home"); break;
-                                case 2: switchFragment(2, thaPreviews, "Previews"); break;
+                                /* case 2: switchFragment(2, thaPreviews, "Previews"); break;*/
                                 /* case 3: switchFragment(3, thaApply, "Apply"); break; */
-                                case 3:
+                                case 2:
                                     ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
                                     NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
                                     boolean isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting();
 
                                     if (isConnected) {
-                                        switchFragment(3, thaWalls, "Wallpapers");
+                                        switchFragment(2, thaWalls, "Wallpapers");
                                     } else {
                                         showNotConnectedDialog();
                                     }
                                     break;
                                 /*case 5: switchFragment(5, thaRequest, "Request"); break;*/
-                                case 4: switchFragment(4, thaCredits, "Credits"); break;
+                                case 3: switchFragment(3, thaCredits, "Credits"); break;
                             }
                         }
                     }
@@ -212,10 +212,10 @@ public class Main extends ActionBarActivity {
     }
 
     public void addItemsToDrawer() {
-        IDrawerItem walls = new PrimaryDrawerItem().withName(thaWalls).withIcon(GoogleMaterial.Icon.gmd_landscape).withIdentifier(3);
+        IDrawerItem walls = new PrimaryDrawerItem().withName(thaWalls).withIcon(GoogleMaterial.Icon.gmd_landscape).withIdentifier(2);
         /*IDrawerItem request = new PrimaryDrawerItem().withName(thaRequest).withIcon(GoogleMaterial.Icon.gmd_forum).withIdentifier(5);*/
         if (enable_features) {
-            result.addItem(walls, 2);
+            result.addItem(walls, 1);
             /*result.addItem(request, 4);*/
         }
     }
