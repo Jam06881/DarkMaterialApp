@@ -4,10 +4,11 @@
     <string name="json_file_url">"https://raw.githubusercontent.com/jahirfiquitiva/MinDesigns-Wallpapers/master/JSON-Files/walls_test.json"</string>
 
     <!-- Main Strings -->
-    <string name="app_name">"cdt"</string>
-    <string name="app_long_name">"chummy development team"</string>
-    <string name="current_version">47</string>
+    <string name="app_name">"Nicholas\' Dark Material"</string>
+    <string name="app_long_name">"Nicholas\' Dark Material"</string>
+    <string name="current_version">"chummy development team"</string>
     <string name="package_name">"com.chummy.jezebel.material.dark"</string>
+    <string name="theme_name">"Dark Material"</string>
 
     <!-- Some launchers stuff -->
     <string name="theme_title">@string/app_name</string>
@@ -29,8 +30,8 @@
     <string name="email_id">nicholaschum@gmail.com</string>
 
     <!-- Mail subjects for simple e-mail and requests e-mail -->
-    <string name="email_subject">"PaperBoard"</string>
-    <string name="email_request_subject">"PaperBoard - Icon Requests"</string>
+    <string name="email_subject">"Dark Material - CM12 Theme UI (From the App)"</string>
+    <string name="email_request_subject">"Dark Material - CM12 Theme UI (From the App) (Icon Request)"</string>
 
     <!-- This are the strings for the cards in the main screen -->
     <string name="welcome_title">welcome to lollipop, darkened!</string>

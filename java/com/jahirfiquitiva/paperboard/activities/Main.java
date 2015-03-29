@@ -66,7 +66,7 @@ public class Main extends ActionBarActivity {
         thaRequest = getResources().getString(R.string.section_five);
         thaCredits = getResources().getString(R.string.section_seven);
 
-        drawerVersion = "v " + getResources().getString(R.string.current_version);
+        drawerVersion = getResources().getString(R.string.current_version);
 
         currentItem = 1;
 
@@ -175,7 +175,7 @@ public class Main extends ActionBarActivity {
             case R.id.share:
                 Intent sharingIntent = new Intent(Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
-                String shareBody = "Check out this awesome icon pack by " + getResources().getString(R.string.iconpack_designer) + ".    Download Here: " + getResources().getString(R.string.play_store_link);
+                String shareBody = "Check out " + getResources().getString(R.string.theme_name) + " by " + getResources().getString(R.string.iconpack_designer) + "!\n\nDownload it here!: " + getResources().getString(R.string.play_store_link);
                 sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
                 startActivity(Intent.createChooser(sharingIntent, (getResources().getString(R.string.share_title))));
                 break;

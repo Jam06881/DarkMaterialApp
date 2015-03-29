@@ -14,7 +14,6 @@
     <color name="secondary_pressed">#26a69a</color>
     <color name="navbar">#424242</color>
 
-    <!-- Ctrl + H and search for color/cardsbg if you want to customize card colors individually-->
     <color name="cardsbg">#4d000000</color>
     <color name="light_bg">#000000</color>
     <color name="dialogcontent">#ffffff</color>

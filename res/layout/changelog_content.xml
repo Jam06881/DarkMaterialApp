@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textColor="@color/dialogcontent"
-        android:textSize="@dimen/text_med"
+        android:textSize="@dimen/text_ultrasmall"
         android:lineSpacingMultiplier="1.6"/>
 
     <TextView
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/cards_padding"
         android:textColor="@color/dialogcontent"
-        android:textSize="@dimen/text_med"
+        android:textSize="@dimen/text_ultrasmall"
         android:lineSpacingMultiplier="1.6"/>
 
 </LinearLayout>
