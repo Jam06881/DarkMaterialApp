@@ -38,13 +38,13 @@ public class Credits extends Fragment {
         ActionBar toolbar = ((ActionBarActivity)context).getSupportActionBar();
         toolbar.setTitle(R.string.section_seven);
 
-        TextView authordesc = (TextView) root.findViewById(R.id.dashauthor_info);
+        /*TextView authordesc = (TextView) root.findViewById(R.id.dashauthor_info);
         authordesc.setText(Html.fromHtml(getString(R.string.dashboard_author_desc)));
 
         TextView designerdesc = (TextView) root.findViewById(R.id.dev_card_content);
         designerdesc.setText(Html.fromHtml(getString(R.string.iconpack_designer_desc)));
 
-        TextView fablib = (TextView) root.findViewById(R.id.libtwo_content);
+        /*TextView fablib = (TextView) root.findViewById(R.id.libtwo_content);
         fablib.setText(Html.fromHtml(getString(R.string.fab_desc)));
 
         TextView materialdialogslib = (TextView) root.findViewById(R.id.libthree_content);
@@ -115,7 +115,7 @@ public class Credits extends Fragment {
                 Intent libeightweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.okhttp_web)));
                 startActivity(libeightweb);
             }
-        });
+        });*/
 
         TextView web = (TextView) root.findViewById(R.id.web_button);
         web.setOnClickListener(new View.OnClickListener() {
