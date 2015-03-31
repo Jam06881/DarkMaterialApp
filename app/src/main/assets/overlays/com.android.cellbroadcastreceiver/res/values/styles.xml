@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing CellBroadcastReceiver.apk's Styles-->
+<!--LAST REVISED ON: 4:05PM EST 20/02/2015-->
+
+<resources>
+    <style name="AlertFullScreenTheme" parent="@android:style/Theme.Material" />
+    <style name="CellBroadcastSettingsTheme" parent="@android:style/Theme.Material">
+		<item name="android:statusBarColor">@color/cell_broadcast_color_primary</item>
+    </style>
+</resources>

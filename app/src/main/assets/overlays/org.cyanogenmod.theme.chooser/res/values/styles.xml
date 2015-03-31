@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing ThemeChooser.apk's Styles-->
+<!--LAST REVISED ON: 6:14PM EST 20/02/2015-->
+
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material" />
+</resources>

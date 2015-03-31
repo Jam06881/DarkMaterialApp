@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Google Play's Styles-->
+<!--LAST REVISED ON: 5:08AM EST 12/03/2015-->
+
+<resources>
+    <style name="PlayPlainText">
+        <item name="android:fontFamily">sans</item>
+	</style>
+    <style name="PlayMediumPlainText">
+        <item name="android:fontFamily">sans-serif-medium</item>
+	</style>
+    <style name="PlayDrawerProfileNameText" parent="@style/PlayMediumPlainText">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+    <style name="PlayDrawerProfileEmailText" parent="@style/PlayPlainText">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+	
+    <style name="FinskyBaseDialogTheme" parent="@android:style/Theme.Material.Dialog" />
+    <style name="FinskyLightDialogTheme" parent="@android:style/Theme.Material.Dialog" />
+    <style name="Platform.AppCompat" parent="@android:style/Theme.Material" />
+    <style name="Platform.AppCompat.Light" parent="@style/Platform.AppCompat" />
+    <style name="Platform.AppCompat.Dialog" parent="@android:style/Theme.Material.Dialog" />
+    <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog" />
+    <style name="SettingsTheme" parent="@android:style/Theme.Material" />
+    <style name="Theme.Base.InstrumentManager.Light.Dialog" parent="@android:style/Theme.Material.Dialog" />
+</resources>

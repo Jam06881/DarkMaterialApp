@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Threema.apk's Colors-->
+<!--LAST REVISED ON: 2:46PM EST 18/02/2015-->
+
+<resources>
+	<color name="highlighted_text_material_light">#66212021</color>
+	<color name="material_deep_teal_500">#ff212021</color>
+	<color name="material_teal">#ff212021</color>
+	<color name="material_teal_alpha">#cc212021</color>
+    <color name="navdrawer_background">#ff000000</color>
+    <color name="navdrawer_text_color">#ffffffff</color>
+    <color name="navdrawer_text_color_selected">#ffeeeeee</color>
+	<color name="white">#ff212021</color>
+</resources>

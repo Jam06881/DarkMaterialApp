@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing BZ Reminder & Birthday's Colors-->
+<!--LAST REVISED ON: 5:29PM EST 04/03/2015-->
+
+<resources>
+    <color name="background_main_dark">#ff000000</color>
+    <color name="cardview_dark_background">#ff000000</color>
+    <color name="primary_dark">#ff212021</color>
+    <color name="primary_dark_dark">#ff212021</color>
+	
+    <color name="blue_dark">#ff212021</color>
+    <color name="blue_light">#ff212021</color>
+    <color name="blue_selected_list_item">#ff212021</color>
+</resources>

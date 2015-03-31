@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Settings.apk's Drawables-->
+<!--LAST REVISED ON: 9:53PM EST 27/02/2015-->
+
+<resources>
+    <item type="drawable" name="expanded_item_bg">@android:color/black</item>
+    <item type="drawable" name="expanded_item_bg_activated">@android:color/black</item>
+</resources>

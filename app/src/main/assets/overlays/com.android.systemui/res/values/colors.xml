@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing SystemUI.apk's Colors-->
+<!--LAST REVISED ON: 5:17AM EST 28/03/2015-->
+
+<resources>
+	<!--Color of your notification drawer, primary:middle, secondary:top w/avatar, accent: brightness trail)-->	
+		<color name="system_primary_color">#ff000000</color>
+		<color name="system_primary_color_translucent">#90000000</color>
+		<color name="system_secondary_color">#ff1f1f1f</color>
+		<color name="system_accent_color">#ffffffff</color>
+		
+	<!--Bliss Gerrit ID: I8ccefddf5eb2d38297f385a7ea83752162a7c563-->
+		<!--QS Background-->
+		<color name="qs_background_drawable_color">@color/system_primary_color</color>
+		
+	<!--Quick Settings in Notification drawer -->	
+		<color name="qs_tile_text">#ffffffff</color>
+	
+	<!--All notification popups listed here-->
+		<color name="notification_legacy_background_color">#ff1f1f1f</color>
+		<color name="notification_material_background_color">#ff1f1f1f</color>
+		<color name="notification_material_background_dimmed_color">#ff1f1f1f</color>
+		<color name="notification_material_background_low_priority_color">#ff1f1f1f</color>
+		<color name="notification_material_background_media_default_color">#ff1f1f1f</color>
+		
+	<!--Miscellaneous ROM based tweaks-->
+		<color name="status_bar_traffic_color">#ffffffff</color>
+		<color name="gesture_overlay_background_fill_color">#80000000</color>
+		<color name="fab_color">#ff2e2d2e</color>
+		<color name="floating_action_button_icon_color">#ffffffff</color>
+		<color name="floating_action_button_touch_tint">#d4000000</color>
+		
+	<!--Navigation Bar Shortcuts Settings Colors-->
+		<color name="navring_check_tint">#4a000000</color>
+		<color name="navring_edit_fill">#ff212021</color>
+		<color name="navring_edit_tint">#4a000000</color>
+
+	<!--Navigation Bar Shortcuts Colors-->		
+		<color name="search_panel_circle_color">#ff212021</color>
+		<color name="search_panel_ripple_color">#4a000000</color>
+</resources>

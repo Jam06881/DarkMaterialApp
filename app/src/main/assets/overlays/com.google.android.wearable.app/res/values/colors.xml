@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Android Wear's Colors-->
+<!--LAST REVISED ON: 3:04AM EST 19/03/2015-->
+
+<resources>
+    <color name="action_bar_background">#ff212021</color>
+    <color name="setup_background">#ff1e1e1e</color>
+
+    <color name="buttonbar_bg">#ff212021</color>
+    <color name="buttonbar_bg_pressed">#ff777777</color>
+</resources>

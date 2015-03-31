@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Gallery3d.apk's Styles-->
+<!--LAST REVISED ON: 5:40AM EST 28/03/2015-->
+
+<resources>
+	<style name="Theme.GalleryBase" parent="@android:style/Theme.Material">
+		<item name="listPreferredItemHeightSmall">48.0dip</item>
+        <item name="switchStyle">@android:style/Widget.CompoundButton</item>
+		<item name="android:statusBarColor">@color/primary</item>
+		<item name="android:windowBackground">@android:color/black</item>
+	</style>
+</resources>

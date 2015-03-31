@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing CMSetting's Dimensions-->
+<!--LAST REVISED ON: 1:26AM EST 20/03/2015-->
+
+<resources>
+    <dimen name="actionbar_subsettings_contentInsetStart">72.0dip</dimen>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Google Play's Colors-->
+<!--Only edit if you know what you're doing, shithead...b-baka!-->
+<!--LAST REVISED ON: 2:26AM EST 26/03/2015-->
+
+<resources>
+	<!--Actionbar colors and section button colors-->
+	<!--<color name="play_apps_primary">#ff444444</color>
+		<color name="play_books_primary">#ff444444</color>
+		<color name="play_movies_primary">#ff444444</color>
+		<color name="play_music_primary">#ff444444</color>
+		<color name="play_newsstand_primary">#ff444444</color> -->
+    <color name="play_multi_primary">#ff000000</color>
+    <color name="play_apps_primary_disabled">#ff000000</color>
+    <color name="play_books_primary_disabled">#ff000000</color>
+    <color name="play_movies_primary_disabled">#ff000000</color>
+    <color name="play_music_primary_disabled">#ff000000</color>
+    <color name="play_newsstand_primary_disabled">#ff000000</color>
+    <color name="play_multi_primary_disabled">#ff000000</color>
+	
+    <color name="play_apps_secondary">#ff797676</color>
+    <color name="play_books_secondary">#ff797676</color>
+    <color name="play_movies_secondary">#ff797676</color>
+    <color name="play_music_secondary">#ff797676</color>
+    <color name="play_newsstand_secondary">#ff797676</color>
+    <color name="play_multi_secondary">#ff797676</color>
+
+    <color name="play_action_button_pressed_grey">#ffff0000</color>
+    <color name="account_selector_background">#ff000000</color>
+    <color name="action_bar_selected_bg">#ff000000</color>
+
+	<color name="primary_text_default_material_light">#ffffffff</color>
+    <color name="secondary_text_default_material_light">#b3ffffff</color>
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="secondary_text_disabled_material_light">#36ffffff</color>
+    <color name="primary_text_disabled_material_dark">#4dffffff</color>
+    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
+
+    <color name="highlighted_text_material_light">#ffb6b1b6</color>
+    <color name="material_deep_teal_200">#ffb6b1b6</color>
+    <color name="material_deep_teal_500">#ffb6b1b6</color>
+    <color name="material_blue_grey_800">#ff212021</color>
+    <color name="material_blue_grey_900">#ff212021</color>
+    <color name="material_blue_grey_950">#ff212021</color>
+
+	<color name="play_fg_primary">#ffffffff</color>
+	<color name="play_search_plate_hint_text_color">#ffffffff</color>
+    <color name="play_search_plate_navigation_button_color">#ffffffff</color>
+    <color name="primary_material_dark">#ffffffff</color>
+    <color name="play_card_light_background">#ff212021</color>
+
+    <color name="play_banner_light_fg">#ff000000</color>
+	<color name="play_rated_overlay">#ff000000</color>
+	<color name="setup_wizard_navbar_text_dark">#ff000000</color>
+	<color name="action_bar_menu_color">#ff000000</color>
+	
+	<color name="play_white">#ff000000</color>
+	<color name="play_white_half_transparent">#ffffffff</color>
+	<color name="play_white_disabled">#ffffffff</color>
+	
+	<color name="white">#ff000000</color>
+	
+    <color name="play_main_background">#ff000000</color>
+    <color name="background_material_light">#ff000000</color>
+    <color name="background_floating_material_light">#ff000000</color>
+
+	<color name="whatsnew_apps">#ff212021</color>
+    <color name="whatsnew_books">#ff212021</color>
+    <color name="whatsnew_music">#ff212021</color>
+    <color name="whatsnew_movies">#ff212021</color>
+    <color name="whatsnew_newsstand">#ff212021</color>
+
+    <color name="sliding_tab_text_color_active">#ffffffff</color>
+
+	<color name="play_fg_tabs">#ff212021</color>
+	
+	<color name="bind__active_gray">#ffffffff</color>
+	<color name="play_fg_secondary">#ffffffff</color>
+	<color name="play_header_list_tab_pressed_bg_color">#40ffffff</color>
+ </resources>

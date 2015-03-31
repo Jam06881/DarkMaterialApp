@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing OpenCamera.apk's Styles-->
+<!--LAST REVISED ON: 4:46PM EST 02/03/2015-->
+
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material">
+		<item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+	</style>
+    <style name="PreferenceTheme" parent="@android:style/Theme.Material.Settings">
+		<item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+	</style>
+</resources>

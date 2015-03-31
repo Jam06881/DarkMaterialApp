@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Google Play's Styles-->
+<!--Only edit if you know what you're doing, shithead...b-baka!-->
+<!--LAST REVISED ON: 12:08AM EST 06/02/2015-->
+
+<resources>
+    <style name="SettingsTheme" parent="@android:style/Theme.Material">
+		<item name="android:statusBarColor">@color/play_fg_tabs</item>    
+	</style>
+</resources>

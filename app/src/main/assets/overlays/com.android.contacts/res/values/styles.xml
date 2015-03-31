@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- You are editing Contacts.apk's Styles-->
+<!--LAST REVISED ON: 2:48AM EST 26/03/2015-->
+
+<resources>
+    <style name="ContactsAlertDialogTheme" parent="@android:style/Theme.Material.Dialog" />
+	<style name="DetailActivityTheme" parent="@android:style/Theme.Material" />
+    <style name="PeopleTheme" parent="@android:style/Theme.Material">
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/primary_text_color</item>
+	</style>
+</resources>

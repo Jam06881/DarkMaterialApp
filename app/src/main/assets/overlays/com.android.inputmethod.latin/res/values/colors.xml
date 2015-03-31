@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing LatinIME.apk's Colors-->
+<!--LAST REVISED ON: 11:12PM EST 04/03/2015-->
+
+<resources>
+	<!--Material Light Keyboard-->
+		<color name="emoji_tab_page_indicator_background_lxx_light">#ffffffff</color>
+		<color name="key_text_color_lxx_light">#ff000000</color>
+		<color name="key_functional_text_color_lxx_light">#cc000000</color>
+		<color name="key_background_lxx_light">#ffffffff</color>
+		<color name="key_background_pressed_lxx_light">#ffeeeeee</color>
+		<color name="gesture_trail_color_lxx_light">#ff777777</color>
+		
+		<color name="suggested_word_color_lxx_light">#ff000000</color>
+		<color name="suggested_word_background_selected_lxx_light">#d4ffffff</color>
+		
+		<color name="gesture_floating_preview_color_lxx_light">#d4ffffff</color>
+		<color name="key_text_inactive_color_lxx_light">#b3000000</color>
+		<color name="key_hint_letter_color_lxx_light">#b3000000</color>
+		<color name="typed_word_color_lxx_light">#ff000000</color>
+		
+		<color name="language_on_spacebar_text_color_lxx_light">#ff000000</color>
+		<color name="auto_correct_color_lxx_light">#ff000000</color>
+		
+	<!--Material Dark Keyboard-->
+		<color name="emoji_tab_page_indicator_background_lxx_dark">#ff212021</color>
+		<color name="key_text_color_lxx_dark">#ffffffff</color>
+		<color name="key_functional_text_color_lxx_dark">#ccffffff</color>
+		<color name="key_background_lxx_dark">#ff000000</color>
+		<color name="key_background_pressed_lxx_dark">#40212021</color>
+		<color name="gesture_trail_color_lxx_dark">#ff777777</color>
+		
+		<color name="suggested_word_color_lxx_dark">#ffffffff</color>
+		<color name="suggested_word_background_selected_lxx_dark">#d4000000</color>
+		
+		<color name="gesture_floating_preview_color_lxx_dark">#d4000000</color>
+		<color name="key_text_inactive_color_lxx_dark">#b3ffffff</color>
+		<color name="key_hint_letter_color_lxx_dark">#b3ffffff</color>
+		<color name="typed_word_color_lxx_dark">#ffffffff</color>
+		
+		<color name="language_on_spacebar_text_color_lxx_dark">#ffffffff</color>
+		<color name="auto_correct_color_lxx_dark">#ffffffff</color>
+		
+	<color name="suggested_word_color_klp">#ff777777</color>
+</resources>

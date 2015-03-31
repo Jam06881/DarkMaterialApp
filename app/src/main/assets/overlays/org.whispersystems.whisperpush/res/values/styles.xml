@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing WhisperPush's Styles-->
+<!--LAST REVISED ON: 9:37PM EST 10/03/2015-->
+
+<resources>
+    <style name="Theme.Main" parent="@android:style/Theme.Material" />
+    <style name="Theme.ActionBar.SubSettings" parent="@android:style/Theme.Material" />
+</resources>

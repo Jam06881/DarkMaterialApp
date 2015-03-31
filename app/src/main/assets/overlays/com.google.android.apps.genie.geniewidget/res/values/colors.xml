@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Google News & Weather's Colors-->
+<!--LAST REVISED ON: 11:54PM EST 04/03/2015-->
+
+<resources>
+	<color name="background_color_dark">#ff212021</color>
+    <color name="foreground_color_dark">#ff000000</color>
+    <color name="background_floating_material_dark">#ff000000</color>
+</resources>

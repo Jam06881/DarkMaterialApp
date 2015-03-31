@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Threema.apk's Colors-->
+<!--LAST REVISED ON: 2:43PM EST 18/02/2015-->
+
+<resources>
+	<style name="Theme.Material" parent="@android:style/Theme.Material">
+		<item name="android:actionBarTheme">@android:style/Theme.Material</item>
+		<item name="android:colorBackground">@android:color/white</item>
+		<item name="android:windowBackground">@android:color/white</item>
+	</style>
+    <style name="Platform.AppCompat" parent="@style/Theme.Material" />
+    <style name="Platform.AppCompat.Light" parent="@style/Theme.Material" />
+	<style name="Platform.AppCompat.Dialog" parent="@android:style/Theme.Material.Dialog"/>
+    <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog" />
+</resources>

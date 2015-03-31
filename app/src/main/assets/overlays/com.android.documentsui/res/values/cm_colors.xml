@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing DocumentsUI.apk's CM Specific Colors-->
+<!--LAST REVISED ON: 8:21PM EST 10/03/2015-->
+
+<resources>
+	<color name="drawer_background_color">#ff000000</color>
+	
+	<color name="exposed_font_color_doc_grid">#ffffffff</color> <!--Bliss-->
+    <color name="font_color_doc_grid">#ffffffff</color> <!--Everything else-->
+</resources>

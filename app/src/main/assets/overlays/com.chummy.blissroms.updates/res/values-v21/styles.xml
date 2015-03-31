@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing BlissOTA's Styles-->
+<!--LAST REVISED ON: 3:42AM EST 31/03/2015-->
+
+<resources>
+    <style name="Theme.RagnarDark" parent="@android:style/Theme.Material" />
+    <style name="Theme.RagnarLight" parent="@android:style/Theme.Material" />
+    <style name="Theme.RagnarDark.Settings" parent="Theme.RagnarDark" />
+	<style name="Theme.RagnarLight.Settings" parent="Theme.RagnarLight" />
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Apex Launcher's Styles-->
+<!--LAST REVISED ON: 4:34AM EST 05/03/2015-->
+
+<resources>
+    <style name="Theme.Apex" parent="@android:style/Theme.Material.Light" />
+</resources>

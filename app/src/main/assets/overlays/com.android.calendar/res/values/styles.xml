@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Calendar.apk's Styles-->
+<!--LAST REVISED ON: 2:27PM EST 04/02/2015-->
+
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Material" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+</resources>

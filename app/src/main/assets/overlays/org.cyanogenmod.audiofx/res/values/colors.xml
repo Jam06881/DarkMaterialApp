@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing AudioFX's Colors-->
+<!--LAST REVISED ON: 2:12AM EST 06/03/2015-->
+
+<resources>
+    <color name="primary">#ff212021</color>
+    <color name="primary_dark">#ff212021</color>
+    <color name="accent">#ffffffff</color>
+</resources>

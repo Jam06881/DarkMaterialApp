@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing MultiROM's Drawables-->
+<!--LAST REVISED ON: 9:15PM EST 27/02/2015-->
+
+<resources>
+    <item type="drawable" name="dark_blue">#ff212021</item>
+    <item type="drawable" name="gray">#ff000000</item>
+    <item type="drawable" name="light_blue">#ff000000</item>
+    <item type="drawable" name="light_gray">#ff000000</item>
+    <item type="drawable" name="light_gray_text">#ff000000</item>
+    <item type="drawable" name="transparent">#00000000</item>
+</resources>

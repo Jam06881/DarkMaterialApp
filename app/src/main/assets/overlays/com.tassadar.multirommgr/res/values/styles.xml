@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing MultiROM's Styles-->
+<!--LAST REVISED ON: 9:15PM EST 27/02/2015-->
+
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material">
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:textColor">#ffff4d4d</item>
+        <item name="android:colorAccent">#ffff4d4d</item>
+    </style>
+    <style name="Base.TextAppearance.AppCompat" parent="@android:style/Theme.Material">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+	
+    <style name="Platform.AppCompat" parent="@android:style/Theme.Material">
+        <item name="android:colorForeground">@android:color/black</item>
+        <item name="android:colorBackground">@android:color/black</item>
+	</style>
+	<style name="Platform.AppCompat.Dialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:colorForeground">@android:color/black</item>
+        <item name="android:colorBackground">@android:color/black</item>
+	</style>
+	
+</resources>

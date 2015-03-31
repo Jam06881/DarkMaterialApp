@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing LatinIME.apk's Colors-->
+<!--LAST REVISED ON: 10:12PM EST 13/03/2015-->
+
+<resources>
+    <style name="platformActivityTheme" parent="@android:style/Theme.DeviceDefault" />
+    <style name="platformSettingsTheme" parent="@android:style/Theme.DeviceDefault" />
+    <style name="platformDialogTheme" parent="@android:style/Theme.DeviceDefault.Dialog" />
+</resources>

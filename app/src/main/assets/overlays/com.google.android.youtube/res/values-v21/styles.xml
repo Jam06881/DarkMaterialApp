@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing YouTube's Colors-->
+<!--LAST REVISED ON: 2:16AM EST 09/03/2015-->
+
+<resources>
+	<style name="Theme.YouTube.Settings" parent="@android:style/Theme.Material" />
+</resources>

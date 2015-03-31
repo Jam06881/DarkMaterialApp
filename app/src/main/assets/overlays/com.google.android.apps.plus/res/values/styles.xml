@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Google Plus' Styles-->
+<!--LAST REVISED ON: 6:49PM EST 23/02/2015-->
+
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Material" />
+    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+	<style name="ActionBarTextAppearanceBigStyle">
+	    <item name="android:textSize">24.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff777777</item>
+    </style>
+	<style name="ActionBarTextAppearanceLargeStyle">
+	    <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff777777</item>
+    </style>
+	<style name="ActionBarTextAppearanceMediumStyle">
+	    <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff777777</item>
+		<item name="gravity">center</item>
+    </style>
+    <style name="ActionBarTextAppearanceSmallStyle">
+	    <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff777777</item>
+		<item name="gravity">center</item>
+    </style>
+	<style name="Base.TextAppearance.AppCompat" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/lighter_grey</item>
+        <item name="android:textColorHighlight">@color/lighter_grey</item>
+        <item name="android:textColorHint">@color/lighter_grey</item>
+        <item name="android:textColorLink">@color/lighter_grey</item>
+    </style>
+	<style name="Base.TextAppearance.AppCompat.Title" parent="@style/ActionBarTextAppearanceBigStyle">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/lighter_grey</item>
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" parent="@style/ActionBarTextAppearanceMediumStyle" />
+    <style name="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" parent="@style/ActionBarTextAppearanceMediumStyle" />
+	<style name="Base.TextAppearance.AppCompat.Title" parent="@style/Base.TextAppearance.AppCompat" />
+	<style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@style/TextAppearance.AppCompat.Title">
+		<item name="android:textSize">20.0dip</item>
+    </style>
+	<style name="Base.TextAppearance.AppCompat.Widget.DropDownItem" parent="@style/ActionBarTextAppearanceMediumStyle">
+        <item name="android:textColor">#ff777777</item>
+    </style>
+	<style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Large" parent="@style/ActionBarTextAppearanceMediumStyle" />
+    <style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Small" parent="@style/ActionBarTextAppearanceMediumStyle" />
+	<style name="Base.TextAppearance.Custom.Large" parent="@style/ActionBarTextAppearanceLargeStyle" />	
+	<style name="Base.TextAppearance.Widget.AppCompat.Toolbar.Title" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+	<style name="Base.Widget.AppCompat.ListPopupWindow" parent="@android:style/Widget.ListPopupWindow">
+        <item name="android:dropDownSelector">?listChoiceBackgroundIndicator</item>
+        <item name="android:popupBackground">@drawable/abc_popup_background_mtrl_mult</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:dropDownHorizontalOffset">0.0dip</item>
+        <item name="android:dropDownVerticalOffset">0.0dip</item>
+    </style>
+	<style name="Base.Widget.AppCompat.PopupMenu" parent="@android:style/Widget.ListPopupWindow">
+		<item name="android:textColor">#ff777777</item>
+		<item name="android:dropDownVerticalOffset">110.0dip</item>
+	</style>
+	<style name="Base.Widget.AppCompat.Spinner.DropDown.ActionBar" parent="@android:style/Widget.Holo.ListPopupWindow" />
+
+    <style name="Divider">
+        <item name="android:layout_gravity">end</item>
+        <item name="android:background">#ff777777</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="DividerVertical">
+        <item name="android:background">#ff777777</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="FlatButtonBar">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">#ff000000</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+    <style name="FlatButtonBorder">
+        <item name="android:background">#ff000000</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="FlatButtonSeparator">
+        <item name="android:background">#88777777</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+        <item name="android:maxHeight">56.0dip</item>
+    </style>
+    <style name="MediaUploadSeparator">
+        <item name="android:background">#88777777</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">2.0dip</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:layout_marginRight">2.0dip</item>
+        <item name="android:layout_marginBottom">4.0dip</item>
+        <item name="android:layout_marginStart">2.0dip</item>
+        <item name="android:layout_marginEnd">2.0dip</item>
+    </style>
+    <style name="notificationCounter">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/lighter_grey</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">top|right|center</item>
+        <item name="android:background">@drawable/notification_count_background</item>
+        <item name="android:layout_width">18.0dip</item>
+        <item name="android:layout_height">18.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginRight">6.0dip</item>
+        <item name="android:layout_marginEnd">6.0dip</item>
+    </style>
+	<style name="ProfileAboutReview" />	
+	<style name="ProfileAboutReview.EditorialAuthorAttribution" parent="@style/ProfileAboutReview">
+        <item name="android:textColor">@color/lighter_grey</item>
+    </style>
+    <style name="sharebox_HorizontalSeparator">
+        <item name="android:background">#88777777</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="sharebox_VerticalSeparator">
+        <item name="android:background">#88777777</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">24.0dip</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+    </style>
+	<style name="TextAppearance.AppCompat.Title" parent="@style/Base.TextAppearance.AppCompat.Title" />
+	    <style name="ProfileItemLabel">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/lighter_grey</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+    </style>
+	<style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title" />
+    <style name="Theme.EmeraldSea.Preference.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+	<style name="Widget.ActionBar.Title.White" parent="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title">
+		<item name="android:textColor">@color/lighter_grey</item>
+	</style>
+</resources>

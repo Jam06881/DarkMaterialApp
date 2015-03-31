@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Play Music's Styles-->
+<!--LAST REVISED ON: 4:54AM EST 27/03/2015-->
+
+<resources>
+    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textColorPrimary">@color/text_color</item>
+        <item name="android:textColorSecondary">@color/text_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="PlayDrawerList">
+		<item name="android:layout_gravity">start</item>
+        <item name="android:background">@color/play_main_background</item>
+        <item name="android:fadingEdgeLength">0.0dip</item>
+        <item name="android:layout_width">320.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:cacheColorHint">@color/play_main_background</item>
+        <item name="android:divider">@null</item>
+        <item name="android:choiceMode">none</item>
+	</style>
+</resources>

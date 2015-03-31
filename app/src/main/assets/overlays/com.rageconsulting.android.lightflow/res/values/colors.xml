@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing LightFlow's Colors-->
+<!--LAST REVISED ON: 5:59PM EST 07/03/2015-->
+
+<resources>
+    <color name="background_material_dark">#ff000000</color>
+    <color name="background_slider_dark">#ff000000</color>
+	
+    <color name="background_floating_material_dark">#4a777777</color>
+	
+    <color name="darkbackground">#ff000000</color>
+    <color name="pager_holo_dark">#ff000000</color>
+	
+    <color name="reactle_color">#ff212021</color>
+	<color name="red">#ff777777</color>
+</resources>

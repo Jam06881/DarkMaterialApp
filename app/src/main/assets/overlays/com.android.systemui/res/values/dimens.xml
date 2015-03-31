@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing SystemUI.apk's Dimensions-->
+<!--LAST REVISED ON: 3:33PM EST 02/03/2015-->
+
+<resources>
+    <dimen name="notification_side_padding">0.0dip</dimen>
+</resources>

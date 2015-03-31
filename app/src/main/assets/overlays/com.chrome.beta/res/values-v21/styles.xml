@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Chrome Beta.apk's Styles-->
+<!--LAST REVISED ON: 3:30PM EST 19/03/2015-->
+
+<resources>
+    <style name="Platform.AppCompat" parent="@android:style/Theme.Material">
+		<item name="android:windowBackground">@android:color/black</item>
+	</style>
+    <style name="PreferencesTheme" parent="@android:style/Theme.Material" />
+    <style name="PreferencesDialogTheme" parent="@android:style/Theme.Material.Dialog.Alert" />	
+    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material" />
+    <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog" />
+</resources>

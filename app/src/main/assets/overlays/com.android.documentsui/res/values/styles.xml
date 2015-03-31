@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing DocumentsUI.apk's Styles-->
+<!--LAST REVISED ON: 11:44PM EST 05/02/2015-->
+
+<resources>
+    <style name="DialogWhenReallyLarge" parent="@android:style/Theme.DeviceDefault" />
+    <style name="DocumentsTheme" parent="@style/DialogWhenReallyLarge">
+		<item name="android:statusBarColor">@color/dark_material</item>
+	</style>
+</resources>

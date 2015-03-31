@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Trebuchet's Colors-->
+<!--LAST REVISED ON: 1:54AM EST 26/03/2015-->
+
+<resources>
+    <color name="quantum_panel_text_color">#ffffffff</color>
+    <color name="quantum_panel_text_shadow_color">#ff777777</color>
+    <color name="settings_bg_color">#ff212021</color>
+    <color name="settings_header_text">#ff777777</color>	
+</resources>

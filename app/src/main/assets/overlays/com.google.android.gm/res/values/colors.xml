@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Gmail's Colors-->
+<!--LAST REVISED ON: 8:36AM EST 20/02/2015-->
+
+<resources>
+	<!--Monochrome Colored Gmail Sender Titles-->
+<!-- 	<color name="quantum_cyan300">#ff212021</color>
+		<color name="quantum_deeporange500">#ff212021</color>
+		<color name="quantum_deeporange700">#ff212021</color>
+		<color name="quantum_deeporangeA200">#ff212021</color>
+		<color name="quantum_deeppurple300">#ff212021</color>
+		<color name="quantum_deeppurpleA100">#ff212021</color>
+		<color name="quantum_googblue400">#ff212021</color>
+		<color name="quantum_googblue500">#ff212021</color>
+		<color name="quantum_googgreen500">#ff212021</color>
+		<color name="quantum_googgreenA700">#ff212021</color>
+		<color name="quantum_googred400">#ff212021</color>
+		<color name="quantum_googred500">#ff212021</color>
+		<color name="quantum_googred800">#ff212021</color>
+		<color name="quantum_gray200">#ff212021</color>
+		<color name="quantum_gray400">#ff212021</color>
+		<color name="quantum_grey400">#ff212021</color>
+		<color name="quantum_indigo900">#ff212021</color>
+		<color name="quantum_indigoA100">#ff212021</color>
+		<color name="quantum_lightblue600">#ff212021</color>
+		<color name="quantum_lightblue700">#ff212021</color>
+		<color name="quantum_lightgreen400">#ff212021</color>
+		<color name="quantum_pink300">#ff212021</color>
+		<color name="quantum_tealA700">#ff212021</color>
+		<color name="quantum_yellow700">#ff212021</color>
+		<color name="quantum_yellow800">#ff212021</color>
+ -->
+	<!--Notification Colors-->
+	<color name="primary_text">#ffb7b7b7</color>
+	<color name="secondary_text">#ff1a1a1a</color>
+ 
+	<color name="holo_blue_light_trans">#88212021</color>
+	<color name="holo_blue_light_semitrans">#cc212021</color>
+	<color name="holo_blue_light_verytrans">#20212021</color>
+	<color name="holo_blue_light">#ff212021</color>
+	<color name="holo_blue_dark">#ff212021</color>
+
+	<color name="drawer_item_activated_background_color">#4affffff</color>
+	<color name="list_background_color">#ff000000</color>
+	<color name="default_account_details_color">#ffffffff</color>
+	<color name="account_text_color">#ffffffff</color>
+	<color name="add_accounts_text_color">#ffffffff</color>
+	<color name="manage_accounts_text_color">#ffffffff</color>
+	
+	<color name="primary_color">#ff212021</color>
+	<color name="primary_dark_color">#ff212021</color>
+	<color name="primary_material_dark">#ff777777</color>
+	<color name="swiped_bg_color">#ff000000</color>
+	<color name="text_color_black">#ffaaaaaa</color>
+	<color name="text_color_draft_red">#ffb30000</color>
+
+    <color name="accent_blue">#ffc3bec3</color>
+	<color name="ap_overflow_badge_color">#ff212021</color>
+	<color name="divider_color">#ff1f1f1f</color>
+	<color name="tip_teaser_bg">#ff444444</color>
+	<color name="account_setup_xlarge_background_color">#ff1f1f1f</color>
+    <color name="message_header_background_color">@android:color/black</color>
+
+	<color name="chips_dropdown_background_activated">#ff777777</color>
+	<color name="chips_dropdown_background_pressed">#4a777777</color>
+	
+    <color name="background_floating_material_light">#ff000000</color>
+    <color name="background_material_light">#ff000000</color>
+	<color name="conv_header_add_label_background">#ffffffff</color>
+    <color name="conversation_item_blue_background_color">#ff212021</color>
+    <color name="conversation_item_grey_background_color">#ff212021</color>
+    <color name="conversation_item_grey_pressed_color">#ff202020</color>
+    <color name="conversation_item_grey_ripple_color">#30777777</color>
+	<color name="folder_teaser_icon_background">#ff000000</color>
+	<color name="loading_messages_background_color">#ff000000</color>
+	<color name="vacation_responder_window_background">#ff212021</color>
+</resources>

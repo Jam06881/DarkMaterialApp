@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Settings.apk's CM Specific Colors-->
+<!--LAST REVISED ON: 1:55AM EST 28/02/2015-->
+
+<resources>
+	<color name="screencolor_background">#ff000000</color>
+	<color name="background_color_gray">#ff000000</color>
+	<color name="background_color_white">#ff000000</color>
+</resources>

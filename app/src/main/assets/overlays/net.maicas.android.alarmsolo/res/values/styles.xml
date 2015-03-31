@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing AlarmSolo's Colors-->
+<!--LAST REVISED ON: 4:54PM EST 04/03/2015-->
+
+<resources>
+    <style name="alarm_alert" parent="@android:style/Theme.Material">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

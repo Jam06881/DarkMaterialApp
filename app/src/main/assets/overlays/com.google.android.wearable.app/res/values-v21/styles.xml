@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Android Wear's Styles-->
+<!--LAST REVISED ON: 3:01AM EST 19/03/2015-->
+
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material">
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:actionBarStyle">@style/ActionBarTheme</item>
+    </style>
+    <style name="SetupTheme" parent="@android:style/Theme.Material">
+        <item name="android:windowBackground">@color/setup_background</item>
+        <item name="android:actionBarStyle">@style/SetupActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+    <style name="ActionBarTheme" parent="@android:style/Widget.Material.ActionBar">
+        <item name="android:icon">@android:color/transparent</item>
+        <item name="android:background">@color/action_bar_background</item>
+        <item name="android:subtitleTextStyle">@style/ActionBarSubtitleTextStyle</item>
+    </style>
+    <style name="SetupActionBarStyle" parent="@android:style/Widget.Material.ActionBar">
+        <item name="android:icon">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="DialogTheme" parent="@android:style/Theme.Material.Dialog.MinWidth" />
+</resources>

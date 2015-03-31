@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing SoundRecorder.apk's Colors-->
+<!--LAST REVISED ON: 12:07AM EST 06/02/2015-->
+
+<resources>
+    <color name="material_primary">#ff212021</color>
+    <color name="material_dark">#ff212021</color>
+	
+    <color name="bottom_bar_background">@color/material_primary</color>
+	
+    <color name="button_background_pressed_color">#1affffff</color>
+    <color name="button_background_focused_color">#77ffffff</color>
+</resources>

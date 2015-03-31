@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing Hangout's Styles-->
+<!--LAST REVISED ON: 7:49AM EST 20/03/2015-->
+
+<resources>
+    <style name="NotificationPrimaryText">
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+    <style name="NotificationSecondaryText">
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+    <style name="Platform.AppCompat.Light" parent="@android:style/Theme.Material">
+        <item name="android:colorBackground">@android:color/white</item>
+		<item name="android:textColorPrimary">#ff777777</item>
+        <item name="android:textColorSecondary">#ff777777</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Platform.AppCompat.Light.Dialog" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+</resources>

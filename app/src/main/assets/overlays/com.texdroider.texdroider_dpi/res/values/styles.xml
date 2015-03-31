@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You are editing TexdroiderDPI's Styles-->
+<!--LAST REVISED ON: 4:47AM EST 17/03/2015-->
+
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material">
+		<item name="android:colorBackground">@android:color/black</item>
+		<item name="android:statusBarColor">@color/dark_material</item>
+		<item name="android:windowBackground">@android:color/black</item>
+	</style>
+</resources>
