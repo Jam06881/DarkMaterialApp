@@ -1,4 +1,4 @@
-package com.jahirfiquitiva.paperboard.fragments;
+package com.chummy.jezebel.material.dark.fragments;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -19,8 +19,8 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.chummy.jezebel.material.dark.R;
-import com.jahirfiquitiva.paperboard.activities.DetailedWallpaper;
-import com.jahirfiquitiva.paperboard.utils.JSONParser;
+import com.chummy.jezebel.material.dark.activities.DetailedWallpaper;
+import com.chummy.jezebel.material.dark.utils.JSONParser;
 
 import org.json.JSONArray;
 import org.json.JSONException;

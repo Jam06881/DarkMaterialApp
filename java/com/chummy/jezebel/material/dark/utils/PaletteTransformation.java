@@ -1,4 +1,4 @@
-package com.jahirfiquitiva.paperboard.utils;
+package com.chummy.jezebel.material.dark.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -15,9 +15,6 @@ import java.lang.ref.WeakReference;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-/**
- * Created by Jahir on 25/03/2015.
- */
 public final class PaletteTransformation implements Transformation {
 
     private static final PaletteTransformation INSTANCE = new PaletteTransformation();

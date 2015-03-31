@@ -1,4 +1,4 @@
-package com.jahirfiquitiva.paperboard.utils;
+package com.chummy.jezebel.material.dark.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

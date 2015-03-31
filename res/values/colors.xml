@@ -21,8 +21,8 @@
     <color name="dialogcontent">#ffffff</color>
 
     <color name="white">#ffffff</color>
-    <color name="transparent">#00ffffff</color>
-    <color name="semitransparent_white">#b3ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="semitransparent_white">#b3000000</color>
     <color name="dark_grey">#ff9d9d9d</color>
     <color name="window_bg">@color/primary_dark</color>
     <color name="black_semi_transparent">#b2000000</color>

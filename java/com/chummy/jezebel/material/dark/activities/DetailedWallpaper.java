@@ -1,4 +1,4 @@
-package com.jahirfiquitiva.paperboard.activities;
+package com.chummy.jezebel.material.dark.activities;
 
 import android.app.WallpaperManager;
 import android.content.Context;

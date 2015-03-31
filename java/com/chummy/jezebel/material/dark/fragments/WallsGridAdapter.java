@@ -1,7 +1,6 @@
-package com.jahirfiquitiva.paperboard.fragments;
+package com.chummy.jezebel.material.dark.fragments;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Point;
 import android.support.v7.graphics.Palette;
 import android.view.Display;
@@ -12,18 +11,15 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.BaseAdapter;
-import android.widget.FrameLayout;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.chummy.jezebel.material.dark.R;
-import com.jahirfiquitiva.paperboard.activities.DetailedWallpaper;
-import com.jahirfiquitiva.paperboard.utils.PaletteTransformation;
-import static com.jahirfiquitiva.paperboard.utils.PaletteTransformation.PaletteCallback;
-import com.squareup.picasso.Callback;
+import com.chummy.jezebel.material.dark.utils.PaletteTransformation;
+import static com.chummy.jezebel.material.dark.utils.PaletteTransformation.PaletteCallback;
+
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

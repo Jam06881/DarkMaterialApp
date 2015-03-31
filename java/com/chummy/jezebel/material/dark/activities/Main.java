@@ -1,4 +1,4 @@
-package com.jahirfiquitiva.paperboard.activities;
+package com.chummy.jezebel.material.dark.activities;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -22,8 +22,8 @@ import android.widget.AdapterView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.chummy.jezebel.material.dark.R;
-import com.jahirfiquitiva.paperboard.utils.ChangelogAdapter;
-import com.jahirfiquitiva.paperboard.utils.Preferences;
+import com.chummy.jezebel.material.dark.utils.ChangelogAdapter;
+import com.chummy.jezebel.material.dark.utils.Preferences;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.accountswitcher.AccountHeader;
@@ -66,7 +66,7 @@ public class Main extends ActionBarActivity {
         thaRequest = getResources().getString(R.string.section_five);
         thaCredits = getResources().getString(R.string.section_seven);
 
-        drawerVersion = getResources().getString(R.string.current_version);
+        drawerVersion = getResources().getString(R.string.version_code);
 
         currentItem = 1;
 
@@ -138,7 +138,7 @@ public class Main extends ActionBarActivity {
         getSupportActionBar().setTitle(title);
         FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
         tx.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
-        tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.jahirfiquitiva.paperboard.fragments." + fragment));
+        tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.chummy.jezebel.material.dark.fragments." + fragment));
         tx.commit();
     }
 
@@ -175,7 +175,7 @@ public class Main extends ActionBarActivity {
             case R.id.share:
                 Intent sharingIntent = new Intent(Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
-                String shareBody = "Check out " + getResources().getString(R.string.theme_name) + " by " + getResources().getString(R.string.nicholas) + "!\n\nDownload it here!: " + getResources().getString(R.string.play_store_link);
+                String shareBody = "Check out " + getResources().getString(R.string.theme_name) + " by " + getResources().getString(R.string.nicholas_short) + "!\n\nDownload it here!: " + getResources().getString(R.string.play_store_link);
                 sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
                 startActivity(Intent.createChooser(sharingIntent, (getResources().getString(R.string.share_title))));
                 break;
@@ -262,7 +262,7 @@ public class Main extends ActionBarActivity {
     private void showChangelogDialog() {
 
         String launchinfo = getSharedPreferences("PrefsFile", MODE_PRIVATE).getString("version", "0");
-        if (!launchinfo.equals(getResources().getString(R.string.current_version))) {
+        if (!launchinfo.equals(getResources().getString(R.string.version_code))) {
             changelog();
         }
         storeSharedPrefs();
@@ -271,7 +271,7 @@ public class Main extends ActionBarActivity {
     protected void storeSharedPrefs() {
         SharedPreferences sharedPreferences = getSharedPreferences("PrefsFile", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("version", getResources().getString(R.string.current_version));
+        editor.putString("version", getResources().getString(R.string.version_code));
         editor.commit();
     }
 

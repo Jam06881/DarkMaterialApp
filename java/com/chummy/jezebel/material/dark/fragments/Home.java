@@ -1,4 +1,4 @@
-package com.jahirfiquitiva.paperboard.fragments;
+package com.chummy.jezebel.material.dark.fragments;
 
 import android.content.Context;
 import android.content.Intent;
@@ -88,7 +88,7 @@ public class Home extends Fragment {
             public void onClick(View v) {
                 Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
                 if (intent == null) {
-                    Toast.makeText(getActivity(), getString(R.string.cm_not_installed), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), getString(R.string.cm_not_configured), Toast.LENGTH_SHORT).show();
                 } else {
                     startActivity(intent);
                 }
