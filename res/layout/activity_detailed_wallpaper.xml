@@ -50,7 +50,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        fab:fab_addButtonColorNormal="@color/accent"
+        fab:fab_addButtonColorNormal="@color/primary"
         fab:fab_addButtonColorPressed="@color/accent_pressed"
         fab:fab_addButtonPlusIconColor="@color/white"
         fab:fab_labelStyle="@style/FabLabels">

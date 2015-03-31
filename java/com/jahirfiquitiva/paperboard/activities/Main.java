@@ -175,7 +175,7 @@ public class Main extends ActionBarActivity {
             case R.id.share:
                 Intent sharingIntent = new Intent(Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
-                String shareBody = "Check out " + getResources().getString(R.string.theme_name) + " by " + getResources().getString(R.string.iconpack_designer) + "!\n\nDownload it here!: " + getResources().getString(R.string.play_store_link);
+                String shareBody = "Check out " + getResources().getString(R.string.theme_name) + " by " + getResources().getString(R.string.nicholas) + "!\n\nDownload it here!: " + getResources().getString(R.string.play_store_link);
                 sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
                 startActivity(Intent.createChooser(sharingIntent, (getResources().getString(R.string.share_title))));
                 break;

@@ -135,7 +135,61 @@ public class Credits extends Fragment {
             }
         });
 
-        TextView dashauthorweb = (TextView) root.findViewById(R.id.dashauthor_web_button);
+        TextView web2 = (TextView) root.findViewById(R.id.web_button_bella);
+        web2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent devweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_link_bella)));
+                startActivity(devweb);
+            }
+        });
+
+        TextView googleplus2 = (TextView) root.findViewById(R.id.facebook_button_bella);
+        googleplus2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent devgplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.facebook_link_bella)));
+                startActivity(devgplus);
+            }
+        });
+
+        TextView web3 = (TextView) root.findViewById(R.id.web_button_khizar);
+        web3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent devweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_link_khizar)));
+                startActivity(devweb);
+            }
+        });
+
+        TextView googleplus3 = (TextView) root.findViewById(R.id.gplus_button_khizar);
+        googleplus3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent devgplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_gplus_link_khizar)));
+                startActivity(devgplus);
+            }
+        });
+
+        TextView web4 = (TextView) root.findViewById(R.id.web_button_fahad);
+        web4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent devweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_link_fahad)));
+                startActivity(devweb);
+            }
+        });
+
+        TextView googleplus4 = (TextView) root.findViewById(R.id.gplus_button_fahad);
+        googleplus4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent devgplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_gplus_link_fahad)));
+                startActivity(devgplus);
+            }
+        });
+
+        /*TextView dashauthorweb = (TextView) root.findViewById(R.id.dashauthor_web_button);
         dashauthorweb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -151,7 +205,7 @@ public class Credits extends Fragment {
                 Intent dashauthorgplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dashboard_author_gplus)));
                 startActivity(dashauthorgplus);
             }
-        });
+        });*/
 
         return root;
     }

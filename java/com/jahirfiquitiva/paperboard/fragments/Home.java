@@ -11,12 +11,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.melnykov.fab.FloatingActionButton;
+import com.melnykov.fab.ObservableScrollView;
 import com.chummy.jezebel.material.dark.R;
 
-/**
- * Created by Jahir on 28/02/2015.
- */
 public class Home extends Fragment {
 
     private Context context;
@@ -77,6 +77,21 @@ public class Home extends Fragment {
             public void onClick(View v) {
                 Intent rate = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_link)));
                 startActivity(rate);
+            }
+        });
+
+        ObservableScrollView view = (ObservableScrollView) root.findViewById(R.id.scrollView1);
+        FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.cm_shortcut);
+        fab.attachToScrollView(view);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
+                if (intent == null) {
+                    Toast.makeText(getActivity(), getString(R.string.cm_not_installed), Toast.LENGTH_SHORT).show();
+                } else {
+                    startActivity(intent);
+                }
             }
         });
 
