@@ -73,7 +73,7 @@ public class Main extends ActionBarActivity {
         headerResult = new AccountHeader()
                 .withActivity(this)
                 .withHeaderBackground(R.drawable.header)
-                .withSelectionFirstLine(getResources().getString(R.string.app_long_name))
+                .withSelectionFirstLine(getResources().getString(R.string.app_name))
                 .withSelectionSecondLine(drawerVersion)
                 .withSavedInstance(savedInstanceState)
                 .build();

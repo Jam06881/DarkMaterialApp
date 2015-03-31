@@ -7,7 +7,8 @@
 
     <string-array name="v47">
         <item>version.release.fourtyseven</item>
-        <item>Create new app that comes with the theme</item>
+        <item>Added new app into Theme package</item>
+        <item>Theme BlissOTA</item>
         <item>Touch up CM File Manager\'s Default Colors (To fix black on black, this has to be changed by the user in Color Scheme Options (Click on text color, then press OK without making any changes)</item>
         <item>G+ logo and Add Contact Picture in Play Store</item>
         <item>Leave Hangout Button Invert</item>

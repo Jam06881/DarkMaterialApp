@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.chummy.jezebel.material.dark">
-
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.chummy.jezebel.material.dark">
+	
+	<uses-feature android:name="org.cyanogenmod.theme" android:required="true"/>
+	
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
-    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	
+	<meta-data android:name="org.cyanogenmod.theme.name" android:value="@string/app_name"/>
+    <meta-data android:name="org.cyanogenmod.theme.author" android:value="@string/team"/>
 
     <supports-screens 
         android:anyDensity="true" 
@@ -23,7 +26,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/launcher_name"
+        android:label="@string/app_name"
         android:theme="@style/AppTheme">
 
         <!-- Main Activity -->
