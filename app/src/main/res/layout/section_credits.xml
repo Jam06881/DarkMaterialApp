@@ -476,7 +476,7 @@
                             android:lineSpacingMultiplier="1.2"
                             android:text="@string/license_credit"
                             android:textColor="@color/dark_grey"
-                            android:textSize="@dimen/text_small"
+                            android:textSize="@dimen/text_ultrasmall"
                             android:gravity="center" />
                     </LinearLayout>
                 </RelativeLayout>
