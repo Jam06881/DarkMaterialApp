@@ -12,10 +12,6 @@
     <color name="accent_pressed">#515151</color>
     <color name="accent_secondary">@color/accent</color>
 
-    <color name="secondary">#009688</color>
-    <color name="secondary_pressed">#26a69a</color>
-    <color name="navbar">#424242</color>
-
     <color name="cardsbg">#4d000000</color>
     <color name="light_bg">#000000</color>
     <color name="dialogcontent">#ffffff</color>

@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
+        <item>@array/v49</item>
         <item>@array/v47</item>
-        <item>@array/v46</item>
     </string-array>
-
+    <string-array name="v49">
+        <item>version.release.fourtynine</item>
+        <item>Added new app into Theme package</item>
+        <item>Theme BlissOTA</item>
+        <item>Touch up CM File Manager\'s Default Colors (To fix black on black, this has to be changed by the user in Color Scheme Options (Click on text color, then press OK without making any changes)</item>
+        <item>G+ logo and Add Contact Picture in Play Store</item>
+        <item>Leave Hangout Button Invert</item>
+    </string-array>
     <string-array name="v47">
         <item>version.release.fourtyseven</item>
         <item>Added new app into Theme package</item>
@@ -12,22 +19,5 @@
         <item>Touch up CM File Manager\'s Default Colors (To fix black on black, this has to be changed by the user in Color Scheme Options (Click on text color, then press OK without making any changes)</item>
         <item>G+ logo and Add Contact Picture in Play Store</item>
         <item>Leave Hangout Button Invert</item>
-    </string-array>
-    <string-array name="v46">
-        <item>version.release.fourtysix</item>
-        <item>Attempt to fix Contacts Title Color "Frequently Contacted"</item>
-        <item>Change Settings Toggle Background Darker</item>
-        <item>Rewrite Brightness Scrubber as a Vector to respect all resolutions</item>
-        <item>Fix Play Music Unreadable Text</item>
-        <item>Retheme Google Play Music with Orange ActionBar</item>
-        <item>Optimize Trebuchet to attempt to fix Wallpaper FC</item>
-        <item>Update Google Search Recents Search Bar Background</item>
-        <item>Keep Account Select Black on Black Fixed</item>
-        <item>Theme GravityBox Settings</item>
-        <item>Chrome autofill dropdown dark grey on black background fixed</item>
-        <item>Whiten Hangout\'s Hangout Name Icon</item>
-        <item>Increase Hangouts People and Options Windows Readability</item>
-        <item>Touch Up Gallery3d\'s Style, attempt to fix FC issues due to missing attributes</item>
-        <item>Fix Dialer FC issues on non-stock DPI, stress tested on 480, 360, 220, 120, 60 DPIs</item>
     </string-array>
 </resources>
