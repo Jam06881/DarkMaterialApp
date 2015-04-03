@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#212021</color>
+    <color name="primary_dark">#212021</color>
+    <color name="text_color">#777777</color>
+    <color name="primary_pressed">#777777</color>
+
+    <color name="title_color">#ffffff</color>
+    <color name="accent">#ffffff</color>
+    <color name="button_color">#ffffff</color>
+    <color name="ripple_accent">#4a777777</color>
+    <color name="accent_pressed">#515151</color>
+    <color name="accent_secondary">@color/accent</color>
+
+    <color name="secondary">#009688</color>
+    <color name="secondary_pressed">#26a69a</color>
+    <color name="navbar">#424242</color>
+
+    <color name="cardsbg">#4d000000</color>
+    <color name="light_bg">#000000</color>
+    <color name="dialogcontent">#ffffff</color>
+
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="semitransparent_white">#b3000000</color>
+    <color name="dark_grey">#ff9d9d9d</color>
+    <color name="window_bg">@color/primary_dark</color>
+    <color name="black_semi_transparent">#b2000000</color>
+    <color name="theme_info_header">@color/primary</color>
+    <color name="theme_info">@color/primary</color>
+    <color name="theme">@color/primary</color>
+    <color name="divider_grey">#d4d4d4</color>
+    <color name="red">#f44336</color>
+    <color name="green">#4caf50</color>
+</resources>
