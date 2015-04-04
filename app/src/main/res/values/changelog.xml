@@ -6,7 +6,7 @@
         <item>@array/v48</item>
     </string-array>
     <string-array name="v50">
-        <item>version.release.fifty</item>
+        <item>version.release.fifty to fiftythree</item>
         <item>Clean up app manifest and app files to optimize speed</item>
         <item>Stabilizing entire build</item>
     </string-array>
