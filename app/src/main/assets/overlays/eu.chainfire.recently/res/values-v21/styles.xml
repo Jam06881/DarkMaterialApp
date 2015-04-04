@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--You are editing Recently's Styles-->
-<!--LAST REVISED ON: 10:09PM EST 18/03/2015-->
-
-<resources>
-    <style name="AppTheme" parent="@android:style/Theme.Material" />
-</resources>

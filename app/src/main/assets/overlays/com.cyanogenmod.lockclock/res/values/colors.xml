@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--You are editing LockClock.apk's Colors-->
-<!--LAST REVISED ON: 1:08AM EST 26/03/2015-->
-
-<resources>
-    <color name="colorAccent">#ffffffff</color>
-    <color name="colorPrimary">#ff212021</color>
-    <color name="colorPrimaryDark">#ff212021</color>
-</resources>

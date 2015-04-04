@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--You are editing TricksterMod's Styles-->
-<!--LAST REVISED ON: 8:42PM EST 13/03/2015-->
-
-<resources>
-    <style name="Theme.Holo.Light.DarkActionBar" parent="@android:style/Theme.Material" >
-		<item name="android:colorAccent">#ff777777</item>
-	</style>
-</resources>

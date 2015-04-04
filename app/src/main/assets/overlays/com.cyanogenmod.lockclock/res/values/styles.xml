@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--You are editing LockClock.apk's Styles-->
-<!--LAST REVISED ON: 1:09AM EST 26/03/2015-->
-
-<resources>
-    <style name="Theme.Main" parent="@android:style/Theme.Material" />
-    <style name="Theme.AlertDialog" parent="@android:style/Theme.Material.Dialog.Alert" />
-</resources>

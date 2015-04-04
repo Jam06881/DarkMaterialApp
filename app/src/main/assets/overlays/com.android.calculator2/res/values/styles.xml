@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- You are editing Calculator.apk's Colors -->
-<!--LAST REVISED ON: 3:11AM EST 06/02/2015-->
-
-<resources>
-    <style name="CalculatorTheme" parent="@android:style/Theme.Material">
-        <item name="android:windowBackground">@android:color/black</item>
-    </style>
-</resources>

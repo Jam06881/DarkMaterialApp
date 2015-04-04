@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--You are editing Android Wear's Colors-->
-<!--LAST REVISED ON: 2:59AM EST 19/03/2015-->
-
-<resources>
-    <color name="fragment_background">@android:color/black</color>
-    <color name="voice_actions_item_background">@android:color/black</color>
-</resources>

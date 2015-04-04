@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--You are editing Google Authenticator's Colors-->
-<!--LAST REVISED ON: 3:05AM EST 21/03/2015-->
-
-<resources>
-    <color name="countdown_indicator">#ffffffff</color>
-</resources>

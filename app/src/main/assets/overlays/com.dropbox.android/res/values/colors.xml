@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--You are editing Dropbox's Colors-->
-<!--LAST REVISED ON: 4:07AM EST 19/03/2015-->
-
-<resources>
-    <color name="actionBarBackground">#ff212021</color>
-    <color name="circle_indicator_selected">#ff212021</color>
-    <color name="lightBlueText">#ff777777</color>
-</resources>

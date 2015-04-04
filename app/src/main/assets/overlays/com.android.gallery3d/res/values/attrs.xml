@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--You are editing Gallery3d.apk's Attributes-->
-<!--LAST REVISED ON: 5:42AM EST 28/03/2015-->
-
-<resources>
-    <attr name="listPreferredItemHeightSmall" format="dimension" />
-    <attr name="switchStyle" format="reference" />
-</resources>

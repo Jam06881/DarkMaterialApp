@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--You are editing Android Wear's Styles-->
-<!--LAST REVISED ON: 2:44AM EST 19/03/2015-->
-
-<resources>
-    <style name="ActionBarSubtitleTextStyle" parent="@android:style/TextAppearance.Small">
-        <item name="android:textColor">@android:color/white</item>
-    </style>
-</resources>
