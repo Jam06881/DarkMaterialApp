@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v47</item>
-        <item>@array/v46</item>
+        <item>@array/v49</item>
+        <item>@array/v48</item>
     </string-array>
-
-    <string-array name="v47">
-        <item>version.release.fourtyseven</item>
+    <string-array name="v49">
+        <item>version.release.fourtynine</item>
+        <item>Fix theme app's nav bar color</item>
+        <item>Dropbox White Underline, due to FW, fixed</item>
+        <item>Darkened bliss logo added into status bar</item>
+        <item>Reintroduce LightFlow, reddened</item>
+        <item>Reintroduce Pushbullet, greenified</item>
+        <item>Configure Settings style for Google Camera</item>
+        <item>CPU Spy Menu Background has a black border</item>
+        <item>Completely invert Gmail thanks to Google's new exposes</item>
+        <item>Readjusted Contacts Actionbar color to fix Frequently Contacted title in Contacts - linked to primary_color</item>
+        <item>Chrome close tab icon grey -> white</item>
+        <item>Pandora rich notification with Pandora patcher, notification background is white</item>
+        <item>Theme Delayed Lock by Javelin, problem with checkboxes</item>
+        <item>Google Play Music Unreadable Widget</item>
+        <item>Fix up whitened dialog in latest Chainfire's Recently App</item>
+        <item>Keep hardkey menu</item>
+        <item>Increase readability in keep: Grey text to Blackish Grey</item>
+        <item>Keep drawer header titles and divider colors</item>
+        <item>Keep new drawer icons for labels</item>
+        <item>Retheme DocumentsUI drawer text and icons</item>
+    </string-array>
+    <string-array name="v48">
+        <item>version.release.fourtyeight</item>
         <item>Added new app into Theme package</item>
         <item>Theme BlissOTA</item>
         <item>Touch up CM File Manager\'s Default Colors (To fix black on black, this has to be changed by the user in Color Scheme Options (Click on text color, then press OK without making any changes)</item>
         <item>G+ logo and Add Contact Picture in Play Store</item>
         <item>Leave Hangout Button Invert</item>
-    </string-array>
-    <string-array name="v46">
-        <item>version.release.fourtysix</item>
-        <item>Attempt to fix Contacts Title Color "Frequently Contacted"</item>
-        <item>Change Settings Toggle Background Darker</item>
-        <item>Rewrite Brightness Scrubber as a Vector to respect all resolutions</item>
-        <item>Fix Play Music Unreadable Text</item>
-        <item>Retheme Google Play Music with Orange ActionBar</item>
-        <item>Optimize Trebuchet to attempt to fix Wallpaper FC</item>
-        <item>Update Google Search Recents Search Bar Background</item>
-        <item>Keep Account Select Black on Black Fixed</item>
-        <item>Theme GravityBox Settings</item>
-        <item>Chrome autofill dropdown dark grey on black background fixed</item>
-        <item>Whiten Hangout\'s Hangout Name Icon</item>
-        <item>Increase Hangouts People and Options Windows Readability</item>
-        <item>Touch Up Gallery3d\'s Style, attempt to fix FC issues due to missing attributes</item>
-        <item>Fix Dialer FC issues on non-stock DPI, stress tested on 480, 360, 220, 120, 60 DPIs</item>
     </string-array>
 </resources>
