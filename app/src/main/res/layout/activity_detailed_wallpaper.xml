@@ -59,8 +59,8 @@
             android:id="@+id/setwall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/accent"
-            fab:fab_colorPressed="@color/accent_pressed"
+            fab:fab_colorNormal="@color/primary"
+            fab:fab_colorPressed="@color/primary_pressed"
             fab:fab_icon="@drawable/ic_check"
             fab:fab_size="mini"
             fab:fab_title="@string/apply" />

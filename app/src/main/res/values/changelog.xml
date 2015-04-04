@@ -6,20 +6,20 @@
     </string-array>
     <string-array name="v49">
         <item>version.release.fourtynine</item>
-        <item>Fix theme app's nav bar color</item>
+        <item>Fix theme app\'s nav bar color</item>
         <item>Dropbox White Underline, due to FW, fixed</item>
         <item>Darkened bliss logo added into status bar</item>
         <item>Reintroduce LightFlow, reddened</item>
         <item>Reintroduce Pushbullet, greenified</item>
         <item>Configure Settings style for Google Camera</item>
         <item>CPU Spy Menu Background has a black border</item>
-        <item>Completely invert Gmail thanks to Google's new exposes</item>
+        <item>Completely invert Gmail thanks to Google\'s new exposes</item>
         <item>Readjusted Contacts Actionbar color to fix Frequently Contacted title in Contacts - linked to primary_color</item>
         <item>Chrome close tab icon grey -> white</item>
         <item>Pandora rich notification with Pandora patcher, notification background is white</item>
         <item>Theme Delayed Lock by Javelin, problem with checkboxes</item>
         <item>Google Play Music Unreadable Widget</item>
-        <item>Fix up whitened dialog in latest Chainfire's Recently App</item>
+        <item>Fix up whitened dialog in latest Chainfire\'s Recently App</item>
         <item>Keep hardkey menu</item>
         <item>Increase readability in keep: Grey text to Blackish Grey</item>
         <item>Keep drawer header titles and divider colors</item>
