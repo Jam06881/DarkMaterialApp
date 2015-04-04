@@ -444,7 +444,7 @@
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
-                android:id="@+id/license"
+                android:id="@+id/credits"
                 android:layout_below="@+id/fahad"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -454,15 +454,20 @@
                 card_view:cardElevation="@dimen/cards_elevation"
                 card_view:cardBackgroundColor="@color/cardsbg">
 
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
+
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:id="@+id/credit_card"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/license"
-                        android:layout_alignParentRight="true"
-                        android:orientation="horizontal">
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/welcome_contenttest_five"
+                            android:id="@+id/credit_text"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_alignLeft="@id/welcometest"
@@ -474,6 +479,7 @@
                             android:textSize="@dimen/text_ultrasmall"
                             android:gravity="center" />
                     </LinearLayout>
+                </RelativeLayout>
             </android.support.v7.widget.CardView>
         </RelativeLayout>
     </ScrollView>
