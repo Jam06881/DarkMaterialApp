@@ -6,6 +6,17 @@
     </string-array>
     <string-array name="v49">
         <item>version.release.fourtynine</item>
+        <item>Get IncallUI ready for Android 5.1</item>
+        <item>Fix Google+ Photos not having proper statusbar</item>
+        <item>Darken Instagram Camera View</item>
+        <item>Instagram button accent colors</item>
+        <item>Gmail Reply/Forward Icons</item>
+        <item>Fix Black on Location in G+ Button</item>
+        <item>Revert G+ to red again</item>
+        <item>Google+ Events all greyed out</item>
+        <item>Reverted Google+ to red again</item>
+        <item>Changed Google+ Ripple Color</item>
+        <item>Grey Google+ Events fix</item>
         <item>Fix theme app\'s nav bar color</item>
         <item>Dropbox White Underline, due to FW, fixed</item>
         <item>Darkened bliss logo added into status bar</item>
