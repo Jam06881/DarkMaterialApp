@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
+        <item>@array/v50</item>
         <item>@array/v49</item>
         <item>@array/v48</item>
+    </string-array>
+    <string-array name="v50">
+        <item>version.release.fifty</item>
+        <item>Clean up app manifest and app files to optimize speed</item>
+        <item>Stabilizing entire build</item>
     </string-array>
     <string-array name="v49">
         <item>version.release.fourtynine</item>
