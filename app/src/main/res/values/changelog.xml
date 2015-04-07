@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v54</item>
-        <item>@array/v53</item>
+        <item>@array/v56</item>
+        <item>@array/v55</item>
     </string-array>
-    <string-array name="v54">
-        <item>fiftyfour</item>
+    <string-array name="v56">
+        <item>fiftysix</item>
+        <item>Adjust Hangouts Selected Color, remove the blue!</item>
+        <item>Hangouts Indicator, Dialpad Background</item>
+        <item>Add Vanir Exodus (EXODUS BRANCH) Icons</item>
+        <item>Fix up Chrome Colors</item>
+        <item>Theme Chrome Immersive Mode Popup</item>
+        <item>Adjust Play Store\'s Redeem Button</item>
+        <item>Themed Ebay\'s Notification Colors</item>
+        <item>Change TricksterMod\'s Light theme Refresh Icon</item>
+        <item>[BLISS] Theme BlissPapers</item>
+        <item>Theme Pocket MAL</item>
+        <item>Lighten Gmail Double Arrow</item>
+        <item>Adjust Gmail Colors to have visible Search Text</item>
+    </string-array>
+    <string-array name="v55">
+        <item>fiftyfive</item>
         <item>Dev device upgraded to Bliss v3.0 (5.1), let\'s begin darkening it out!</item>
         <item>Change Theme Chooser shortcut icon in the app</item>
         <item>Theme 5.1 Dialer</item>
@@ -16,40 +31,5 @@
         <item>Theme Pocket MAL</item>
         <item>Revert "Remove black background on Generic Selector for G+"</item>
         <item>Remove blacked out Google Calendar except Widget</item>
-    </string-array>
-    <string-array name="v53">
-        <item>fiftythree</item>
-        <item>Clean up app manifest and app files to optimize speed</item>
-        <item>Stabilizing entire build</item>
-        <item>Get IncallUI ready for Android 5.1</item>
-        <item>Fix Google+ Photos not having proper statusbar</item>
-        <item>Darken Instagram Camera View</item>
-        <item>Instagram button accent colors</item>
-        <item>Gmail Reply/Forward Icons</item>
-        <item>Fix Black on Location in G+ Button</item>
-        <item>Revert G+ to red again</item>
-        <item>Google+ Events all greyed out</item>
-        <item>Reverted Google+ to red again</item>
-        <item>Changed Google+ Ripple Color</item>
-        <item>Grey Google+ Events fix</item>
-        <item>Fix theme app\'s nav bar color</item>
-        <item>Dropbox White Underline, due to FW, fixed</item>
-        <item>Darkened bliss logo added into status bar</item>
-        <item>Reintroduce LightFlow, reddened</item>
-        <item>Reintroduce Pushbullet, greenified</item>
-        <item>Configure Settings style for Google Camera</item>
-        <item>CPU Spy Menu Background has a black border</item>
-        <item>Completely invert Gmail thanks to Google\'s new exposes</item>
-        <item>Readjusted Contacts Actionbar color to fix Frequently Contacted title in Contacts - linked to primary_color</item>
-        <item>Chrome close tab icon grey -> white</item>
-        <item>Pandora rich notification with Pandora patcher, notification background is white</item>
-        <item>Theme Delayed Lock by Javelin, problem with checkboxes</item>
-        <item>Google Play Music Unreadable Widget</item>
-        <item>Fix up whitened dialog in latest Chainfire\'s Recently App</item>
-        <item>Keep hardkey menu</item>
-        <item>Increase readability in keep: Grey text to Blackish Grey</item>
-        <item>Keep drawer header titles and divider colors</item>
-        <item>Keep new drawer icons for labels</item>
-        <item>Retheme DocumentsUI drawer text and icons</item>
     </string-array>
 </resources>
