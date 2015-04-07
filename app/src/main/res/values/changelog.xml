@@ -5,7 +5,7 @@
         <item>@array/v53</item>
     </string-array>
     <string-array name="v54">
-        <item>release.version.fiftyfour</item>
+        <item>fiftyfour</item>
         <item>Dev device upgraded to Bliss v3.0 (5.1), let\'s begin darkening it out!</item>
         <item>Change Theme Chooser shortcut icon in the app</item>
         <item>Theme 5.1 Dialer</item>
@@ -18,7 +18,7 @@
         <item>Remove blacked out Google Calendar except Widget</item>
     </string-array>
     <string-array name="v53">
-        <item>release.version.fiftythree</item>
+        <item>fiftythree</item>
         <item>Clean up app manifest and app files to optimize speed</item>
         <item>Stabilizing entire build</item>
         <item>Get IncallUI ready for Android 5.1</item>
