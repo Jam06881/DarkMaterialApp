@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
+        <item>@array/v58</item>
         <item>@array/v57</item>
+    </string-array>
+    <string-array name="v58">
+        <item>fiftyeight</item>
+        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES! NO SUPPORT GIVEN TO NON-REBOOTED DEVICES AFTER UPDATE!!!</item>
+        <item>Final clean up and optimization build, ironed out most if not all bugs!</item>
+        <item>Fix calculator for 5.0.2 with white digit background</item>
+        <item>Fix Gmail Draft Edit Icon</item>
+        <item>Theme Device Control icon in Nameless Rom</item>
+        <item>Update Dialer for 5.1 to target unreadable in-call dialer text</item>
+        <item>Fix Manual Setup for Gmail</item>
+        <item>Theme Hangouts Invite Background (Remove the blue)</item>
+        <item>No updates for a week or two, going on a vacation!</item>
     </string-array>
     <string-array name="v57">
         <item>fiftyseven</item>
