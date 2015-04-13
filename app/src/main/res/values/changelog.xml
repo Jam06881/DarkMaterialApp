@@ -1,34 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v56</item>
-        <item>@array/v55</item>
+        <item>@array/v57</item>
     </string-array>
-    <string-array name="v56">
-        <item>fiftysix</item>
-        <item>Adjust Hangouts Selected Color, remove the blue!</item>
-        <item>Hangouts Indicator, Dialpad Background</item>
-        <item>Add Vanir Exodus (EXODUS BRANCH) Icons</item>
-        <item>Fix up Chrome Colors</item>
-        <item>Theme Chrome Immersive Mode Popup</item>
-        <item>Adjust Play Store\'s Redeem Button</item>
-        <item>Themed Ebay\'s Notification Colors</item>
-        <item>Change TricksterMod\'s Light theme Refresh Icon</item>
-        <item>[BLISS] Theme BlissPapers</item>
-        <item>Lighten Gmail Double Arrow</item>
-        <item>Adjust Gmail Colors to have visible Search Text</item>
-    </string-array>
-    <string-array name="v55">
-        <item>fiftyfive</item>
-        <item>Dev device upgraded to Bliss v3.0 (5.1), let\'s begin darkening it out!</item>
-        <item>Change Theme Chooser shortcut icon in the app</item>
-        <item>Theme 5.1 Dialer</item>
-        <item>[BLISS] Theme A Better Camera Unlocked</item>
-        <item>Preparing for 5.1 changes by adding necessary files</item>
-        <item>Whitened out statusbar screenshot icons</item>
-        <item>[BLISS] Tint Bliss Interface 5.1 Icon (v3.0)</item>
-        <item>Theme Pocket MAL</item>
-        <item>Revert "Remove black background on Generic Selector for G+"</item>
-        <item>Remove blacked out Google Calendar except Widget</item>
+    <string-array name="v57">
+        <item>fiftyseven</item>
+        <item>HAPPY 100TH! THIS BUILD NOW HAS 100 APP OVERLAYS!</item>
+        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES! NO SUPPORT GIVEN TO NON-REBOOTED DEVICES AFTER UPDATE!!!</item>
+        <item>Any problems, try reinstalling, as this package has a TON of new mods compared to before.</item>
+        <item>Huge cleaning build, mainly under the hood, testing and optimization</item>
+        <item>Status Bar, Power Menu, Nav Bar and Settings has new minimal icons</item>
+        <item>New animated toggles!</item>
+        <item>Fixed pattern registration default color</item>
+        <item>[BLISS] New Bliss Logos used system wide, Status Bar, About Phone</item>
+        <item>Theme Android Terminal</item>
+        <item>Theme TeleService for 5.0.2 and 5.1, quick reply messages.</item>
+        <item>Theme TextSecure Fab icon (request)</item>
+        <item>Remove dark overlay for G+, instead, replacing with FB style black borders.</item>
+        <item>Revert "Whiten Hangouts Video Call Icon"</item>
+        <item>Enlarge QS Icon Size</item>
+        <item>Change Holo background gradient to pure black</item>
+        <item>Theme Screen Pinning FAB in Recents</item>
+        <item>Theme Screen Pinning Dialog (5.1)</item>
+        <item>Theme Google Play Games and Google Play Services</item>
+        <item>Add BetterBatteryStats Paid Version Theme</item>
+        <item>Add Google Services Themed</item>
+        <item>Finalize Calculator Theme</item>
+        <item>Make the Gmail Double Arrow Whiter!</item>
     </string-array>
 </resources>
