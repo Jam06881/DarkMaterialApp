@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
+        <item>@array/v59</item>
         <item>@array/v58</item>
         <item>@array/v57</item>
     </string-array>
+    <string-array name="v59">
+        <item>fiftynine</item>
+        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES! NO SUPPORT GIVEN TO NON-REBOOTED DEVICES AFTER UPDATE!!!</item>
+        <item>Heavy clean up of deprecated files, colors, attributes, items, drawables, comments, etc.</item>
+        <item>Remove Reddit Sync Overlay, causing issues with updates.</item>
+        <item>Fix Instagram White on White Notification Badge</item>
+    </string-array>
     <string-array name="v58">
         <item>fiftyeight</item>
-        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES! NO SUPPORT GIVEN TO NON-REBOOTED DEVICES AFTER UPDATE!!!</item>
         <item>Final clean up and optimization build, ironed out most if not all bugs!</item>
-        <item>Fix calculator for 5.0.2 with white digit background</item>
+        <item>Fix Calculator for 5.0.2 with white digit background</item>
         <item>Fix Gmail Draft Edit Icon</item>
         <item>Theme Device Control icon in Nameless Rom</item>
         <item>Update Dialer for 5.1 to target unreadable in-call dialer text</item>
@@ -19,7 +26,6 @@
     <string-array name="v57">
         <item>fiftyseven</item>
         <item>HAPPY 100TH! THIS BUILD NOW HAS 100 APP OVERLAYS!</item>
-        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES! NO SUPPORT GIVEN TO NON-REBOOTED DEVICES AFTER UPDATE!!!</item>
         <item>Any problems, try reinstalling, as this package has a TON of new mods compared to before.</item>
         <item>Huge cleaning build, mainly under the hood, testing and optimization</item>
         <item>Status Bar, Power Menu, Nav Bar and Settings has new minimal icons</item>
