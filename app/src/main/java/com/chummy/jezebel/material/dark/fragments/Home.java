@@ -86,11 +86,13 @@ public class Home extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
-                if (intent == null) {
+                Intent intent_cyanogenmod = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
+                Intent intent_settings = getActivity().getPackageManager().getLaunchIntentForPackage("com.android.settings");
+                if (intent_cyanogenmod == null) {
                     Toast.makeText(getActivity(), getString(R.string.cm_not_configured), Toast.LENGTH_SHORT).show();
+                    startActivity(intent_settings);
                 } else {
-                    startActivity(intent);
+                    startActivity(intent_cyanogenmod);
                 }
             }
         });
