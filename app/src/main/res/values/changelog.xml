@@ -1,50 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v59</item>
-        <item>@array/v58</item>
-        <item>@array/v57</item>
+        <item>@array/v62</item>
     </string-array>
-    <string-array name="v59">
-        <item>fiftynine</item>
-        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES! NO SUPPORT GIVEN TO NON-REBOOTED DEVICES AFTER UPDATE!!!</item>
-        <item>Heavy clean up of deprecated files, colors, attributes, items, drawables, comments, etc.</item>
-        <item>Remove Reddit Sync Overlay, causing issues with updates.</item>
-        <item>Fix Instagram White on White Notification Badge</item>
-    </string-array>
-    <string-array name="v58">
-        <item>fiftyeight</item>
-        <item>Final clean up and optimization build, ironed out most if not all bugs!</item>
-        <item>Fix Calculator for 5.0.2 with white digit background</item>
-        <item>Fix Gmail Draft Edit Icon</item>
-        <item>Theme Device Control icon in Nameless Rom</item>
-        <item>Update Dialer for 5.1 to target unreadable in-call dialer text</item>
-        <item>Fix Manual Setup for Gmail</item>
-        <item>Theme Hangouts Invite Background (Remove the blue)</item>
-        <item>No updates for a week or two, going on a vacation!</item>
-    </string-array>
-    <string-array name="v57">
-        <item>fiftyseven</item>
-        <item>HAPPY 100TH! THIS BUILD NOW HAS 100 APP OVERLAYS!</item>
-        <item>Any problems, try reinstalling, as this package has a TON of new mods compared to before.</item>
-        <item>Huge cleaning build, mainly under the hood, testing and optimization</item>
-        <item>Status Bar, Power Menu, Nav Bar and Settings has new minimal icons</item>
-        <item>New animated toggles!</item>
-        <item>Fixed pattern registration default color</item>
-        <item>[BLISS] New Bliss Logos used system wide, Status Bar, About Phone</item>
-        <item>Theme Android Terminal</item>
-        <item>Theme TeleService for 5.0.2 and 5.1, quick reply messages.</item>
-        <item>Theme TextSecure Fab icon (request)</item>
-        <item>Remove dark overlay for G+, instead, replacing with FB style black borders.</item>
-        <item>Revert "Whiten Hangouts Video Call Icon"</item>
-        <item>Enlarge QS Icon Size</item>
-        <item>Change Holo background gradient to pure black</item>
-        <item>Theme Screen Pinning FAB in Recents</item>
-        <item>Theme Screen Pinning Dialog (5.1)</item>
-        <item>Theme Google Play Games and Google Play Services</item>
-        <item>Add BetterBatteryStats Paid Version Theme</item>
-        <item>Add Google Services Themed</item>
-        <item>Finalize Calculator Theme</item>
-        <item>Make the Gmail Double Arrow Whiter!</item>
+    <string-array name="v62">
+        <item>sixtytwo</item>
+        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES!</item>
+        <item>MAJOR DESIGN UPGRADE</item>
+        <item>New QS toggles</item>
+        <item>New animated status bar icons</item>
+        <item>Fix Launcher Wallpaper Chooser FC</item>
+        <item>Theme Tinfoil for Facebook</item>
+        <item>Configure Settings\' Battery History Chart Remainder</item>
+        <item>Fix Browser white on white accent</item>
+        <item>Fix Dialer In-call Unreadable Text + In-call Backgrounds</item>
+        <item>Fix up all Dialer\'s styles, letting it have the full Theme.Material styles</item>
+        <item>Theme CellBroadcastReceiver</item>
+        <item>Optimize Gmail to tackle FCs and problematic code during updates</item>
+        <item>Add Benzo Rom specific sidebar drawable to fix FC</item>
+        <item>Add minimal animated Superuser statusbar icon</item>
+        <item>Fix Facebook unreadable highlight accent</item>
+        <item>Remove Threema overlay due to buggy interface, redone, and changed accents</item>
+        <item>Add some transparency to the popup menu</item>
+        <item>Clean up framework, fix all DeviceDefault issues and white text on white</item>
+        <item>Add 95% opacity to notification background</item>
+        <item>Remove Unused Apex Launcher style</item>
+        <item>Remove Google Calendar Colors</item>
+        <item>Remove all Calendar overlays except AOSP Calendar FAB</item>
+        <item>Add Media Provider into Overlays to fix black on black</item>
+        <item>Adjust colorAccent value specifically for Settings in FW</item>
+        <item>Add new Hangouts icons thanks to @jezebelxxx</item>
+        <item>Fix unreadable text in Hangouts -> Hidden Contacts</item>
+        <item>Theme Settings Extra Information Popup</item>
+        <item>Fix invisible Google Translate offline download icon</item>
+        <item>Theme XDA One</item>
+        <item>Fix Hangouts video icon white on white</item>
+        <item>Update cdt activator structure layout</item>
+        <item>Merge latest notification panel header background</item>
+        <item>Theme Cyanogen OS 12 Theme Chooser</item>
+        <item>Add WhatsApp Material colors</item>
+        <item>Update SuperSU overlay</item>
+        <item>Update BlissOTA overlay to 4.0.0</item>
+        <item>[BLISS] Add new Bliss logo into BlissOTA</item>
+        <item>Control TRDS icon color</item>
+        <item>Theme Chrome Dev</item>
+        <item>Theme com.ota.updates on Temasek</item>
+        <item>Drop reliance on Material Light\'s text color for SystemUI notifications</item>
+        <item>Whiten typing dots in Hangouts</item>
+        <item>Add Kernel Adiutor Overlay</item>
+        <item>[BLISS] Add new screen record icon in Power Menu</item>
+        <item>[BLISS] Add new Zen icons (Important and None) to Power Menu</item>
+        <item>Remove thin Bluetooth logo in Status Bar</item>
+        <item>Change YouTube actionbar to Dark Material Red color</item>
+        <item>[BLISS] Fix BlissPapers\' Floating Action Button Colors</item>
+        <item>Fix black expand arrow in Gmail for CC and BCC</item>
+        <item>Clean project completely, clean up all overlays, minor bugs, etc.</item>
     </string-array>
 </resources>
