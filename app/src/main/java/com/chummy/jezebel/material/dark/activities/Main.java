@@ -33,7 +33,6 @@ import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 
-
 public class Main extends ActionBarActivity {
 
     public Drawer.Result result = null;
@@ -100,7 +99,9 @@ public class Main extends ActionBarActivity {
                         if (drawerItem != null) {
 
                             switch (drawerItem.getIdentifier()) {
-                                case 1: switchFragment(1, thaApp, "Home"); break;
+                                case 1:
+                                    switchFragment(1, thaApp, "Home");
+                                    break;
                                 /* case 2: switchFragment(2, thaPreviews, "Previews"); break;*/
                                 /* case 3: switchFragment(3, thaApply, "Apply"); break; */
                                 case 2:
@@ -115,7 +116,9 @@ public class Main extends ActionBarActivity {
                                     }
                                     break;
                                 /*case 5: switchFragment(5, thaRequest, "Request"); break;*/
-                                case 3: switchFragment(3, thaCredits, "Credits"); break;
+                                case 3:
+                                    switchFragment(3, thaCredits, "Credits");
+                                    break;
                             }
                         }
                     }

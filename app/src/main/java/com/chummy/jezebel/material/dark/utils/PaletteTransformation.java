@@ -20,6 +20,32 @@ public final class PaletteTransformation implements Transformation {
     private static final PaletteTransformation INSTANCE = new PaletteTransformation();
     private static final Map<Bitmap, Palette> CACHE = new WeakHashMap<Bitmap, Palette>();
 
+    private PaletteTransformation() {
+    }
+
+    public static Palette getPalette(Bitmap bitmap) {
+        return CACHE.get(bitmap);
+    }
+
+    public static PaletteTransformation instance() {
+        return INSTANCE;
+    }
+
+    @Override
+    public final Bitmap transform(Bitmap source) {
+        final Palette palette = Palette.generate(source);
+
+        CACHE.put(source, palette);
+
+        return source;
+
+    }
+
+    @Override
+    public String key() {
+        return "";
+    }
+
     public static abstract class PaletteTarget implements Target {
         protected abstract void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from, Palette palette);
 
@@ -29,10 +55,6 @@ public final class PaletteTransformation implements Transformation {
             onBitmapLoaded(bitmap, from, palette);
         }
 
-    }
-
-    public static Palette getPalette(Bitmap bitmap) {
-        return CACHE.get(bitmap);
     }
 
     public static abstract class PaletteCallback implements Callback {
@@ -61,28 +83,6 @@ public final class PaletteTransformation implements Transformation {
             return mImageView.get();
         }
 
-    }
-
-    public static PaletteTransformation instance() {
-        return INSTANCE;
-    }
-
-    @Override
-    public final Bitmap transform(Bitmap source) {
-        final Palette palette = Palette.generate(source);
-
-        CACHE.put(source, palette);
-
-        return source;
-
-    }
-
-    @Override
-    public String key() {
-        return "";
-    }
-
-    private PaletteTransformation() {
     }
 
 

@@ -13,9 +13,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.chummy.jezebel.material.dark.R;
 import com.melnykov.fab.FloatingActionButton;
 import com.melnykov.fab.ObservableScrollView;
-import com.chummy.jezebel.material.dark.R;
 
 public class Home extends Fragment {
 
@@ -32,7 +32,7 @@ public class Home extends Fragment {
 
         context = getActivity();
 
-        ActionBar toolbar = ((ActionBarActivity)context).getSupportActionBar();
+        ActionBar toolbar = ((ActionBarActivity) context).getSupportActionBar();
         toolbar.setTitle(R.string.app_name);
 
         TextView playbtn = (TextView) root.findViewById(R.id.play_button);

@@ -33,7 +33,7 @@ public class Credits extends Fragment {
 
         context = getActivity();
 
-        ActionBar toolbar = ((ActionBarActivity)context).getSupportActionBar();
+        ActionBar toolbar = ((ActionBarActivity) context).getSupportActionBar();
         toolbar.setTitle(R.string.section_seven);
 
         /*TextView authordesc = (TextView) root.findViewById(R.id.dashauthor_info);

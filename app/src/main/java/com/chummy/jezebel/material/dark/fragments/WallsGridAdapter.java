@@ -18,17 +18,17 @@ import android.widget.TextView;
 
 import com.chummy.jezebel.material.dark.R;
 import com.chummy.jezebel.material.dark.utils.PaletteTransformation;
-import static com.chummy.jezebel.material.dark.utils.PaletteTransformation.PaletteCallback;
-
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import static com.chummy.jezebel.material.dark.utils.PaletteTransformation.PaletteCallback;
+
 public class WallsGridAdapter extends BaseAdapter {
 
-    ArrayList<HashMap<String, String>> data;
     public String wallurl;
+    ArrayList<HashMap<String, String>> data;
     private Context context;
     private int numColumns;
     private HashMap<String, String> jsondata = new HashMap<String, String>();
@@ -98,30 +98,30 @@ public class WallsGridAdapter extends BaseAdapter {
                 .centerCrop()
                 .transform(PaletteTransformation.instance())
                 .into(holder.wall,
-                new PaletteCallback(holder.wall){
-                    @Override
-                    public void onSuccess(Palette palette){
-                        holder.progressBar.setVisibility(View.GONE);
+                        new PaletteCallback(holder.wall) {
+                            @Override
+                            public void onSuccess(Palette palette) {
+                                holder.progressBar.setVisibility(View.GONE);
 
-                        if (usePalete) {
-                            if (palette != null) {
-                                Palette.Swatch wallSwatch = palette.getVibrantSwatch();
-                                if (wallSwatch != null) {
-                                    holder.titleBg.setBackgroundColor(wallSwatch.getRgb());
-                                    holder.titleBg.setAlpha(1);
-                                    holder.name.setTextColor(wallSwatch.getTitleTextColor());
-                                    holder.name.setAlpha(1);
+                                if (usePalete) {
+                                    if (palette != null) {
+                                        Palette.Swatch wallSwatch = palette.getVibrantSwatch();
+                                        if (wallSwatch != null) {
+                                            holder.titleBg.setBackgroundColor(wallSwatch.getRgb());
+                                            holder.titleBg.setAlpha(1);
+                                            holder.name.setTextColor(wallSwatch.getTitleTextColor());
+                                            holder.name.setAlpha(1);
+                                        }
+                                    }
                                 }
+
                             }
-                        }
 
-                    }
+                            @Override
+                            public void onError() {
 
-                    @Override
-                    public void onError() {
-
-                    }
-                });
+                            }
+                        });
 
         return wallitem;
     }
