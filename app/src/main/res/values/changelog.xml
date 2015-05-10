@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v62</item>
+        <item>@array/v61</item>
     </string-array>
-    <string-array name="v62">
-        <item>sixtytwo</item>
+    <string-array name="v61">
+        <item>sixtyone</item>
         <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES!</item>
         <item>MAJOR DESIGN UPGRADE</item>
         <item>New QS toggles</item>
@@ -23,7 +23,7 @@
         <item>Remove Threema overlay due to buggy interface, redone, and changed accents</item>
         <item>Add some transparency to the popup menu</item>
         <item>Clean up framework, fix all DeviceDefault issues and white text on white</item>
-        <item>Add 95% opacity to notification background</item>
+        <item>Add 10% transparency to notification background</item>
         <item>Remove Unused Apex Launcher style</item>
         <item>Remove Google Calendar Colors</item>
         <item>Remove all Calendar overlays except AOSP Calendar FAB</item>
