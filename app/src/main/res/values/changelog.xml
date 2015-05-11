@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
+        <item>@array/v65</item>
         <item>@array/v64</item>
         <item>@array/v63</item>
+    </string-array>
+    <string-array name="v65">
+        <item>sixtyfive</item>
+        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING!</item>
+        <item>BUG SQUASH BUILD</item>
+        <item>Fix Inbox Black Rectangle in Drawer</item>
+        <item>Add Low Priority Google Inbox Icon</item>
+        <item>Theme CarbonROM Fibers\' Subtweaks Header Accent</item>
+        <item>Add support for Carbon ROM Settings Icons</item>
+        <item>Theme Contacts Properly</item>
+        <item>Update DU Power Menu Icons</item>
     </string-array>
     <string-array name="v64">
         <item>sixtyfour</item>
@@ -44,7 +56,7 @@
         <item>Remove all Calendar overlays except AOSP Calendar FAB</item>
         <item>Add Media Provider into Overlays to fix black on black</item>
         <item>Adjust colorAccent value specifically for Settings in FW</item>
-        <item>Add new Hangouts icons thanks to @jezebelxxx</item>
+        <item>Add new Hangouts icons thanks to @BellaxMiu</item>
         <item>Fix unreadable text in Hangouts -> Hidden Contacts</item>
         <item>Theme Settings Extra Information Popup</item>
         <item>Fix invisible Google Translate offline download icon</item>
