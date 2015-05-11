@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v62</item>
+        <item>@array/v64</item>
+        <item>@array/v63</item>
     </string-array>
-    <string-array name="v62">
+    <string-array name="v64">
+        <item>sixtyfour</item>
+        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING!</item>
+        <item>MAJOR CLEAN UP BUILD</item>
+        <item>Add Bluetooth Overlay to fix Black on Black dialog when incoming transfer</item>
+        <item>Add support for Flex OS Settings Icons</item>
+        <item>Add support for Candy5 Settings Icons</item>
+        <item>Optimize and compress v63 base completely (took ~4 hours for all files)</item>
+        <item>Optimize and compress DM app completely (took ~20 minutes for all files)</item>
+        <item>Fix Black on Black on new AOSP Browser Tab</item>
+        <item>Clean up comments inside Settings</item>
+        <item>Fix XDA One Sign in Black on Black</item>
+        <item>Theme DU Updater, DU Tweaks and DU Settings Icons</item>
+    </string-array>
+    <string-array name="v63">
         <item>sixtythree</item>
         <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES!</item>
         <item>MAJOR DESIGN UPGRADE</item>
