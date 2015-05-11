@@ -35,9 +35,7 @@ import java.util.HashMap;
 public class Wallpapers extends Fragment {
 
     private static final int DEFAULT_COLUMNS_PORTRAIT = 2;
-    private int mColumnCountPortrait = DEFAULT_COLUMNS_PORTRAIT;
     private static final int DEFAULT_COLUMNS_LANDSCAPE = 3;
-    private int mColumnCountLandscape = DEFAULT_COLUMNS_LANDSCAPE;
     static String NAME = "name";
     static String AUTHOR = "author";
     static String WALL = "wall";
@@ -47,6 +45,8 @@ public class Wallpapers extends Fragment {
     WallsGridAdapter mGridAdapter;
     ProgressDialog mProgressDialog;
     ArrayList<HashMap<String, String>> arraylist;
+    private int mColumnCountPortrait = DEFAULT_COLUMNS_PORTRAIT;
+    private int mColumnCountLandscape = DEFAULT_COLUMNS_LANDSCAPE;
     private ViewGroup root;
     private Context context;
     private ProgressBar mProgress;
