@@ -1,86 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v65</item>
-        <item>@array/v64</item>
-        <item>@array/v63</item>
+        <item>@array/v66</item>
     </string-array>
-    <string-array name="v65">
-        <item>sixtyfive</item>
+    <string-array name="v66">
+        <item>sixtysix</item>
         <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING!</item>
-        <item>BUG SQUASH BUILD</item>
-        <item>Fix Inbox Black Rectangle in Drawer</item>
-        <item>Add Low Priority Google Inbox Icon</item>
-        <item>Theme CarbonROM Fibers\' Subtweaks Header Accent</item>
-        <item>Add support for Carbon ROM Settings Icons</item>
-        <item>Theme Contacts Properly</item>
-        <item>Update DU Power Menu Icons</item>
-    </string-array>
-    <string-array name="v64">
-        <item>sixtyfour</item>
-        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING!</item>
-        <item>MAJOR CLEAN UP BUILD</item>
-        <item>Add Bluetooth Overlay to fix Black on Black dialog when incoming transfer</item>
-        <item>Add support for Flex OS Settings Icons</item>
-        <item>Add support for Candy5 Settings Icons</item>
-        <item>Optimize and compress v63 base completely (took ~4 hours for all files)</item>
-        <item>Optimize and compress DM app completely (took ~20 minutes for all files)</item>
-        <item>Fix Black on Black on new AOSP Browser Tab</item>
-        <item>Clean up comments inside Settings</item>
-        <item>Fix XDA One Sign in Black on Black</item>
-        <item>Theme DU Updater, DU Tweaks and DU Settings Icons</item>
-    </string-array>
-    <string-array name="v63">
-        <item>sixtythree</item>
-        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES!</item>
-        <item>MAJOR DESIGN UPGRADE</item>
-        <item>New QS toggles</item>
-        <item>New animated status bar icons</item>
-        <item>Fix Launcher Wallpaper Chooser FC</item>
-        <item>Theme Tinfoil for Facebook</item>
-        <item>Configure Settings\' Battery History Chart Remainder</item>
-        <item>Fix Browser white on white accent</item>
-        <item>Fix Dialer In-call Unreadable Text + In-call Backgrounds</item>
-        <item>Fix up all Dialer\'s styles, letting it have the full Theme.Material styles</item>
-        <item>Theme CellBroadcastReceiver</item>
-        <item>Optimize Gmail to tackle FCs and problematic code during updates</item>
-        <item>Add Benzo Rom specific sidebar drawable to fix FC</item>
-        <item>Add minimal animated Superuser statusbar icon</item>
-        <item>Fix Facebook unreadable highlight accent</item>
-        <item>Remove Threema overlay due to buggy interface, redone, and changed accents</item>
-        <item>Add some transparency to the popup menu</item>
-        <item>Clean up framework, fix all DeviceDefault issues and white text on white</item>
-        <item>Add 10% transparency to notification background</item>
-        <item>Remove Unused Apex Launcher style</item>
-        <item>Remove Google Calendar Colors</item>
-        <item>Remove all Calendar overlays except AOSP Calendar FAB</item>
-        <item>Add Media Provider into Overlays to fix black on black</item>
-        <item>Adjust colorAccent value specifically for Settings in FW</item>
-        <item>Add new Hangouts icons thanks to @BellaxMiu</item>
-        <item>Fix unreadable text in Hangouts -> Hidden Contacts</item>
-        <item>Theme Settings Extra Information Popup</item>
-        <item>Fix invisible Google Translate offline download icon</item>
-        <item>Theme XDA One</item>
-        <item>Fix Hangouts video icon white on white</item>
-        <item>Update cdt activator structure layout</item>
-        <item>Merge latest notification panel header background</item>
-        <item>Theme Cyanogen OS 12 Theme Chooser</item>
-        <item>Add WhatsApp Material colors including selected message actionbar</item>
-        <item>Update SuperSU overlay</item>
-        <item>Update BlissOTA overlay to 4.0.0</item>
-        <item>[BLISS] Add new Bliss logo into BlissOTA</item>
-        <item>Control TRDS icon color</item>
-        <item>Theme Chrome Dev</item>
-        <item>Theme com.ota.updates on Temasek</item>
-        <item>Drop reliance on Material Light\'s text color for SystemUI notifications</item>
-        <item>Whiten typing dots in Hangouts</item>
-        <item>Add Kernel Adiutor Overlay</item>
-        <item>[BLISS] Add new screen record icon in Power Menu</item>
-        <item>[BLISS] Add new Zen icons (Important and None) to Power Menu</item>
-        <item>Remove thin Bluetooth logo in Status Bar</item>
-        <item>Change YouTube actionbar to Dark Material Red color</item>
-        <item>[BLISS] Fix BlissPapers\' Floating Action Button Colors</item>
-        <item>Fix black expand arrow in Gmail for CC and BCC</item>
-        <item>Clean project completely, clean up all overlays, minor bugs, etc.</item>
+        <item>Clean up unused overlays like Youtube, as well as clean up WhatsApp unused colors allowing custom themed versions to work</item>
+        <item>Add support for latest Bliss navigation bar customizations</item>
+        <item>Remove pulsating bluetooth animated statusbar icon</item>
+        <item>Make network activity icons in status bar transparent as it didn\'t scale properly</item>
+        <item>Revert Dark Google Search Settings to fix black on black for devices with OK Google training support</item>
+        <item>Remove Gallery3d\'s styles.xml to attempt fixing Gallery FC</item>
+        <item>Add Euphoria OTA and Touch Control support</item>
+        <item>Change light accent to grey (to target black on black issues on Validus and other ROMs)</item>
+        <item>Clean out MultiROM Manager Overlay</item>
+        <item>FRAMEWORK: A new approach to fix popup menu colors/overflow menu colors</item>
+        <item>Theme Materinova v4.0 public version</item>
+        <item>Theme MusixMatch notification icons and text and fix popup colors black on black, white on white</item>
+        <item>Remove vertical signal data connected text in status bar, use horizontal instead</item>
+        <item>Fix up Messenger\'s Popup Menu background</item>
+        <item>Prepare for Bliss Logo replacement in No Recent Apps</item>
+        <item>Clean out framework xmls, shrunken down to less than 100 lines each file</item>
+        <item>Fix up black on black on new screen pinning dialog</item>
+        <item>Change ripple shape/dimensions for nav bar</item>
+        <item>Change WhatsApp Material Fab icon color</item>
+        <item>Change Messenger\'s Accent Color to fix white on white in text dialog</item>
+        <item>Fix PAC-ROM Icons in Settings</item>
+        <item>Fix Resurrection Remix Tools Icon in Settings</item>
     </string-array>
 </resources>
