@@ -71,6 +71,15 @@ public class Home extends Fragment {
             }
         });
 
+        TextView regression = (TextView) root.findViewById(R.id.regression);
+        regression.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent rate = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_link_regression)));
+                startActivity(rate);
+            }
+        });
+
         TextView ratebtn = (TextView) root.findViewById(R.id.rate_button);
         ratebtn.setOnClickListener(new View.OnClickListener() {
             @Override
