@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v69</item>
+        <item>@array/v70</item>
         <item>@array/v67</item>
         <item>@array/v66</item>
     </string-array>
-    <string-array name="v69">
-        <item>sixtynine</item>
+    <string-array name="v70">
+        <item>sixtynine/seventy</item>
         <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING!</item>
+        <item>Theme static QS icons for ROMs that are using non AVD toggles for custom colors</item>
         <item>Remove AppSearch background for Materinova, caused black on black text</item>
         <item>Fixed up Materinova Settings where there were hardcoded white backgrounds, fixing white on white text.</item>
         <item>BLACKED OUT: Fixed Hangouts chat bubbles</item>
