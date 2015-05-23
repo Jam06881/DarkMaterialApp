@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v72</item>
-        <item>@array/v67</item>
-        <item>@array/v66</item>
+        <item>@array/v74</item>
+        <item>@array/v73</item>
     </string-array>
-    <string-array name="v72">
-        <item>seventytwo</item>
-        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING!</item>
+    <string-array name="v74">
+        <item>seventyfour &#8212; STABLE</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Cleaned out all excluded files and empty folders within the theme - rebased all local files and folders</item>
+        <item>Fix up broken autorotate QS tile for 5.0.2 ROMs</item>
+        <item>Fix unreadable text and theme emoji body for WhatsApp Material</item>
+        <item>dm // colors: Hardcode Play Store colors to fix up unpleasant text colors</item>
+        <item>dm // colors: Organize cdt base activator folder integrity and structure</item>
+    </string-array>
+    <string-array name="v73">
+        <item>sixtysix &#8212; seventythree</item>
         <item>Fix Inbox\'s popup menus and styles</item>
         <item>Theme static QS icons for ROMs that are using non AVD toggles for custom colors</item>
         <item>Remove AppSearch background for Materinova, caused black on black text</item>
         <item>Fixed up Materinova Settings where there were hardcoded white backgrounds, fixing white on white text.</item>
         <item>BLACKED OUT: Fixed Hangouts chat bubbles</item>
-    </string-array>
-    <string-array name="v67">
-        <item>sixtyeight</item>
-        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING!</item>
-        <item>IMPORTANT: Nova Launcher v4.0 users with CARD BACKGROUND DRAWER, please set your card background to black or else you will have black on black text. This is for app search background to be black.</item>
         <item>Clean up and optimize all asset files</item>
         <item>Update notification icon color from grey to white</item>
         <item>Attempt to fix low battery color in status bar</item>
         <item>Theme Power Icon in QS header</item>
         <item>Add new Bliss Interface icons</item>
         <item>Theme VindicatorOTA</item>
-    </string-array>
-    <string-array name="v66">
-        <item>sixtysix</item>
-        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING!</item>
         <item>Clean up unused overlays like Youtube, as well as clean up WhatsApp unused colors allowing custom themed versions to work</item>
         <item>Add support for latest Bliss navigation bar customizations</item>
         <item>Remove pulsating bluetooth animated statusbar icon</item>
