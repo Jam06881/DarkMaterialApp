@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v74</item>
-        <item>@array/v73</item>
+        <item>@array/v77</item>
+        <item>@array/v76</item>
     </string-array>
-    <string-array name="v74">
-        <item>seventyfour &#8212; STABLE</item>
+    <string-array name="v77">
+        <item>seventyseven &#8212; STABLE</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Fix WhatsApp popup menu for 2.12.96</item>
+        <item>Fix AOSP Messages attach dialog icons</item>
+        <item>Theme Dropbox Material Lightly (Due to unreadable text, there are a bunch of limitations)</item>
+        <item>Change No Recent Apps Logo to be more generic</item>
+    </string-array>
+    <string-array name="v76">
+        <item>sixtysix &#8212; seventysix</item>
         <item>Cleaned out all excluded files and empty folders within the theme - rebased all local files and folders</item>
         <item>Fix up broken autorotate QS tile for 5.0.2 ROMs</item>
         <item>Fix unreadable text and theme emoji body for WhatsApp Material</item>
         <item>dm // colors: Hardcode Play Store colors to fix up unpleasant text colors</item>
         <item>dm // colors: Organize cdt base activator folder integrity and structure</item>
-    </string-array>
-    <string-array name="v73">
-        <item>sixtysix &#8212; seventythree</item>
         <item>Fix Inbox\'s popup menus and styles</item>
         <item>Theme static QS icons for ROMs that are using non AVD toggles for custom colors</item>
         <item>Remove AppSearch background for Materinova, caused black on black text</item>
