@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v77</item>
-        <item>@array/v76</item>
+        <item>@array/v79</item>
+        <item>@array/v78</item>
     </string-array>
-    <string-array name="v77">
-        <item>seventyseven &#8212; STABLE</item>
+    <string-array name="v79">
+        <item>seventynine &#8212; STABLE</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Fix unreadable text in Google Translate</item>
+        <item>Add Spotify Overlay</item>
+        <item>Add missing Gmail empty state icons</item>
+        <item>Update dm app with dm // colors shortcut</item>
+        <item>dm // colors: Hardcode Google Inbox colors</item>
+        <item>dm // colors: Make "No Recent Apps" Icon themable from commons</item>
+        <item>dm // colors: Expose WhatsApp Fab Color to commons</item>
+    </string-array>
+    <string-array name="v78">
+        <item>sixtysix &#8212; seventyeight</item>
         <item>Fix WhatsApp popup menu for 2.12.96</item>
         <item>Fix AOSP Messages attach dialog icons</item>
         <item>Theme Dropbox Material Lightly (Due to unreadable text, there are a bunch of limitations)</item>
         <item>Change No Recent Apps Logo to be more generic</item>
-    </string-array>
-    <string-array name="v76">
-        <item>sixtysix &#8212; seventysix</item>
         <item>Cleaned out all excluded files and empty folders within the theme - rebased all local files and folders</item>
         <item>Fix up broken autorotate QS tile for 5.0.2 ROMs</item>
         <item>Fix unreadable text and theme emoji body for WhatsApp Material</item>
