@@ -35,6 +35,20 @@ public class Home extends Fragment {
         ActionBar toolbar = ((ActionBarActivity) context).getSupportActionBar();
         toolbar.setTitle(R.string.app_name);
 
+        TextView playcolorsbtn = (TextView) root.findViewById(R.id.play_button_colors);
+        playcolorsbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent devPlay = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_colors_link)));
+                Intent intent_colors = getActivity().getPackageManager().getLaunchIntentForPackage("com.chummy.jezebel.darkmaterial.colors");
+                if (intent_colors == null) {
+                    startActivity(devPlay);
+                } else {
+                    startActivity(intent_colors);
+                }
+            }
+        });
+
         TextView playbtn = (TextView) root.findViewById(R.id.play_button);
         playbtn.setOnClickListener(new View.OnClickListener() {
             @Override
