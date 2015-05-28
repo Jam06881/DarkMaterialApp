@@ -1,63 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v79</item>
-        <item>@array/v78</item>
+        <item>@array/v80</item>
     </string-array>
-    <string-array name="v79">
-        <item>seventynine &#8212; STABLE</item>
+    <string-array name="v80">
+        <item>eighty &#8212; STABLE</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
-        <item>Fix unreadable text in Google Translate</item>
-        <item>Add Spotify Overlay</item>
-        <item>Add missing Gmail empty state icons</item>
-        <item>Update dm app with dm // colors shortcut</item>
-        <item>dm // colors: Hardcode Google Inbox colors</item>
-        <item>dm // colors: Make "No Recent Apps" Icon themable from commons</item>
-        <item>dm // colors: Expose WhatsApp Fab Color to commons</item>
-    </string-array>
-    <string-array name="v78">
-        <item>sixtysix &#8212; seventyeight</item>
-        <item>Fix WhatsApp popup menu for 2.12.96</item>
-        <item>Fix AOSP Messages attach dialog icons</item>
-        <item>Theme Dropbox Material Lightly (Due to unreadable text, there are a bunch of limitations)</item>
-        <item>Change No Recent Apps Logo to be more generic</item>
-        <item>Cleaned out all excluded files and empty folders within the theme - rebased all local files and folders</item>
-        <item>Fix up broken autorotate QS tile for 5.0.2 ROMs</item>
-        <item>Fix unreadable text and theme emoji body for WhatsApp Material</item>
-        <item>dm // colors: Hardcode Play Store colors to fix up unpleasant text colors</item>
-        <item>dm // colors: Organize cdt base activator folder integrity and structure</item>
-        <item>Fix Inbox\'s popup menus and styles</item>
-        <item>Theme static QS icons for ROMs that are using non AVD toggles for custom colors</item>
-        <item>Remove AppSearch background for Materinova, caused black on black text</item>
-        <item>Fixed up Materinova Settings where there were hardcoded white backgrounds, fixing white on white text.</item>
-        <item>BLACKED OUT: Fixed Hangouts chat bubbles</item>
-        <item>Clean up and optimize all asset files</item>
-        <item>Update notification icon color from grey to white</item>
-        <item>Attempt to fix low battery color in status bar</item>
-        <item>Theme Power Icon in QS header</item>
-        <item>Add new Bliss Interface icons</item>
-        <item>Theme VindicatorOTA</item>
-        <item>Clean up unused overlays like Youtube, as well as clean up WhatsApp unused colors allowing custom themed versions to work</item>
-        <item>Add support for latest Bliss navigation bar customizations</item>
-        <item>Remove pulsating bluetooth animated statusbar icon</item>
-        <item>Make network activity icons in status bar transparent as it didn\'t scale properly</item>
-        <item>Revert Dark Google Search Settings to fix black on black for devices with OK Google training support</item>
-        <item>Remove Gallery3d\'s styles.xml to attempt fixing Gallery FC</item>
-        <item>Add Euphoria OTA and Touch Control support</item>
-        <item>Change light accent to grey (to target black on black issues on Validus and other ROMs)</item>
-        <item>Clean out MultiROM Manager Overlay</item>
-        <item>FRAMEWORK: A new approach to fix popup menu colors/overflow menu colors</item>
-        <item>Theme Materinova v4.0 public version</item>
-        <item>Theme MusixMatch notification icons and text and fix popup colors black on black, white on white</item>
-        <item>Remove vertical signal data connected text in status bar, use horizontal instead</item>
-        <item>Fix up Messenger\'s Popup Menu background</item>
-        <item>Prepare for Bliss Logo replacement in No Recent Apps</item>
-        <item>Clean out framework xmls, shrunken down to less than 100 lines each file</item>
-        <item>Fix up black on black on new screen pinning dialog</item>
-        <item>Change ripple shape/dimensions for nav bar</item>
-        <item>Change WhatsApp Material Fab icon color</item>
-        <item>Change Messenger\'s Accent Color to fix white on white in text dialog</item>
-        <item>Fix PAC-ROM Icons in Settings</item>
-        <item>Fix Resurrection Remix Tools Icon in Settings</item>
+        <item>Add animated scrubber drawable, horizontal progress bar, toast background and system animations by @_moelle! HUGE THANKS!</item>
+        <item>Add new brightness thumb drawable for SystemUI</item>
+        <item>Theme Swype Material Dark Keyboard + Settings</item>
+        <item>Theme Bliss Task Manager feature</item>
+        <item>dm // colors: Expose keyboard text colors</item>
+        <item>Update Resurrection Remix\'s Settings Icons</item>
+        <item>Update Sound Icon for latest CM nightly 25/05</item>
     </string-array>
 </resources>
