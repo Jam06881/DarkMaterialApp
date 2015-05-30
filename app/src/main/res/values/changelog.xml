@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
+        <item>@array/v85</item>
         <item>@array/v84</item>
-        <item>@array/v83</item>
     </string-array>
-    <string-array name="v84">
-        <item>eightyfour &#8212; STABLE</item>
+    <string-array name="v85">
+        <item>eightyfive &#8212; STABLE</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
         <item>Enlarge Power Menu Icon in QS Header (Supported ROMs only)</item>
-        <item>Update Heads Up QS Header icon (Supported ROMs only)</item>
+        <item>Fix Heads Up QS Header icon (Supported ROMs only)</item>
         <item>Fix Google Play Music black on black Settings</item>
         <item>Revamp Progress Circle Algorithm</item>
     </string-array>
-    <string-array name="v83">
-        <item>eightythree</item>
+    <string-array name="v84">
+        <item>eightythree &#8212; eightyfour</item>
         <item>Configure in-app fab to reroute directly to ThemeChooser entry of Dark Material!</item>
         <item>Configure in-app Play Store link to new Play Developer Website!</item>
         <item>Removed Setting\'s dimensions</item>
