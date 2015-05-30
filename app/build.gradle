@@ -9,8 +9,8 @@ android {
         minSdkVersion 21
         maxSdkVersion 22
         targetSdkVersion 21
-        versionCode 82
-        versionName "eightytwo"
+        versionCode 83
+        versionName "eightythree"
     }
     buildTypes {
         release {
