@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!--Change this on every version-->
-    <string name="version_code">eightyone</string>
+    <string name="version_code">eightytwo</string>
 
     <!-- Main Strings -->
     <string name="app_name">"Nicholas\' Dark Material"</string>
@@ -17,7 +17,7 @@
     <string name="play_store_link">https://play.google.com/store/apps/details?id=com.chummy.jezebel.material.dark</string>
     <string name="play_store_colors_link">https://play.google.com/store/apps/details?id=com.chummy.jezebel.darkmaterial.colors</string>
     <string name="play_store_link_regression">https://play.google.com/store/apps/details?id=com.chummy.jezebel.material.dark.regression</string>
-    <string name="play_store_dev_link">https://play.google.com/store/apps/developer?id=chummy+development+team</string>
+    <string name="play_store_dev_link">https://play.google.com/store/apps/dev?id=6772568782420610939</string>
 
     <!--Database for Wallpapers-->
     <string name="json_file_url">"http://pastebin.com/raw.php?i=hvKBvrXD"</string>

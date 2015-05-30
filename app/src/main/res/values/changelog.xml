@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v81</item>
+        <item>@array/v82</item>
     </string-array>
-    <string-array name="v81">
-        <item>eightyone &#8212; STABLE</item>
+    <string-array name="v82">
+        <item>eightytwo &#8212; STABLE</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
         <item>Configure in-app fab to reroute directly to ThemeChooser entry of Dark Material!</item>
+        <item>Configure in-app Play Store link to new Play Developer Website!</item>
         <item>Add AOSP Email Theme Overlay</item>
         <item>Update scrubber for old theme styles, to remove outline under circle</item>
         <item>Theme progress spinners for all theme styles</item>
