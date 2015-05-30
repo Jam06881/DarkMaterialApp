@@ -17,6 +17,8 @@ import com.chummy.jezebel.material.dark.R;
 import com.melnykov.fab.FloatingActionButton;
 import com.melnykov.fab.ObservableScrollView;
 
+import android.content.ComponentName;
+
 public class Home extends Fragment {
 
     private Context context;
@@ -109,13 +111,17 @@ public class Home extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent launch_theme = new Intent("android.intent.action.MAIN");
+                launch_theme.setComponent(new ComponentName("org.cyanogenmod.theme.chooser", "org.cyanogenmod.theme.chooser.ChooserActivity"));
+                launch_theme.putExtra("pkgName", context.getPackageName());
                 Intent intent_cyanogenmod = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
                 Intent intent_settings = getActivity().getPackageManager().getLaunchIntentForPackage("com.android.settings");
                 if (intent_cyanogenmod == null) {
                     Toast.makeText(getActivity(), getString(R.string.cm_not_configured), Toast.LENGTH_SHORT).show();
                     startActivity(intent_settings);
                 } else {
-                    startActivity(intent_cyanogenmod);
+                    Toast.makeText(getActivity(), getString(R.string.theme_installed), Toast.LENGTH_LONG).show();
+                    startActivity(launch_theme);
                 }
             }
         });
