@@ -1,5 +1,6 @@
 package com.chummy.jezebel.material.dark.fragments;
 
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -16,8 +17,6 @@ import android.widget.Toast;
 import com.chummy.jezebel.material.dark.R;
 import com.melnykov.fab.FloatingActionButton;
 import com.melnykov.fab.ObservableScrollView;
-
-import android.content.ComponentName;
 
 public class Home extends Fragment {
 

@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v80</item>
+        <item>@array/v81</item>
     </string-array>
-    <string-array name="v80">
-        <item>eighty &#8212; STABLE</item>
+    <string-array name="v81">
+        <item>eightyone &#8212; STABLE</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
-        <item>Add animated scrubber drawable, horizontal progress bar, toast background and system animations by @_moelle! HUGE THANKS!</item>
-        <item>Add new brightness thumb drawable for SystemUI</item>
-        <item>Theme Swype Material Dark Keyboard + Settings</item>
-        <item>Theme Bliss Task Manager feature</item>
-        <item>dm // colors: Expose keyboard text colors</item>
-        <item>Update Resurrection Remix\'s Settings Icons</item>
-        <item>Update Sound Icon for latest CM nightly 25/05</item>
+        <item>Configure in-app fab to reroute directly to ThemeChooser entry of Dark Material!</item>
+        <item>Add AOSP Email Theme Overlay</item>
+        <item>Update scrubber for old theme styles, to remove outline under circle</item>
+        <item>Theme progress spinners for all theme styles</item>
+        <item>Add heads up icon for status bar (Supported ROMs only)</item>
+        <item>Add stroke to volume panel icons</item>
+        <item>Update task manager task close icon</item>
+        <item>Update new reference to GPS icon in status bar</item>
+        <item>Update Facebook Messenger Overlay to latest update</item>
+        <item>Update Setting\'s dimensions</item>
+        <item>Retheme AudioFX Overlay (using my new CyanogenMod commits)</item>
+        <item>Fix Contacts dropdown arrow button</item>
+        <item>Clean out cdt base activator folders</item>
+        <item>Change volume dialog background color to toast background color</item>
+        <item>Update Benzo Rom Settings Icons</item>
+        <item>Add letter tile colors to Mms, thanks to @markbencze</item>
+        <item>Theme Stickers and Drawings for Hangouts</item>
+        <item>Enlarge SystemUI recents clear all FAB, redoing an HD version</item>
+        <item>Final clean up: Repulling/syncing with Github sources to clear out unused files, empty folders and temporary files.</item>
     </string-array>
 </resources>
