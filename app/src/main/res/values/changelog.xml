@@ -1,40 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v85</item>
-        <item>@array/v84</item>
+        <item>@array/v87</item>
     </string-array>
-    <string-array name="v85">
-        <item>eightysix &#8212; STABLE</item>
+    <string-array name="v87">
+        <item>eightyseven &#8212; MAJOR CLEAN UP BUILD</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
-        <item>Remove unused vector drawables</item>
-        <item>Update Mms overlay</item>
-        <item>Enlarge Power Menu Icon in QS Header (Supported ROMs only)</item>
-        <item>Fix Heads Up QS Header icon (Supported ROMs only)</item>
-        <item>Fix Google Play Music black on black Settings</item>
-        <item>Revamp Progress Circle Algorithm</item>
-    </string-array>
-    <string-array name="v84">
-        <item>eightythree &#8212; eightyfive</item>
-        <item>Configure in-app fab to reroute directly to ThemeChooser entry of Dark Material!</item>
-        <item>Configure in-app Play Store link to new Play Developer Website!</item>
-        <item>Removed Setting\'s dimensions</item>
-        <item>Add AOSP Email Theme Overlay</item>
-        <item>Update scrubber for old theme styles, to remove outline under circle</item>
-        <item>Theme progress spinners for all theme styles</item>
-        <item>Add heads up icon for status bar (Supported ROMs only)</item>
-        <item>Add stroke to volume panel icons</item>
-        <item>Update task manager task close icon</item>
-        <item>Update new reference to GPS icon in status bar</item>
-        <item>Update Facebook Messenger Overlay to latest update</item>
-        <item>Retheme AudioFX Overlay (using my new CyanogenMod commits)</item>
-        <item>Fix Contacts dropdown arrow button</item>
-        <item>Clean out cdt base activator folders</item>
-        <item>Change volume dialog background color to toast background color</item>
-        <item>Update Benzo Rom Settings Icons</item>
-        <item>Add letter tile colors to Mms, thanks to @markbencze</item>
-        <item>Theme Stickers and Drawings for Hangouts</item>
-        <item>Enlarge SystemUI recents clear all FAB, redoing an HD version</item>
-        <item>Final clean up: Repulling/syncing with Github sources to clear out unused files, empty folders and temporary files.</item>
+        <item>Control scrollbar color and size, shrink the rectangular width</item>
+        <item>Add black into toggle circle (remove transparency so track doesn\'t show through)</item>
+        <item>Remove unused framework drawables</item>
+        <item>Retheme CM Eleven Music Player</item>
+        <item>Theme DeskClock</item>
+        <item>Update Theme Chooser Overlay (Uninstall icon, drawer ripple)</item>
+        <item>Update Contacts Overlay</item>
+        <item>Retheme PackageInstaller (Now all black)</item>
+        <item>Update Trebuchet (Android M re-source version)</item>
+        <item>Update Google Now Launcher (Android M preview)</item>
+        <item>Update Bluetooth connected state QS toggle icon</item>
+        <item>Fix "+" in "ADD TRUSTED DEVICE" notification</item>
+        <item>Stroke Airplane Mode Status Bar Icon</item>
+        <item>Add animated USB notification icon</item>
+        <item>Speed up Superuser status bar animation</item>
+        <item>Add CDMA Roaming Icon to status bar</item>
+        <item>Add animated screen record icon</item>
+        <item>Add missing nav bar icons</item>
+        <item>Adjust all QS icons with a fully greyed out base PNG, allowing ROMs with QS disabled toggles as white to be grey as well.</item>
+        <item>Remove unnecessary XML reroutes for Heads Up Icon</item>
+        <item>Add whitened Settings permissions</item>
+        <item>Update Google Play Overlay</item>
+        <item>Increase quality of progress circles thanks to Bella!</item>
     </string-array>
 </resources>
