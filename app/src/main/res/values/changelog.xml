@@ -1,33 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v87</item>
+        <item>@array/v88</item>
     </string-array>
-    <string-array name="v87">
-        <item>eightyseven &#8212; MAJOR CLEAN UP BUILD</item>
+    <string-array name="v88">
+        <item>eightyeight &#8212; MAJOR CLEAN UP BUILD</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
-        <item>Control scrollbar color and size, shrink the rectangular width</item>
-        <item>Add black into toggle circle (remove transparency so track doesn\'t show through)</item>
-        <item>Remove unused framework drawables</item>
-        <item>Retheme CM Eleven Music Player</item>
-        <item>Theme DeskClock</item>
-        <item>Update Theme Chooser Overlay (Uninstall icon, drawer ripple)</item>
-        <item>Update Contacts Overlay</item>
-        <item>Retheme PackageInstaller (Now all black)</item>
-        <item>Update Trebuchet (Android M re-source version)</item>
-        <item>Update Google Now Launcher (Android M preview)</item>
-        <item>Update Bluetooth connected state QS toggle icon</item>
-        <item>Fix "+" in "ADD TRUSTED DEVICE" notification</item>
-        <item>Stroke Airplane Mode Status Bar Icon</item>
-        <item>Add animated USB notification icon</item>
-        <item>Speed up Superuser status bar animation</item>
-        <item>Add CDMA Roaming Icon to status bar</item>
-        <item>Add animated screen record icon</item>
-        <item>Add missing nav bar icons</item>
-        <item>Adjust all QS icons with a fully greyed out base PNG, allowing ROMs with QS disabled toggles as white to be grey as well.</item>
-        <item>Remove unnecessary XML reroutes for Heads Up Icon</item>
-        <item>Add whitened Settings permissions</item>
-        <item>Update Google Play Overlay</item>
-        <item>Increase quality of progress circles thanks to Bella!</item>
+        <item>New WhatsApp Overlay - completely dark!</item>
+        <item>OctOS, AntaresOne CM12.1, LiquidSmooth and AOSiP icons added</item>
+        <item>Fix invisible Google Search add account icon</item>
+        <item>Add Launcher3 Overlay</item>
+        <item>Update Google Keep Overlay</item>
+        <item>Fix up Google Play Games</item>
+        <item>Theme Google Play Services</item>
+        <item>Theme GitSkarios lightly</item>
+        <item>Theme Kik lightly</item>
+        <item>Fix AOSP Browser Quick Controls</item>
+        <item>Darken Launcher Background</item>
+        <item>Darken Google Search Settings</item>
     </string-array>
 </resources>
