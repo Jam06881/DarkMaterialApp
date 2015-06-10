@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
+        <item>@array/v90</item>
         <item>@array/v89</item>
         <item>@array/v88</item>
     </string-array>
-    <string-array name="v89">
-        <item>eightynine &#8212; STABLE/FINAL</item>
+    <string-array name="v90">
+        <item>ninety &#8212; FINAL (Touch up build)</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Update and clean WhatsApp Overlay for 2.12.122 (to fix dialog, and WhatsApp mods)</item>
+        <item>Fix Kik message bubble overlay</item>
+    </string-array>
+    <string-array name="v89">
+        <item>eightynine</item>
         <item>Update Google Play Overlay to fix white on white (card background)</item>
         <item>Fix WhatsApp icons (mute group, broadcast icon)</item>
         <item>Update Exodus Settings</item>
     </string-array>
     <string-array name="v88">
-        <item>eightyeight &#8212; MAJOR CLEAN UP BUILD</item>
-        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>eightyeight</item>
         <item>New WhatsApp Overlay - completely dark!</item>
         <item>OctOS, AntaresOne CM12.1, LiquidSmooth and AOSiP icons added</item>
         <item>Fix invisible Google Search add account icon</item>
