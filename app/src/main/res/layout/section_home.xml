@@ -528,9 +528,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/cardView"
         android:layout_centerHorizontal="true"
         android:src="@drawable/theme_chooser"
+        fab:fab_colorNormal="@color/primary"
+        fab:fab_colorPressed="@color/accent_pressed"
+        fab:fab_colorRipple="@color/accent" />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/restart_systemui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/cm_shortcut"
+        android:src="@drawable/system_ui"
+        fab:fab_colorNormal="@color/primary"
+        fab:fab_colorPressed="@color/accent_pressed"
+        fab:fab_colorRipple="@color/accent" />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/reboot_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/cm_shortcut"
+        android:src="@drawable/reboot_device"
         fab:fab_colorNormal="@color/primary"
         fab:fab_colorPressed="@color/accent_pressed"
         fab:fab_colorRipple="@color/accent" />

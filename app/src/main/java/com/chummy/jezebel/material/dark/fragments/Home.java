@@ -4,6 +4,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
@@ -16,7 +17,8 @@ import android.widget.Toast;
 
 import com.chummy.jezebel.material.dark.R;
 import com.melnykov.fab.FloatingActionButton;
-import com.melnykov.fab.ObservableScrollView;
+
+import eu.chainfire.libsuperuser.Shell;
 
 public class Home extends Fragment {
 
@@ -104,9 +106,10 @@ public class Home extends Fragment {
             }
         });
 
-        ObservableScrollView view = (ObservableScrollView) root.findViewById(R.id.scrollView1);
         FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.cm_shortcut);
-        fab.attachToScrollView(view);
+        FloatingActionButton fab2 = (FloatingActionButton) root.findViewById(R.id.restart_systemui);
+        FloatingActionButton fab3 = (FloatingActionButton) root.findViewById(R.id.reboot_device);
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -125,7 +128,58 @@ public class Home extends Fragment {
             }
         });
 
+
+        fab2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                (new StartUp()).setContext(v.getContext()).execute("sysui");
+            }
+        });
+
+        fab3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                (new StartUp()).setContext(v.getContext()).execute("reboot");
+            }
+        });
+
         return root;
+    }
+
+    private class StartUp extends AsyncTask<String, Void, Void> {
+
+
+        boolean suAvailable = false;
+        private Context context = null;
+
+        public StartUp setContext(Context context) {
+            this.context = context;
+            return this;
+        }
+
+        @Override
+        protected Void doInBackground(String... params) {
+            suAvailable = Shell.SU.available();
+            if (suAvailable) {
+                switch (params[0]) {
+                    case "reboot":
+                        Shell.SU.run("reboot");
+                        break;
+                    case "recov":
+                        Shell.SU.run("reboot recovery");
+                        break;
+                    case "shutdown":
+                        Shell.SU.run("reboot -p");
+                        break;
+                    case "sysui":
+                        Shell.SU.run("pkill com.android.systemui");
+                        break;
+                }
+            }
+
+            return null;
+        }
+
     }
 
 }
