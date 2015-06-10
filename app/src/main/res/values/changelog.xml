@@ -2,35 +2,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
         <item>@array/v91</item>
-        <item>@array/v89</item>
-        <item>@array/v88</item>
     </string-array>
     <string-array name="v91">
-        <item>ninety to ninetyone &#8212; FINAL (Touch up build)</item>
+        <item>ninetyone &#8212; FINAL (Touch up build)</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
-        <item>Update and clean WhatsApp Overlay for 2.12.122 (to fix dialog, and WhatsApp mods)</item>
+        <item>DarkMaterialApp: Add Restart SystemUI and Reboot device fabs in MainActivity (NEEDS ROOT ACCESS)</item>
+        <item>Update all Chrome overlays as much as I could, lots of things still hardcoded</item>
+        <item>Update and clean WhatsApp Overlay for 2.12.122 (to fix dialog\'s white on white)</item>
         <item>Fix Kik message bubble overlay</item>
+        <item>Fix Benzo ROM Tweaks Settings FC</item>
         <item>Fix Google Play Newsstand black popup</item>
-    </string-array>
-    <string-array name="v89">
-        <item>eightynine</item>
-        <item>Update Google Play Overlay to fix white on white (card background)</item>
-        <item>Fix WhatsApp icons (mute group, broadcast icon)</item>
-        <item>Update Exodus Settings</item>
-    </string-array>
-    <string-array name="v88">
-        <item>eightyeight</item>
-        <item>New WhatsApp Overlay - completely dark!</item>
-        <item>OctOS, AntaresOne CM12.1, LiquidSmooth and AOSiP icons added</item>
-        <item>Fix invisible Google Search add account icon</item>
-        <item>Add Launcher3 Overlay</item>
-        <item>Update Google Keep Overlay</item>
-        <item>Fix up Google Play Games</item>
-        <item>Theme Google Play Services</item>
-        <item>Theme GitSkarios lightly</item>
-        <item>Theme Kik lightly</item>
-        <item>Fix AOSP Browser Quick Controls</item>
-        <item>Darken Launcher Background</item>
-        <item>Darken Google Search Settings</item>
     </string-array>
 </resources>
