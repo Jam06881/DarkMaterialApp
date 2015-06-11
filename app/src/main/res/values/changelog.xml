@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
+        <item>@array/v93</item>
         <item>@array/v91</item>
     </string-array>
-    <string-array name="v91">
-        <item>ninetyone &#8212; FINAL (Touch up build)</item>
+    <string-array name="v93">
+        <item>ninetytwo to ninetythree &#8212; CLEAN UP BUILDS</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Clean up Nova Settings separator line color and widget selector background</item>
+        <item>Attempt another approach to clean up WhatsApp styles to try fix FCs</item>
+        <item>Fix WhatsApp call button black on black</item>
+        <item>Try out PackageInstaller fix for AOSiP</item>
+        <item>Fix Swype Highlight color when picking language.</item>
+    </string-array>
+    <string-array name="v91">
+        <item>ninetyone</item>
         <item>DarkMaterialApp: Add Restart SystemUI and Reboot device fabs in MainActivity (NEEDS ROOT ACCESS)</item>
         <item>Update all Chrome overlays as much as I could, lots of things still hardcoded</item>
         <item>Update and clean WhatsApp Overlay for 2.12.122 (to fix dialog\'s white on white)</item>
