@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
+        <item>@array/v94</item>
         <item>@array/v93</item>
-        <item>@array/v91</item>
+    </string-array>
+    <string-array name="v94">
+        <item>ninetyfour &#8212; FINAL CLEAN UP BUILD</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Clean up WhatsApp\'s location picker text, call icon and set status fragment buttons</item>
+        <item>Fix up PAC-ROM setting\'s icons</item>
+        <item>Update Play Store Overlay (Search plate, unified status bar)</item>
+        <item>Allow Black-WhatsApp to retain it\'s black action bars</item>
     </string-array>
     <string-array name="v93">
-        <item>ninetytwo to ninetythree &#8212; CLEAN UP BUILDS</item>
-        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>ninetythree</item>
         <item>Clean up Nova Settings separator line color and widget selector background</item>
         <item>Attempt another approach to clean up WhatsApp styles to try fix FCs</item>
         <item>Fix WhatsApp call button black on black</item>
         <item>Try out PackageInstaller fix for AOSiP</item>
         <item>Fix Swype Highlight color when picking language.</item>
-    </string-array>
-    <string-array name="v91">
-        <item>ninetyone</item>
-        <item>DarkMaterialApp: Add Restart SystemUI and Reboot device fabs in MainActivity (NEEDS ROOT ACCESS)</item>
-        <item>Update all Chrome overlays as much as I could, lots of things still hardcoded</item>
-        <item>Update and clean WhatsApp Overlay for 2.12.122 (to fix dialog\'s white on white)</item>
-        <item>Fix Kik message bubble overlay</item>
-        <item>Fix Benzo ROM Tweaks Settings FC</item>
-        <item>Fix Google Play Newsstand black popup</item>
     </string-array>
 </resources>
