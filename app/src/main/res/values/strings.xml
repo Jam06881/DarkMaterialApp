@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!--Change this on every version-->
-    <string name="version_code">ninetyfour</string>
+    <string name="version_code">ninetyfive</string>
 
     <!-- Main Strings -->
     <string name="app_name">"Nicholas\' Dark Material"</string>
@@ -28,7 +28,7 @@
 
     <!--Main Screen Cards-->
     <string name="welcome_title">welcome to lollipop, darkened!</string>
-    <string name="theme_description">\ndark material is cm12/cm12.1\'s first and original dark theme, with multiple weekly updates and immediate bug fixes - installed by more than 190,000 users with over 40,000 active users! having over 110 original app overlays, this is the most complete theme available on the play store!</string>
+    <string name="theme_description">\ndark material is cm12/cm12.1\'s first and original dark theme, with multiple weekly updates and immediate bug fixes - installed by more than 200,000 users with over 40,000 active users! having over 110 original app overlays, this is the most complete theme available on the play store!</string>
 
     <string name="play_card_colors_title">dark material // colors</string>
     <string name="play_card_colors_content">"variants of dark material as four different colored versions and one special version served to you in an all in one package!"</string>
@@ -131,12 +131,12 @@
     <string name="no_conn_title">"No Connection Found"</string>
     <string name="no_conn_content">"Wallpapers are stored on Cloud Server. Please connect to Internet and try again."</string>
     <string name="progress_dialog_title">Downloading wallpaper</string>
-    <string name="setting_wall_title">Setting pic as wallpaper</string>
+    <string name="setting_wall_title">Setting picture as wallpaper</string>
     <string name="please_wait">Please wait…</string>
     <string name="set_as_wall_done">"Picture set as wallpaper"</string>
     <string name="retry">Retry</string>
     <string name="ok">OK</string>
-    <string name="regression">DON\'T LIKE CUSTOM ICONS/ANIMATIONS?</string>
+    <string name="regression">STOCK ICONS/ANIMATIONS?</string>
     <string name="ratebtn">RATE THEME</string>
     <string name="download">DOWNLOAD</string>
     <string name="donate">DONATE</string>
