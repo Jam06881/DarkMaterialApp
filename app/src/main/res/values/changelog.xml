@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v95</item>
+        <item>@array/v96</item>
     </string-array>
-    <string-array name="v95">
-        <item>ninetyfive &#8212; STABLE/FINAL</item>
+    <string-array name="v96">
+        <item>ninetysix &#8212; STABLE/FINAL</item>
+        <item>ANNOUNCEMENT: The official date of theme weeklies will be Sunday. Expect updates every Sunday, if applicable. Check G+ community for more info!</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
-        <item>ANNOUNCEMENT: Weekly builds will now commence, instead of nightlies as the base has finally stabilized.</item>
-        <item>Fix Google Search (Grey on Grey/Black on Black)</item>
+        <item>Fix Google Search (Grey on Grey/Black on Black) including dropdown arrow</item>
         <item>Update MMS link text color to a lighter shade of grey</item>
         <item>Fix WhatsApp chat unsent icon/loading icon</item>
         <item>Fix text colors for multi-SIM devices (When selecting SIM colors)</item>
