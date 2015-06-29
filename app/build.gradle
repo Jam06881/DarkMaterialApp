@@ -9,8 +9,8 @@ android {
         minSdkVersion 21
         maxSdkVersion 22
         targetSdkVersion 21
-        versionCode 98
-        versionName "ninetyeight"
+        versionCode 99
+        versionName "ninetynine"
     }
     buildTypes {
         release {

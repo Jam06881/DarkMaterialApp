@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
+        <item>@array/v99</item>
         <item>@array/v98</item>
+    </string-array>
+    <string-array name="v99">
+        <item>ninetynine &#8212; FINAL/STABLE</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Fix Chrome Beta and Chrome Dev\'s Merge Tab Unlink Dialog.</item>
+        <item>Fix all Chrome variant\'s scroll accents.</item>
+        <item>Fix WhatsApp invisible buttons in Gallery Picker Fragment.</item>
+        <item>Revert new redesign of AOSP/Google Keyboard, but keeping custom colors for gesture swiping.</item>
+        <item>Complete re-pull from latest GitHub sources, clean up dead files, optimize, etc.</item>
     </string-array>
     <string-array name="v98">
         <item>ninetyeight</item>
-        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
         <item>Attempt to fix Contacts FC\'s using a complete rewrite in styles - cleaned and inflatable in a low, resource efficient way.</item>
         <item>New redesign of AOSP Keyboard and Google Keyboard.</item>
         <item>Add Exodus Settings Icon Support.</item>
