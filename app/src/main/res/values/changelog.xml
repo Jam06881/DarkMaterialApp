@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v97</item>
+        <item>@array/v98</item>
     </string-array>
-    <string-array name="v97">
-        <item>ninetyseven</item>
+    <string-array name="v98">
+        <item>ninetyeight</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
         <item>Attempt to fix Contacts FC\'s using a complete rewrite in styles - cleaned and inflatable in a low, resource efficient way.</item>
         <item>New redesign of AOSP Keyboard and Google Keyboard.</item>
