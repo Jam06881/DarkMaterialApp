@@ -1,50 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v99</item>
-        <item>@array/v98</item>
+        <item>@array/v100</item>
     </string-array>
-    <string-array name="v99">
-        <item>ninetynine &#8212; FINAL/STABLE</item>
+    <string-array name="v100">
+        <item>hyaku &#8212; 百へようこそ! (Welcome to 100!)</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
-        <item>Fix Chrome Beta and Chrome Dev\'s Merge Tab Unlink Dialog.</item>
-        <item>Fix all Chrome variant\'s scroll accents.</item>
-        <item>Fix WhatsApp invisible buttons in Gallery Picker Fragment.</item>
-        <item>Revert new redesign of AOSP/Google Keyboard, but keeping custom colors for gesture swiping.</item>
-        <item>Complete re-pull from latest GitHub sources, clean up dead files, optimize, etc.</item>
-    </string-array>
-    <string-array name="v98">
-        <item>ninetyeight</item>
-        <item>Attempt to fix Contacts FC\'s using a complete rewrite in styles - cleaned and inflatable in a low, resource efficient way.</item>
-        <item>New redesign of AOSP Keyboard and Google Keyboard.</item>
-        <item>Add Exodus Settings Icon Support.</item>
-        <item>Theme Exodus Updater and Power Menu.</item>
-        <item>Add custom no-SIM status bar icon and QS toggle.</item>
-        <item>Fix Google Keep Empty Entry Background Drawable.</item>
-        <item>Settings: Increasing ring volume drawable icon state change colors.</item>
-        <item>Update all icons in Settings -> Sound (Consistency in size and design).</item>
-        <item>Theme SystemUI Volume Panel "Notification" Icon.</item>
-        <item>Update Google Keep Attach Icons in Dialog.</item>
-        <item>Static Auto-rotate SystemUI QS Toggle for 5.1.1 ROMs (Due to popularity on G+).</item>
-        <item>Update BlissOTA overlay to 5.0.0.</item>
-        <item>Fix Google Play Games in-game overlay + settings background.</item>
-        <item>Fix unreadable hardkey popup menu for base app in Google Play Games.</item>
-        <item>Fix AOSP browser search bar suggestion icons.</item>
-        <item>Adjust unified status bar color and cleaning up accents in Google Play Games.</item>
-        <item>Theme AOSP Email Account Setup fragment.</item>
-        <item>Add Settings icons for OwnROM.</item>
-        <item>Remove unused fab drawable in Contacts and add contacts drawables for missing resolutions under xxhdpi.</item>
-        <item>Remove white loading symbol for WhatsApp.</item>
-        <item>Add themed Slim Device Manager for ROMs with customizable gesture support.</item>
-        <item>Darken Nova Launcher 4.0.2b1 settings lightly.</item>
-        <item>Theme Sysbar Power Menu and QuickSettings icon.</item>
-        <item>Fix unreadable Chrome hint text in address bar.</item>
-        <item>Add flashlight power menu icon.</item>
-        <item>Add Setting\'s Identicon setup icons.</item>
-        <item>Change screenshot notification\'s delete and share buttons.</item>
-        <item>Fix WhatsApp search actionbar colors for 2.12.157 - using a workaround for now.</item>
-        <item>Navigation Bar Ring Icon replacements.</item>
-        <item>Remove WhatsApp Voice Note Scrubber Colors.</item>
-        <item>Complete re-pull from latest GitHub sources, clean up dead files, optimize, etc.</item>
+        <item>Introducing a new numbering system (Japanese) for the distribution of new builds.</item>
+        <item>Remove traces of dm // colors in DarkMaterialApp.</item>
+        <item>Remove Icons folder from Assets folder to prevent mix up from users. Use Whicons available on Play!</item>
+        <item>Lightly theme Chromecast and Google Cloud Print apps.</item>
+        <item>Theme Settings\'s Omniswitch Icon.</item>
+        <item>Prepare No SIM status bar icons for AOSP signal cluster code upgrade.</item>
+        <item>Theme Google Play Services Help and Feedback Actionbar (Now fully grey with white accents)</item>
+        <item>Theme Dropbox Authenticator\'s Icon.</item>
+        <item>Fix App Bar Setup Settings FC using a SystemUI reroute.</item>
+        <item>Theme WhatsApp Popup Window Button Background.</item>
+        <item>Adjust Dialer/Contacts Letter Tile Colors to Theme Color (Majority wins!).</item>
+        <item>Theme WhatsApp Null Contact/Conversation Drawables (No contact picture in conversation list).</item>
+        <item>Add #NoChromo Overlay.</item>
+        <item>Squash, compress and optimize all files.</item>
+        <item>Add themed icons for Dynamic Tile QS icons.</item>
+        <item>Fix unreadable worldwide leaderboard entries in Google Play Games.</item>
+        <item>Theme Snapchat Lightly (Main screen).</item>
+        <item>Make Play Music Subscribe button less intrusive.</item>
+        <item>Add dynamic icon state-color switching for Notification Volume, thanks to Mark (@Spannaa).</item>
+        <item>Clean up indentation in Settings\' colors.</item>
+        <item>Update Pushbullet Overlay with the new UI refresh (using white as text in the actionbar now).</item>
+        <item>Add stroke to Play and Pause, and LiveDisplay QS tiles.</item>
+        <item>Sync up OTAUpdates (distributed by Matt Booth) to BlissOTA\'s overlay.</item>
     </string-array>
 </resources>
