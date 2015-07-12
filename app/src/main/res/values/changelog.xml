@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v100</item>
+        <item>@array/v101</item>
     </string-array>
-    <string-array name="v100">
-        <item>hyaku &#8212; 百へようこそ! (Welcome to 100!)</item>
+    <string-array name="v101">
+        <item>hyaku ichi</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
-        <item>Introducing a new numbering system (Japanese) for the distribution of new builds.</item>
-        <item>Remove traces of dm // colors in DarkMaterialApp.</item>
-        <item>Remove Icons folder from Assets folder to prevent mix up from users. Use Whicons available on Play!</item>
-        <item>Lightly theme Chromecast and Google Cloud Print apps.</item>
-        <item>Theme Settings\'s Omniswitch Icon.</item>
-        <item>Prepare No SIM status bar icons for AOSP signal cluster code upgrade.</item>
-        <item>Theme Google Play Services Help and Feedback Actionbar (Now fully grey with white accents)</item>
-        <item>Theme Dropbox Authenticator\'s Icon.</item>
-        <item>Fix App Bar Setup Settings FC using a SystemUI reroute.</item>
-        <item>Theme WhatsApp Popup Window Button Background.</item>
-        <item>Adjust Dialer/Contacts Letter Tile Colors to Theme Color (Majority wins!).</item>
-        <item>Theme WhatsApp Null Contact/Conversation Drawables (No contact picture in conversation list).</item>
-        <item>Add #NoChromo Overlay.</item>
-        <item>Squash, compress and optimize all files.</item>
-        <item>Add themed icons for Dynamic Tile QS icons.</item>
-        <item>Fix unreadable worldwide leaderboard entries in Google Play Games.</item>
-        <item>Theme Snapchat Lightly (Main screen).</item>
-        <item>Make Play Music Subscribe button less intrusive.</item>
-        <item>Add dynamic icon state-color switching for Notification Volume, thanks to Mark (@Spannaa).</item>
-        <item>Clean up indentation in Settings\' colors.</item>
-        <item>Update Pushbullet Overlay with the new UI refresh (using white as text in the actionbar now).</item>
-        <item>Add stroke to Play and Pause, and LiveDisplay QS tiles.</item>
-        <item>Sync up OTAUpdates (distributed by Matt Booth) to BlissOTA\'s overlay.</item>
+        <item>Use light grey as Contact tile colors for Dialer and Contacts - to maximize readability.</item>
+        <item>Fix Dropbox Icon for Settings -> Account.</item>
+        <item>Change Contact\'s Edit Contact Accent (colorAccent to white) - while retaining FastScroll color.</item>
+        <item>FastScroll Framework Overhaul - using colorPrimary instead of colorControlActivated.</item>
+        <item>Experimental framework changes for DeviceDefault - fixing date picker dialog.</item>
+        <item>Fix Google Inbox\'s invisible icons.</item>
+        <item>Update SystemUI for internal notification changes.</item>
+        <item>Theme TextNow\'s Dark (Grey) Mode.</item>
+        <item>Fix up Sony Sketch\'s Hardcoded Accents - and fix floating action button.</item>
+        <item>Add Bliss Floating Menu Icon for Bliss Interface.</item>
+        <item>Fix Snapchat Chat Background.</item>
+        <item>Gmail: An alternative way to achieve black windowBackground - fix overflow menu as well.</item>
+        <item>Remove more traces of Dropbox Material Blue.</item>
+        <item>Fix Chromecast Backdrop Toggle Color.</item>
+        <item>Fix invisible drag handle in Google Play Music.</item>
     </string-array>
 </resources>
