@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
+        <item>@array/v102</item>
         <item>@array/v101</item>
+    </string-array>
+    <string-array name="v102">
+        <item>hyaku ni &#8212; STABLE/FINAL</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Change elevation value of action bar, making the design look more flat.</item>
+        <item>Fix Google Search Parking Pin Icon</item>
+        <item>Revert light grey Contacts/Dialer tile colors back to default colors, however using a fused actionbar style.</item>
     </string-array>
     <string-array name="v101">
         <item>hyaku ichi</item>
-        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
         <item>Use light grey as Contact tile colors for Dialer and Contacts - to maximize readability.</item>
         <item>Fix Dropbox Icon for Settings -> Account.</item>
         <item>Change Contact\'s Edit Contact Accent (colorAccent to white) - while retaining FastScroll color.</item>
