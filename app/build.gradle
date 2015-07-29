@@ -9,8 +9,8 @@ android {
         minSdkVersion 21
         maxSdkVersion 22
         targetSdkVersion 21
-        versionCode 102
-        versionName "hyaku ni"
+        versionCode 103
+        versionName "hyaku san"
     }
     buildTypes {
         release {
