@@ -38,6 +38,20 @@ public class Home extends Fragment {
         ActionBar toolbar = ((ActionBarActivity) context).getSupportActionBar();
         toolbar.setTitle(R.string.app_name);
 
+        TextView playwhicons = (TextView) root.findViewById(R.id.play_button_whicons);
+        playwhicons.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent devPlay = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_whicons)));
+                Intent intent_colors = getActivity().getPackageManager().getLaunchIntentForPackage("com.whicons.iconpack");
+                if (intent_colors == null) {
+                    startActivity(devPlay);
+                } else {
+                    startActivity(intent_colors);
+                }
+            }
+        });
+
         TextView playbtn = (TextView) root.findViewById(R.id.play_button);
         playbtn.setOnClickListener(new View.OnClickListener() {
             @Override
