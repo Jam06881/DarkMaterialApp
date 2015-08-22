@@ -1,31 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v103</item>
+        <item>@array/v104</item>
     </string-array>
-    <string-array name="v103">
-        <item>hyaku san</item>
-        <item>ANNOUNCEMENT: Builds will follow a biweekly schedule instead of weekly. We have reached stability!</item>
+    <string-array name="v104">
+        <item>hyaku yon</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
-        <item>Add icon recommendations into the app - Whicons!</item>
-        <item>Theme Audials and Audials Pro Notification Text</item>
-        <item>Remove Android Wear from overlays temporarily due to no physical device to test on.</item>
-        <item>Fix invisible missed call icon in Hangouts.</item>
-        <item>Theme Relay for Reddit (Free and Paid)\'s Night AMOLED mode colors.</item>
-        <item>Fix Google Play Music Premium section card background.</item>
-        <item>Clean up Facebook overlay to target less force closes.</item>
-        <item>Add TeslaUnread Overlay.</item>
-        <item>Add GroupMe Overlay - this fixes notification text as well.</item>
-        <item>Theme BlackPlayer and BlackPlayer EX notification control colors.</item>
-        <item>Fix up internal comments in Settings.</item>
-        <item>Theme WeatherBug notification background color.</item>
-        <item>Theme PlayerPro Trial and PlayerPro notification text.</item>
-        <item>Re-add themed YouTube overlay.</item>
-        <item>Theme Settings\' Dual SIM options icon.</item>
-        <item>Update CM Theme Engine Iconography.</item>
-        <item>Tweak Fastscroll handle color.</item>
-        <item>Fix unreadable Contacts text "Frequently Contacted" and unlink it from the actionbar color.</item>
-        <item>Remove DeviceDefault InputMethod style override, fixing transparent full screen keyboard.</item>
-        <item>Rebase the entire theme on a Windows 10 Pro machine.</item>
+        <item>Revert back to previous fonts to prevent switching problems.</item>
+        <item>Added Hangouts 4.0 themed overlay</item>
+        <item>DESIGN: Make launcher panels more simple.</item>
+        <item>Shorten the toast frame as requested.</item>
+        <item>Adjust framework text for foreground text in Legacy theme.</item>
+        <item>Squash, compress and optimize all images in the overlay folder.</item>
+        <item>Fix Chrome Stable/Beta/Dev bookmarks invisible text.</item>
+        <item>Update project files and fix build (rebase on 5.1.1 framework).</item>
+        <item>Fix YouTube Upload activity black on black buttons.</item>
+        <item>Update README.md for contributors to the private repository.</item>
+        <item>Change accent color in Tapatalk to allow visibility of Following buttons.</item>
+        <item>Add support for ES File Explorer 4.0 on top of 3.0.</item>
+        <item>Add themed Tapatalk v5.1.1 inverted overlay.</item>
+        <item>Add inverted Dialer hint icons for Speed Dial/Recents/Contacts.</item>
+        <item>DESIGN: Update all FABs and Circular Drawables.</item>
+        <item>DESIGN: Update all search frames to a more thin and sleek design.</item>
+        <item>Update Google Play Music Premium Activity icons, text and dialog colors.</item>
+        <item>Add missing Google icons in Play Store thanks to Kevin Dixson.</item>
+        <item>Add new Holo Dark and Holo Light framework drawables.</item>
+        <item>Update Facebook Messenger Overlay with more drawables.</item>
+        <item>Fix WhatsApp message waiting icon invisible.</item>
+        <item>Change white value in WhatsApp to fix visibility.</item>
+        <item>Add themed ES File Explorer 3.0 overlay.</item>
+        <item>Add themed OGYoutube Overlay for Settings and invisible text colors.</item>
+        <item>Fix BlackPlayerEX\'s Notification Background.</item>
+        <item>Fix Bluetooth XML comments.</item>
+        <item>Fix white on white on Google Wallet Dialogs.</item>
+        <item>Update MultiROM Manager Overlay.</item>
+        <item>Update previously untouched SystemUI navigation buttons (Bliss targeted).</item>
+        <item>Fix up Calculator status bar on ROMs with TRDS (Temasek targeted).</item>
+        <item>Fix Holo Keyboard key hint black on black.</item>
+        <item>Add Google Play Games Card color text.</item>
+        <item>Fix Google Play Games Sign Up Dialog.</item>
+        <item>Officially drop support for modded WhatsApp variants.</item>
+        <item>Update Chrome Overlay to Chrome Beta Overlay.</item>
+        <item>Update Google Keep Overlay to add missing + icon in drawer.</item>
+        <item>Update Settings icon names.</item>
+        <item>Add support for CRDroid and Team EOS Settings Icons.</item>
+        <item>Re-add Appcompat themes for styles in Gmail to combat Force Closes.</item>
+        <item>Remove Recents Clear All Icon.</item>
+        <item>Say NO! to rounded corners in Settings (Bliss targeted).</item>
     </string-array>
 </resources>
