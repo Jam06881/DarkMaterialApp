@@ -1,51 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
-        <item>@array/v104</item>
+        <item>@array/v105</item>
     </string-array>
-    <string-array name="v104">
-        <item>hyaku yon</item>
+    <string-array name="v105">
+        <item>hyaku go</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
-        <item>Revert back to previous fonts to prevent switching problems.</item>
-        <item>Added Hangouts 4.0 themed overlay</item>
-        <item>DESIGN: Make launcher panels more simple.</item>
-        <item>Shorten the toast frame as requested.</item>
-        <item>Adjust framework text for foreground text in Legacy theme.</item>
-        <item>Squash, compress and optimize all images in the overlay folder.</item>
-        <item>Fix Chrome Stable/Beta/Dev bookmarks invisible text.</item>
-        <item>Update project files and fix build (rebase on 5.1.1 framework).</item>
-        <item>Fix YouTube Upload activity black on black buttons.</item>
-        <item>Update README.md for contributors to the private repository.</item>
-        <item>Change accent color in Tapatalk to allow visibility of Following buttons.</item>
-        <item>Add support for ES File Explorer 4.0 on top of 3.0.</item>
-        <item>Add themed Tapatalk v5.1.1 inverted overlay.</item>
-        <item>Add inverted Dialer hint icons for Speed Dial/Recents/Contacts.</item>
-        <item>DESIGN: Update all FABs and Circular Drawables.</item>
-        <item>DESIGN: Update all search frames to a more thin and sleek design.</item>
-        <item>Update Google Play Music Premium Activity icons, text and dialog colors.</item>
-        <item>Add missing Google icons in Play Store thanks to Kevin Dixson.</item>
-        <item>Add new Holo Dark and Holo Light framework drawables.</item>
-        <item>Update Facebook Messenger Overlay with more drawables.</item>
-        <item>Fix WhatsApp message waiting icon invisible.</item>
-        <item>Change white value in WhatsApp to fix visibility.</item>
-        <item>Add themed ES File Explorer 3.0 overlay.</item>
-        <item>Add themed OGYoutube Overlay for Settings and invisible text colors.</item>
-        <item>Fix BlackPlayerEX\'s Notification Background.</item>
-        <item>Fix Bluetooth XML comments.</item>
-        <item>Fix white on white on Google Wallet Dialogs.</item>
-        <item>Update MultiROM Manager Overlay.</item>
-        <item>Update previously untouched SystemUI navigation buttons (Bliss targeted).</item>
-        <item>Fix up Calculator status bar on ROMs with TRDS (Temasek targeted).</item>
-        <item>Fix Holo Keyboard key hint black on black.</item>
-        <item>Add Google Play Games Card color text.</item>
-        <item>Fix Google Play Games Sign Up Dialog.</item>
-        <item>Officially drop support for modded WhatsApp variants.</item>
-        <item>Update Chrome Overlay to Chrome Beta Overlay.</item>
-        <item>Update Google Keep Overlay to add missing + icon in drawer.</item>
-        <item>Update Settings icon names.</item>
-        <item>Add support for CRDroid and Team EOS Settings Icons.</item>
-        <item>Re-add Appcompat themes for styles in Gmail to combat Force Closes.</item>
-        <item>Remove Recents Clear All Icon.</item>
-        <item>Say NO! to rounded corners in Settings (Bliss targeted).</item>
+        <item>ATTENTION!!: This is a monthly build now, as I started school and I have much more responsibilities now, I can\'t juggle both CMTE, Layers and ROM source verification as well as assignments. From now on, I will accept requests, and only push out updates when deemed enough of an update. Please respect my decision and I would be grateful if you joined my G+ community instead of spamming my mailbox to post bugs, as other users can help answer your issue.</item>
+        <item>Revert back to previous fonts to prevent switching problems, AGAIN! No more complaints, please!</item>
+        <item>Add themed QS volume panel tile.</item>
+        <item>Add QS On-the-Go QS Tiles and Power Menu buttons.</item>
+        <item>Add themed notification drawer button to switch from Task Manager.</item>
+        <item>Replace contextual headers with new poly effect backgrounds by @BellaxMiu</item>
+        <item>Revamp ES File Explorer drawer text, thanks to @franzyroy.</item>
+        <item>Fix Chrome Dev\'s Unreadable bookmarks.</item>
+        <item>Pushbullet: Fix unreadable text colors for popup and search box.</item>
+        <item>Do not use publicized styles, call privatized ones instead.</item>
+        <item>Fix G+ Poll colors and reorganize cdt colors.</item>
+        <item>Fix unreadable text in Smart Lock "Places" activity and change header text in Google Settings.</item>
+        <item>Add inverted Google+ Overlay.</item>
+        <item>Add darkened button bar for Twitter.</item>
+        <item>Update Bluetooth connected status bar icon.</item>
+        <item>Fix OK Google Voice Training Text Colors.</item>
+        <item>Update YouTube Overlay for 10.35.53.</item>
+        <item>Add colorful Google icons into search bar and SystemUI\'s nav target.</item>
+        <item>Theme Snapdragon Browser (Cyanogen OS 12.1 edition).</item>
+        <item>Theme GalleryNext (Cyanogen OS 12.1 edition).</item>
+        <item>Theme DialerNext (Cyanogen OS 12.1 edition).</item>
+        <item>Add colored drawables for legacy Google Search apps.</item>
+        <item>Fix invisible Cyanogen Theme Chooser App Themer text color.</item>
+        <item>Bliss: Add exposed text color on DPI alert dialog.</item>
+        <item>Fix unreadable status change window in Hangouts.</item>
+        <item>WhatsApp: Change accent to green, and darken card colors.</item>
+        <item>Bliss: Add new QS Panel and QS Bar tiles.</item>
+        <item>Add themed KatPro notification text color.</item>
+        <item>Add themed Shuttle and Shuttle+ notification colors.</item>
+        <item>Fix invisible Root and SD card icon in history of ESFileExplorer.</item>
+        <item>Fix Google Play Music Tutorial Buttons.</item>
+        <item>Whiten YouTube search clear all button.</item>
+        <item>Fix YouTube text after typing in searchbox/actionbar.</item>
+        <item>Fix unreadable Frequently Contacted contact text colors.</item>
+        <item>Adjust Chrome tab text color and remove text shadows.</item>
+        <item>Re-add default text color to fix unreadable popups in Chrome.</item>
+        <item>Revert "Fix Chrome Bookmarks Invisible Text".</item>
+        <item>Add new WhatsApp Compose Icons by @arjerine.</item>
+        <item>Remove legacy Google Logo from Google Search Bar.</item>
+        <item>Hangouts Blocked People drawable - inverted the question marks.</item>
+        <item>Fix Google Play Services v8 - Popup menu black on black.</item>
+        <item>Drop support for Hangouts 3.0.</item>
+        <item>Change Hangouts overlay to use green instead of grey.</item>
+        <item>Add new Dropbox authenticator icon.</item>
+        <item>Fix BetterBatteryStats status bar color.</item>
+        <item>Fix Google Play Games Settings status bar.</item>
+        <item>Fix unreadable Google Play Games progress circle.</item>
     </string-array>
 </resources>
