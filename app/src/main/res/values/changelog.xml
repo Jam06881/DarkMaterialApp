@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="fullchangelog">
+        <item>@array/v106</item>
         <item>@array/v105</item>
+    </string-array>
+    <string-array name="v106">
+        <item>hyaku roku &#8212; final build</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>ATTENTION! This is a monthly build now, as I started class and I have much more responsibilities now, I can\'t juggle CMTE, Layers, ROM source verification and assignments. From now on, I will only push out updates when deemed enough of an update. Please respect my decision and I would be grateful if you joined my G+ community instead of spamming my mailbox to post bugs, as other users could help answer your question/doubt.</item>
+        <item>NOTE: A bug in G+ is the paste popup due to backgroundTint, ignore it for now.</item>
+        <item>Return blue text colors to G+ (Tags, Links, Collections).</item>
+        <item>Google Now Launcher Reset - Fix White Fade BG.</item>
+        <item>Add themed Phonograph notification text and button colors.</item>
+        <item>Update MMS quick reply dialog.</item>
+        <item>Bliss: Resize "Restart SystemUI" icon to fit nav bar.</item>
+        <item>Google Now Launcher: Fix up no result found colors and drawables.</item>
+        <item>Add more colors for Google Now Launcher.</item>
+        <item>Inbox: Fix invisible unbundled message icon in drawer.</item>
+        <item>Update Google Now Launcher to Google App 5.3.19.19 (Turn off App suggestions in Launcher settings as divider is a hardcoded color).</item>
     </string-array>
     <string-array name="v105">
         <item>hyaku go</item>
-        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
-        <item>ATTENTION!!: This is a monthly build now, as I started school and I have much more responsibilities now, I can\'t juggle both CMTE, Layers and ROM source verification as well as assignments. From now on, I will accept requests, and only push out updates when deemed enough of an update. Please respect my decision and I would be grateful if you joined my G+ community instead of spamming my mailbox to post bugs, as other users can help answer your issue.</item>
         <item>Revert back to previous fonts to prevent switching problems, AGAIN! No more complaints, please!</item>
         <item>Add themed QS volume panel tile.</item>
         <item>Add QS On-the-Go QS Tiles and Power Menu buttons.</item>
         <item>Add themed notification drawer button to switch from Task Manager.</item>
-        <item>Replace contextual headers with new poly effect backgrounds by @BellaxMiu</item>
+        <item>Replace contextual headers with new poly effect backgrounds by @BellaxMiu.</item>
         <item>Revamp ES File Explorer drawer text, thanks to @franzyroy.</item>
         <item>Fix Chrome Dev\'s Unreadable bookmarks.</item>
         <item>Pushbullet: Fix unreadable text colors for popup and search box.</item>
@@ -33,7 +47,7 @@
         <item>Fix unreadable status change window in Hangouts.</item>
         <item>WhatsApp: Change accent to green, and darken card colors.</item>
         <item>Bliss: Add new QS Panel and QS Bar tiles.</item>
-        <item>Add themed KatPro notification text color.</item>
+        <item>Add themed KatePro notification text color.</item>
         <item>Add themed Shuttle and Shuttle+ notification colors.</item>
         <item>Fix invisible Root and SD card icon in history of ESFileExplorer.</item>
         <item>Fix Google Play Music Tutorial Buttons.</item>
