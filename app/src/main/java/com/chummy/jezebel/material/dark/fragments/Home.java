@@ -113,17 +113,23 @@ public class Home extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent launch_theme = new Intent("android.intent.action.MAIN");
-                launch_theme.setComponent(new ComponentName("org.cyanogenmod.theme.chooser", "org.cyanogenmod.theme.chooser.ChooserActivity"));
-                launch_theme.putExtra("pkgName", context.getPackageName());
+                Intent launch_cm_theme = new Intent("android.intent.action.MAIN");
+                launch_cm_theme.setComponent(new ComponentName("org.cyanogenmod.theme.chooser", "org.cyanogenmod.theme.chooser.ChooserActivity"));
+                launch_cm_theme.putExtra("pkgName", context.getPackageName());
                 Intent intent_cyanogenmod = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
+                Intent intent_rrolayers = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
                 Intent intent_settings = getActivity().getPackageManager().getLaunchIntentForPackage("com.android.settings");
                 if (intent_cyanogenmod == null) {
-                    Toast.makeText(getActivity(), getString(R.string.cm_not_configured), Toast.LENGTH_SHORT).show();
-                    startActivity(intent_settings);
+                    if (intent_rrolayers == null) {
+                        Toast.makeText(getActivity(), getString(R.string.cm_not_configured), Toast.LENGTH_SHORT).show();
+                        startActivity(intent_settings);
+                    } else {
+                        Toast.makeText(getActivity(), getString(R.string.theme_installed_rro), Toast.LENGTH_LONG).show();
+                        startActivity(intent_rrolayers);
+                    }
                 } else {
-                    Toast.makeText(getActivity(), getString(R.string.theme_installed), Toast.LENGTH_LONG).show();
-                    startActivity(launch_theme);
+                    Toast.makeText(getActivity(), getString(R.string.theme_installed_cm), Toast.LENGTH_LONG).show();
+                    startActivity(launch_cm_theme);
                 }
             }
         });
