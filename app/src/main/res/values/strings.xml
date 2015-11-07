@@ -157,6 +157,8 @@
     <string name="nicholas_description">cdt lead themer &amp; team bliss developer</string>
     <string name="bella">Jezebel (Bella) Ng</string>
     <string name="bella_description">lead advertising and drawable designer</string>
+    <string name="aditya">Aditya Gupta</string>
+    <string name="aditya_description">layers developer &amp; theme porter</string>
     <string name="khizar">Khizar Mundia</string>
     <string name="khizar_description">theme developer &amp; rom contributor</string>
     <string name="fahad">Fahad Ali Javed</string>
@@ -168,6 +170,8 @@
     <string name="dev_gplus_link">"https://plus.google.com/u/0/116845249995235969561"</string>
     <string name="dev_link_bella">"http://forum.xda-developers.com/member.php?u=5973165"</string>
     <string name="facebook_link_bella">"https://www.facebook.com/Nikukyuu"</string>
+    <string name="dev_link_aditya">"http://forum.xda-developers.com/member.php?u=6233580"</string>
+    <string name="dev_gplus_link_aditya">"https://plus.google.com/u/0/110274024625699059860"</string>
     <string name="dev_link_khizar">"http://forum.xda-developers.com/member.php?u=4519152"</string>
     <string name="dev_gplus_link_khizar">"https://plus.google.com/u/0/+KhizarMundia/posts"</string>
     <string name="dev_link_fahad">"http://forum.xda-developers.com/member.php?u=5444625"</string>

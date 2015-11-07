@@ -187,6 +187,24 @@ public class Credits extends Fragment {
             }
         });
 
+        TextView web5 = (TextView) root.findViewById(R.id.web_button_aditya);
+        web5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent devweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_link_aditya)));
+                startActivity(devweb);
+            }
+        });
+
+        TextView googleplus5 = (TextView) root.findViewById(R.id.gplus_button_aditya);
+        googleplus5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent devgplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dev_gplus_link_aditya)));
+                startActivity(devgplus);
+            }
+        });
+
         /*TextView dashauthorweb = (TextView) root.findViewById(R.id.dashauthor_web_button);
         dashauthorweb.setOnClickListener(new View.OnClickListener() {
             @Override
