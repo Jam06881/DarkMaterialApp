@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!--Change this on every version-->
-    <string name="version_code">hyaku roku</string>
+    <string name="version_code">hundertsieben</string>
 
     <!-- Main Strings -->
     <string name="app_name">"Nicholas\' Dark Material"</string>
@@ -17,6 +17,7 @@
     <string name="play_store_link">https://play.google.com/store/apps/details?id=com.chummy.jezebel.material.dark</string>
     <string name="play_store_link_regression">https://play.google.com/store/apps/details?id=com.chummy.jezebel.material.dark.regression</string>
     <string name="play_store_dev_link">https://play.google.com/store/apps/dev?id=6772568782420610939</string>
+    <string name="play_store_link_logcat">https://play.google.com/store/apps/details?id=com.nolanlawson.logcat</string>
 
     <!--Recommended Icon Pack (Whicons)-->
     <string name="play_store_whicons">https://play.google.com/store/apps/details?id=com.whicons.iconpack</string>
@@ -83,6 +84,10 @@
     <string name="section_six">More Apps</string>
     <string name="section_seven">About The Team</string>
     <string name="section_eight">Testers &amp; Credits</string>
+    <string name="section_nine">What is Themed?</string>
+    <string name="section_ten">Contact Us</string>
+    <string name="section_eleven">Take LogCat</string>
+    <string name="section_twelve">Frequently Asked Questions</string>
 
     <!--Wallpapers Activity-->
     <string name="title_activity_detailed_wallpaper">Detailed Wallpaper</string>
@@ -156,6 +161,13 @@
     <string name="donate">DONATE</string>
     <string name="open">OPEN</string>
 
+    <!--What is Themed-->
+    <string name="wit_title">what is themed?</string>
+    <string name="wit_description">we have over 145 apps overlaid in both our cm and layers version of dark material. carefully categorized below</string>
+
+    <!--Logcat-->
+    <string name="logcat_toast">With this app, you can monitor the errors that you may be getting (if the app gets forcibly uninstalled). Save the log and email it to me please!</string>
+
     <!--License Checker Texts-->
     <string name="license_check">License Check</string>
     <string name="license_failed_title">License Check Failed</string>
@@ -189,4 +201,162 @@
     <string name="dev_gplus_link_khizar">"https://plus.google.com/u/0/+KhizarMundia/posts"</string>
     <string name="dev_link_fahad">"http://forum.xda-developers.com/member.php?u=5444625"</string>
     <string name="dev_gplus_link_fahad">"https://plus.google.com/u/0/103585729111608705481/posts"</string>
+
+    <!--FAQ-->
+    <string name="faq_q_1">esfileexplorer unreadable? (cmte/layers)</string>
+    <string name="faq_a_1">take off the theme, go into esfileexplorer, open the drawer and press the theme button. click on default theme and adjust the theme so that everything is inverted on a black theme. re-apply dark material then you\'re done!</string>
+    <string name="faq_q_2">some aspects of the device is not themed (cmte/layers)</string>
+    <string name="faq_a_2">make sure you restarted your device twice (cm theme engine). if it remains unthemed, email me the name of your rom, attach a screenshot and tell me how to replicate this issue (if on a third party app).</string>
+    <string name="faq_q_3">there\'s an unthemed icon in settings...what should I do? (cmte/layers)</string>
+    <string name="faq_a_3">if you are on a rom with an icon that is not themed inside Settings, email me the name of your rom, and attach a screenshot.</string>
+    <string name="faq_q_4">notifications are white text on white background (cmte)"</string>
+    <string name="faq_a_4">you must apply a dark theme\'s style and status bar together. if you do not apply both you will have unreadable texts in the notification drawer.</string>
+    <string name="faq_q_5">notifications are white text on white background (layers)"</string>
+    <string name="faq_a_5">you must apply a dark theme\'s framework and systemui together. if you do not apply both you will have unreadable texts in the notification drawer.</string>
+    <string name="faq_q_6">applying the theme causes a bootloop (cmte)</string>
+    <string name="faq_a_6">please read the description on the play store and follow the several solutions there.</string>
+    <string name="faq_q_7">status bar is not theming even though i picked to theme it (cmte)</string>
+    <string name="faq_a_7">please read the description on the play store and follow the link to a youtube video, i have provided a solution there.</string>
+    <string name="faq_q_8">nav bar isn\'t theming properly, it keeps reverting back to stock! (cmte)</string>
+    <string name="faq_a_8">apply default theme\'s navigation bar, then apply dark material\'s navigation bar. this is a bug with cmte.</string>
+    <string name="faq_q_9">do you have a version of the theme without custom icons? (cmte)</string>
+    <string name="faq_a_9">there\'s a regression theme for all my cmte themes available on play store, you can check them out.</string>
+    <string name="faq_q_10">constantly failed to install?</string>
+    <string name="faq_a_10">first make sure you do not have GoogleDeskClock installed, do not freeze it using tibu. you must completely remove it from the phone. if it still remains, please send me a log.</string>
+
+    <!--What Is Themed-->
+    <string name="card_one_title">"android system base requirements"</string>
+    <string name="card_one_list">"Framework-res (com.android)
+        SystemUI (com.android.systemui)
+        Settings (com.android.settings)"</string>
+    <string name="card_two_title">"android system app support"</string>
+    <string name="card_two_list">AOSP Browser (com.android.browser)
+        \nAOSP Keyboard (com.android.inputmethod.latinime)
+        \nAOSP Messages (com.android.mms)
+        \nBluetooth Transfer (com.android.bluetooth)
+        \nCalculator (com.android.calculator2)
+        \nCalendar (com.android.calendar)
+        \nCellBroadcastReceiver (com.android.cellbroadcastreceiver)
+        \nGoogle Camera (com.android.camera2)
+        \nContacts (com.android.contacts)
+        \nClock (com.android.deskclock)
+        \nDocumentsUI (com.android.documentsui)
+        \nGallery (com.android.gallery3d)
+        \nPackage Installer (com.android.packageinstaller)
+        \nSound Recorder (com.android.soundrecorder)
+        \nTeleService (com.android.server.telecom)
+        \nPhone (com.android.phone)</string>
+    <string name="card_three_title">"rom specific app support"</string>
+    <string name="card_three_list">BlissOTA (com.chummy.blissroms.updates)
+        \nBlissPapers (com.death2all110.blisspapers)
+        \nDevice Control (org.namelessrom.devicecontrol)
+        \nDU Updater (com.dirtyunicorns.duupdater)
+        \nEuphoria Mahdi TouchControl (com.mahdi.touchcontrol)
+        \nEuphoria Updater (com.euphoria.ota)
+        \nLiquid Updater (com.liquid.updater)
+        \nSlim Device (com.slim.device)
+        \nSlimLauncher (com.slim.slimlauncher)
+        \nTemasek OTA (com.ota.updates)</string>
+    <string name="card_four_title">"cyanogen/cyanogenmod app support"</string>
+    <string name="card_four_list">Advanced Settings (com.cyanogenmod.settings.device)
+        \nAudioFX (org.cyanogenmod.audiofx)
+        \nCyanogenMod Account (com.cyanogenmod.account)
+        \nEleven (com.cyanogenmod.eleven)
+        \nFile Manager (com.cyanogenmod.filemanager)
+        \nGalleryNext (com.cyngn.gallerynext)
+        \nLockClock (com.cyanogenmod.lockclock)
+        \nSetup Wizard (com.cyanogenmod.setupwizard)
+        \nSnap Browser (com.cyngn.browser)
+        \nThemeChooser - CyanogenMod 12/12.1 (org.cyanogenmod.theme.chooser)
+        \nThemeChooser - Cyanogen OS 12 (com.cyngn.theme.chooser)
+        \nTrebuchet (com.cyanogenmod.trebuchet)
+        \nUpdater (com.cyanogenmod.updater)</string>
+    <string name="card_five_title">"google app support"</string>
+    <string name="card_five_list">Android Wear (com.google.android.wearable.app)
+        \nAuthenticator (com.google.android.apps.authenticator2)
+        \nChrome (com.android.chrome)
+        \nChrome Beta (com.chrome.beta)
+        \nChrome Dev (com.chrome.dev)
+        \nChromecast (com.google.android.apps.chromecast.app)
+        \nCloud Print (com.google.android.apps.cloudprint)
+        \nDialer (com.google.android.dialer)
+        \nDocs, Sheets, Slides (com.google.android.apps.docs.editors.docs/sheets/slides)
+        \nGmail (com.google.android.gm)
+        \nGoogle Now Launcher (com.google.android.launcher)
+        \nGoogle Search (com.google.android.googlequicksearchbox)
+        \nGoogle Keyboard (com.google.android.inputmethod.latin)
+        \nGoogle+ (com.google.android.apps.plus)
+        \nGoogle Camera (com.google.android.GoogleCamera)
+        \nHangouts (com.google.android.talk)
+        \nInbox (com.google.android.apps.inbox)
+        \nKeep (com.google.android.keep)
+        \nMessenger (com.google.android.apps.messaging)
+        \nMusic (com.google.android.music)
+        \nNewsstand/Magazines (com.google.android.apps.magazines)
+        \nPlay Services (com.google.android.gms)
+        \nTranslate (com.google.android.apps.translate)
+        \nYoutube (com.google.android.youtube)</string>
+    <string name="card_six_title">"third party app support"</string>
+    <string name="card_six_list">Audials + Audials Free (com.audials.paid)
+        \nA Better Camera Unlocked (com.almalence.opencam_plus)
+        \nAlarmSolo (net.maicas.android.alarmsolo)
+        \nApex Launcher (com.anddoes.launcher)
+        \nBetterBatteryStats Play (com.asksven.betterbatterystats)
+        \nBetterBatteryStats XDA (com.asksven.betterbatterystats_xdaedition)
+        \nBlackPlayer EX + BlackPlayer Free (com.kodarkooperativet.blackplayerex)
+        \nTricksterMod (com.bigeyes0x0.trickstermod)
+        \nBzzapp Reminders (com.bzzzapp)
+        \nDelayed Lock (de.j4velin.delayedlock2.trial)
+        \nDropbox + Dropbox Material (com.dropbox.android)
+        \nEbay (com.ebay.mobile)
+        \nFacebook (com.facebook.katana)
+        \nFacebook Messenger (com.facebook.orca)
+        \nGravityBoxLP (com.ceco.lollipop.gravitybox)
+        \nGreenify (com.oasisfeng.greenify)
+        \nGroupMe (com.groupme.android)
+        \nInstagram (com.instagram.android)
+        \nKate Pro (com.perm.kate.pro)
+        \nKernel Adiutor (com.grarak.kerneladiutor)
+        \nKik (kik.android)
+        \nLiveboot (eu.chainfire.liveboot)
+        \nLightflow (com.rageconsulting.android.lightflow)
+        \nMultiROM Manager (com.tassadar.multirommgr)
+        \nMusixMatch (com.musixmatch.android.lyrify)
+        \nNoChromo (com.metalasfook.nochromo)
+        \nNova Launcher + Materinova (com.teslacoilsw.launcher)
+        \nMusixMatch (com.musixmatch.android.lyrify)
+        \nOGYoutube (com.google.android.ogyoutube)
+        \nOpenCamera (net.sourceforge.opencamera)
+        \nPandora (com.pandora.android)
+        \nPandora Patcher (com.hunterx.pandorapatcher)
+        \nPhonograph (com.kabouzeid.gramophone)
+        \nPlayerPro + Trial (com.tbig.playerpro)
+        \nPocket MAL (com.g.pocketmal)
+        \nPushbullet (com.pushbullet.android)
+        \nRecently (eu.chainfire.recently)
+        \nReddit Sync (com.laurencedawson.reddit_sync)
+        \nRelay for Reddit (reddit.news)
+        \nSetCPU (com.mhuang.overclocking)
+        \nShuttle+ (com.simplecity.amp_pro)
+        \nSlack (com.Slack)
+        \nSnapchat (com.snapchat.android)
+        \nSony Sketch (com.sonymobile.sketch)
+        \nSuperSU (eu.chainfire.supersu)
+        \nSwype (com.nuance.swype.dtc)
+        \nTapatalk (com.quoord.tapatalkpro.activity)
+        \nTexdroiderDPI (com.texdroider.texdroider_dpi)
+        \nTextNow (com.enflick.android.TextNow)
+        \nTextSecure (org.thoughtcrime.securesms)
+        \nThreema (ch.threema.app)
+        \nTinfoil for Facebook (com.danvelazco.fbwrapper)
+        \nTitaniumBackup (com.keramidas.TitaniumBackup)
+        \nTricksterMod (com.bigeyes0x0.trickstermod)
+        \nTwitter (com.twitter.android)
+        \nViber (com.viber.voip)
+        \nVindicator OTA (com.mcswainsoftware.vindicator.ota)
+        \nViper4Android (com.vipercn.viper4android_v2)
+        \nWeatherBug (com.aws.android)
+        \nWhatsApp + WhatsApp Material (com.whatsapp)
+        \nWhisperPush (org.whispersystems.whisperpush)
+        \nXDA One (com.xda.one)</string>
 </resources>

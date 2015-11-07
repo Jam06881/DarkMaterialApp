@@ -19,6 +19,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.chummy.jezebel.material.dark.R;
@@ -37,7 +38,7 @@ public class Main extends ActionBarActivity {
 
     public Drawer.Result result = null;
     public AccountHeader.Result headerResult = null;
-    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits, thaTesters;
+    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits, thaTesters, thaWhatIsThemed, thaContactUs, thaLogcat, thaFAQ;
     public String version, drawerVersion;
     public int currentItem;
     private boolean firstrun, enable_features;
@@ -65,6 +66,10 @@ public class Main extends ActionBarActivity {
         thaRequest = getResources().getString(R.string.section_five);
         thaCredits = getResources().getString(R.string.section_seven);
         thaTesters = getResources().getString(R.string.section_eight);
+        thaWhatIsThemed = getResources().getString(R.string.section_nine);
+        thaContactUs = getResources().getString(R.string.section_ten);
+        thaLogcat = getResources().getString(R.string.section_eleven);
+        thaFAQ = getResources().getString(R.string.section_twelve);
 
         drawerVersion = getResources().getString(R.string.version_code);
 
@@ -89,8 +94,14 @@ public class Main extends ActionBarActivity {
                 .addDrawerItems(
                         new PrimaryDrawerItem().withName(thaHome).withIcon(GoogleMaterial.Icon.gmd_home).withIdentifier(1),
                         new DividerDrawerItem(),
-                        new SecondaryDrawerItem().withName(thaTesters).withIcon(GoogleMaterial.Icon.gmd_star).withIdentifier(3),
-                        new SecondaryDrawerItem().withName(thaCredits).withIcon(GoogleMaterial.Icon.gmd_people).withIdentifier(4)
+                        new PrimaryDrawerItem().withName(thaWhatIsThemed).withIcon(GoogleMaterial.Icon.gmd_info).withIdentifier(3),
+                        new PrimaryDrawerItem().withName(thaFAQ).withIcon(GoogleMaterial.Icon.gmd_question_answer).withIdentifier(8),
+                        new DividerDrawerItem(),
+                        new SecondaryDrawerItem().withName(thaCredits).withIcon(GoogleMaterial.Icon.gmd_people).withIdentifier(5),
+                        new SecondaryDrawerItem().withName(thaTesters).withIcon(GoogleMaterial.Icon.gmd_star).withIdentifier(4),
+                        new DividerDrawerItem(),
+                        new SecondaryDrawerItem().withName(thaLogcat).withIcon(GoogleMaterial.Icon.gmd_bug_report).withCheckable(false).withIdentifier(7),
+                        new SecondaryDrawerItem().withName(thaContactUs).withIcon(GoogleMaterial.Icon.gmd_mail).withCheckable(false).withIdentifier(6)
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
@@ -114,10 +125,65 @@ public class Main extends ActionBarActivity {
                                     }
                                     break;
                                 case 3:
-                                    switchFragment(3, thaTesters, "Testers");
+                                    switchFragment(3, thaWhatIsThemed, "WhatIsThemed");
                                     break;
                                 case 4:
-                                    switchFragment(4, thaCredits, "Credits");
+                                    switchFragment(4, thaTesters, "Testers");
+                                    break;
+                                case 5:
+                                    switchFragment(5, thaCredits, "Credits");
+                                    break;
+                                case 6:
+                                    StringBuilder emailBuilder = new StringBuilder();
+                                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + getResources().getString(R.string.email_id)));
+                                    if (!isAppInstalled("org.cyanogenmod.theme.chooser")) {
+                                        if (!isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
+                                            intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject));
+                                        } else {
+                                            intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject_rro));
+                                        }
+                                    } else {
+                                        intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject_cm));
+                                    }
+                                    emailBuilder.append("\n \n \nOS Version: " + System.getProperty("os.version") + "(" + Build.VERSION.INCREMENTAL + ")");
+                                    emailBuilder.append("\nOS API Level: " + Build.VERSION.SDK_INT + " (" + Build.VERSION.RELEASE + ") " + "[" + Build.ID + "]");
+                                    emailBuilder.append("\nDevice: " + Build.DEVICE);
+                                    emailBuilder.append("\nManufacturer: " + Build.MANUFACTURER);
+                                    emailBuilder.append("\nModel (and Product): " + Build.MODEL + " (" + Build.PRODUCT + ")");
+                                    if (!isAppInstalled("org.cyanogenmod.theme.chooser")) {
+                                        if (!isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
+                                            emailBuilder.append("\nTheme Engine: Not Available");
+                                        } else {
+                                            emailBuilder.append("\nTheme Engine: Layers Manager (RRO)");
+                                        }
+                                    } else {
+                                        emailBuilder.append("\nTheme Engine: CyanogenMod Theme Engine");
+                                    }
+                                    PackageInfo appInfo = null;
+                                    try {
+                                        appInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+                                    } catch (PackageManager.NameNotFoundException e) {
+                                        e.printStackTrace();
+                                    }
+                                    emailBuilder.append("\nApp Version Name: " + appInfo.versionName);
+                                    emailBuilder.append("\nApp Version Code: " + appInfo.versionCode);
+
+                                    intent.putExtra(Intent.EXTRA_TEXT, emailBuilder.toString());
+                                    startActivity(Intent.createChooser(intent, (getResources().getString(R.string.send_title))));
+                                    break;
+                                case 7:
+                                    if (!isAppInstalled("com.nolanlawson.logcat")) {
+                                        Intent logcat = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_link_logcat)));
+                                        startActivity(logcat);
+                                    } else {
+                                        Intent intent_logcat = getPackageManager().getLaunchIntentForPackage("com.nolanlawson.logcat");
+                                        Toast toast = Toast.makeText(getApplicationContext(), getResources().getString(R.string.logcat_toast), Toast.LENGTH_LONG);
+                                        toast.show();
+                                        startActivity(intent_logcat);
+                                    }
+                                    break;
+                                case 8:
+                                    switchFragment(8, thaFAQ, "FAQ");
                                     break;
                             }
                         }
