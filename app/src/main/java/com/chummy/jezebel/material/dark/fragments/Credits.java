@@ -14,9 +14,6 @@ import android.widget.TextView;
 
 import com.chummy.jezebel.material.dark.R;
 
-/**
- * Created by Jahir on 08/03/2015.
- */
 public class Credits extends Fragment {
 
     private Context context;
@@ -35,85 +32,6 @@ public class Credits extends Fragment {
 
         ActionBar toolbar = ((ActionBarActivity) context).getSupportActionBar();
         toolbar.setTitle(R.string.section_seven);
-
-        /*TextView authordesc = (TextView) root.findViewById(R.id.dashauthor_info);
-        authordesc.setText(Html.fromHtml(getString(R.string.dashboard_author_desc)));
-
-        TextView designerdesc = (TextView) root.findViewById(R.id.dev_card_content);
-        designerdesc.setText(Html.fromHtml(getString(R.string.iconpack_designer_desc)));
-
-        /*TextView fablib = (TextView) root.findViewById(R.id.libtwo_content);
-        fablib.setText(Html.fromHtml(getString(R.string.fab_desc)));
-
-        TextView materialdialogslib = (TextView) root.findViewById(R.id.libthree_content);
-        materialdialogslib.setText(Html.fromHtml(getString(R.string.materialdialogs_desc)));
-
-        TextView materialdrawerlib = (TextView) root.findViewById(R.id.libfour_content);
-        materialdrawerlib.setText(Html.fromHtml(getString(R.string.materialdrawer_desc)));
-
-        TextView picassolib = (TextView) root.findViewById(R.id.libfive_content);
-        picassolib.setText(Html.fromHtml(getString(R.string.picasso_desc)));
-
-        TextView pkiconrequestlib = (TextView) root.findViewById(R.id.libseven_content);
-        pkiconrequestlib.setText(Html.fromHtml(getString(R.string.pkrequestmanager_desc)));
-
-        TextView okhttplib = (TextView) root.findViewById(R.id.libeight_content);
-        okhttplib.setText(Html.fromHtml(getString(R.string.okhttp_desc)));
-
-
-        CardView libtwocard = (CardView) root.findViewById(R.id.libtwocard);
-        libtwocard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent libtwoweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.fab_web)));
-                startActivity(libtwoweb);
-            }
-        });
-
-        CardView libthreecard = (CardView) root.findViewById(R.id.libthreecard);
-        libthreecard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent libthreeweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.materialdialogs_web)));
-                startActivity(libthreeweb);
-            }
-        });
-
-        CardView libfourcard = (CardView) root.findViewById(R.id.libfourcard);
-        libfourcard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent libfourweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.materialdrawer_web)));
-                startActivity(libfourweb);
-            }
-        });
-
-        CardView libfivecard = (CardView) root.findViewById(R.id.libfivecard);
-        libfivecard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent libfiveweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.picasso_web)));
-                startActivity(libfiveweb);
-            }
-        });
-
-        CardView libsevencard = (CardView) root.findViewById(R.id.libsevencard);
-        libsevencard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent libsevenweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.pkrequestmanager_web)));
-                startActivity(libsevenweb);
-            }
-        });
-
-        CardView libeightcard = (CardView) root.findViewById(R.id.libeightcard);
-        libeightcard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent libeightweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.okhttp_web)));
-                startActivity(libeightweb);
-            }
-        });*/
 
         TextView web = (TextView) root.findViewById(R.id.web_button);
         web.setOnClickListener(new View.OnClickListener() {
@@ -204,24 +122,6 @@ public class Credits extends Fragment {
                 startActivity(devgplus);
             }
         });
-
-        /*TextView dashauthorweb = (TextView) root.findViewById(R.id.dashauthor_web_button);
-        dashauthorweb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent dashauthorweb = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dashboard_author_link)));
-                startActivity(dashauthorweb);
-            }
-        });
-
-        TextView dashauthorgoogleplus = (TextView) root.findViewById(R.id.dashauthor_gplus_button);
-        dashauthorgoogleplus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent dashauthorgplus = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.dashboard_author_gplus)));
-                startActivity(dashauthorgplus);
-            }
-        });*/
 
         return root;
     }

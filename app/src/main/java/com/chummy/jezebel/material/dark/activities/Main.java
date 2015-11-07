@@ -88,8 +88,6 @@ public class Main extends ActionBarActivity {
                 .withHeaderDivider(false)
                 .addDrawerItems(
                         new PrimaryDrawerItem().withName(thaHome).withIcon(GoogleMaterial.Icon.gmd_home).withIdentifier(1),
-                        /*new PrimaryDrawerItem().withName(thaPreviews).withIcon(GoogleMaterial.Icon.gmd_palette).withIdentifier(2),*/
-                        /*new PrimaryDrawerItem().withName(thaApply).withIcon(GoogleMaterial.Icon.gmd_loyalty).withIdentifier(3),*/
                         new DividerDrawerItem(),
                         new SecondaryDrawerItem().withName(thaTesters).withIcon(GoogleMaterial.Icon.gmd_star).withIdentifier(3),
                         new SecondaryDrawerItem().withName(thaCredits).withIcon(GoogleMaterial.Icon.gmd_people).withIdentifier(4)
@@ -104,8 +102,6 @@ public class Main extends ActionBarActivity {
                                 case 1:
                                     switchFragment(1, thaApp, "Home");
                                     break;
-                                /* case 2: switchFragment(2, thaPreviews, "Previews"); break;*/
-                                /* case 3: switchFragment(3, thaApply, "Apply"); break; */
                                 case 2:
                                     ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
                                     NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
@@ -117,7 +113,6 @@ public class Main extends ActionBarActivity {
                                         showNotConnectedDialog();
                                     }
                                     break;
-                                /*case 5: switchFragment(5, thaRequest, "Request"); break;*/
                                 case 3:
                                     switchFragment(3, thaTesters, "Testers");
                                     break;
