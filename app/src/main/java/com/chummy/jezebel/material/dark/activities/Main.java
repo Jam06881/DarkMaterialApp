@@ -37,7 +37,7 @@ public class Main extends ActionBarActivity {
 
     public Drawer.Result result = null;
     public AccountHeader.Result headerResult = null;
-    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits;
+    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits, thaTesters;
     public String version, drawerVersion;
     public int currentItem;
     private boolean firstrun, enable_features;
@@ -64,6 +64,7 @@ public class Main extends ActionBarActivity {
         thaWalls = getResources().getString(R.string.section_four);
         thaRequest = getResources().getString(R.string.section_five);
         thaCredits = getResources().getString(R.string.section_seven);
+        thaTesters = getResources().getString(R.string.section_eight);
 
         drawerVersion = getResources().getString(R.string.version_code);
 
@@ -90,7 +91,7 @@ public class Main extends ActionBarActivity {
                         /*new PrimaryDrawerItem().withName(thaPreviews).withIcon(GoogleMaterial.Icon.gmd_palette).withIdentifier(2),*/
                         /*new PrimaryDrawerItem().withName(thaApply).withIcon(GoogleMaterial.Icon.gmd_loyalty).withIdentifier(3),*/
                         new DividerDrawerItem(),
-                        new SecondaryDrawerItem().withName(thaCredits).withIdentifier(3)
+                        new SecondaryDrawerItem().withName(thaTesters).withIcon(GoogleMaterial.Icon.gmd_star).withIdentifier(3),
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
@@ -117,7 +118,10 @@ public class Main extends ActionBarActivity {
                                     break;
                                 /*case 5: switchFragment(5, thaRequest, "Request"); break;*/
                                 case 3:
-                                    switchFragment(3, thaCredits, "Credits");
+                                    switchFragment(3, thaTesters, "Testers");
+                                    break;
+                                case 4:
+                                    switchFragment(4, thaCredits, "Credits");
                                     break;
                             }
                         }

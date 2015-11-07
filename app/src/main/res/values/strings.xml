@@ -35,6 +35,7 @@
     <!--Main Screen Cards-->
     <string name="welcome_title">welcome to lollipop, darkened!</string>
     <string name="theme_description">\ndark material is cm12/cm12.1\'s first and original dark theme, with biweekly design updates and bug fixes - installed by more than 300,000 users with over 65,000 active users! having over 145 original app overlays, this is the most complete theme available on the play store!</string>
+    <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with biweekly design updates and bug fixes - installed by more than 400,000 users with over 75,000 active users! having over 145 original app overlays, this is the most complete theme available on the play store! now available for both cmte and layers for lollipop and marshmallow devices!</string>
 
     <string name="play_card_title">chummy development team</string>
     <string name="play_card_content">"if you haven't already, please check out our other themes and boot animations on Play!"</string>
@@ -81,10 +82,19 @@
     <string name="section_five">Icon Request</string>
     <string name="section_six">More Apps</string>
     <string name="section_seven">About The Team</string>
+    <string name="section_eight">Testers &amp; Credits</string>
 
     <!--Wallpapers Activity-->
     <string name="title_activity_detailed_wallpaper">Detailed Wallpaper</string>
     <string name="title_ab_detailed_wallpaper">""</string>
+
+    <!--Testers Activity-->
+    <string name="title_testers">testers &amp; credits</string>
+    <string name="cdt_description_testers">chummy development team takes a lot of consideration to our beta testers and contributors to our theme. the people listed below have tested for many hours to make dark material such a wonderful theme that we all love!\n\nwe hope to work with much more people who are willing to actively test or develop fixes for any issues that may come up during build!\n\nthank you everyone who worked on this project with us!</string>
+    <string name="testers_title">official list of beta testers</string>
+    <string name="contributor_title">official list of contributors</string>
+    <string name="list_of_testers">"Akki Mahajan (Androizer)\nVignesh Ravi (BATVIC)\n</string>
+    <string name="list_of_contributors">"Pneuma Anonymous (Pneuma1985)\nManuel Möllmann (_moelle)\nMark Bencze (markbencze\nJon West (electrikjesus)\nVivek Neel (Vivek_Neel\nTeddy Tan (ted77usa)\nGiulio Fagioli &amp; Lorenzo Salani\nJahir Fiquitiva (jahirfiquitiva)\nFranck Rohée (franzyroy)\nKevin Dixson (Punchieo)"</string>
 
     <!--Strings for Dropdown Menu & Requests-->
     <string name="share">Share this theme!</string>
