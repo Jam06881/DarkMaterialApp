@@ -170,6 +170,18 @@ public class Main extends ActionBarActivity {
         return true;
     }
 
+    private boolean isAppInstalled(String uri) {
+        PackageManager pm = getPackageManager();
+        boolean installed = false;
+        try {
+            pm.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
+            installed = true;
+        } catch (PackageManager.NameNotFoundException e) {
+            installed = false;
+        }
+        return installed;
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         super.onOptionsItemSelected(item);
@@ -185,15 +197,30 @@ public class Main extends ActionBarActivity {
 
             case R.id.sendemail:
                 StringBuilder emailBuilder = new StringBuilder();
-
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + getResources().getString(R.string.email_id)));
-                intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject));
-
+                if (!isAppInstalled("org.cyanogenmod.theme.chooser")) {
+                    if (!isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
+                        intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject));
+                    } else {
+                        intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject_rro));
+                    }
+                } else {
+                    intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject_cm));
+                }
                 emailBuilder.append("\n \n \nOS Version: " + System.getProperty("os.version") + "(" + Build.VERSION.INCREMENTAL + ")");
-                emailBuilder.append("\nOS API Level: " + Build.VERSION.SDK_INT);
+                emailBuilder.append("\nOS API Level: " + Build.VERSION.SDK_INT + " (" + Build.VERSION.RELEASE + ") " + "[" + Build.ID + "]");
                 emailBuilder.append("\nDevice: " + Build.DEVICE);
                 emailBuilder.append("\nManufacturer: " + Build.MANUFACTURER);
                 emailBuilder.append("\nModel (and Product): " + Build.MODEL + " (" + Build.PRODUCT + ")");
+                if (!isAppInstalled("org.cyanogenmod.theme.chooser")) {
+                    if (!isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
+                        emailBuilder.append("\nTheme Engine: Not Available");
+                    } else {
+                        emailBuilder.append("\nTheme Engine: Layers Manager (RRO)");
+                    }
+                } else {
+                    emailBuilder.append("\nTheme Engine: CyanogenMod Theme Engine");
+                }
                 PackageInfo appInfo = null;
                 try {
                     appInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
