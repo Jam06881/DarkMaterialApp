@@ -4,7 +4,7 @@
 
     <uses-feature
         android:name="org.cyanogenmod.theme"
-        android:required="true" />
+        android:required="false" />
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />

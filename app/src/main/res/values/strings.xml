@@ -35,7 +35,6 @@
 
     <!--Main Screen Cards-->
     <string name="welcome_title">welcome to lollipop, darkened!</string>
-    <string name="theme_description">\ndark material is cm12/cm12.1\'s first and original dark theme, with biweekly design updates and bug fixes - installed by more than 300,000 users with over 65,000 active users! having over 145 original app overlays, this is the most complete theme available on the play store!</string>
     <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with biweekly design updates and bug fixes - installed by more than 400,000 users with over 75,000 active users! having over 145 original app overlays, this is the most complete theme available on the play store! now available for both cmte and layers for lollipop and marshmallow devices!</string>
 
     <string name="play_card_title">chummy development team</string>
