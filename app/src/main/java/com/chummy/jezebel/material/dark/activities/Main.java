@@ -38,7 +38,7 @@ public class Main extends ActionBarActivity {
 
     public Drawer.Result result = null;
     public AccountHeader.Result headerResult = null;
-    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits, thaTesters, thaWhatIsThemed, thaContactUs, thaLogcat, thaFAQ;
+    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits, thaTesters, thaWhatIsThemed, thaContactUs, thaLogcat, thaFAQ, thaHelp, thaAbout;
     public String version, drawerVersion;
     public int currentItem;
     private boolean firstrun, enable_features;
@@ -70,6 +70,8 @@ public class Main extends ActionBarActivity {
         thaContactUs = getResources().getString(R.string.section_ten);
         thaLogcat = getResources().getString(R.string.section_eleven);
         thaFAQ = getResources().getString(R.string.section_twelve);
+        thaHelp = getResources().getString(R.string.section_thirteen);
+        thaAbout = getResources().getString(R.string.section_fourteen);
 
         drawerVersion = getResources().getString(R.string.version_code);
 
@@ -94,14 +96,17 @@ public class Main extends ActionBarActivity {
                 .addDrawerItems(
                         new PrimaryDrawerItem().withName(thaHome).withIcon(GoogleMaterial.Icon.gmd_home).withIdentifier(1),
                         new DividerDrawerItem(),
-                        new PrimaryDrawerItem().withName(thaWhatIsThemed).withIcon(GoogleMaterial.Icon.gmd_info).withIdentifier(3),
+                        new PrimaryDrawerItem().withName(thaAbout).withIcon(GoogleMaterial.Icon.gmd_info_outline).withIdentifier(10),
+                        new PrimaryDrawerItem().withName(thaWhatIsThemed).withIcon(GoogleMaterial.Icon.gmd_warning).withIdentifier(3),
                         new PrimaryDrawerItem().withName(thaFAQ).withIcon(GoogleMaterial.Icon.gmd_question_answer).withIdentifier(8),
                         new DividerDrawerItem(),
                         new SecondaryDrawerItem().withName(thaCredits).withIcon(GoogleMaterial.Icon.gmd_people).withIdentifier(5),
                         new SecondaryDrawerItem().withName(thaTesters).withIcon(GoogleMaterial.Icon.gmd_star).withIdentifier(4),
                         new DividerDrawerItem(),
                         new SecondaryDrawerItem().withName(thaLogcat).withIcon(GoogleMaterial.Icon.gmd_bug_report).withCheckable(false).withIdentifier(7),
-                        new SecondaryDrawerItem().withName(thaContactUs).withIcon(GoogleMaterial.Icon.gmd_mail).withCheckable(false).withIdentifier(6)
+                        new SecondaryDrawerItem().withName(thaContactUs).withIcon(GoogleMaterial.Icon.gmd_mail).withCheckable(false).withIdentifier(6),
+                        new DividerDrawerItem(),
+                        new SecondaryDrawerItem().withName(thaHelp).withIcon(GoogleMaterial.Icon.gmd_help).withCheckable(false).withIdentifier(9)
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
@@ -184,6 +189,12 @@ public class Main extends ActionBarActivity {
                                     break;
                                 case 8:
                                     switchFragment(8, thaFAQ, "FAQ");
+                                    break;
+                                case 9:
+                                    switchFragment(9, thaHelp, "Help");
+                                    break;
+                                case 10:
+                                    switchFragment(10, thaAbout, "About");
                                     break;
                             }
                         }

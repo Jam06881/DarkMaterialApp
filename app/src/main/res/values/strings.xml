@@ -35,7 +35,7 @@
 
     <!--Main Screen Cards-->
     <string name="welcome_title">welcome to lollipop, darkened!</string>
-    <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with biweekly design updates and bug fixes - installed by more than 400,000 users with over 75,000 active users! having over 145 original app overlays, this is the most complete theme available on the play store! now available for both cmte and layers for lollipop and marshmallow devices!</string>
+    <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with monthly design updates and bug fixes - installed by more than 400,000 users with over 75,000 active users on play! having over 145 original app overlays, this is the most complete theme available on the play store!\n\nnow available for both cmte and layers for lollipop and marshmallow devices!</string>
 
     <string name="play_card_title">chummy development team</string>
     <string name="play_card_content">"if you haven't already, please check out our other themes and boot animations on Play!"</string>
@@ -87,7 +87,14 @@
     <string name="section_ten">Contact Us</string>
     <string name="section_eleven">Take LogCat</string>
     <string name="section_twelve">Frequently Asked Questions</string>
+    <string name="section_thirteen">Help</string>
+    <string name="section_fourteen">About Dark Material</string>
 
+    <!--About Dark Material-->
+    <string name="about_title">why \'dark material\'?</string>
+    <string name="about_description">\nto understand why this theme doesn\'t follow google\'s traditional "material dark" design with dark teal and/or blue grey, i will briefly explain.
+    \n\nthis theme wasn\'t based on google\'s material style, but was mainly influenced by the "tinted status bar" mod\'s results, where it completely made the action bar into one fused item. i really liked this design, which made the system more minimal as it had two layers to look at, rather than 3 (action bar primary, action bar primary dark (status bar darkened color) and the fragment layer (the interacting area)).
+    \n\nthe fact that i named this theme "dark material" over "material dark" was because i wanted to depict a dark, physical metamorphic rock - "slate", and it\'s color. as the color scheme of this theme is mainly dark (black, grey and white text), i added the word "dark" in front of my interpretation of "material" hence the title "dark material". themes that follow google\'s material dark, should show up as "material dark" to ensure consistency (see google keyboard settings for reference)</string>
     <!--Wallpapers Activity-->
     <string name="title_activity_detailed_wallpaper">Detailed Wallpaper</string>
     <string name="title_ab_detailed_wallpaper">""</string>
@@ -200,6 +207,12 @@
     <string name="dev_gplus_link_khizar">"https://plus.google.com/u/0/+KhizarMundia/posts"</string>
     <string name="dev_link_fahad">"http://forum.xda-developers.com/member.php?u=5444625"</string>
     <string name="dev_gplus_link_fahad">"https://plus.google.com/u/0/103585729111608705481/posts"</string>
+
+    <!--Help-->
+    <string name="help_q_1">why does this app need root?</string>
+    <string name="help_a_1">as android requires root for you to use certain permissions, the three buttons on the home screen include \'restart systemui\' and \'restart device\', which require root access.</string>
+    <string name="help_q_2">why does this app have so many permissions?</string>
+    <string name="help_a_2">the app comes with:\na wallpaper downloading section (network permissions)\nafter download the wallpaper can be immediately set as wallpaper (set wallpaper permission)\nwallpaper storage on internal storage (modify/delete contents permission).</string>
 
     <!--FAQ-->
     <string name="faq_q_1">esfileexplorer unreadable? (cmte/layers)</string>
