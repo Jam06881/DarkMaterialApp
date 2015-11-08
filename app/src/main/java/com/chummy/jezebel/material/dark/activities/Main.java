@@ -147,10 +147,14 @@ public class Main extends ActionBarActivity {
                                     StringBuilder emailBuilder = new StringBuilder();
                                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + getResources().getString(R.string.email_id)));
                                     if (!isAppInstalled("org.cyanogenmod.theme.chooser")) {
-                                        if (!isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
-                                            intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject));
+                                        if (!isAppInstalled("com.cyngn.theme.chooser")) {
+                                            if (!isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
+                                                intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject));
+                                            } else {
+                                                intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject_rro));
+                                            }
                                         } else {
-                                            intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject_rro));
+                                            intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject_cos));
                                         }
                                     } else {
                                         intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject_cm));
@@ -161,10 +165,14 @@ public class Main extends ActionBarActivity {
                                     emailBuilder.append("\nManufacturer: " + Build.MANUFACTURER);
                                     emailBuilder.append("\nModel (and Product): " + Build.MODEL + " (" + Build.PRODUCT + ")");
                                     if (!isAppInstalled("org.cyanogenmod.theme.chooser")) {
-                                        if (!isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
-                                            emailBuilder.append("\nTheme Engine: Not Available");
+                                        if (!isAppInstalled("com.cyngn.theme.chooser")) {
+                                            if (!isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
+                                                emailBuilder.append("\nTheme Engine: Not Available");
+                                            } else {
+                                                emailBuilder.append("\nTheme Engine: Layers Manager (RRO)");
+                                            }
                                         } else {
-                                            emailBuilder.append("\nTheme Engine: Layers Manager (RRO)");
+                                            emailBuilder.append("\nTheme Engine: Cyanogen OS Theme Engine");
                                         }
                                     } else {
                                         emailBuilder.append("\nTheme Engine: CyanogenMod Theme Engine");
@@ -300,10 +308,14 @@ public class Main extends ActionBarActivity {
                 StringBuilder emailBuilder = new StringBuilder();
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:" + getResources().getString(R.string.email_id)));
                 if (!isAppInstalled("org.cyanogenmod.theme.chooser")) {
-                    if (!isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
-                        intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject));
+                    if (!isAppInstalled("com.cyngn.theme.chooser")) {
+                        if (!isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
+                            intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject));
+                        } else {
+                            intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject_rro));
+                        }
                     } else {
-                        intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject_rro));
+                        intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject_cos));
                     }
                 } else {
                     intent.putExtra(Intent.EXTRA_SUBJECT, getResources().getString(R.string.email_subject_cm));
@@ -314,10 +326,14 @@ public class Main extends ActionBarActivity {
                 emailBuilder.append("\nManufacturer: " + Build.MANUFACTURER);
                 emailBuilder.append("\nModel (and Product): " + Build.MODEL + " (" + Build.PRODUCT + ")");
                 if (!isAppInstalled("org.cyanogenmod.theme.chooser")) {
-                    if (!isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
-                        emailBuilder.append("\nTheme Engine: Not Available");
+                    if (!isAppInstalled("com.cyngn.theme.chooser")) {
+                        if (!isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
+                            emailBuilder.append("\nTheme Engine: Not Available");
+                        } else {
+                            emailBuilder.append("\nTheme Engine: Layers Manager (RRO)");
+                        }
                     } else {
-                        emailBuilder.append("\nTheme Engine: Layers Manager (RRO)");
+                        emailBuilder.append("\nTheme Engine: Cyanogen OS Theme Engine");
                     }
                 } else {
                     emailBuilder.append("\nTheme Engine: CyanogenMod Theme Engine");

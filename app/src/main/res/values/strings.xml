@@ -31,6 +31,7 @@
     <string name="email_id">chummydevteam@gmail.com</string>
     <string name="email_subject">"Dark Material - Theme UI (From the App)"</string>
     <string name="email_subject_cm">"Dark Material - CM12/CM12.1/13 Theme UI (From the App)"</string>
+    <string name="email_subject_cos">"Dark Material - COS12/COS12.1 Theme UI (From the App)"</string>
     <string name="email_subject_rro">"Dark Material - Layers Theme UI (From the App)"</string>
 
     <!--Main Screen Cards-->
