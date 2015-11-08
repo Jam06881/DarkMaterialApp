@@ -1,5 +1,6 @@
 package com.chummy.jezebel.material.dark.activities;
 
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -201,12 +202,19 @@ public class Main extends ActionBarActivity {
                                     switchFragment(10, thaAbout, "About");
                                     break;
                                 case 11:
+                                    Intent launch_whicons = new Intent("android.intent.action.MAIN");
+                                    launch_whicons.setComponent(new ComponentName("org.cyanogenmod.theme.chooser", "org.cyanogenmod.theme.chooser.ChooserActivity"));
+                                    launch_whicons.putExtra("pkgName", "com.whicons.iconpack");
                                     Intent devPlay = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_whicons)));
                                     Intent intent_whicons = getPackageManager().getLaunchIntentForPackage("com.whicons.iconpack");
                                     if (intent_whicons == null) {
                                         startActivity(devPlay);
                                     } else {
-                                        startActivity(intent_whicons);
+                                        if (isAppInstalled("org.cyanogenmod.theme.chooser")) {
+                                            startActivity(launch_whicons);
+                                        } else {
+                                            startActivity(intent_whicons);
+                                        }
                                     }
                                     break;
                                 case 12:
