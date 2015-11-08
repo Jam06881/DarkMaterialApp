@@ -43,11 +43,11 @@ public class Home extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent devPlay = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_whicons)));
-                Intent intent_colors = getActivity().getPackageManager().getLaunchIntentForPackage("com.whicons.iconpack");
-                if (intent_colors == null) {
+                Intent intent_whicons = getActivity().getPackageManager().getLaunchIntentForPackage("com.whicons.iconpack");
+                if (intent_whicons == null) {
                     startActivity(devPlay);
                 } else {
-                    startActivity(intent_colors);
+                    startActivity(intent_whicons);
                 }
             }
         });

@@ -38,7 +38,7 @@ public class Main extends ActionBarActivity {
 
     public Drawer.Result result = null;
     public AccountHeader.Result headerResult = null;
-    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits, thaTesters, thaWhatIsThemed, thaContactUs, thaLogcat, thaFAQ, thaHelp, thaAbout;
+    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits, thaTesters, thaWhatIsThemed, thaContactUs, thaLogcat, thaFAQ, thaHelp, thaAbout, thaIconPack;
     public String version, drawerVersion;
     public int currentItem;
     private boolean firstrun, enable_features;
@@ -72,6 +72,7 @@ public class Main extends ActionBarActivity {
         thaFAQ = getResources().getString(R.string.section_twelve);
         thaHelp = getResources().getString(R.string.section_thirteen);
         thaAbout = getResources().getString(R.string.section_fourteen);
+        thaIconPack = getResources().getString(R.string.section_fifteen);
 
         drawerVersion = getResources().getString(R.string.version_code);
 
@@ -95,6 +96,7 @@ public class Main extends ActionBarActivity {
                 .withHeaderDivider(false)
                 .addDrawerItems(
                         new PrimaryDrawerItem().withName(thaHome).withIcon(GoogleMaterial.Icon.gmd_home).withIdentifier(1),
+                        new PrimaryDrawerItem().withName(thaIconPack).withIcon(GoogleMaterial.Icon.gmd_picture_in_picture).withCheckable(false).withIdentifier(11),
                         new DividerDrawerItem(),
                         new PrimaryDrawerItem().withName(thaAbout).withIcon(GoogleMaterial.Icon.gmd_info_outline).withIdentifier(10),
                         new PrimaryDrawerItem().withName(thaWhatIsThemed).withIcon(GoogleMaterial.Icon.gmd_warning).withIdentifier(3),
@@ -195,6 +197,15 @@ public class Main extends ActionBarActivity {
                                     break;
                                 case 10:
                                     switchFragment(10, thaAbout, "About");
+                                    break;
+                                case 11:
+                                    Intent devPlay = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_whicons)));
+                                    Intent intent_whicons = getPackageManager().getLaunchIntentForPackage("com.whicons.iconpack");
+                                    if (intent_whicons == null) {
+                                        startActivity(devPlay);
+                                    } else {
+                                        startActivity(intent_whicons);
+                                    }
                                     break;
                             }
                         }

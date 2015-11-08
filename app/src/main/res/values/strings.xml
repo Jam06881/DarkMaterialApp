@@ -89,6 +89,7 @@
     <string name="section_twelve">Frequently Asked Questions</string>
     <string name="section_thirteen">Help</string>
     <string name="section_fourteen">About Dark Material</string>
+    <string name="section_fifteen">Icon Pack</string>
 
     <!--About Dark Material-->
     <string name="about_title">why \'dark material\'?</string>
