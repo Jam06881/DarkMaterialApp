@@ -1,8 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string-array name="newchangelog">
+
+    </string-array>
     <string-array name="fullchangelog">
         <item>@array/v106</item>
         <item>@array/v105</item>
+        <item>@array/v104</item>
+        <item>@array/v103</item>
+        <item>@array/v102</item>
+        <item>@array/v101</item>
+        <item>@array/v100</item>
+        <item>@array/v99</item>
+        <item>@array/v98</item>
+        <item>@array/v97</item>
+        <item>@array/v96</item>
+        <item>@array/v95</item>
+        <item>@array/v94</item>
+        <item>@array/v93</item>
+        <item>@array/v92</item>
+        <item>@array/v89</item>
+        <item>@array/v88</item>
+        <item>@array/v87</item>
+        <item>@array/v86</item>
+        <item>@array/v85</item>
+        <item>@array/v84</item>
+        <item>@array/v83</item>
+        <item>@array/v82</item>
+        <item>@array/v81</item>
+        <item>@array/v80</item>
+        <item>@array/v79</item>
+        <item>@array/v78</item>
+        <item>@array/v77</item>
+        <item>@array/v76</item>
+        <item>@array/v74</item>
+        <item>@array/v73</item>
+        <item>@array/v65</item>
+        <item>@array/v64</item>
+        <item>@array/v63</item>
+        <item>@array/v62</item>
+        <item>@array/v59</item>
+        <item>@array/v58</item>
+        <item>@array/v57</item>
+        <item>@array/v54</item>
+        <item>@array/v53</item>
+        <item>@array/v50</item>
+        <item>@array/v49</item>
+        <item>@array/v48</item>
+        <item>@array/v47</item>
+        <item>@array/v46</item>
     </string-array>
     <string-array name="v106">
         <item>hyaku roku &#8212; final build</item>
@@ -67,5 +113,820 @@
         <item>Fix BetterBatteryStats status bar color.</item>
         <item>Fix Google Play Games Settings status bar.</item>
         <item>Fix unreadable Google Play Games progress circle.</item>
+    </string-array>
+    <string-array name="v104">
+        <item>hyaku yon</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Revert back to previous fonts to prevent switching problems.</item>
+        <item>Added Hangouts 4.0 themed overlay</item>
+        <item>DESIGN: Make launcher panels more simple.</item>
+        <item>Shorten the toast frame as requested.</item>
+        <item>Adjust framework text for foreground text in Legacy theme.</item>
+        <item>Squash, compress and optimize all images in the overlay folder.</item>
+        <item>Fix Chrome Stable/Beta/Dev bookmarks invisible text.</item>
+        <item>Update project files and fix build (rebase on 5.1.1 framework).</item>
+        <item>Fix YouTube Upload activity black on black buttons.</item>
+        <item>Update README.md for contributors to the private repository.</item>
+        <item>Change accent color in Tapatalk to allow visibility of Following buttons.</item>
+        <item>Add support for ES File Explorer 4.0 on top of 3.0.</item>
+        <item>Add themed Tapatalk v5.1.1 inverted overlay.</item>
+        <item>Add inverted Dialer hint icons for Speed Dial/Recents/Contacts.</item>
+        <item>DESIGN: Update all FABs and Circular Drawables.</item>
+        <item>DESIGN: Update all search frames to a more thin and sleek design.</item>
+        <item>Update Google Play Music Premium Activity icons, text and dialog colors.</item>
+        <item>Add missing Google icons in Play Store thanks to Kevin Dixson.</item>
+        <item>Add new Holo Dark and Holo Light framework drawables.</item>
+        <item>Update Facebook Messenger Overlay with more drawables.</item>
+        <item>Fix WhatsApp message waiting icon invisible.</item>
+        <item>Change white value in WhatsApp to fix visibility.</item>
+        <item>Add themed ES File Explorer 3.0 overlay.</item>
+        <item>Add themed OGYoutube Overlay for Settings and invisible text colors.</item>
+        <item>Fix BlackPlayerEX\'s Notification Background.</item>
+        <item>Fix Bluetooth XML comments.</item>
+        <item>Fix white on white on Google Wallet Dialogs.</item>
+        <item>Update MultiROM Manager Overlay.</item>
+        <item>Update previously untouched SystemUI navigation buttons (Bliss targeted).</item>
+        <item>Fix up Calculator status bar on ROMs with TRDS (Temasek targeted).</item>
+        <item>Fix Holo Keyboard key hint black on black.</item>
+        <item>Add Google Play Games Card color text.</item>
+        <item>Fix Google Play Games Sign Up Dialog.</item>
+        <item>Officially drop support for modded WhatsApp variants.</item>
+        <item>Update Chrome Overlay to Chrome Beta Overlay.</item>
+        <item>Update Google Keep Overlay to add missing + icon in drawer.</item>
+        <item>Update Settings icon names.</item>
+        <item>Add support for CRDroid and Team EOS Settings Icons.</item>
+        <item>Re-add Appcompat themes for styles in Gmail to combat Force Closes.</item>
+        <item>Remove Recents Clear All Icon.</item>
+        <item>Say NO! to rounded corners in Settings (Bliss targeted).</item>
+    </string-array>
+    <string-array name="v103">
+        <item>Add icon recommendations into the app - Whicons!</item>
+        <item>Theme Audials and Audials Pro Notification Text</item>
+        <item>Remove Android Wear from overlays temporarily due to no physical device to test on.</item>
+        <item>Fix invisible missed call icon in Hangouts.</item>
+        <item>Theme Relay for Reddit (Free and Paid)\'s Night AMOLED mode colors.</item>
+        <item>Fix Google Play Music Premium section card background.</item>
+        <item>Clean up Facebook overlay to target less force closes.</item>
+        <item>Add TeslaUnread Overlay.</item>
+        <item>Add GroupMe Overlay - this fixes notification text as well.</item>
+        <item>Theme BlackPlayer and BlackPlayer EX notification control colors.</item>
+        <item>Fix up internal comments in Settings.</item>
+        <item>Theme WeatherBug notification background color.</item>
+        <item>Theme PlayerPro Trial and PlayerPro notification text.</item>
+        <item>Re-add themed YouTube overlay.</item>
+        <item>Theme Settings\' Dual SIM options icon.</item>
+        <item>Update CM Theme Engine Iconography.</item>
+        <item>Tweak Fastscroll handle color.</item>
+        <item>Fix unreadable Contacts text "Frequently Contacted" and unlink it from the actionbar color.</item>
+        <item>Remove DeviceDefault InputMethod style override, fixing transparent full screen keyboard.</item>
+        <item>Rebase the entire theme on a Windows 10 Pro machine.</item>
+    </string-array>
+    <string-array name="v102">
+        <item>hyaku ni &#8212; STABLE/FINAL</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Change elevation value of action bar, making the design look more flat.</item>
+        <item>Fix Google Search Parking Pin Icon</item>
+        <item>Revert light grey Contacts/Dialer tile colors back to default colors, however using a fused actionbar style.</item>
+    </string-array>
+    <string-array name="v101">
+        <item>hyaku ichi</item>
+        <item>Use light grey as Contact tile colors for Dialer and Contacts - to maximize readability.</item>
+        <item>Fix Dropbox Icon for Settings -> Account.</item>
+        <item>Change Contact\'s Edit Contact Accent (colorAccent to white) - while retaining FastScroll color.</item>
+        <item>FastScroll Framework Overhaul - using colorPrimary instead of colorControlActivated.</item>
+        <item>Experimental framework changes for DeviceDefault - fixing date picker dialog.</item>
+        <item>Fix Google Inbox\'s invisible icons.</item>
+        <item>Update SystemUI for internal notification changes.</item>
+        <item>Theme TextNow\'s Dark (Grey) Mode.</item>
+        <item>Fix up Sony Sketch\'s Hardcoded Accents - and fix floating action button.</item>
+        <item>Add Bliss Floating Menu Icon for Bliss Interface.</item>
+        <item>Fix Snapchat Chat Background.</item>
+        <item>Gmail: An alternative way to achieve black windowBackground - fix overflow menu as well.</item>
+        <item>Remove more traces of Dropbox Material Blue.</item>
+        <item>Fix Chromecast Backdrop Toggle Color.</item>
+        <item>Fix invisible drag handle in Google Play Music.</item>
+    </string-array>
+    <string-array name="v100">
+        <item>hyaku &#8212; 百へようこそ! (Welcome to 100!)</item>
+        <item>Introducing a new numbering system (Japanese) for the distribution of new builds.</item>
+        <item>Remove traces of dm // colors in DarkMaterialApp.</item>
+        <item>Remove Icons folder from Assets folder to prevent mix up from users. Use Whicons available on Play!</item>
+        <item>Lightly theme Chromecast and Google Cloud Print apps.</item>
+        <item>Theme Settings\'s Omniswitch Icon.</item>
+        <item>Prepare No SIM status bar icons for AOSP signal cluster code upgrade.</item>
+        <item>Theme Google Play Services Help and Feedback Actionbar (Now fully grey with white accents)</item>
+        <item>Theme Dropbox Authenticator\'s Icon.</item>
+        <item>Fix App Bar Setup Settings FC using a SystemUI reroute.</item>
+        <item>Theme WhatsApp Popup Window Button Background.</item>
+        <item>Adjust Dialer/Contacts Letter Tile Colors to Theme Color (Majority wins!).</item>
+        <item>Theme WhatsApp Null Contact/Conversation Drawables (No contact picture in conversation list).</item>
+        <item>Add #NoChromo Overlay.</item>
+        <item>Squash, compress and optimize all files.</item>
+        <item>Add themed icons for Dynamic Tile QS icons.</item>
+        <item>Fix unreadable worldwide leaderboard entries in Google Play Games.</item>
+        <item>Theme Snapchat Lightly (Main screen).</item>
+        <item>Make Play Music Subscribe button less intrusive.</item>
+        <item>Add dynamic icon state-color switching for Notification Volume, thanks to Mark (@Spannaa).</item>
+        <item>Clean up indentation in Settings\' colors.</item>
+        <item>Update Pushbullet Overlay with the new UI refresh (using white as text in the actionbar now).</item>
+        <item>Add stroke to Play and Pause, and LiveDisplay QS tiles.</item>
+        <item>Sync up OTAUpdates (distributed by Matt Booth) to BlissOTA\'s overlay.</item>
+    </string-array>
+    <string-array name="v99">
+        <item>ninetynine &#8212; FINAL/STABLE</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Fix Chrome Beta and Chrome Dev\'s Merge Tab Unlink Dialog.</item>
+        <item>Fix all Chrome variant\'s scroll accents.</item>
+        <item>Fix WhatsApp invisible buttons in Gallery Picker Fragment.</item>
+        <item>Revert new redesign of AOSP/Google Keyboard, but keeping custom colors for gesture swiping.</item>
+        <item>Complete re-pull from latest GitHub sources, clean up dead files, optimize, etc.</item>
+    </string-array>
+    <string-array name="v98">
+        <item>ninetyeight</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Attempt to fix Contacts FC\'s using a complete rewrite in styles - cleaned and inflatable in a low, resource efficient way.</item>
+        <item>New redesign of AOSP Keyboard and Google Keyboard.</item>
+        <item>Add Exodus Settings Icon Support.</item>
+    </string-array>
+    <string-array name="v97">
+        <item>ninetyseven</item>
+        <item>Attempt to fix Contacts FC\'s using a complete rewrite in styles - cleaned and inflatable in a low, resource efficient way.</item>
+        <item>New redesign of AOSP Keyboard and Google Keyboard.</item>
+        <item>Add Exodus Settings Icon Support.</item>
+        <item>Theme Exodus Updater and Power Menu.</item>
+        <item>Add custom no-SIM status bar icon and QS toggle.</item>
+        <item>Fix Google Keep Empty Entry Background Drawable.</item>
+        <item>Settings: Increasing ring volume drawable icon state change colors.</item>
+        <item>Update all icons in Settings -> Sound (Consistency in size and design).</item>
+        <item>Theme SystemUI Volume Panel "Notification" Icon.</item>
+        <item>Update Google Keep Attach Icons in Dialog.</item>
+        <item>Static Auto-rotate SystemUI QS Toggle for 5.1.1 ROMs (Due to popularity on G+).</item>
+        <item>Update BlissOTA overlay to 5.0.0.</item>
+        <item>Fix Google Play Games in-game overlay + settings background.</item>
+        <item>Fix unreadable hardkey popup menu for base app in Google Play Games.</item>
+        <item>Fix AOSP browser search bar suggestion icons.</item>
+        <item>Adjust unified status bar color and cleaning up accents in Google Play Games.</item>
+        <item>Theme AOSP Email Account Setup fragment.</item>
+        <item>Add Settings icons for OwnROM.</item>
+        <item>Remove unused fab drawable in Contacts and add contacts drawables for missing resolutions under xxhdpi.</item>
+        <item>Remove white loading symbol for WhatsApp.</item>
+        <item>Add themed Slim Device Manager for ROMs with customizable gesture support.</item>
+        <item>Darken Nova Launcher 4.0.2b1 settings lightly.</item>
+        <item>Theme Sysbar Power Menu and QuickSettings icon.</item>
+        <item>Fix unreadable Chrome hint text in address bar.</item>
+        <item>Add flashlight power menu icon.</item>
+        <item>Add Setting\'s Identicon setup icons.</item>
+        <item>Change screenshot notification\'s delete and share buttons.</item>
+        <item>Fix WhatsApp search actionbar colors for 2.12.157 - using a workaround for now.</item>
+        <item>Navigation Bar Ring Icon replacements.</item>
+        <item>Remove WhatsApp Voice Note Scrubber Colors.</item>
+        <item>Complete re-pull from latest GitHub sources, clean up dead files, optimize, etc.</item>
+    </string-array>
+    <string-array name="v96">
+        <item>ninetysix &#8212; STABLE/FINAL</item>
+        <item>ANNOUNCEMENT: The official date of theme weeklies will be Sunday. Expect updates every Sunday, if applicable. Check G+ community for more info!</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Fix Google Search (Grey on Grey/Black on Black) including dropdown arrow</item>
+        <item>Update MMS link text color to a lighter shade of grey</item>
+        <item>Fix WhatsApp chat unsent icon/loading icon</item>
+        <item>Fix text colors for multi-SIM devices (When selecting SIM colors)</item>
+    </string-array>
+    <string-array name="v95">
+        <item>ninetyfive &#8212; STABLE/FINAL</item>
+        <item>ANNOUNCEMENT: Weekly builds will now commence, instead of nightlies as the base has finally stabilized.</item>
+        <item>Fix Google Search (Grey on Grey/Black on Black)</item>
+        <item>Update MMS link text color to a lighter shade of grey</item>
+        <item>Fix WhatsApp chat unsent icon/loading icon</item>
+        <item>Fix text colors for multi-SIM devices (When selecting SIM colors)</item>
+        <item>Expose Play Store colors for dm // colors</item>
+        <item>Fix Google Messenger\'s hardkey background and Group MMS Settings (Black on Black/White on White)</item>
+        <item>Fix Greenify\'s Action Bar Color</item>
+        <item>Clean up Setting\'s Styles in preparation for RRO Layers port - adding them into ROM specific named XML files</item>
+        <item>Fix Email Draft Edit Icon Pencil (White on White)</item>
+    </string-array>
+    <string-array name="v94">
+        <item>ninetyfour &#8212; FINAL CLEAN UP BUILD</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Clean up WhatsApp\'s location picker text, call icon and set status fragment buttons</item>
+        <item>Fix up PAC-ROM setting\'s icons</item>
+        <item>Update Play Store Overlay (Search plate, unified status bar)</item>
+        <item>Allow Black-WhatsApp to retain it\'s black action bars</item>
+    </string-array>
+    <string-array name="v93">
+        <item>ninetythree</item>
+        <item>Clean up Nova Settings separator line color and widget selector background</item>
+        <item>Attempt another approach to clean up WhatsApp styles to try fix FCs</item>
+        <item>Fix WhatsApp call button black on black</item>
+        <item>Try out PackageInstaller fix for AOSiP</item>
+        <item>Fix Swype Highlight color when picking language.</item>
+    </string-array>
+    <string-array name="v92">
+        <item>ninety to ninetytwo &#8212; FINAL (Touch up build)</item>
+        <item>ninetyone &#8212; FINAL (Touch up build)</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Update and clean WhatsApp Overlay for 2.12.122 (to fix dialog, and WhatsApp mods)</item>
+        <item>DarkMaterialApp: Add Restart SystemUI and Reboot device fabs in MainActivity (NEEDS ROOT ACCESS)</item>
+        <item>Update all Chrome overlays as much as I could, lots of things still hardcoded</item>
+        <item>Update and clean WhatsApp Overlay for 2.12.122 (to fix dialog\'s white on white)</item>
+        <item>Fix Kik message bubble overlay</item>
+        <item>Fix Benzo ROM Tweaks Settings FC</item>
+        <item>Fix Google Play Newsstand black popup</item>
+    </string-array>
+    <string-array name="v89">
+        <item>eightynine</item>
+        <item>Update Google Play Overlay to fix white on white (card background)</item>
+        <item>Fix WhatsApp icons (mute group, broadcast icon)</item>
+        <item>Update Exodus Settings</item>
+    </string-array>
+    <string-array name="v88">
+        <item>eightyeight</item>
+        <item>New WhatsApp Overlay - completely dark!</item>
+        <item>OctOS, AntaresOne CM12.1, LiquidSmooth and AOSiP icons added</item>
+        <item>Fix invisible Google Search add account icon</item>
+        <item>Add Launcher3 Overlay</item>
+        <item>Update Google Keep Overlay</item>
+        <item>Fix up Google Play Games</item>
+        <item>Theme Google Play Services</item>
+        <item>Theme GitSkarios lightly</item>
+        <item>Theme Kik lightly</item>
+        <item>Fix AOSP Browser Quick Controls</item>
+        <item>Darken Launcher Background</item>
+        <item>Darken Google Search Settings</item>
+    </string-array>
+    <string-array name="v87">
+        <item>eightyseven &#8212; MAJOR CLEAN UP BUILD</item>
+        <item>Control scrollbar color and size, shrink the rectangular width</item>
+        <item>Add black into toggle circle (remove transparency so track doesn\'t show through)</item>
+        <item>Remove unused framework drawables</item>
+        <item>Retheme CM Eleven Music Player</item>
+        <item>Theme DeskClock</item>
+        <item>Update Theme Chooser Overlay (Uninstall icon, drawer ripple)</item>
+        <item>Update Contacts Overlay</item>
+        <item>Retheme PackageInstaller (Now all black)</item>
+        <item>Update Trebuchet (Android M re-source version)</item>
+        <item>Update Google Now Launcher (Android M preview)</item>
+        <item>Update Bluetooth connected state QS toggle icon</item>
+        <item>Fix "+" in "ADD TRUSTED DEVICE" notification</item>
+        <item>Stroke Airplane Mode Status Bar Icon</item>
+        <item>Add animated USB notification icon</item>
+        <item>Speed up Superuser status bar animation</item>
+        <item>Add CDMA Roaming Icon to status bar</item>
+        <item>Add animated screen record icon</item>
+        <item>Add missing nav bar icons</item>
+        <item>Adjust all QS icons with a fully greyed out base PNG, allowing ROMs with QS disabled toggles as white to be grey as well.</item>
+        <item>Remove unnecessary XML reroutes for Heads Up Icon</item>
+        <item>Add whitened Settings permissions</item>
+        <item>Update Google Play Overlay</item>
+        <item>Increase quality of progress circles thanks to Bella!</item>
+    </string-array>
+    <string-array name="v86">
+        <item>eightysix &#8212; STABLE</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Remove unused vector drawables</item>
+        <item>Update Mms overlay</item>
+        <item>Enlarge Power Menu Icon in QS Header (Supported ROMs only)</item>
+        <item>Fix Heads Up QS Header icon (Supported ROMs only)</item>
+        <item>Fix Google Play Music black on black Settings</item>
+        <item>Revamp Progress Circle Algorithm</item>
+    </string-array>
+    <string-array name="v85">
+        <item>eightyfive &#8212; STABLE</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Enlarge Power Menu Icon in QS Header (Supported ROMs only)</item>
+        <item>Update Heads Up QS Header icon (Supported ROMs only)</item>
+        <item>Fix Heads Up QS Header icon (Supported ROMs only)</item>
+        <item>Fix Google Play Music black on black Settings</item>
+        <item>Revamp Progress Circle Algorithm</item>
+    </string-array>
+    <string-array name="v84">
+        <item>eightyfour &#8212; STABLE</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Enlarge Power Menu Icon in QS Header (Supported ROMs only)</item>
+        <item>Update Heads Up QS Header icon (Supported ROMs only)</item>
+        <item>Fix Google Play Music black on black Settings</item>
+        <item>Revamp Progress Circle Algorithm</item>
+    </string-array>
+    <string-array name="v83">
+        <item>eightythree</item>
+        <item>Configure in-app fab to reroute directly to ThemeChooser entry of Dark Material!</item>
+        <item>Configure in-app Play Store link to new Play Developer Website!</item>
+        <item>Removed Setting\'s dimensions</item>
+        <item>Add AOSP Email Theme Overlay</item>
+        <item>Update scrubber for old theme styles, to remove outline under circle</item>
+        <item>Theme progress spinners for all theme styles</item>
+        <item>Add heads up icon for status bar (Supported ROMs only)</item>
+        <item>Add stroke to volume panel icons</item>
+        <item>Update task manager task close icon</item>
+        <item>Update new reference to GPS icon in status bar</item>
+        <item>Update Facebook Messenger Overlay to latest update</item>
+        <item>Retheme AudioFX Overlay (using my new CyanogenMod commits)</item>
+        <item>Fix Contacts dropdown arrow button</item>
+        <item>Clean out cdt base activator folders</item>
+        <item>Change volume dialog background color to toast background color</item>
+        <item>Update Benzo Rom Settings Icons</item>
+        <item>Add letter tile colors to Mms, thanks to @markbencze</item>
+        <item>Theme Stickers and Drawings for Hangouts</item>
+        <item>Enlarge SystemUI recents clear all FAB, redoing an HD version</item>
+        <item>Final clean up: Repulling/syncing with Github sources to clear out unused files, empty folders and temporary files.</item>
+    </string-array>
+    <string-array name="v82">
+        <item>eightytwo &#8212; STABLE</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Configure in-app fab to reroute directly to ThemeChooser entry of Dark Material!</item>
+        <item>Configure in-app Play Store link to new Play Developer Website!</item>
+        <item>Add AOSP Email Theme Overlay</item>
+        <item>Update scrubber for old theme styles, to remove outline under circle</item>
+        <item>Theme progress spinners for all theme styles</item>
+        <item>Add heads up icon for status bar (Supported ROMs only)</item>
+        <item>Add stroke to volume panel icons</item>
+        <item>Update task manager task close icon</item>
+        <item>Update new reference to GPS icon in status bar</item>
+        <item>Update Facebook Messenger Overlay to latest update</item>
+        <item>Update Setting\'s dimensions</item>
+        <item>Retheme AudioFX Overlay (using my new CyanogenMod commits)</item>
+        <item>Fix Contacts dropdown arrow button</item>
+        <item>Clean out cdt base activator folders</item>
+        <item>Change volume dialog background color to toast background color</item>
+        <item>Update Benzo Rom Settings Icons</item>
+        <item>Add letter tile colors to Mms, thanks to @markbencze</item>
+        <item>Theme Stickers and Drawings for Hangouts</item>
+        <item>Enlarge SystemUI recents clear all FAB, redoing an HD version</item>
+        <item>Final clean up: Repulling/syncing with Github sources to clear out unused files, empty folders and temporary files.</item>
+    </string-array>
+    <string-array name="v81">
+        <item>eightyone &#8212; STABLE</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Configure in-app fab to reroute directly to ThemeChooser entry of Dark Material!</item>
+        <item>Add AOSP Email Theme Overlay</item>
+        <item>Update scrubber for old theme styles, to remove outline under circle</item>
+        <item>Theme progress spinners for all theme styles</item>
+        <item>Add heads up icon for status bar (Supported ROMs only)</item>
+        <item>Add stroke to volume panel icons</item>
+        <item>Update task manager task close icon</item>
+        <item>Update new reference to GPS icon in status bar</item>
+        <item>Update Facebook Messenger Overlay to latest update</item>
+        <item>Update Setting\'s dimensions</item>
+        <item>Retheme AudioFX Overlay (using my new CyanogenMod commits)</item>
+        <item>Fix Contacts dropdown arrow button</item>
+        <item>Clean out cdt base activator folders</item>
+        <item>Change volume dialog background color to toast background color</item>
+        <item>Update Benzo Rom Settings Icons</item>
+        <item>Add letter tile colors to Mms, thanks to @markbencze</item>
+        <item>Theme Stickers and Drawings for Hangouts</item>
+        <item>Enlarge SystemUI recents clear all FAB, redoing an HD version</item>
+        <item>Final clean up: Repulling/syncing with Github sources to clear out unused files, empty folders and temporary files.</item>
+    </string-array>
+    <string-array name="v80">
+        <item>eighty &#8212; STABLE</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Add animated scrubber drawable, horizontal progress bar, toast background and system animations by @_moelle! HUGE THANKS!</item>
+        <item>Add new brightness thumb drawable for SystemUI</item>
+        <item>Theme Swype Material Dark Keyboard + Settings</item>
+        <item>Theme Bliss Task Manager feature</item>
+        <item>dm // colors: Expose keyboard text colors</item>
+        <item>Update Resurrection Remix\'s Settings Icons</item>
+        <item>Update Sound Icon for latest CM nightly 25/05</item>
+    </string-array>
+    <string-array name="v79">
+        <item>seventynine &#8212; STABLE</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Fix unreadable text in Google Translate</item>
+        <item>Add Spotify Overlay</item>
+        <item>Add missing Gmail empty state icons</item>
+        <item>Update dm app with dm // colors shortcut</item>
+        <item>dm // colors: Hardcode Google Inbox colors</item>
+        <item>dm // colors: Make "No Recent Apps" Icon themable from commons</item>
+        <item>dm // colors: Expose WhatsApp Fab Color to commons</item>
+    </string-array>
+    <string-array name="v78">
+        <item>sixtysix &#8212; seventyeight</item>
+        <item>Fix WhatsApp popup menu for 2.12.96</item>
+        <item>Fix AOSP Messages attach dialog icons</item>
+        <item>Theme Dropbox Material Lightly (Due to unreadable text, there are a bunch of limitations)</item>
+        <item>Change No Recent Apps Logo to be more generic</item>
+        <item>Cleaned out all excluded files and empty folders within the theme - rebased all local files and folders</item>
+        <item>Fix up broken autorotate QS tile for 5.0.2 ROMs</item>
+        <item>Fix unreadable text and theme emoji body for WhatsApp Material</item>
+        <item>dm // colors: Hardcode Play Store colors to fix up unpleasant text colors</item>
+        <item>dm // colors: Organize cdt base activator folder integrity and structure</item>
+        <item>Fix Inbox\'s popup menus and styles</item>
+        <item>Theme static QS icons for ROMs that are using non AVD toggles for custom colors</item>
+        <item>Remove AppSearch background for Materinova, caused black on black text</item>
+        <item>Fixed up Materinova Settings where there were hardcoded white backgrounds, fixing white on white text.</item>
+        <item>BLACKED OUT: Fixed Hangouts chat bubbles</item>
+        <item>Clean up and optimize all asset files</item>
+        <item>Update notification icon color from grey to white</item>
+        <item>Attempt to fix low battery color in status bar</item>
+        <item>Theme Power Icon in QS header</item>
+        <item>Add new Bliss Interface icons</item>
+        <item>Theme VindicatorOTA</item>
+        <item>Clean up unused overlays like Youtube, as well as clean up WhatsApp unused colors allowing custom themed versions to work</item>
+        <item>Add support for latest Bliss navigation bar customizations</item>
+        <item>Remove pulsating bluetooth animated statusbar icon</item>
+        <item>Make network activity icons in status bar transparent as it didn\'t scale properly</item>
+        <item>Revert Dark Google Search Settings to fix black on black for devices with OK Google training support</item>
+        <item>Remove Gallery3d\'s styles.xml to attempt fixing Gallery FC</item>
+        <item>Add Euphoria OTA and Touch Control support</item>
+        <item>Change light accent to grey (to target black on black issues on Validus and other ROMs)</item>
+        <item>Clean out MultiROM Manager Overlay</item>
+        <item>FRAMEWORK: A new approach to fix popup menu colors/overflow menu colors</item>
+        <item>Theme Materinova v4.0 public version</item>
+        <item>Theme MusixMatch notification icons and text and fix popup colors black on black, white on white</item>
+        <item>Remove vertical signal data connected text in status bar, use horizontal instead</item>
+        <item>Fix up Messenger\'s Popup Menu background</item>
+        <item>Prepare for Bliss Logo replacement in No Recent Apps</item>
+        <item>Clean out framework xmls, shrunken down to less than 100 lines each file</item>
+        <item>Fix up black on black on new screen pinning dialog</item>
+        <item>Change ripple shape/dimensions for nav bar</item>
+        <item>Change WhatsApp Material Fab icon color</item>
+        <item>Change Messenger\'s Accent Color to fix white on white in text dialog</item>
+        <item>Fix PAC-ROM Icons in Settings</item>
+        <item>Fix Resurrection Remix Tools Icon in Settings</item>
+    </string-array>
+    <string-array name="v77">
+        <item>seventyseven &#8212; STABLE</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Fix WhatsApp popup menu for 2.12.96</item>
+        <item>Fix AOSP Messages attach dialog icons</item>
+        <item>Theme Dropbox Material Lightly (Due to unreadable text, there are a bunch of limitations)</item>
+        <item>Change No Recent Apps Logo to be more generic</item>
+    </string-array>
+    <string-array name="v76">
+        <item>sixtysix &#8212; seventysix</item>
+        <item>Cleaned out all excluded files and empty folders within the theme - rebased all local files and folders</item>
+        <item>Fix up broken autorotate QS tile for 5.0.2 ROMs</item>
+        <item>Fix unreadable text and theme emoji body for WhatsApp Material</item>
+        <item>dm // colors: Hardcode Play Store colors to fix up unpleasant text colors</item>
+        <item>dm // colors: Organize cdt base activator folder integrity and structure</item>
+        <item>Fix Inbox\'s popup menus and styles</item>
+        <item>Theme static QS icons for ROMs that are using non AVD toggles for custom colors</item>
+        <item>Remove AppSearch background for Materinova, caused black on black text</item>
+        <item>Fixed up Materinova Settings where there were hardcoded white backgrounds, fixing white on white text.</item>
+        <item>BLACKED OUT: Fixed Hangouts chat bubbles</item>
+        <item>Clean up and optimize all asset files</item>
+        <item>Update notification icon color from grey to white</item>
+        <item>Attempt to fix low battery color in status bar</item>
+        <item>Theme Power Icon in QS header</item>
+        <item>Add new Bliss Interface icons</item>
+        <item>Theme VindicatorOTA</item>
+        <item>Clean up unused overlays like Youtube, as well as clean up WhatsApp unused colors allowing custom themed versions to work</item>
+        <item>Add support for latest Bliss navigation bar customizations</item>
+        <item>Remove pulsating bluetooth animated statusbar icon</item>
+        <item>Make network activity icons in status bar transparent as it didn\'t scale properly</item>
+        <item>Revert Dark Google Search Settings to fix black on black for devices with OK Google training support</item>
+        <item>Remove Gallery3d\'s styles.xml to attempt fixing Gallery FC</item>
+        <item>Add Euphoria OTA and Touch Control support</item>
+        <item>Change light accent to grey (to target black on black issues on Validus and other ROMs)</item>
+        <item>Clean out MultiROM Manager Overlay</item>
+        <item>FRAMEWORK: A new approach to fix popup menu colors/overflow menu colors</item>
+        <item>Theme Materinova v4.0 public version</item>
+        <item>Theme MusixMatch notification icons and text and fix popup colors black on black, white on white</item>
+        <item>Remove vertical signal data connected text in status bar, use horizontal instead</item>
+        <item>Fix up Messenger\'s Popup Menu background</item>
+        <item>Prepare for Bliss Logo replacement in No Recent Apps</item>
+        <item>Clean out framework xmls, shrunken down to less than 100 lines each file</item>
+        <item>Fix up black on black on new screen pinning dialog</item>
+        <item>Change ripple shape/dimensions for nav bar</item>
+        <item>Change WhatsApp Material Fab icon color</item>
+        <item>Change Messenger\'s Accent Color to fix white on white in text dialog</item>
+        <item>Fix PAC-ROM Icons in Settings</item>
+        <item>Fix Resurrection Remix Tools Icon in Settings</item>
+    </string-array>
+    <string-array name="v74">
+        <item>seventyfour to seventyfive &#8212; STABLE</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Cleaned out all excluded files and empty folders within the theme - rebased all local files and folders</item>
+        <item>Fix up broken autorotate QS tile for 5.0.2 ROMs</item>
+        <item>Fix unreadable text and theme emoji body for WhatsApp Material</item>
+        <item>dm // colors: Hardcode Play Store colors to fix up unpleasant text colors</item>
+        <item>dm // colors: Organize cdt base activator folder integrity and structure</item>
+    </string-array>
+    <string-array name="v73">
+        <item>sixtysix &#8212; seventythree</item>
+        <item>Fix Inbox\'s popup menus and styles</item>
+        <item>Theme static QS icons for ROMs that are using non AVD toggles for custom colors</item>
+        <item>Remove AppSearch background for Materinova, caused black on black text</item>
+        <item>Fixed up Materinova Settings where there were hardcoded white backgrounds, fixing white on white text.</item>
+        <item>BLACKED OUT: Fixed Hangouts chat bubbles</item>
+        <item>Clean up and optimize all asset files</item>
+        <item>Update notification icon color from grey to white</item>
+        <item>Attempt to fix low battery color in status bar</item>
+        <item>Theme Power Icon in QS header</item>
+        <item>Add new Bliss Interface icons</item>
+        <item>Theme VindicatorOTA</item>
+        <item>Clean up unused overlays like Youtube, as well as clean up WhatsApp unused colors allowing custom themed versions to work</item>
+        <item>Add support for latest Bliss navigation bar customizations</item>
+        <item>Remove pulsating bluetooth animated statusbar icon</item>
+        <item>Make network activity icons in status bar transparent as it didn\'t scale properly</item>
+        <item>Revert Dark Google Search Settings to fix black on black for devices with OK Google training support</item>
+        <item>Remove Gallery3d\'s styles.xml to attempt fixing Gallery FC</item>
+        <item>Add Euphoria OTA and Touch Control support</item>
+        <item>Change light accent to grey (to target black on black issues on Validus and other ROMs)</item>
+        <item>Clean out MultiROM Manager Overlay</item>
+        <item>FRAMEWORK: A new approach to fix popup menu colors/overflow menu colors</item>
+        <item>Theme Materinova v4.0 public version</item>
+        <item>Theme MusixMatch notification icons and text and fix popup colors black on black, white on white</item>
+        <item>Remove vertical signal data connected text in status bar, use horizontal instead</item>
+        <item>Fix up Messenger\'s Popup Menu background</item>
+        <item>Prepare for Bliss Logo replacement in No Recent Apps</item>
+        <item>Clean out framework xmls, shrunken down to less than 100 lines each file</item>
+        <item>Fix up black on black on new screen pinning dialog</item>
+        <item>Change ripple shape/dimensions for nav bar</item>
+        <item>Change WhatsApp Material Fab icon color</item>
+        <item>Change Messenger\'s Accent Color to fix white on white in text dialog</item>
+        <item>Fix PAC-ROM Icons in Settings</item>
+        <item>Fix Resurrection Remix Tools Icon in Settings</item>
+    </string-array>
+    <string-array name="v65">
+        <item>sixtyfive</item>
+        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING!</item>
+        <item>BUG SQUASH BUILD</item>
+        <item>Fix Inbox Black Rectangle in Drawer</item>
+        <item>Add Low Priority Google Inbox Icon</item>
+        <item>Theme CarbonROM Fibers\' Subtweaks Header Accent</item>
+        <item>Add support for Carbon ROM Settings Icons</item>
+        <item>Theme Contacts Properly</item>
+        <item>Update DU Power Menu Icons</item>
+    </string-array>
+    <string-array name="v64">
+        <item>sixtyfour</item>
+        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING!</item>
+        <item>MAJOR CLEAN UP BUILD</item>
+        <item>Add Bluetooth Overlay to fix Black on Black dialog when incoming transfer</item>
+        <item>Add support for Flex OS Settings Icons</item>
+        <item>Add support for Candy5 Settings Icons</item>
+        <item>Optimize and compress v63 base completely (took ~4 hours for all files)</item>
+        <item>Optimize and compress DM app completely (took ~20 minutes for all files)</item>
+        <item>Fix Black on Black on new AOSP Browser Tab</item>
+        <item>Clean up comments inside Settings</item>
+        <item>Fix XDA One Sign in Black on Black</item>
+        <item>Theme DU Updater, DU Tweaks and DU Settings Icons</item>
+    </string-array>
+    <string-array name="v63">
+        <item>sixtythree</item>
+        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES!</item>
+        <item>MAJOR DESIGN UPGRADE</item>
+        <item>New QS toggles</item>
+        <item>New animated status bar icons</item>
+        <item>Fix Launcher Wallpaper Chooser FC</item>
+        <item>Theme Tinfoil for Facebook</item>
+        <item>Configure Settings\' Battery History Chart Remainder</item>
+        <item>Fix Browser white on white accent</item>
+        <item>Fix Dialer In-call Unreadable Text + In-call Backgrounds</item>
+        <item>Fix up all Dialer\'s styles, letting it have the full Theme.Material styles</item>
+        <item>Theme CellBroadcastReceiver</item>
+        <item>Optimize Gmail to tackle FCs and problematic code during updates</item>
+        <item>Add Benzo Rom specific sidebar drawable to fix FC</item>
+        <item>Add minimal animated Superuser statusbar icon</item>
+        <item>Fix Facebook unreadable highlight accent</item>
+        <item>Remove Threema overlay due to buggy interface, redone, and changed accents</item>
+        <item>Add some transparency to the popup menu</item>
+        <item>Clean up framework, fix all DeviceDefault issues and white text on white</item>
+        <item>Add 10% transparency to notification background</item>
+        <item>Remove Unused Apex Launcher style</item>
+        <item>Remove Google Calendar Colors</item>
+        <item>Remove all Calendar overlays except AOSP Calendar FAB</item>
+        <item>Add Media Provider into Overlays to fix black on black</item>
+        <item>Adjust colorAccent value specifically for Settings in FW</item>
+        <item>Add new Hangouts icons thanks to @BellaxMiu</item>
+        <item>Fix unreadable text in Hangouts -> Hidden Contacts</item>
+        <item>Theme Settings Extra Information Popup</item>
+        <item>Fix invisible Google Translate offline download icon</item>
+        <item>Theme XDA One</item>
+        <item>Fix Hangouts video icon white on white</item>
+        <item>Update cdt activator structure layout</item>
+        <item>Merge latest notification panel header background</item>
+        <item>Theme Cyanogen OS 12 Theme Chooser</item>
+        <item>Add WhatsApp Material colors including selected message actionbar</item>
+        <item>Update SuperSU overlay</item>
+        <item>Update BlissOTA overlay to 4.0.0</item>
+        <item>[BLISS] Add new Bliss logo into BlissOTA</item>
+        <item>Control TRDS icon color</item>
+        <item>Theme Chrome Dev</item>
+        <item>Theme com.ota.updates on Temasek</item>
+        <item>Drop reliance on Material Light\'s text color for SystemUI notifications</item>
+        <item>Whiten typing dots in Hangouts</item>
+        <item>Add Kernel Adiutor Overlay</item>
+        <item>[BLISS] Add new screen record icon in Power Menu</item>
+        <item>[BLISS] Add new Zen icons (Important and None) to Power Menu</item>
+        <item>Remove thin Bluetooth logo in Status Bar</item>
+        <item>Change YouTube actionbar to Dark Material Red color</item>
+        <item>[BLISS] Fix BlissPapers\' Floating Action Button Colors</item>
+        <item>Fix black expand arrow in Gmail for CC and BCC</item>
+        <item>Clean project completely, clean up all overlays, minor bugs, etc.</item>
+    </string-array>
+    <string-array name="v62">
+        <item>sixtythree</item>
+        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES!</item>
+        <item>MAJOR DESIGN UPGRADE</item>
+        <item>New QS toggles</item>
+        <item>New animated status bar icons</item>
+        <item>Fix Launcher Wallpaper Chooser FC</item>
+        <item>Theme Tinfoil for Facebook</item>
+        <item>Configure Settings\' Battery History Chart Remainder</item>
+        <item>Fix Browser white on white accent</item>
+        <item>Fix Dialer In-call Unreadable Text + In-call Backgrounds</item>
+        <item>Fix up all Dialer\'s styles, letting it have the full Theme.Material styles</item>
+        <item>Theme CellBroadcastReceiver</item>
+        <item>Optimize Gmail to tackle FCs and problematic code during updates</item>
+        <item>Add Benzo Rom specific sidebar drawable to fix FC</item>
+        <item>Add minimal animated Superuser statusbar icon</item>
+        <item>Fix Facebook unreadable highlight accent</item>
+        <item>Remove Threema overlay due to buggy interface, redone, and changed accents</item>
+        <item>Add some transparency to the popup menu</item>
+        <item>Clean up framework, fix all DeviceDefault issues and white text on white</item>
+        <item>Add 10% transparency to notification background</item>
+        <item>Remove Unused Apex Launcher style</item>
+        <item>Remove Google Calendar Colors</item>
+        <item>Remove all Calendar overlays except AOSP Calendar FAB</item>
+        <item>Add Media Provider into Overlays to fix black on black</item>
+        <item>Adjust colorAccent value specifically for Settings in FW</item>
+        <item>Add new Hangouts icons thanks to @jezebelxxx</item>
+        <item>Fix unreadable text in Hangouts -> Hidden Contacts</item>
+        <item>Theme Settings Extra Information Popup</item>
+        <item>Fix invisible Google Translate offline download icon</item>
+        <item>Theme XDA One</item>
+        <item>Fix Hangouts video icon white on white</item>
+        <item>Update cdt activator structure layout</item>
+        <item>Merge latest notification panel header background</item>
+        <item>Theme Cyanogen OS 12 Theme Chooser</item>
+        <item>Add WhatsApp Material colors including selected message actionbar</item>
+        <item>Update SuperSU overlay</item>
+        <item>Update BlissOTA overlay to 4.0.0</item>
+        <item>[BLISS] Add new Bliss logo into BlissOTA</item>
+        <item>Control TRDS icon color</item>
+        <item>Theme Chrome Dev</item>
+        <item>Theme com.ota.updates on Temasek</item>
+        <item>Drop reliance on Material Light\'s text color for SystemUI notifications</item>
+        <item>Whiten typing dots in Hangouts</item>
+        <item>Add Kernel Adiutor Overlay</item>
+        <item>[BLISS] Add new screen record icon in Power Menu</item>
+        <item>[BLISS] Add new Zen icons (Important and None) to Power Menu</item>
+        <item>Remove thin Bluetooth logo in Status Bar</item>
+        <item>Change YouTube actionbar to Dark Material Red color</item>
+        <item>[BLISS] Fix BlissPapers\' Floating Action Button Colors</item>
+        <item>Fix black expand arrow in Gmail for CC and BCC</item>
+        <item>Clean project completely, clean up all overlays, minor bugs, etc.</item>
+    </string-array>
+    <string-array name="v59">
+        <item>fiftynine</item>
+        <item>If you haven\'t rebooted yet, REBOOT IN 2 MINUTES! NO SUPPORT GIVEN TO NON-REBOOTED DEVICES AFTER UPDATE!!!</item>
+        <item>Heavy clean up of deprecated files, colors, attributes, items, drawables, comments, etc.</item>
+        <item>Remove Reddit Sync Overlay, causing issues with updates.</item>
+        <item>Fix Instagram White on White Notification Badge</item>
+    </string-array>
+    <string-array name="v58">
+        <item>fiftyeight</item>
+        <item>Final clean up and optimization build, ironed out most if not all bugs!</item>
+        <item>Fix Calculator for 5.0.2 with white digit background</item>
+        <item>Fix Gmail Draft Edit Icon</item>
+        <item>Theme Device Control icon in Nameless Rom</item>
+        <item>Update Dialer for 5.1 to target unreadable in-call dialer text</item>
+        <item>Fix Manual Setup for Gmail</item>
+        <item>Theme Hangouts Invite Background (Remove the blue)</item>
+        <item>No updates for a week or two, going on a vacation!</item>
+    </string-array>
+    <string-array name="v57">
+        <item>fiftyseven</item>
+        <item>HAPPY 100TH! THIS BUILD NOW HAS 100 APP OVERLAYS!</item>
+        <item>Any problems, try reinstalling, as this package has a TON of new mods compared to before.</item>
+        <item>Huge cleaning build, mainly under the hood, testing and optimization</item>
+        <item>Status Bar, Power Menu, Nav Bar and Settings has new minimal icons</item>
+        <item>New animated toggles!</item>
+        <item>Fixed pattern registration default color</item>
+        <item>[BLISS] New Bliss Logos used system wide, Status Bar, About Phone</item>
+        <item>Theme Android Terminal</item>
+        <item>Theme TeleService for 5.0.2 and 5.1, quick reply messages.</item>
+        <item>Theme TextSecure Fab icon (request)</item>
+        <item>Remove dark overlay for G+, instead, replacing with FB style black borders.</item>
+        <item>Revert "Whiten Hangouts Video Call Icon"</item>
+        <item>Enlarge QS Icon Size</item>
+        <item>Change Holo background gradient to pure black</item>
+        <item>Theme Screen Pinning FAB in Recents</item>
+        <item>Theme Screen Pinning Dialog (5.1)</item>
+        <item>Theme Google Play Games and Google Play Services</item>
+        <item>Add BetterBatteryStats Paid Version Theme</item>
+        <item>Add Google Services Themed</item>
+        <item>Finalize Calculator Theme</item>
+        <item>Make the Gmail Double Arrow Whiter!</item>
+    </string-array>
+    <string-array name="v54">
+        <item>fiftyfour</item>
+        <item>Dev device upgraded to Bliss v3.0 (5.1), let\'s begin darkening it out!</item>
+        <item>Change Theme Chooser shortcut icon in the app</item>
+        <item>Theme 5.1 Dialer</item>
+        <item>[BLISS] Theme A Better Camera Unlocked</item>
+        <item>Preparing for 5.1 changes by adding necessary files</item>
+        <item>Whitened out statusbar screenshot icons</item>
+        <item>[BLISS] Tint Bliss Interface 5.1 Icon (v3.0)</item>
+        <item>Theme Pocket MAL</item>
+        <item>Revert "Remove black background on Generic Selector for G+"</item>
+        <item>Remove blacked out Google Calendar except Widget</item>
+    </string-array>
+    <string-array name="v53">
+        <item>fiftythree</item>
+        <item>Clean up app manifest and app files to optimize speed</item>
+        <item>Stabilizing entire build</item>
+        <item>Get IncallUI ready for Android 5.1</item>
+        <item>Fix Google+ Photos not having proper statusbar</item>
+        <item>Darken Instagram Camera View</item>
+        <item>Instagram button accent colors</item>
+        <item>Gmail Reply/Forward Icons</item>
+        <item>Fix Black on Location in G+ Button</item>
+        <item>Revert G+ to red again</item>
+        <item>Google+ Events all greyed out</item>
+        <item>Reverted Google+ to red again</item>
+        <item>Changed Google+ Ripple Color</item>
+        <item>Grey Google+ Events fix</item>
+        <item>Fix theme app\'s nav bar color</item>
+        <item>Dropbox White Underline, due to FW, fixed</item>
+        <item>Darkened bliss logo added into status bar</item>
+        <item>Reintroduce LightFlow, reddened</item>
+        <item>Reintroduce Pushbullet, greenified</item>
+        <item>Configure Settings style for Google Camera</item>
+        <item>CPU Spy Menu Background has a black border</item>
+        <item>Completely invert Gmail thanks to Google\'s new exposes</item>
+        <item>Readjusted Contacts Actionbar color to fix Frequently Contacted title in Contacts - linked to primary_color</item>
+        <item>Chrome close tab icon grey -> white</item>
+        <item>Pandora rich notification with Pandora patcher, notification background is white</item>
+        <item>Theme Delayed Lock by Javelin, problem with checkboxes</item>
+        <item>Google Play Music Unreadable Widget</item>
+        <item>Fix up whitened dialog in latest Chainfire\'s Recently App</item>
+        <item>Keep hardkey menu</item>
+        <item>Increase readability in keep: Grey text to Blackish Grey</item>
+        <item>Keep drawer header titles and divider colors</item>
+        <item>Keep new drawer icons for labels</item>
+        <item>Retheme DocumentsUI drawer text and icons</item>
+    </string-array>
+    <string-array name="v50">
+        <item>version.release.fifty to fiftythree</item>
+        <item>Clean up app manifest and app files to optimize speed</item>
+        <item>Stabilizing entire build</item>
+    </string-array>
+    <string-array name="v49">
+        <item>version.release.fourtynine</item>
+        <item>Get IncallUI ready for Android 5.1</item>
+        <item>Fix Google+ Photos not having proper statusbar</item>
+        <item>Darken Instagram Camera View</item>
+        <item>Instagram button accent colors</item>
+        <item>Gmail Reply/Forward Icons</item>
+        <item>Fix Black on Location in G+ Button</item>
+        <item>Revert G+ to red again</item>
+        <item>Google+ Events all greyed out</item>
+        <item>Reverted Google+ to red again</item>
+        <item>Changed Google+ Ripple Color</item>
+        <item>Grey Google+ Events fix</item>
+        <item>Fix theme app\'s nav bar color</item>
+        <item>Dropbox White Underline, due to FW, fixed</item>
+        <item>Darkened bliss logo added into status bar</item>
+        <item>Reintroduce LightFlow, reddened</item>
+        <item>Reintroduce Pushbullet, greenified</item>
+        <item>Configure Settings style for Google Camera</item>
+        <item>CPU Spy Menu Background has a black border</item>
+        <item>Completely invert Gmail thanks to Google\'s new exposes</item>
+        <item>Readjusted Contacts Actionbar color to fix Frequently Contacted title in Contacts - linked to primary_color</item>
+        <item>Chrome close tab icon grey -> white</item>
+        <item>Pandora rich notification with Pandora patcher, notification background is white</item>
+        <item>Theme Delayed Lock by Javelin, problem with checkboxes</item>
+        <item>Google Play Music Unreadable Widget</item>
+        <item>Fix up whitened dialog in latest Chainfire\'s Recently App</item>
+        <item>Keep hardkey menu</item>
+        <item>Increase readability in keep: Grey text to Blackish Grey</item>
+        <item>Keep drawer header titles and divider colors</item>
+        <item>Keep new drawer icons for labels</item>
+        <item>Retheme DocumentsUI drawer text and icons</item>
+    </string-array>
+    <string-array name="v48">
+        <item>version.release.fourtyeight</item>
+        <item>Added new app into Theme package</item>
+        <item>Theme BlissOTA</item>
+        <item>Touch up CM File Manager\'s Default Colors (To fix black on black, this has to be changed by the user in Color Scheme Options (Click on text color, then press OK without making any changes)</item>
+        <item>G+ logo and Add Contact Picture in Play Store</item>
+        <item>Leave Hangout Button Invert</item>
+    </string-array>
+    <string-array name="v47">
+        <item>version.release.fourtyseven</item>
+        <item>Added new app into Theme package</item>
+        <item>Theme BlissOTA</item>
+        <item>Touch up CM File Manager\'s Default Colors (To fix black on black, this has to be changed by the user in Color Scheme Options (Click on text color, then press OK without making any changes)</item>
+        <item>G+ logo and Add Contact Picture in Play Store</item>
+        <item>Leave Hangout Button Invert</item>
+    </string-array>
+    <string-array name="v46">
+        <item>version.release.fourtysix</item>
+        <item>Attempt to fix Contacts Title Color "Frequently Contacted"</item>
+        <item>Change Settings Toggle Background Darker</item>
+        <item>Rewrite Brightness Scrubber as a Vector to respect all resolutions</item>
+        <item>Fix Play Music Unreadable Text</item>
+        <item>Retheme Google Play Music with Orange ActionBar</item>
+        <item>Optimize Trebuchet to attempt to fix Wallpaper FC</item>
+        <item>Update Google Search Recents Search Bar Background</item>
+        <item>Keep Account Select Black on Black Fixed</item>
+        <item>Theme GravityBox Settings</item>
+        <item>Chrome autofill dropdown dark grey on black background fixed</item>
+        <item>Whiten Hangout\'s Hangout Name Icon</item>
+        <item>Increase Hangouts People and Options Windows Readability</item>
+        <item>Touch Up Gallery3d\'s Style, attempt to fix FC issues due to missing attributes</item>
+        <item>Fix Dialer FC issues on non-stock DPI, stress tested on 480, 360, 220, 120, 60 DPIs</item>
     </string-array>
 </resources>

@@ -38,7 +38,7 @@ public class Main extends ActionBarActivity {
 
     public Drawer.Result result = null;
     public AccountHeader.Result headerResult = null;
-    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits, thaTesters, thaWhatIsThemed, thaContactUs, thaLogcat, thaFAQ, thaHelp, thaAbout, thaIconPack;
+    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits, thaTesters, thaWhatIsThemed, thaContactUs, thaLogcat, thaFAQ, thaHelp, thaAbout, thaIconPack, thaFullChangelog;
     public String version, drawerVersion;
     public int currentItem;
     private boolean firstrun, enable_features;
@@ -73,6 +73,7 @@ public class Main extends ActionBarActivity {
         thaHelp = getResources().getString(R.string.section_thirteen);
         thaAbout = getResources().getString(R.string.section_fourteen);
         thaIconPack = getResources().getString(R.string.section_fifteen);
+        thaFullChangelog = getResources().getString(R.string.section_sixteen);
 
         drawerVersion = getResources().getString(R.string.version_code);
 
@@ -97,6 +98,7 @@ public class Main extends ActionBarActivity {
                 .addDrawerItems(
                         new PrimaryDrawerItem().withName(thaHome).withIcon(GoogleMaterial.Icon.gmd_home).withIdentifier(1),
                         new PrimaryDrawerItem().withName(thaIconPack).withIcon(GoogleMaterial.Icon.gmd_picture_in_picture).withCheckable(false).withIdentifier(11),
+                        new PrimaryDrawerItem().withName(thaFullChangelog).withIcon(GoogleMaterial.Icon.gmd_wrap_text).withCheckable(false).withIdentifier(12),
                         new DividerDrawerItem(),
                         new PrimaryDrawerItem().withName(thaAbout).withIcon(GoogleMaterial.Icon.gmd_info_outline).withIdentifier(10),
                         new PrimaryDrawerItem().withName(thaWhatIsThemed).withIcon(GoogleMaterial.Icon.gmd_warning).withIdentifier(3),
@@ -206,6 +208,9 @@ public class Main extends ActionBarActivity {
                                     } else {
                                         startActivity(intent_whicons);
                                     }
+                                    break;
+                                case 12:
+                                    fullchangelog();
                                     break;
                             }
                         }
@@ -366,6 +371,21 @@ public class Main extends ActionBarActivity {
 
         new MaterialDialog.Builder(this)
                 .title(R.string.changelog_dialog_title)
+                .adapter(new ChangelogAdapter(this, R.array.newchangelog), null)
+                .positiveText(R.string.nice)
+                .callback(new MaterialDialog.ButtonCallback() {
+                    @Override
+                    public void onPositive(MaterialDialog dialog) {
+                        mPrefs.setNotFirstrun();
+                    }
+                })
+                .show();
+    }
+
+    private void fullchangelog() {
+
+        new MaterialDialog.Builder(this)
+                .title(R.string.section_sixteen)
                 .adapter(new ChangelogAdapter(this, R.array.fullchangelog), null)
                 .positiveText(R.string.nice)
                 .callback(new MaterialDialog.ButtonCallback() {

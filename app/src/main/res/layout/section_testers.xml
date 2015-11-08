@@ -38,7 +38,6 @@
                         android:id="@+id/intro"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/cdt_banner"
                         android:layout_margin="@dimen/cards_text_margin"
                         android:orientation="vertical">
 
@@ -89,7 +88,6 @@
                         android:id="@+id/intro2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/cdt_banner"
                         android:layout_margin="@dimen/cards_text_margin"
                         android:orientation="vertical">
 
@@ -140,7 +138,6 @@
                         android:id="@+id/intro3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/cdt_banner"
                         android:layout_margin="@dimen/cards_text_margin"
                         android:orientation="vertical">
 
@@ -164,6 +161,55 @@
                             android:gravity="center"
                             android:lineSpacingMultiplier="1.2"
                             android:text="@string/list_of_testers"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/text_small" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/testers4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/testers3"
+                android:layout_margin="@dimen/cards_margin"
+                android:clickable="false"
+                card_view:cardBackgroundColor="@color/cardsbg"
+                card_view:cardCornerRadius="@dimen/card_corner_radius"
+                card_view:cardElevation="@dimen/cards_elevation">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cards_margin">
+
+                    <LinearLayout
+                        android:id="@+id/intro4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cards_text_margin"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/intro_two4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:gravity="center"
+                            android:text="@string/title_libraries"
+                            android:textColor="@color/title_color"
+                            android:textSize="@dimen/text_big" />
+
+                        <TextView
+                            android:id="@+id/intro_three4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/cards_text_margin"
+                            android:layout_marginTop="@dimen/cards_text_margin"
+                            android:gravity="center"
+                            android:lineSpacingMultiplier="1.2"
+                            android:text="@string/list_of_implemeted_libraries"
                             android:textColor="@color/dark_grey"
                             android:textSize="@dimen/text_small" />
 

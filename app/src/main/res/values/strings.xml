@@ -90,6 +90,7 @@
     <string name="section_thirteen">Help</string>
     <string name="section_fourteen">About Dark Material</string>
     <string name="section_fifteen">Icon Pack</string>
+    <string name="section_sixteen">Full Changelog</string>
 
     <!--About Dark Material-->
     <string name="about_title">why \'dark material\'?</string>
@@ -105,8 +106,11 @@
     <string name="cdt_description_testers">chummy development team takes a lot of consideration to our beta testers and contributors to our theme. the people listed below have tested for many hours to make dark material such a wonderful theme that we all love!\n\nwe hope to work with much more people who are willing to actively test or develop fixes for any issues that may come up during build!\n\nthank you everyone who worked on this project with us!</string>
     <string name="testers_title">official list of beta testers</string>
     <string name="contributor_title">official list of contributors</string>
-    <string name="list_of_testers">"Akki Mahajan (Androizer)\nVignesh Ravi (BATVIC)\n</string>
-    <string name="list_of_contributors">"Pneuma Anonymous (Pneuma1985)\nManuel Möllmann (_moelle)\nMark Bencze (markbencze\nJon West (electrikjesus)\nVivek Neel (Vivek_Neel\nTeddy Tan (ted77usa)\nGiulio Fagioli &amp; Lorenzo Salani\nJahir Fiquitiva (jahirfiquitiva)\nFranck Rohée (franzyroy)\nKevin Dixson (Punchieo)"</string>
+    <string name="title_libraries">list of implemented library authors</string>
+    <string name="list_of_testers">"\nAkki Mahajan (Androizer)\nVignesh Ravi (BATVIC)\n</string>
+    <string name="list_of_contributors">"\nPneuma Anonymous (Pneuma1985)\nManuel Möllmann (_moelle)\nMark Bencze (markbencze\nJon West (electrikjesus)\nVivek Neel (Vivek_Neel\nTeddy Tan (ted77usa)\nGiulio Fagioli &amp; Lorenzo Salani\nJahir Fiquitiva (jahirfiquitiva)\nFranck Rohée (franzyroy)\nKevin Dixson (Punchieo)"</string>
+    <string name="list_of_implemeted_libraries">\nMelnykov\nAidan Follestad\nMike Penz\nSquare\nBalys Valentukevicius</string>
+
 
     <!--Strings for Dropdown Menu & Requests-->
     <string name="share">Share this theme!</string>
@@ -115,10 +119,10 @@
     <string name="rate">Rate theme</string>
     <string name="sendemail">Contact Nicholas directly</string>
     <string name="request_precontent">"These apps are not themed. Thanks in advance.</string>
-    <string name="changelog">View theme changelog</string>
+    <string name="changelog">View recent changelog</string>
 
     <!--Changelog Dialog Content-->
-    <string name="changelog_dialog_title">Changelog</string>
+    <string name="changelog_dialog_title">Recent Changelog</string>
     <string name="nice">Awesome!</string>
 
     <string name="drawer_open">Menu open</string>
