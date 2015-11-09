@@ -222,6 +222,8 @@
     <string name="help_a_1">as android requires root for you to use certain permissions, the three buttons on the home screen include \'restart systemui\' and \'restart device\', which require root access.</string>
     <string name="help_q_2">why does this app have so many permissions?</string>
     <string name="help_a_2">the app comes with:\na wallpaper downloading section (network permissions)\nafter download the wallpaper can be immediately set as wallpaper (set wallpaper permission)\nwallpaper storage on internal storage (modify/delete contents permission).</string>
+    <string name="help_q_3">how do i use the boot animation installer in this app to set a custom bootanimation (layers)?</string>
+    <string name="help_a_3">all you have to do is navigate to /emulated/0/DarkMaterial/BootAnimation/ and put your bootanimation inside, named "original_bootanimation.zip" (without quotes). the installer will automatically recognize and transfer your bootanimation to /system/media/, correctly setting all permissions. this tool will need root to work.</string>
 
     <!--FAQ-->
     <string name="faq_q_1">esfileexplorer unreadable? (cmte/layers)</string>
