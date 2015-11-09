@@ -62,7 +62,6 @@
             fab:fab_colorNormal="@color/primary"
             fab:fab_colorPressed="@color/primary_pressed"
             fab:fab_icon="@drawable/ic_check"
-            fab:fab_size="mini"
             fab:fab_title="@string/apply" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
@@ -72,7 +71,6 @@
             fab:fab_colorNormal="@color/primary"
             fab:fab_colorPressed="@color/primary_pressed"
             fab:fab_icon="@drawable/ic_save"
-            fab:fab_size="mini"
             fab:fab_title="@string/save" />
 
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
