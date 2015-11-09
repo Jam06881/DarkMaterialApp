@@ -7,15 +7,18 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.res.AssetManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -34,12 +37,19 @@ import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+
 
 public class Main extends ActionBarActivity {
 
     public Drawer.Result result = null;
     public AccountHeader.Result headerResult = null;
-    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits, thaTesters, thaWhatIsThemed, thaContactUs, thaLogcat, thaFAQ, thaHelp, thaAbout, thaIconPack, thaFullChangelog;
+    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits, thaTesters, thaWhatIsThemed, thaContactUs, thaLogcat, thaFAQ, thaHelp, thaAbout, thaIconPack, thaFullChangelog, thaBootAnimInstall, thaBootAnimRestore;
     public String version, drawerVersion;
     public int currentItem;
     private boolean firstrun, enable_features;
@@ -75,6 +85,8 @@ public class Main extends ActionBarActivity {
         thaAbout = getResources().getString(R.string.section_fourteen);
         thaIconPack = getResources().getString(R.string.section_fifteen);
         thaFullChangelog = getResources().getString(R.string.section_sixteen);
+        thaBootAnimInstall = getResources().getString(R.string.section_seventeen);
+        thaBootAnimRestore = getResources().getString(R.string.section_eighteen);
 
         drawerVersion = getResources().getString(R.string.version_code);
 
@@ -104,6 +116,9 @@ public class Main extends ActionBarActivity {
                         new PrimaryDrawerItem().withName(thaAbout).withIcon(GoogleMaterial.Icon.gmd_info_outline).withIdentifier(10),
                         new PrimaryDrawerItem().withName(thaWhatIsThemed).withIcon(GoogleMaterial.Icon.gmd_warning).withIdentifier(3),
                         new PrimaryDrawerItem().withName(thaFAQ).withIcon(GoogleMaterial.Icon.gmd_question_answer).withIdentifier(8),
+                        new DividerDrawerItem(),
+                        new SecondaryDrawerItem().withName(thaBootAnimInstall).withIcon(GoogleMaterial.Icon.gmd_file_download).withCheckable(false).withIdentifier(13),
+                        new SecondaryDrawerItem().withName(thaBootAnimRestore).withIcon(GoogleMaterial.Icon.gmd_file_upload).withCheckable(false).withIdentifier(14),
                         new DividerDrawerItem(),
                         new SecondaryDrawerItem().withName(thaCredits).withIcon(GoogleMaterial.Icon.gmd_people).withIdentifier(5),
                         new SecondaryDrawerItem().withName(thaTesters).withIcon(GoogleMaterial.Icon.gmd_star).withIdentifier(4),
@@ -228,6 +243,110 @@ public class Main extends ActionBarActivity {
                                 case 12:
                                     fullchangelog();
                                     break;
+                                case 13:
+                                    if (!isAppInstalled("org.cyanogenmod.theme.chooser")) {
+                                        if (isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
+                                            AssetManager assetManager = getAssets();
+                                            InputStream in = null;
+                                            OutputStream out = null;
+                                            try {
+                                                File bootanimDirectory = new File(Environment.getExternalStorageDirectory() + "/DarkMaterial/BootAnimation/");
+                                                bootanimDirectory.mkdirs();
+                                                in = assetManager.open("bootanimation/" + "bootanimation.zip");
+                                                out = new FileOutputStream(Environment.getExternalStorageDirectory().toString() + "/DarkMaterial/BootAnimation/" + "bootanimation.zip");
+                                                copyFile(in, out);
+                                                in.close();
+                                                in = null;
+                                                out.flush();
+                                                out.close();
+                                                out = null;
+                                            } catch (Exception e) {
+                                                Log.e("FileNotFoundException", "Transfer of boot animation zip file from assets folder has failed.", e);
+                                            }
+                                            String[] commands_mount = {"mount -o remount,rw /system"};
+                                            String[] commands_backup = {"mv /system/media/bootanimation.zip /data/media/0/DarkMaterial/BootAnimation/original_bootanimation.zip"};
+                                            String[] commands_append = {"mv /data/media/0/DarkMaterial/BootAnimation/bootanimation.zip /system/media/bootanimation.zip"};
+                                            String[] commands_setperms = {"chmod 644 /system/media/bootanimation.zip"};
+                                            String[] commands_close = {"mount -o remount,ro /system"};
+                                            RunAsRoot(commands_mount);
+                                            Toast toast1 = Toast.makeText(getApplicationContext(), "Mounting system as R/W", Toast.LENGTH_SHORT);
+                                            toast1.show();
+                                            RunAsRoot(commands_backup);
+                                            Toast toast2 = Toast.makeText(getApplicationContext(), "Backing up current boot animation", Toast.LENGTH_SHORT);
+                                            toast2.show();
+                                            RunAsRoot(commands_append);
+                                            Toast toast3 = Toast.makeText(getApplicationContext(), "Moving from APK file to /system", Toast.LENGTH_SHORT);
+                                            toast3.show();
+                                            RunAsRoot(commands_setperms);
+                                            Toast toast4 = Toast.makeText(getApplicationContext(), "Setting permissions", Toast.LENGTH_SHORT);
+                                            toast4.show();
+                                            RunAsRoot(commands_close);
+                                            Toast toast5 = Toast.makeText(getApplicationContext(), "Mounting system as R/O", Toast.LENGTH_SHORT);
+                                            Toast toast6 = Toast.makeText(getApplicationContext(), "Install success!", Toast.LENGTH_SHORT);
+                                            toast5.show();
+                                            toast6.show();
+                                        } else {
+                                            Intent intent_settings = getPackageManager().getLaunchIntentForPackage("com.android.settings");
+                                            Toast toast_error = Toast.makeText(getApplicationContext(), "Not available to apply boot animation traditionally. Rerouting to Settings.", Toast.LENGTH_SHORT);
+                                            toast_error.show();
+                                            startActivity(intent_settings);
+                                        }
+                                    } else {
+                                        Toast toast_error_cm = Toast.makeText(getApplicationContext(), "Since your device isn't a Layers based device, you have been rerouted to CM Theme Chooser.", Toast.LENGTH_LONG);
+                                        toast_error_cm.show();
+                                        Intent launch_cm_te = new Intent("android.intent.action.MAIN");
+                                        launch_cm_te.setComponent(new ComponentName("org.cyanogenmod.theme.chooser", "org.cyanogenmod.theme.chooser.ChooserActivity"));
+                                        launch_cm_te.putExtra("pkgName", "com.chummy.jezebel.material.dark");
+                                        startActivity(launch_cm_te);
+                                    }
+                                    break;
+                                case 14:
+                                    if (!isAppInstalled("org.cyanogenmod.theme.chooser")) {
+                                        if (isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
+                                            String[] commands_mount2 = {"mount -o remount,rw /system"};
+                                            String[] commands_delete2 = {"rm /system/media/bootanimation.zip"};
+                                            String[] commands_append2 = {"mv /data/media/0/DarkMaterial/BootAnimation/original_bootanimation.zip /system/media/bootanimation.zip"};
+                                            String[] commands_setperms2 = {"chmod 644 /system/media/bootanimation.zip"};
+                                            String[] commands_close2 = {"mount -o remount,ro /system"};
+                                            File file = new File("/storage/emulated/0/DarkMaterial/BootAnimation/original_bootanimation.zip");
+                                            if (file.exists()) {
+                                                RunAsRoot(commands_mount2);
+                                                Toast toast7 = Toast.makeText(getApplicationContext(), "Mounting system as R/W", Toast.LENGTH_SHORT);
+                                                toast7.show();
+                                                RunAsRoot(commands_delete2);
+                                                Toast toast8 = Toast.makeText(getApplicationContext(), "Removing custom boot animation", Toast.LENGTH_SHORT);
+                                                toast8.show();
+                                                RunAsRoot(commands_append2);
+                                                Toast toast9 = Toast.makeText(getApplicationContext(), "Moving backup from internal storage to /system", Toast.LENGTH_SHORT);
+                                                toast9.show();
+                                                RunAsRoot(commands_setperms2);
+                                                Toast toast10 = Toast.makeText(getApplicationContext(), "Setting permissions", Toast.LENGTH_SHORT);
+                                                toast10.show();
+                                                RunAsRoot(commands_close2);
+                                                Toast toast11 = Toast.makeText(getApplicationContext(), "Mounting system as R/O", Toast.LENGTH_SHORT);
+                                                Toast toast12 = Toast.makeText(getApplicationContext(), "Restore success!", Toast.LENGTH_SHORT);
+                                                toast11.show();
+                                                toast12.show();
+                                            } else {
+                                                Log.e("FileNotFoundException", "Original bootanimation backup file not found in '/storage/emulated/0/DarkMaterial/BootAnimation' directory.");
+                                                Toast toast13 = Toast.makeText(getApplicationContext(), "No backup found in '/storage/emulated/0/DarkMaterial/BootAnimation'", Toast.LENGTH_LONG);
+                                                toast13.show();
+                                            }
+                                        } else {
+                                            Intent intent_settings = getPackageManager().getLaunchIntentForPackage("com.android.settings");
+                                            Toast toast_error = Toast.makeText(getApplicationContext(), "Not available to apply boot animation traditionally. Rerouting to Settings.", Toast.LENGTH_SHORT);
+                                            toast_error.show();
+                                            startActivity(intent_settings);
+                                        }
+                                    } else {
+                                        Toast toast_error_cm = Toast.makeText(getApplicationContext(), "Since your device isn't a Layers based device, you have been rerouted to CM Theme Chooser.", Toast.LENGTH_LONG);
+                                        toast_error_cm.show();
+                                        Intent launch_cm_te = new Intent("android.intent.action.MAIN");
+                                        launch_cm_te.setComponent(new ComponentName("org.cyanogenmod.theme.chooser", "org.cyanogenmod.theme.chooser.ChooserActivity"));
+                                        launch_cm_te.putExtra("pkgName", "com.chummy.jezebel.material.dark");
+                                        startActivity(launch_cm_te);
+                                    }
+                                    break;
                             }
                         }
                     }
@@ -243,6 +362,67 @@ public class Main extends ActionBarActivity {
             result.setSelectionByIdentifier(1);
         }
 
+    }
+
+    private void copyAssets() {
+        AssetManager assetManager = getAssets();
+        String[] files = null;
+        try {
+            files = assetManager.list("");
+        } catch (IOException e) {
+            Log.e("tag", "Failed to get asset file list.", e);
+        }
+        if (files != null) for (String filename : files) {
+            InputStream in = null;
+            OutputStream out = null;
+            try {
+                in = assetManager.open(filename);
+                File outFile = new File(getExternalFilesDir(null), filename);
+                out = new FileOutputStream(outFile);
+                copyFile(in, out);
+            } catch (IOException e) {
+                Log.e("tag", "Failed to copy asset file: " + filename, e);
+            } finally {
+                if (in != null) {
+                    try {
+                        in.close();
+                    } catch (IOException e) {
+                        Log.e("tag", "Could not close in", e);
+                    }
+                }
+                if (out != null) {
+                    try {
+                        out.close();
+                    } catch (IOException e) {
+                        Log.e("tag", "Could not close out", e);
+                    }
+                }
+            }
+        }
+    }
+
+    private void copyFile(InputStream in, OutputStream out) throws IOException {
+        byte[] buffer = new byte[1024];
+        int read;
+        while ((read = in.read(buffer)) != -1) {
+            out.write(buffer, 0, read);
+        }
+    }
+
+    public void RunAsRoot(String[] cmds) {
+        try {
+            Process p = Runtime.getRuntime().exec("su");
+            DataOutputStream os = new DataOutputStream(p.getOutputStream());
+            for (String tmpCmd : cmds) {
+                os.writeBytes(tmpCmd + "\n");
+            }
+            os.writeBytes("exit\n");
+            os.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+            Toast toast = Toast.makeText(getApplicationContext(), "Failed", Toast.LENGTH_LONG);
+            toast.show();
+        }
     }
 
     private void switchFragment(int itemId, String title, String fragment) {
