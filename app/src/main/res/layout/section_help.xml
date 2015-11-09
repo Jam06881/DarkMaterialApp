@@ -20,11 +20,12 @@
             android:orientation="vertical">
 
             <android.support.v7.widget.CardView
-                android:id="@+id/wit1"
+                android:id="@+id/help1"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/cards_margin"
-                android:clickable="false"
+                android:clickable="true"
+                android:foreground="?android:selectableItemBackground"
                 card_view:cardBackgroundColor="@color/cardsbg"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
                 card_view:cardElevation="@dimen/cards_elevation">
@@ -67,12 +68,13 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/wit2"
+                android:id="@+id/help2"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/wit1"
+                android:layout_below="@id/help1"
                 android:layout_margin="@dimen/cards_margin"
-                android:clickable="false"
+                android:clickable="true"
+                android:foreground="?android:selectableItemBackground"
                 card_view:cardBackgroundColor="@color/cardsbg"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
                 card_view:cardElevation="@dimen/cards_elevation">
@@ -113,12 +115,13 @@
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
-                android:id="@+id/wit3"
+                android:id="@+id/help3"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/wit2"
+                android:layout_below="@id/help2"
                 android:layout_margin="@dimen/cards_margin"
-                android:clickable="false"
+                android:clickable="true"
+                android:foreground="?android:selectableItemBackground"
                 card_view:cardBackgroundColor="@color/cardsbg"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
                 card_view:cardElevation="@dimen/cards_elevation">

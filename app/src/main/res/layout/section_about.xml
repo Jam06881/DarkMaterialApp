@@ -24,7 +24,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/cards_margin"
-                android:clickable="false"
+                android:clickable="true"
+                android:foreground="?android:selectableItemBackground"
                 card_view:cardBackgroundColor="@color/cardsbg"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
                 card_view:cardElevation="@dimen/cards_elevation">
