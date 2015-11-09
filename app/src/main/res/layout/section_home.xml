@@ -121,6 +121,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/infocard"
                 android:layout_margin="@dimen/cards_margin"
+                android:clickable="true"
+                android:foreground="?android:selectableItemBackground"
                 card_view:cardBackgroundColor="@color/cardsbg"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
                 card_view:cardElevation="@dimen/cards_elevation">
@@ -171,19 +173,6 @@
                             android:background="@color/divider_grey"
                             android:visibility="invisible" />
 
-                        <TextView
-                            android:id="@+id/appthree_button"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="right"
-                            android:background="?selectableItemBackground"
-                            android:gravity="right"
-                            android:padding="@dimen/cards_padding"
-                            android:text="@string/open"
-                            android:textColor="@color/button_color"
-                            android:textSize="@dimen/text_ultrasmall"
-                            android:textStyle="bold" />
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -201,6 +190,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/gplus"
                 android:layout_margin="@dimen/cards_margin"
+                android:clickable="true"
+                android:foreground="?android:selectableItemBackground"
                 card_view:cardBackgroundColor="@color/cardsbg"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
                 card_view:cardElevation="@dimen/cards_elevation">
@@ -255,19 +246,6 @@
                             android:background="@color/divider_grey"
                             android:visibility="invisible" />
 
-                        <TextView
-                            android:id="@+id/play_button_whicons"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="right"
-                            android:background="?selectableItemBackground"
-                            android:gravity="right"
-                            android:padding="@dimen/cards_padding"
-                            android:text="@string/open"
-                            android:textColor="@color/button_color"
-                            android:textSize="@dimen/text_ultrasmall"
-                            android:textStyle="bold" />
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -279,11 +257,13 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/cardView"
+                android:id="@+id/play_dev"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/whicons"
                 android:layout_margin="@dimen/cards_margin"
+                android:clickable="true"
+                android:foreground="?android:selectableItemBackground"
                 card_view:cardBackgroundColor="@color/cardsbg"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
                 card_view:cardElevation="@dimen/cards_elevation">
@@ -338,19 +318,6 @@
                             android:background="@color/divider_grey"
                             android:visibility="invisible" />
 
-                        <TextView
-                            android:id="@+id/play_button"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="right"
-                            android:background="?selectableItemBackground"
-                            android:gravity="right"
-                            android:padding="@dimen/cards_padding"
-                            android:text="@string/play"
-                            android:textColor="@color/button_color"
-                            android:textSize="@dimen/text_ultrasmall"
-                            android:textStyle="bold" />
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -362,11 +329,13 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/cardOne"
+                android:id="@+id/paypal"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/cardView"
+                android:layout_below="@id/play_dev"
                 android:layout_margin="@dimen/cards_margin"
+                android:clickable="true"
+                android:foreground="?android:selectableItemBackground"
                 card_view:cardBackgroundColor="@color/cardsbg"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
                 card_view:cardElevation="@dimen/cards_elevation">
@@ -417,19 +386,6 @@
                             android:background="@color/divider_grey"
                             android:visibility="invisible" />
 
-                        <TextView
-                            android:id="@+id/appone_button"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="right"
-                            android:background="?selectableItemBackground"
-                            android:gravity="right"
-                            android:padding="@dimen/cards_padding"
-                            android:text="@string/donate"
-                            android:textColor="@color/button_color"
-                            android:textSize="@dimen/text_ultrasmall"
-                            android:textStyle="bold" />
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -441,11 +397,13 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/cardTwo"
+                android:id="@+id/xda"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/cardOne"
+                android:layout_below="@id/paypal"
                 android:layout_margin="@dimen/cards_margin"
+                android:clickable="true"
+                android:foreground="?android:selectableItemBackground"
                 card_view:cardBackgroundColor="@color/cardsbg"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
                 card_view:cardElevation="@dimen/cards_elevation">
@@ -495,19 +453,6 @@
                             android:layout_height="1px"
                             android:background="@color/divider_grey"
                             android:visibility="invisible" />
-
-                        <TextView
-                            android:id="@+id/apptwo_button"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="right"
-                            android:background="?selectableItemBackground"
-                            android:gravity="right"
-                            android:padding="@dimen/cards_padding"
-                            android:text="@string/open"
-                            android:textColor="@color/button_color"
-                            android:textSize="@dimen/text_ultrasmall"
-                            android:textStyle="bold" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
