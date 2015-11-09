@@ -117,16 +117,15 @@ public class Main extends ActionBarActivity {
                         new PrimaryDrawerItem().withName(thaWhatIsThemed).withIcon(GoogleMaterial.Icon.gmd_warning).withIdentifier(3),
                         new PrimaryDrawerItem().withName(thaFAQ).withIcon(GoogleMaterial.Icon.gmd_question_answer).withIdentifier(8),
                         new DividerDrawerItem(),
-                        new SecondaryDrawerItem().withName(thaBootAnimInstall).withIcon(GoogleMaterial.Icon.gmd_file_download).withCheckable(false).withIdentifier(13),
-                        new SecondaryDrawerItem().withName(thaBootAnimRestore).withIcon(GoogleMaterial.Icon.gmd_file_upload).withCheckable(false).withIdentifier(14),
+                        new PrimaryDrawerItem().withName(thaBootAnimInstall).withIcon(GoogleMaterial.Icon.gmd_file_download).withCheckable(false).withIdentifier(13),
+                        new PrimaryDrawerItem().withName(thaBootAnimRestore).withIcon(GoogleMaterial.Icon.gmd_file_upload).withCheckable(false).withIdentifier(14),
                         new DividerDrawerItem(),
-                        new SecondaryDrawerItem().withName(thaCredits).withIcon(GoogleMaterial.Icon.gmd_people).withIdentifier(5),
-                        new SecondaryDrawerItem().withName(thaTesters).withIcon(GoogleMaterial.Icon.gmd_star).withIdentifier(4),
+                        new PrimaryDrawerItem().withName(thaCredits).withIcon(GoogleMaterial.Icon.gmd_people).withIdentifier(5),
+                        new PrimaryDrawerItem().withName(thaTesters).withIcon(GoogleMaterial.Icon.gmd_star).withIdentifier(4),
                         new DividerDrawerItem(),
-                        new SecondaryDrawerItem().withName(thaLogcat).withIcon(GoogleMaterial.Icon.gmd_bug_report).withCheckable(false).withIdentifier(7),
-                        new SecondaryDrawerItem().withName(thaContactUs).withIcon(GoogleMaterial.Icon.gmd_mail).withCheckable(false).withIdentifier(6),
-                        new DividerDrawerItem(),
-                        new SecondaryDrawerItem().withName(thaHelp).withIcon(GoogleMaterial.Icon.gmd_help).withCheckable(false).withIdentifier(9)
+                        new PrimaryDrawerItem().withName(thaLogcat).withIcon(GoogleMaterial.Icon.gmd_bug_report).withCheckable(false).withIdentifier(7),
+                        new PrimaryDrawerItem().withName(thaContactUs).withIcon(GoogleMaterial.Icon.gmd_mail).withCheckable(false).withIdentifier(6),
+                        new PrimaryDrawerItem().withName(thaHelp).withIcon(GoogleMaterial.Icon.gmd_help).withCheckable(false).withIdentifier(9)
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override

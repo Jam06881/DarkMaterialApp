@@ -83,7 +83,7 @@
     <string name="section_five">Icon Request</string>
     <string name="section_six">More Apps</string>
     <string name="section_seven">About The Team</string>
-    <string name="section_eight">Testers &amp; Credits</string>
+    <string name="section_eight">Contributors &amp; Credits</string>
     <string name="section_nine">What is Themed?</string>
     <string name="section_ten">Contact Us</string>
     <string name="section_eleven">Take LogCat</string>
@@ -105,7 +105,7 @@
     <string name="title_ab_detailed_wallpaper">""</string>
 
     <!--Testers Activity-->
-    <string name="title_testers">testers &amp; credits</string>
+    <string name="title_testers">contributors &amp; credits</string>
     <string name="cdt_description_testers">chummy development team takes a lot of consideration to our beta testers and contributors to our theme. the people listed below have tested for many hours to make dark material such a wonderful theme that we all love!\n\nwe hope to work with much more people who are willing to actively test or develop fixes for any issues that may come up during build!\n\nthank you everyone who worked on this project with us!</string>
     <string name="testers_title">official list of beta testers</string>
     <string name="contributor_title">official list of contributors</string>
