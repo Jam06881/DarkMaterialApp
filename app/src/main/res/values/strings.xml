@@ -94,6 +94,7 @@
     <string name="section_sixteen">Full Changelog</string>
     <string name="section_seventeen">Install BootAnimation (Layers)</string>
     <string name="section_eighteen">Restore BootAnimation (Layers)</string>
+    <string name="section_nineteen">Backup BootAnimation (Layers)</string>
 
     <!--About Dark Material-->
     <string name="about_title">why \'dark material\'?</string>
