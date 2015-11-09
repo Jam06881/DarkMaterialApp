@@ -34,7 +34,6 @@ import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.accountswitcher.AccountHeader;
 import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
-import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 import java.io.DataOutputStream;
@@ -98,6 +97,7 @@ public class Main extends ActionBarActivity {
                 .withSelectionFirstLine(getResources().getString(R.string.app_name))
                 .withSelectionSecondLine(drawerVersion)
                 .withSavedInstance(savedInstanceState)
+                .withHeightDp(120)
                 .build();
 
         enable_features = mPrefs.isFeaturesEnabled();
