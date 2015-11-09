@@ -17,13 +17,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.chummy.jezebel.material.dark.R;
-import com.melnykov.fab.FloatingActionButton;
+import com.getbase.floatingactionbutton.FloatingActionsMenu;
 
 import eu.chainfire.libsuperuser.Shell;
 
 public class Home extends Fragment {
 
     private Context context;
+    private View famBg;
 
     public static Fragment newInstance(Context context) {
         Home f = new Home();
@@ -35,6 +36,9 @@ public class Home extends Fragment {
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_home, null);
 
         context = getActivity();
+
+        famBg = root.findViewById(R.id.famBg);
+        famBg.setVisibility(View.GONE);
 
         ActionBar toolbar = ((ActionBarActivity) context).getSupportActionBar();
         toolbar.setTitle(R.string.app_name);
@@ -107,13 +111,23 @@ public class Home extends Fragment {
             }
         });
 
-        FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.cm_shortcut);
-        FloatingActionButton fab2 = (FloatingActionButton) root.findViewById(R.id.restart_systemui);
-        FloatingActionButton fab3 = (FloatingActionButton) root.findViewById(R.id.reboot_device);
-
-        fab.setOnClickListener(new View.OnClickListener() {
+        final FloatingActionsMenu menuMultipleActions = (FloatingActionsMenu) root.findViewById(R.id.multiple_actions);
+        menuMultipleActions.setOnFloatingActionsMenuUpdateListener(new FloatingActionsMenu.OnFloatingActionsMenuUpdateListener() {
             @Override
-            public void onClick(View v) {
+            public void onMenuExpanded() {
+                famBg.setVisibility(famBg.getVisibility() == View.GONE ? View.VISIBLE : View.GONE);
+            }
+
+            @Override
+            public void onMenuCollapsed() {
+                famBg.setVisibility(famBg.getVisibility() == View.VISIBLE ? View.GONE : View.VISIBLE);
+            }
+        });
+
+        final com.getbase.floatingactionbutton.FloatingActionButton actionA = (com.getbase.floatingactionbutton.FloatingActionButton) root.findViewById(R.id.action_a);
+        actionA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 Intent launch_cm_theme = new Intent("android.intent.action.MAIN");
                 launch_cm_theme.setComponent(new ComponentName("org.cyanogenmod.theme.chooser", "org.cyanogenmod.theme.chooser.ChooserActivity"));
                 launch_cm_theme.putExtra("pkgName", context.getPackageName());
@@ -125,31 +139,45 @@ public class Home extends Fragment {
                         Toast.makeText(getActivity(), getString(R.string.cm_not_configured), Toast.LENGTH_SHORT).show();
                         startActivity(intent_settings);
                     } else {
+                        actionA.setTitle("Layers Manager");
+                        actionA.setIcon(R.drawable.layers);
                         Toast.makeText(getActivity(), getString(R.string.theme_installed_rro), Toast.LENGTH_LONG).show();
                         startActivity(intent_rrolayers);
                     }
                 } else {
+                    actionA.setTitle("Theme Engine");
+                    actionA.setIcon(R.drawable.theme_chooser);
                     Toast.makeText(getActivity(), getString(R.string.theme_installed_cm), Toast.LENGTH_LONG).show();
                     startActivity(launch_cm_theme);
                 }
             }
+
+
         });
-
-
-        fab2.setOnClickListener(new View.OnClickListener() {
+        final com.getbase.floatingactionbutton.FloatingActionButton actionB = (com.getbase.floatingactionbutton.FloatingActionButton) root.findViewById(R.id.action_b);
+        actionB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                (new StartUp()).setContext(v.getContext()).execute("sysui");
+                if (Shell.SU.available()) {
+                    (new StartUp()).setContext(v.getContext()).execute("sysui");
+                } else {
+                    Toast toast1 = Toast.makeText(getActivity(), "Unfortunately, this feature is only available for root users.", Toast.LENGTH_LONG);
+                    toast1.show();
+                }
             }
         });
-
-        fab3.setOnClickListener(new View.OnClickListener() {
+        final com.getbase.floatingactionbutton.FloatingActionButton actionC = (com.getbase.floatingactionbutton.FloatingActionButton) root.findViewById(R.id.action_c);
+        actionC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                (new StartUp()).setContext(v.getContext()).execute("reboot");
+                if (Shell.SU.available()) {
+                    (new StartUp()).setContext(v.getContext()).execute("reboot");
+                } else {
+                    Toast toast2 = Toast.makeText(getActivity(), "Unfortunately, this feature is only available for root users.", Toast.LENGTH_LONG);
+                    toast2.show();
+                }
             }
         });
-
         return root;
     }
 

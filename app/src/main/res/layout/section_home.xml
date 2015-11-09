@@ -467,38 +467,55 @@
 
     </com.melnykov.fab.ObservableScrollView>
 
-    <com.melnykov.fab.FloatingActionButton
-        android:id="@+id/cm_shortcut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/theme_chooser"
-        fab:fab_colorNormal="@color/primary"
-        fab:fab_colorPressed="@color/accent_pressed"
-        fab:fab_colorRipple="@color/accent" />
+    <View
+        android:id="@+id/famBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@color/semitransparent_white" />
 
-    <com.melnykov.fab.FloatingActionButton
-        android:id="@+id/restart_systemui"
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_toRightOf="@+id/cm_shortcut"
-        android:src="@drawable/system_ui"
-        fab:fab_colorNormal="@color/primary"
-        fab:fab_colorPressed="@color/accent_pressed"
-        fab:fab_colorRipple="@color/accent" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        fab:fab_addButtonColorNormal="@color/primary"
+        fab:fab_addButtonColorPressed="#ff777777"
+        fab:fab_addButtonPlusIconColor="@android:color/white"
+        fab:fab_icon="@drawable/ic_fab_star"
+        fab:fab_labelStyle="@style/menu_labels_style">
 
-    <com.melnykov.fab.FloatingActionButton
-        android:id="@+id/reboot_device"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_toLeftOf="@+id/cm_shortcut"
-        android:src="@drawable/reboot_device"
-        fab:fab_colorNormal="@color/primary"
-        fab:fab_colorPressed="@color/accent_pressed"
-        fab:fab_colorRipple="@color/accent" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/primary"
+            fab:fab_colorPressed="@color/white_pressed"
+            fab:fab_icon="@drawable/apply_theme"
+            fab:fab_title="Apply Theme" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/primary"
+            fab:fab_colorPressed="@color/white_pressed"
+            fab:fab_icon="@drawable/system_ui"
+            fab:fab_title="Restart SystemUI" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/primary"
+            fab:fab_colorPressed="@color/white_pressed"
+            fab:fab_icon="@drawable/reboot_device"
+            fab:fab_title="Restart Device" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
 </RelativeLayout>

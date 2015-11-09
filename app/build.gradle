@@ -34,6 +34,6 @@ dependencies {
     compile 'com.squareup.okhttp:okhttp:2.3.0'
     compile 'com.squareup.okhttp:okhttp-urlconnection:2.3.0'
     compile 'com.melnykov:floatingactionbutton:1.2.0'
-    compile 'com.getbase:floatingactionbutton:1.9.0'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
     compile 'eu.chainfire:libsuperuser:1.0.0.+'
 }
