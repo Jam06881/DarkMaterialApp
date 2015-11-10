@@ -123,7 +123,7 @@ public class Main extends ActionBarActivity {
                         new PrimaryDrawerItem().withName(thaWhatIsThemed).withIcon(GoogleMaterial.Icon.gmd_warning).withDescription("List of overlaid applications.").withIdentifier(3),
                         new PrimaryDrawerItem().withName(thaFAQ).withIcon(GoogleMaterial.Icon.gmd_question_answer).withDescription("Common questions with answers.").withIdentifier(8),
                         new DividerDrawerItem(),
-                        new SectionDrawerItem().withName("Layers Boot Animation Applier"),
+                        new SectionDrawerItem().withName("Layers Boot Animation Installer"),
                         new PrimaryDrawerItem().withName(thaBootAnimBackup).withIcon(GoogleMaterial.Icon.gmd_backup).withDescription("Do not run this more than once.").withCheckable(false).withBadge("BETA").withIdentifier(15),
                         new PrimaryDrawerItem().withName(thaBootAnimInstall).withIcon(GoogleMaterial.Icon.gmd_file_download).withDescription("If this fails, run it again.").withCheckable(false).withBadge("BETA").withIdentifier(13),
                         new PrimaryDrawerItem().withName(thaBootAnimRestore).withIcon(GoogleMaterial.Icon.gmd_file_upload).withDescription("This can also flash custom anims.").withCheckable(false).withBadge("BETA").withIdentifier(14),
