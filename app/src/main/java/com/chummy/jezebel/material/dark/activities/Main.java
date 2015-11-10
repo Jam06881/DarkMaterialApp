@@ -120,7 +120,7 @@ public class Main extends ActionBarActivity {
                         new DividerDrawerItem(),
                         new SectionDrawerItem().withName("Information"),
                         new PrimaryDrawerItem().withName(thaAbout).withIcon(GoogleMaterial.Icon.gmd_info_outline).withDescription("Basic information on the theme.").withIdentifier(10),
-                        new PrimaryDrawerItem().withName(thaWhatIsThemed).withIcon(GoogleMaterial.Icon.gmd_warning).withDescription("List of overlaid applications'.").withIdentifier(3),
+                        new PrimaryDrawerItem().withName(thaWhatIsThemed).withIcon(GoogleMaterial.Icon.gmd_warning).withDescription("List of overlaid applications.").withIdentifier(3),
                         new PrimaryDrawerItem().withName(thaFAQ).withIcon(GoogleMaterial.Icon.gmd_question_answer).withDescription("Common questions with answers.").withIdentifier(8),
                         new DividerDrawerItem(),
                         new SectionDrawerItem().withName("Layers Boot Animation Applier"),
