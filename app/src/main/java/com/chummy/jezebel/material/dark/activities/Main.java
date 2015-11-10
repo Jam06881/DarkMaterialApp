@@ -505,8 +505,8 @@ public class Main extends ActionBarActivity {
     public void onBackPressed() {
         if (result != null && result.isDrawerOpen()) {
             result.closeDrawer();
-        } else if (result != null && currentItem != 1) {
-            result.setSelection(0);
+        } else if (result != null && currentItem != 2) {
+            result.setSelection(1);
         } else if (result != null) {
             super.onBackPressed();
         } else {
