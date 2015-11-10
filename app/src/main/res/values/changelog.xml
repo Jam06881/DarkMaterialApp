@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-
+        <item>@array/v107</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v107</item>
         <item>@array/v106</item>
         <item>@array/v105</item>
         <item>@array/v104</item>
@@ -49,6 +50,51 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v107">
+        <item>hundertsieben &#8212; final cm-only build</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Add notification colors for Twitter after reverted commit.</item>
+        <item>Revert "Add darkened button bar for Twitter".</item>
+        <item>Remove success color in lock pattern.</item>
+        <item>Add support for v23 resolver using backgroundTint thanks to @adityaakadynamo.</item>
+        <item>Fix CM13 Calculator FC.</item>
+        <item>Update Launcher3 colors for MM6.0.</item>
+        <item>Add new resolver list row background for mm6.0.</item>
+        <item>Let\'s add the user icons just in case CM fixes them.</item>
+        <item>Fix white background on Share to Hangouts dialog.</item>
+        <item>Add renamed SIM card Settings drawable.</item>
+        <item>Attempt to fix keyboard greens on MM6.0 by adding lower resolution drawables.</item>
+        <item>Revert BitmapDrawable to RippleDrawable for CM13 support.</item>
+        <item>Update Hangouts Colors.</item>
+        <item>Change silent mode indicator to @_moelle\'s version.</item>
+        <item>Darken dialog colors to 75%.</item>
+        <item>Update ESFileExplorer Overlay to 4.0.2.7.</item>
+        <item>Update G+ Overlay to 6.7.0.106735273 (Communities were green).</item>
+        <item>Fix ES File Explorer Default Windows Add Button.</item>
+        <item>Add new uninstall icon by @_moelle for Theme Chooser.</item>
+        <item>Add support for DirtyTweaks on DU v10.0 MM6.0.</item>
+        <item>Let\'s animate all power menu icons! (that look good when animated!).</item>
+        <item>Add more themed resources for MM6.0 (DND, Fingerprint, Hotspot, Ethernet).</item>
+        <item>Add darkened YouTube launch background.</item>
+        <item>Revert "Update Bluetooth Connected Status Bar Icon".</item>
+        <item>Fix unreadable Pushbullet widget.</item>
+        <item>Update build manifest to allow for Marshmallow installs.</item>
+        <item>Let\'s use a transparent black power menu with a border, like the popup.</item>
+        <item>Fix up missing icons in Settings -> Sounds (Media and Alarm).</item>
+        <item>Remove Google Play Magazines Overlay due to limitations.</item>
+        <item>Another take on modifying SegoeUI font set (fix font changing issue!).</item>
+        <item>Update Pushbullet Overlay to 17.0.9.</item>
+        <item>Fix WhatsApp Attach Places black on black (Framework).</item>
+        <item>Fix unreadable hardkey background in Hangouts 4.0.</item>
+        <item>Add dark Hangouts launch background.</item>
+        <item>Add workaround background for Play Store Rating Text.</item>
+        <item>Fix up selected background in All Apps section of Play Store.</item>
+        <item>Update Google Play Store drawables.</item>
+        <item>Google Play Music Cast Bluetooth adjust volume + invisible tutorial card text.</item>
+        <item>ESFileExplorer Overwrite window Apply to all checkbox.</item>
+        <item>Add fixed notification color for Slack.</item>
+        <item>Merge ESFileExplorer text color changes by @franzyroy.</item>
     </string-array>
     <string-array name="v106">
         <item>hyaku roku &#8212; final build</item>
