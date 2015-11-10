@@ -76,7 +76,7 @@
     <string name="replace_seven"></string>
 
     <!--List Of Drawer Sections-->
-    <string name="section_one">Main Screen</string>
+    <string name="section_one">Home</string>
     <string name="section_two">Icons</string>
     <string name="section_three">Apply</string>
     <string name="section_four">Wallpapers</string>

@@ -34,6 +34,8 @@ import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.accountswitcher.AccountHeader;
 import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
+import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
+import com.mikepenz.materialdrawer.model.SectionDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 import java.io.DataOutputStream;
@@ -111,24 +113,31 @@ public class Main extends ActionBarActivity {
                 .withAccountHeader(headerResult)
                 .withHeaderDivider(false)
                 .addDrawerItems(
+                        new SectionDrawerItem().withName("Main"),
                         new PrimaryDrawerItem().withName(thaHome).withIcon(GoogleMaterial.Icon.gmd_home).withIdentifier(1),
-                        new PrimaryDrawerItem().withName(thaIconPack).withIcon(GoogleMaterial.Icon.gmd_picture_in_picture).withCheckable(false).withIdentifier(11),
-                        new PrimaryDrawerItem().withName(thaFullChangelog).withIcon(GoogleMaterial.Icon.gmd_wrap_text).withCheckable(false).withIdentifier(12),
+                        new PrimaryDrawerItem().withName(thaIconPack).withIcon(GoogleMaterial.Icon.gmd_picture_in_picture).withDescription("This applies icon pack 'Whicons'.").withCheckable(false).withIdentifier(11),
+                        new PrimaryDrawerItem().withName(thaFullChangelog).withIcon(GoogleMaterial.Icon.gmd_wrap_text).withDescription("Complete changelog of Dark Material.").withCheckable(false).withIdentifier(12),
                         new DividerDrawerItem(),
-                        new PrimaryDrawerItem().withName(thaAbout).withIcon(GoogleMaterial.Icon.gmd_info_outline).withIdentifier(10),
-                        new PrimaryDrawerItem().withName(thaWhatIsThemed).withIcon(GoogleMaterial.Icon.gmd_warning).withIdentifier(3),
-                        new PrimaryDrawerItem().withName(thaFAQ).withIcon(GoogleMaterial.Icon.gmd_question_answer).withIdentifier(8),
+                        new SectionDrawerItem().withName("Information"),
+                        new PrimaryDrawerItem().withName(thaAbout).withIcon(GoogleMaterial.Icon.gmd_info_outline).withDescription("Basic information on the theme.").withIdentifier(10),
+                        new PrimaryDrawerItem().withName(thaWhatIsThemed).withIcon(GoogleMaterial.Icon.gmd_warning).withDescription("List of overlaid applications'.").withIdentifier(3),
+                        new PrimaryDrawerItem().withName(thaFAQ).withIcon(GoogleMaterial.Icon.gmd_question_answer).withDescription("Common questions with answers.").withIdentifier(8),
                         new DividerDrawerItem(),
-                        new PrimaryDrawerItem().withName(thaBootAnimBackup).withIcon(GoogleMaterial.Icon.gmd_backup).withDescription("Do not run this more than once.").withCheckable(false).withIdentifier(15),
-                        new PrimaryDrawerItem().withName(thaBootAnimInstall).withIcon(GoogleMaterial.Icon.gmd_file_download).withDescription("If this fails, run it again.").withCheckable(false).withIdentifier(13),
-                        new PrimaryDrawerItem().withName(thaBootAnimRestore).withIcon(GoogleMaterial.Icon.gmd_file_upload).withDescription("This also lets you set custom boot anims.").withCheckable(false).withIdentifier(14),
+                        new SectionDrawerItem().withName("Layers Boot Animation Applier"),
+                        new PrimaryDrawerItem().withName(thaBootAnimBackup).withIcon(GoogleMaterial.Icon.gmd_backup).withDescription("Do not run this more than once.").withCheckable(false).withBadge("BETA").withIdentifier(15),
+                        new PrimaryDrawerItem().withName(thaBootAnimInstall).withIcon(GoogleMaterial.Icon.gmd_file_download).withDescription("If this fails, run it again.").withCheckable(false).withBadge("BETA").withIdentifier(13),
+                        new PrimaryDrawerItem().withName(thaBootAnimRestore).withIcon(GoogleMaterial.Icon.gmd_file_upload).withDescription("This can also flash custom anims.").withCheckable(false).withBadge("BETA").withIdentifier(14),
                         new DividerDrawerItem(),
-                        new PrimaryDrawerItem().withName(thaCredits).withIcon(GoogleMaterial.Icon.gmd_people).withIdentifier(5),
-                        new PrimaryDrawerItem().withName(thaTesters).withIcon(GoogleMaterial.Icon.gmd_star).withIdentifier(4),
+                        new SectionDrawerItem().withName("Tools & Utilities"),
+                        new PrimaryDrawerItem().withName(thaLogcat).withIcon(GoogleMaterial.Icon.gmd_bug_report).withDescription("System level log recording.").withCheckable(false).withBadge("ROOT ★").withIdentifier(7),
                         new DividerDrawerItem(),
-                        new PrimaryDrawerItem().withName(thaLogcat).withIcon(GoogleMaterial.Icon.gmd_bug_report).withCheckable(false).withIdentifier(7),
-                        new PrimaryDrawerItem().withName(thaContactUs).withIcon(GoogleMaterial.Icon.gmd_mail).withCheckable(false).withIdentifier(6),
-                        new PrimaryDrawerItem().withName(thaHelp).withIcon(GoogleMaterial.Icon.gmd_help).withCheckable(false).withIdentifier(9)
+                        new SectionDrawerItem().withName("The Developers"),
+                        new PrimaryDrawerItem().withName(thaCredits).withIcon(GoogleMaterial.Icon.gmd_people).withDescription("chummy development team").withIdentifier(5),
+                        new PrimaryDrawerItem().withName(thaTesters).withIcon(GoogleMaterial.Icon.gmd_star).withDescription("The people who keep the team updated.").withIdentifier(4),
+                        new DividerDrawerItem(),
+                        new SectionDrawerItem().withName("Contact"),
+                        new SecondaryDrawerItem().withName(thaContactUs).withIcon(GoogleMaterial.Icon.gmd_mail).withCheckable(false).withIdentifier(6),
+                        new SecondaryDrawerItem().withName(thaHelp).withIcon(GoogleMaterial.Icon.gmd_help).withCheckable(false).withIdentifier(9)
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
@@ -591,10 +600,10 @@ public class Main extends ActionBarActivity {
     }
 
     public void addItemsToDrawer() {
-        IDrawerItem walls = new PrimaryDrawerItem().withName(thaWalls).withIcon(GoogleMaterial.Icon.gmd_landscape).withIdentifier(2);
+        IDrawerItem walls = new PrimaryDrawerItem().withName(thaWalls).withIcon(GoogleMaterial.Icon.gmd_landscape).withDescription("Online wallpaper collection.").withIdentifier(2);
         /*IDrawerItem request = new PrimaryDrawerItem().withName(thaRequest).withIcon(GoogleMaterial.Icon.gmd_forum).withIdentifier(5);*/
         if (enable_features) {
-            result.addItem(walls, 1);
+            result.addItem(walls, 2);
             /*result.addItem(request, 4);*/
         }
     }
