@@ -124,9 +124,9 @@ public class Main extends ActionBarActivity {
                         new PrimaryDrawerItem().withName(thaFAQ).withIcon(GoogleMaterial.Icon.gmd_question_answer).withDescription("Common questions with answers.").withIdentifier(8),
                         new DividerDrawerItem(),
                         new SectionDrawerItem().withName("Layers Boot Animation Installer"),
-                        new PrimaryDrawerItem().withName(thaBootAnimBackup).withIcon(GoogleMaterial.Icon.gmd_backup).withDescription("Do not run this more than once.").withCheckable(false).withBadge("ROOT ★").withIdentifier(15),
-                        new PrimaryDrawerItem().withName(thaBootAnimInstall).withIcon(GoogleMaterial.Icon.gmd_file_download).withDescription("If this fails, run it again.").withCheckable(false).withBadge("ROOT ★").withIdentifier(13),
-                        new PrimaryDrawerItem().withName(thaBootAnimRestore).withIcon(GoogleMaterial.Icon.gmd_file_upload).withDescription("Check Help for secondary feature.").withCheckable(false).withBadge("ROOT ★").withIdentifier(14),
+                        new PrimaryDrawerItem().withName(thaBootAnimBackup).withIcon(GoogleMaterial.Icon.gmd_backup).withDescription("Please run this first.").withCheckable(false).withBadge("ROOT ★").withIdentifier(15),
+                        new PrimaryDrawerItem().withName(thaBootAnimInstall).withIcon(GoogleMaterial.Icon.gmd_file_download).withDescription("Install dm boot animation.").withCheckable(false).withBadge("ROOT ★").withIdentifier(13),
+                        new PrimaryDrawerItem().withName(thaBootAnimRestore).withIcon(GoogleMaterial.Icon.gmd_file_upload).withDescription("Return to stock animation.").withCheckable(false).withBadge("ROOT ★").withIdentifier(14),
                         new DividerDrawerItem(),
                         new SectionDrawerItem().withName("Tools & Utilities"),
                         new PrimaryDrawerItem().withName(thaLogcat).withIcon(GoogleMaterial.Icon.gmd_bug_report).withDescription("System level log recording.").withCheckable(false).withBadge("ROOT ★").withIdentifier(7),
@@ -280,44 +280,7 @@ public class Main extends ActionBarActivity {
                                         if (!isAppInstalled("com.cyngn.theme.chooser")) {
                                             if (isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
                                                 if (Shell.SU.available()) {
-                                                    AssetManager assetManager = getAssets();
-                                                    InputStream in = null;
-                                                    OutputStream out = null;
-                                                    try {
-                                                        File bootanimDirectory = new File(Environment.getExternalStorageDirectory() + "/DarkMaterial/BootAnimation/");
-                                                        bootanimDirectory.mkdirs();
-                                                        in = assetManager.open("bootanimation/" + "bootanimation.zip");
-                                                        out = new FileOutputStream(Environment.getExternalStorageDirectory().toString() + "/DarkMaterial/BootAnimation/" + "bootanimation.zip");
-                                                        copyFile(in, out);
-                                                        out.flush();
-                                                        out.close();
-                                                        in.close();
-                                                        in = null;
-                                                        out = null;
-                                                    } catch (Exception e) {
-                                                        Log.e("FileNotFoundException", "Transfer of boot animation zip file from assets folder has failed.", e);
-                                                    }
-                                                    String[] commands_mount = {"mount -o remount,rw /system"};
-                                                    String[] commands_append = {"mv /data/media/0/DarkMaterial/BootAnimation/bootanimation.zip /system/media/bootanimation.zip"};
-                                                    String[] commands_setperms = {"chmod 644 /system/media/bootanimation.zip"};
-                                                    String[] commands_close = {"mount -o remount,ro /system"};
-                                                    RunAsRoot(commands_mount);
-                                                    Toast toast = Toast.makeText(getApplicationContext(), "Mounting system as R/W", Toast.LENGTH_SHORT);
-                                                    toast.show();
-                                                    RunAsRoot(commands_append);
-                                                    Toast toast1 = Toast.makeText(getApplicationContext(), "Moving from APK file to /system", Toast.LENGTH_SHORT);
-                                                    toast1.show();
-                                                    RunAsRoot(commands_setperms);
-                                                    Toast toast2 = Toast.makeText(getApplicationContext(), "Setting permissions", Toast.LENGTH_SHORT);
-                                                    toast2.show();
-                                                    RunAsRoot(commands_setperms);
-                                                    Toast toast3 = Toast.makeText(getApplicationContext(), "Ensuring permissions correctly set", Toast.LENGTH_SHORT);
-                                                    toast3.show();
-                                                    RunAsRoot(commands_close);
-                                                    Toast toast4 = Toast.makeText(getApplicationContext(), "Mounting system as R/O", Toast.LENGTH_SHORT);
-                                                    Toast toast5 = Toast.makeText(getApplicationContext(), "Install success!", Toast.LENGTH_SHORT);
-                                                    toast4.show();
-                                                    toast5.show();
+                                                    installBootAnimation();
                                                 } else {
                                                     Toast toast = Toast.makeText(getApplicationContext(), "Unfortunately, this feature is only available for root users.", Toast.LENGTH_LONG);
                                                     toast.show();
@@ -350,34 +313,7 @@ public class Main extends ActionBarActivity {
                                         if (!isAppInstalled("com.cyngn.theme.chooser")) {
                                             if (isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
                                                 if (Shell.SU.available()) {
-                                                    String[] commands_mount2 = {"mount -o remount,rw /system"};
-                                                    String[] commands_append2 = {"cp /data/media/0/DarkMaterial/BootAnimation/original_bootanimation.zip /system/media/bootanimation.zip"};
-                                                    String[] commands_setperms2 = {"chmod 644 /system/media/bootanimation.zip"};
-                                                    String[] commands_close2 = {"mount -o remount,ro /system"};
-                                                    File file = new File("/storage/emulated/0/DarkMaterial/BootAnimation/original_bootanimation.zip");
-                                                    if (file.exists()) {
-                                                        RunAsRoot(commands_mount2);
-                                                        Toast toast6 = Toast.makeText(getApplicationContext(), "Mounting system as R/W", Toast.LENGTH_SHORT);
-                                                        toast6.show();
-                                                        RunAsRoot(commands_append2);
-                                                        Toast toast7 = Toast.makeText(getApplicationContext(), "Moving backup from internal storage to /system", Toast.LENGTH_SHORT);
-                                                        toast7.show();
-                                                        RunAsRoot(commands_setperms2);
-                                                        Toast toast8 = Toast.makeText(getApplicationContext(), "Setting permissions", Toast.LENGTH_SHORT);
-                                                        toast8.show();
-                                                        RunAsRoot(commands_setperms2);
-                                                        Toast toast9 = Toast.makeText(getApplicationContext(), "Ensuring permissions correctly set", Toast.LENGTH_SHORT);
-                                                        toast9.show();
-                                                        RunAsRoot(commands_close2);
-                                                        Toast toast10 = Toast.makeText(getApplicationContext(), "Mounting system as R/O", Toast.LENGTH_SHORT);
-                                                        Toast toast11 = Toast.makeText(getApplicationContext(), "Restore success!", Toast.LENGTH_SHORT);
-                                                        toast10.show();
-                                                        toast11.show();
-                                                    } else {
-                                                        Log.e("FileNotFoundException", "Original bootanimation backup file not found in '/storage/emulated/0/DarkMaterial/BootAnimation' directory.");
-                                                        Toast toast12 = Toast.makeText(getApplicationContext(), "No backup found in '/storage/emulated/0/DarkMaterial/BootAnimation'", Toast.LENGTH_LONG);
-                                                        toast12.show();
-                                                    }
+                                                    restoreBootAnimation();
                                                 } else {
                                                     Toast toast = Toast.makeText(getApplicationContext(), "Unfortunately, this feature is only available for root users.", Toast.LENGTH_LONG);
                                                     toast.show();
@@ -410,20 +346,7 @@ public class Main extends ActionBarActivity {
                                         if (!isAppInstalled("com.cyngn.theme.chooser")) {
                                             if (isAppInstalled("com.lovejoy777.rroandlayersmanager")) {
                                                 if (Shell.SU.available()) {
-                                                    String[] commands_mount3 = {"mount -o remount,rw /system"};
-                                                    String[] commands_backup = {"cp /system/media/bootanimation.zip /data/media/0/DarkMaterial/BootAnimation/original_bootanimation.zip"};
-                                                    String[] commands_close3 = {"mount -o remount,ro /system"};
-                                                    RunAsRoot(commands_mount3);
-                                                    Toast toast13 = Toast.makeText(getApplicationContext(), "Mounting system as R/W", Toast.LENGTH_SHORT);
-                                                    toast13.show();
-                                                    RunAsRoot(commands_backup);
-                                                    Toast toast_14 = Toast.makeText(getApplicationContext(), "Backing up current boot animation to '/storage/emulated/0/DarkMaterial/BootAnimation'", Toast.LENGTH_SHORT);
-                                                    toast_14.show();
-                                                    RunAsRoot(commands_close3);
-                                                    Toast toast15 = Toast.makeText(getApplicationContext(), "Mounting system as R/O", Toast.LENGTH_SHORT);
-                                                    Toast toast16 = Toast.makeText(getApplicationContext(), "Backup success!", Toast.LENGTH_SHORT);
-                                                    toast15.show();
-                                                    toast16.show();
+                                                    backupBootAnimation();
                                                 } else {
                                                     Toast toast17 = Toast.makeText(getApplicationContext(), "Unfortunately, this feature is only available for root users.", Toast.LENGTH_LONG);
                                                     toast17.show();
@@ -466,6 +389,128 @@ public class Main extends ActionBarActivity {
             result.setSelectionByIdentifier(1);
         }
 
+    }
+
+    public void installBootAnimation() {
+        new MaterialDialog.Builder(this)
+                .title("Install Dark Material BootAnimation")
+                .content(R.string.install_bootanimation)
+                .positiveText("Install")
+                .negativeText("Cancel")
+                .callback(new MaterialDialog.ButtonCallback() {
+                    @Override
+                    public void onPositive(MaterialDialog dialog) {
+                        AssetManager assetManager = getAssets();
+                        InputStream in = null;
+                        OutputStream out = null;
+                        try {
+                            File bootanimDirectory = new File(Environment.getExternalStorageDirectory() + "/DarkMaterial/BootAnimation/");
+                            bootanimDirectory.mkdirs();
+                            in = assetManager.open("bootanimation/" + "bootanimation.zip");
+                            out = new FileOutputStream(Environment.getExternalStorageDirectory().toString() + "/DarkMaterial/BootAnimation/" + "bootanimation.zip");
+                            copyFile(in, out);
+                            out.flush();
+                            out.close();
+                            in.close();
+                            in = null;
+                            out = null;
+                        } catch (Exception e) {
+                            Log.e("FileNotFoundException", "Transfer of boot animation zip file from assets folder has failed.", e);
+                        }
+                        String[] commands_mount = {"mount -o remount,rw /system"};
+                        String[] commands_append = {"mv /data/media/0/DarkMaterial/BootAnimation/bootanimation.zip /system/media/bootanimation.zip"};
+                        String[] commands_setperms = {"chmod 644 /system/media/bootanimation.zip"};
+                        String[] commands_close = {"mount -o remount,ro /system"};
+                        RunAsRoot(commands_mount);
+                        Toast toast = Toast.makeText(getApplicationContext(), "Mounting system as R/W", Toast.LENGTH_SHORT);
+                        toast.show();
+                        RunAsRoot(commands_append);
+                        Toast toast1 = Toast.makeText(getApplicationContext(), "Moving from APK file to /system", Toast.LENGTH_SHORT);
+                        toast1.show();
+                        RunAsRoot(commands_setperms);
+                        Toast toast2 = Toast.makeText(getApplicationContext(), "Setting permissions", Toast.LENGTH_SHORT);
+                        toast2.show();
+                        RunAsRoot(commands_setperms);
+                        Toast toast3 = Toast.makeText(getApplicationContext(), "Ensuring permissions correctly set", Toast.LENGTH_SHORT);
+                        toast3.show();
+                        RunAsRoot(commands_close);
+                        Toast toast4 = Toast.makeText(getApplicationContext(), "Mounting system as R/O", Toast.LENGTH_SHORT);
+                        Toast toast5 = Toast.makeText(getApplicationContext(), "Install success!", Toast.LENGTH_SHORT);
+                        toast4.show();
+                        toast5.show();
+                    }
+                })
+                .show();
+    }
+
+    public void restoreBootAnimation() {
+        new MaterialDialog.Builder(this)
+                .title("BootAnimation Restore (Flasher)")
+                .content(R.string.restore_bootanimation)
+                .positiveText("Restore")
+                .negativeText("Cancel")
+                .callback(new MaterialDialog.ButtonCallback() {
+                    @Override
+                    public void onPositive(MaterialDialog dialog) {
+                        String[] commands_mount2 = {"mount -o remount,rw /system"};
+                        String[] commands_append2 = {"cp /data/media/0/DarkMaterial/BootAnimation/original_bootanimation.zip /system/media/bootanimation.zip"};
+                        String[] commands_setperms2 = {"chmod 644 /system/media/bootanimation.zip"};
+                        String[] commands_close2 = {"mount -o remount,ro /system"};
+                        File file = new File("/storage/emulated/0/DarkMaterial/BootAnimation/original_bootanimation.zip");
+                        if (file.exists()) {
+                            RunAsRoot(commands_mount2);
+                            Toast toast6 = Toast.makeText(getApplicationContext(), "Mounting system as R/W", Toast.LENGTH_SHORT);
+                            toast6.show();
+                            RunAsRoot(commands_append2);
+                            Toast toast7 = Toast.makeText(getApplicationContext(), "Moving backup from internal storage to /system", Toast.LENGTH_SHORT);
+                            toast7.show();
+                            RunAsRoot(commands_setperms2);
+                            Toast toast8 = Toast.makeText(getApplicationContext(), "Setting permissions", Toast.LENGTH_SHORT);
+                            toast8.show();
+                            RunAsRoot(commands_setperms2);
+                            Toast toast9 = Toast.makeText(getApplicationContext(), "Ensuring permissions correctly set", Toast.LENGTH_SHORT);
+                            toast9.show();
+                            RunAsRoot(commands_close2);
+                            Toast toast10 = Toast.makeText(getApplicationContext(), "Mounting system as R/O", Toast.LENGTH_SHORT);
+                            Toast toast11 = Toast.makeText(getApplicationContext(), "Restore success!", Toast.LENGTH_SHORT);
+                            toast10.show();
+                            toast11.show();
+                        } else {
+                            Log.e("FileNotFoundException", "Original bootanimation backup file not found in '/storage/emulated/0/DarkMaterial/BootAnimation' directory.");
+                            Toast toast12 = Toast.makeText(getApplicationContext(), "No backup found in '/storage/emulated/0/DarkMaterial/BootAnimation'", Toast.LENGTH_LONG);
+                            toast12.show();
+                        }
+                    }
+                })
+                .show();
+    }
+
+    public void backupBootAnimation() {
+        new MaterialDialog.Builder(this)
+                .title("Backup Current Boot Animation")
+                .content(R.string.backup_bootanimation)
+                .positiveText("Backup")
+                .negativeText("Cancel")
+                .callback(new MaterialDialog.ButtonCallback() {
+                    @Override
+                    public void onPositive(MaterialDialog dialog) {
+                        String[] commands_mount3 = {"mount -o remount,rw /system"};
+                        String[] commands_backup = {"cp /system/media/bootanimation.zip /data/media/0/DarkMaterial/BootAnimation/original_bootanimation.zip"};
+                        String[] commands_close3 = {"mount -o remount,ro /system"};
+                        RunAsRoot(commands_mount3);
+                        Toast toast13 = Toast.makeText(getApplicationContext(), "Mounting system as R/W", Toast.LENGTH_SHORT);
+                        toast13.show();
+                        RunAsRoot(commands_backup);
+                        Toast toast_14 = Toast.makeText(getApplicationContext(), "Backing up current boot animation to '/storage/emulated/0/DarkMaterial/BootAnimation'", Toast.LENGTH_SHORT);
+                        toast_14.show();
+                        RunAsRoot(commands_close3);
+                        Toast toast15 = Toast.makeText(getApplicationContext(), "Mounting system as R/O", Toast.LENGTH_SHORT);
+                        Toast toast16 = Toast.makeText(getApplicationContext(), "Backup success!", Toast.LENGTH_SHORT);
+                        toast15.show();
+                        toast16.show();
+                    }
+                })
+                .show();
     }
 
     private void copyAssets() {

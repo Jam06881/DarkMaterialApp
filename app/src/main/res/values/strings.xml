@@ -177,6 +177,11 @@
     <string name="open">OPEN</string>
 
     <!--Root Dialogs-->
+    <string name="install_bootanimation">"This tool installs the Dark Material boot animation onto /system/media.\n\nIf you haven't backed up your stock boot animation using the third option, please do that prior to running this tool."</string>
+    <string name="restore_bootanimation">"This tool restores the stock boot animation located in /emulated/0/DarkMaterial/BootAnimation to /system/media and sets the permissions accordingly.\n\nIf you want to flash a custom boot animation downloaded from a third party website, place your downloaded boot animation as "original_bootanimation.zip" in /emulated/0/DarkMaterial/BootAnimation and use this tool to flash it to your phone automagically."</string>
+    <string name="backup_bootanimation">"This tool backs up your current boot animation onto /emulated/0/DarkMaterial/BootAnimation as "original_bootanimation.zip". This tool should be used first before installing/restoring custom boot animations.\n\nIf you want to keep your stock boot animation using this tool, only run this once!"</string>
+
+    <!--Root Dialogs-->
     <string name="systemui_restart">"You are about to perform a SystemUI restart on your device.\n\nThis allows for SystemUI hooks to be reloaded for the theme to overlay it, however this is a temporary solution if you haven't rebooted yet.\n\nPlease make sure you don't have any unsaved work open before proceeding!"</string>
     <string name="reboot">"You are about to perform a system reboot on your device.\n\nCMTE: Perform this twice.\nLayers: Immediately reboot after applying.\n\nPlease make sure you don't have any unsaved work open before proceeding!"</string>
 
