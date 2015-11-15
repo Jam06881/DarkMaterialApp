@@ -3,6 +3,7 @@ package com.chummy.jezebel.material.dark.fragments;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -131,18 +132,28 @@ public class Home extends Fragment {
                 Intent launch_cm_theme = new Intent("android.intent.action.MAIN");
                 launch_cm_theme.setComponent(new ComponentName("org.cyanogenmod.theme.chooser", "org.cyanogenmod.theme.chooser.ChooserActivity"));
                 launch_cm_theme.putExtra("pkgName", context.getPackageName());
+                Intent launch_cos_theme = new Intent("android.intent.action.MAIN");
+                launch_cos_theme.setComponent(new ComponentName("com.cyngn.theme.chooser", "com.cyngn.theme.chooser.ChooserActivity"));
+                launch_cos_theme.putExtra("pkgName", context.getPackageName());
                 Intent intent_cyanogenmod = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
                 Intent intent_rrolayers = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
                 Intent intent_settings = getActivity().getPackageManager().getLaunchIntentForPackage("com.android.settings");
                 if (intent_cyanogenmod == null) {
-                    if (intent_rrolayers == null) {
-                        Toast.makeText(getActivity(), getString(R.string.cm_not_configured), Toast.LENGTH_SHORT).show();
-                        startActivity(intent_settings);
+                    if (!isAppInstalled(getActivity(), "com.cyngn.theme.chooser")) {
+                        if (intent_rrolayers == null) {
+                            Toast.makeText(getActivity(), getString(R.string.cm_not_configured), Toast.LENGTH_SHORT).show();
+                            startActivity(intent_settings);
+                        } else {
+                            actionA.setTitle("Layers Manager");
+                            actionA.setIcon(R.drawable.layers);
+                            Toast.makeText(getActivity(), getString(R.string.theme_installed_rro), Toast.LENGTH_LONG).show();
+                            startActivity(intent_rrolayers);
+                        }
                     } else {
-                        actionA.setTitle("Layers Manager");
-                        actionA.setIcon(R.drawable.layers);
-                        Toast.makeText(getActivity(), getString(R.string.theme_installed_rro), Toast.LENGTH_LONG).show();
-                        startActivity(intent_rrolayers);
+                        actionA.setTitle("App Themer");
+                        actionA.setIcon(R.drawable.theme_chooser);
+                        Toast.makeText(getActivity(), getString(R.string.theme_installed_cm), Toast.LENGTH_LONG).show();
+                        startActivity(launch_cos_theme);
                     }
                 } else {
                     actionA.setTitle("Theme Engine");
@@ -179,6 +190,16 @@ public class Home extends Fragment {
             }
         });
         return root;
+    }
+
+    public static boolean isAppInstalled(Context context, String packageName) {
+        try {
+            context.getPackageManager().getApplicationInfo(packageName, 0);
+            return true;
+        }
+        catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
     }
 
     private class StartUp extends AsyncTask<String, Void, Void> {
