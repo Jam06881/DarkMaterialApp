@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.afollestad.materialdialogs.MaterialDialog;
 import com.chummy.jezebel.material.dark.R;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 
@@ -30,6 +31,15 @@ public class Home extends Fragment {
     public static Fragment newInstance(Context context) {
         Home f = new Home();
         return f;
+    }
+
+    public static boolean isAppInstalled(Context context, String packageName) {
+        try {
+            context.getPackageManager().getApplicationInfo(packageName, 0);
+            return true;
+        } catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
     }
 
     @Override
@@ -170,7 +180,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View v) {
                 if (Shell.SU.available()) {
-                    (new StartUp()).setContext(v.getContext()).execute("sysui");
+                    showThreadCloserDialogSysUI();
                 } else {
                     Toast toast1 = Toast.makeText(getActivity(), "Unfortunately, this feature is only available for root users.", Toast.LENGTH_LONG);
                     toast1.show();
@@ -182,7 +192,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View v) {
                 if (Shell.SU.available()) {
-                    (new StartUp()).setContext(v.getContext()).execute("reboot");
+                    showThreadCloserDialogReboot();
                 } else {
                     Toast toast2 = Toast.makeText(getActivity(), "Unfortunately, this feature is only available for root users.", Toast.LENGTH_LONG);
                     toast2.show();
@@ -192,14 +202,34 @@ public class Home extends Fragment {
         return root;
     }
 
-    public static boolean isAppInstalled(Context context, String packageName) {
-        try {
-            context.getPackageManager().getApplicationInfo(packageName, 0);
-            return true;
-        }
-        catch (PackageManager.NameNotFoundException e) {
-            return false;
-        }
+    public void showThreadCloserDialogSysUI() {
+        new MaterialDialog.Builder(getActivity())
+                .title("Restart SystemUI")
+                .content(R.string.systemui_restart)
+                .positiveText("Proceed")
+                .negativeText("Cancel")
+                .callback(new MaterialDialog.ButtonCallback() {
+                    @Override
+                    public void onPositive(MaterialDialog dialog) {
+                        (new StartUp()).setContext(dialog.getContext()).execute("sysui");
+                    }
+                })
+                .show();
+    }
+
+    public void showThreadCloserDialogReboot() {
+        new MaterialDialog.Builder(getActivity())
+                .title("System Reboot")
+                .content(R.string.reboot)
+                .positiveText("Proceed")
+                .negativeText("Cancel")
+                .callback(new MaterialDialog.ButtonCallback() {
+                    @Override
+                    public void onPositive(MaterialDialog dialog) {
+                        (new StartUp()).setContext(dialog.getContext()).execute("reboot");
+                    }
+                })
+                .show();
     }
 
     private class StartUp extends AsyncTask<String, Void, Void> {

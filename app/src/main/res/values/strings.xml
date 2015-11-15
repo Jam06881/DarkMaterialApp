@@ -176,6 +176,10 @@
     <string name="donate">DONATE</string>
     <string name="open">OPEN</string>
 
+    <!--Root Dialogs-->
+    <string name="systemui_restart">"You are about to perform a SystemUI restart on your device.\n\nThis allows for SystemUI hooks to be reloaded for the theme to overlay it, however this is a temporary solution if you haven't rebooted yet.\n\nPlease make sure you don't have any unsaved work open before proceeding!"</string>
+    <string name="reboot">"You are about to perform a system reboot on your device.\n\nCMTE: Perform this twice.\nLayers: Immediately reboot after applying.\n\nPlease make sure you don't have any unsaved work open before proceeding!"</string>
+
     <!--What is Themed-->
     <string name="wit_title">what is themed?</string>
     <string name="wit_description">we have over 145 apps overlaid in both our cm and layers version of dark material. carefully categorized below</string>
