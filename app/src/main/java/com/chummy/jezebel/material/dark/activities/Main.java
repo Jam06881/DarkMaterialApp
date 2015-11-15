@@ -217,14 +217,21 @@ public class Main extends ActionBarActivity {
                                     break;
                                 case 7:
                                     if (Shell.SU.available()) {
-                                        if (!isAppInstalled("com.nolanlawson.logcat")) {
-                                            Intent logcat = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_link_logcat)));
-                                            startActivity(logcat);
+                                        if (!isAppInstalled("com.tooleap.logcat")) {
+                                            if (!isAppInstalled("com.nolanlawson.logcat")) {
+                                                Intent logcat = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_link_logcat)));
+                                                startActivity(logcat);
+                                            } else {
+                                                Intent intent_logcat = getPackageManager().getLaunchIntentForPackage("com.nolanlawson.logcat");
+                                                Toast toast = Toast.makeText(getApplicationContext(), getResources().getString(R.string.logcat_toast), Toast.LENGTH_LONG);
+                                                toast.show();
+                                                startActivity(intent_logcat);
+                                            }
                                         } else {
-                                            Intent intent_logcat = getPackageManager().getLaunchIntentForPackage("com.nolanlawson.logcat");
+                                            Intent intent_tooleap = getPackageManager().getLaunchIntentForPackage("com.tooleap.logcat");
                                             Toast toast = Toast.makeText(getApplicationContext(), getResources().getString(R.string.logcat_toast), Toast.LENGTH_LONG);
                                             toast.show();
-                                            startActivity(intent_logcat);
+                                            startActivity(intent_tooleap);
                                         }
                                     } else {
                                         Toast toast = Toast.makeText(getApplicationContext(), "Unfortunately, this feature is only available for root users.", Toast.LENGTH_LONG);
