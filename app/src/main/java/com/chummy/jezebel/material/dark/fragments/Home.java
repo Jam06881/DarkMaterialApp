@@ -27,6 +27,7 @@ public class Home extends Fragment {
 
     private Context context;
     private View famBg;
+    private View regression_view;
 
     public static Fragment newInstance(Context context) {
         Home f = new Home();
@@ -48,8 +49,18 @@ public class Home extends Fragment {
 
         context = getActivity();
 
+        regression_view = root.findViewById(R.id.regression);
+        regression_view.setVisibility(View.GONE);
         famBg = root.findViewById(R.id.famBg);
         famBg.setVisibility(View.GONE);
+
+        if (isAppInstalled(getActivity(), "com.cyanogenmod.theme.chooser")) {
+            regression_view.setVisibility(View.VISIBLE);
+        } else {
+            if (isAppInstalled(getActivity(), "com.cyngn.theme.chooser")) {
+                regression_view.setVisibility(View.VISIBLE);
+            }
+        }
 
         ActionBar toolbar = ((ActionBarActivity) context).getSupportActionBar();
         toolbar.setTitle(R.string.app_name);
