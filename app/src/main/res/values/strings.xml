@@ -46,7 +46,7 @@
     <string name="app_one_link">"http://goo.gl/6ppEVn"</string>
 
     <string name="app_two_title">visit the xda thread</string>
-    <string name="app_two_content">"for more information about the theme and the development of the theme/app/installer, check out the official forum thread.\n\n\n"</string>
+    <string name="app_two_content">"for more information about the theme and the development of the theme/app/installer, check out the official forum thread."</string>
     <string name="app_two_link">@string/xda_link</string>
 
     <string name="app_three_title">join our g+ community</string>
