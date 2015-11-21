@@ -54,7 +54,7 @@ public class Home extends Fragment {
         famBg = root.findViewById(R.id.famBg);
         famBg.setVisibility(View.GONE);
 
-        if (isAppInstalled(getActivity(), "com.cyanogenmod.theme.chooser")) {
+        if (isAppInstalled(getActivity(), "org.cyanogenmod.theme.chooser")) {
             regression_view.setVisibility(View.VISIBLE);
         } else {
             if (isAppInstalled(getActivity(), "com.cyngn.theme.chooser")) {
