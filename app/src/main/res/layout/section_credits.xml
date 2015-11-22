@@ -24,7 +24,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/cards_margin"
-                android:clickable="false"
                 card_view:cardBackgroundColor="@color/cardsbg"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
                 card_view:cardElevation="@dimen/cards_elevation">
@@ -81,7 +80,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/cdt"
                 android:layout_margin="@dimen/cards_margin"
-                android:clickable="false"
                 card_view:cardBackgroundColor="@color/cardsbg"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
                 card_view:cardElevation="@dimen/cards_elevation">
@@ -174,7 +172,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/nicholas"
                 android:layout_margin="@dimen/cards_margin"
-                android:clickable="false"
                 card_view:cardBackgroundColor="@color/cardsbg"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
                 card_view:cardElevation="@dimen/cards_elevation">
@@ -267,7 +264,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/bella"
                 android:layout_margin="@dimen/cards_margin"
-                android:clickable="false"
                 card_view:cardBackgroundColor="@color/cardsbg"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
                 card_view:cardElevation="@dimen/cards_elevation">
@@ -360,7 +356,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/aditya"
                 android:layout_margin="@dimen/cards_margin"
-                android:clickable="false"
                 card_view:cardBackgroundColor="@color/cardsbg"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
                 card_view:cardElevation="@dimen/cards_elevation">
@@ -453,7 +448,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/khizar"
                 android:layout_margin="@dimen/cards_margin"
-                android:clickable="false"
                 card_view:cardBackgroundColor="@color/cardsbg"
                 card_view:cardCornerRadius="@dimen/card_corner_radius"
                 card_view:cardElevation="@dimen/cards_elevation">
@@ -536,45 +530,6 @@
                             android:textSize="@dimen/text_ultrasmall"
                             android:textStyle="bold" />
 
-                    </LinearLayout>
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/credits"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/fahad"
-                android:layout_margin="@dimen/cards_margin"
-                android:clickable="false"
-                card_view:cardBackgroundColor="@color/cardsbg"
-                card_view:cardCornerRadius="@dimen/card_corner_radius"
-                card_view:cardElevation="@dimen/cards_elevation">
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/cards_margin">
-
-                    <LinearLayout
-                        android:id="@+id/credit_card"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/cards_text_margin"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/credit_text"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignLeft="@id/welcometest"
-                            android:layout_marginBottom="@dimen/cards_text_margin"
-                            android:layout_marginTop="@dimen/cards_text_margin"
-                            android:gravity="center"
-                            android:lineSpacingMultiplier="1.2"
-                            android:text="@string/license_credit"
-                            android:textColor="@color/dark_grey"
-                            android:textSize="@dimen/text_ultrasmall" />
                     </LinearLayout>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
