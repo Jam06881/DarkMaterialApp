@@ -36,7 +36,7 @@
 
     <!--Main Screen Cards-->
     <string name="welcome_title">welcome to lollipop, darkened!</string>
-    <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with monthly design updates and bug fixes - installed by more than 400,000 users with over 75,000 active users on play! having over 145 original app overlays, this is the most complete theme available on the play store!\n\nnow available for both cmte and layers for lollipop and marshmallow devices!</string>
+    <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with monthly design updates and bug fixes - installed by more than 400,000 users with over 75,000 active users on play! having over 145 original app overlays, this is the most complete theme available on the play store!\n\nnow available for both cmte and layers (beta) for lollipop and marshmallow devices!</string>
 
     <string name="play_card_title">chummy development team</string>
     <string name="play_card_content">"if you haven't already, please check out our other themes and boot animations on Play!"</string>
@@ -187,7 +187,7 @@
 
     <!--What is Themed-->
     <string name="wit_title">what is themed?</string>
-    <string name="wit_description">we have over 145 apps overlaid in both our cm and layers version of dark material. carefully categorized below</string>
+    <string name="wit_description">we have over 153 apps overlaid in both our cm and layers version of dark material. carefully categorized below</string>
 
     <!--Logcat-->
     <string name="logcat_toast">With this app, you can monitor the errors that you may be getting (if the app gets forcibly uninstalled). Save the log and email it to me please!</string>
@@ -264,7 +264,8 @@
     <string name="card_two_title">"android system app support"</string>
     <string name="card_two_list">AOSP Browser (com.android.browser)
         \nAOSP Keyboard (com.android.inputmethod.latinime)
-        \nAOSP Messages (com.android.mms)
+        \nAOSP Lollipop Messaging (com.android.mms)
+        \nAOSP Marshmallow Messaging (com.android.messaging)
         \nBluetooth Transfer (com.android.bluetooth)
         \nCalculator (com.android.calculator2)
         \nCalendar (com.android.calendar)
@@ -282,6 +283,7 @@
     <string name="card_three_list">BlissOTA (com.chummy.blissroms.updates)
         \nBlissPapers (com.death2all110.blisspapers)
         \nDevice Control (org.namelessrom.devicecontrol)
+        \nDU About (com.dirtyunicorns.about)
         \nDU Updater (com.dirtyunicorns.duupdater)
         \nEuphoria Mahdi TouchControl (com.mahdi.touchcontrol)
         \nEuphoria Updater (com.euphoria.ota)
@@ -319,12 +321,14 @@
         \nGoogle Keyboard (com.google.android.inputmethod.latin)
         \nGoogle+ (com.google.android.apps.plus)
         \nGoogle Camera (com.google.android.GoogleCamera)
+        \nGoogle TTS (com.google.android.tts)
         \nHangouts (com.google.android.talk)
         \nInbox (com.google.android.apps.inbox)
         \nKeep (com.google.android.keep)
         \nMessenger (com.google.android.apps.messaging)
         \nMusic (com.google.android.music)
         \nNewsstand/Magazines (com.google.android.apps.magazines)
+        \nPackage Installer (com.google.android.packageinstaller)
         \nPlay Services (com.google.android.gms)
         \nTranslate (com.google.android.apps.translate)
         \nYoutube (com.google.android.youtube)</string>
@@ -333,6 +337,7 @@
         \nA Better Camera Unlocked (com.almalence.opencam_plus)
         \nAlarmSolo (net.maicas.android.alarmsolo)
         \nApex Launcher (com.anddoes.launcher)
+        \nArcus (pixkart.arcus)
         \nBetterBatteryStats Play (com.asksven.betterbatterystats)
         \nBetterBatteryStats XDA (com.asksven.betterbatterystats_xdaedition)
         \nBlackPlayer EX + BlackPlayer Free (com.kodarkooperativet.blackplayerex)
@@ -341,6 +346,7 @@
         \nDelayed Lock (de.j4velin.delayedlock2.trial)
         \nDropbox + Dropbox Material (com.dropbox.android)
         \nEbay (com.ebay.mobile)
+        \nES File Explorer (com.estrongs.android.pop)
         \nFacebook (com.facebook.katana)
         \nFacebook Messenger (com.facebook.orca)
         \nGravityBoxLP (com.ceco.lollipop.gravitybox)
