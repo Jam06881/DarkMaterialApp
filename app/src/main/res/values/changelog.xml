@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-        <item>@array/v107</item>
+        <item>@array/v108</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v108</item>
         <item>@array/v107</item>
         <item>@array/v106</item>
         <item>@array/v105</item>
@@ -50,6 +51,90 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v108">
+        <item>cent huit &#8212; cmte-only release</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>MM6.0: Fix DocumentsUI grey background.</item>
+        <item>CM13: More SystemUI Tuner Tweaks.</item>
+        <item>Add prospective CM colors that I have added to CM Gerrit.</item>
+        <item>CM13: Add themed Edit Tiles QS Tile.</item>
+        <item>MM6.0: Add themed SystemUI Tuner Icon.</item>
+        <item>Special request to fix GMD Gesture Control\'s Arrow Back.</item>
+        <item>Add dark BG in Starred Background of WhatsApp + Clean up some gfx.</item>
+        <item>Add dark launchBGs for Docs/Slides/Sheets.</item>
+        <item>Fix up invisible black on black icons in Google App.</item>
+        <item>Fix unreadable Add to Circles recommendation text in G+.</item>
+        <item>Add advanced text color into Calculator colors.</item>
+        <item>Fix CellBroadcastReceiver\'s styles (missing @\'s).</item>
+        <item>Dropbox: Fix highlighted accent and unreadable MSWord shortcut text.</item>
+        <item>Revamp Dropbox Overlay with dark background.</item>
+        <item>Steal @moelle89\'s clear all/dismiss all notification animated icon.</item>
+        <item>Remove dim alarm icon tint as it only dims on lockscreen.</item>
+        <item>Update G+ overlay to use AppCompat completely .</item>
+        <item>Add more styles into appcompat_styles for more support.</item>
+        <item>Revert "MM6.0: Add support for state-changing seekbar/scroll handle".</item>
+        <item>MM6.0: Theme Permission icon in permission dialog.</item>
+        <item>MM6.0: Fix Settings Permissions Switchbar Background.</item>
+        <item>Fix up Google Keep\'s Quick Photo Attachment Icons.</item>
+        <item>Partial revert of Play Store whitening commit.</item>
+        <item>Fix up white action bars on G+, thus fixing text colors too!.</item>
+        <item>Change G+ notification badge color to red instead of white.</item>
+        <item>Fix unreadable notification badge on G+ 6.8.</item>
+        <item>Fix up G+ 6.8 Profile Background.</item>
+        <item>Revamp Google Keep Overlay.</item>
+        <item>MM6.0: Revamp AOSP Messaging App.</item>
+        <item>Verify integrity of Google App overlay against 5.6.23.19 arm64 beta.</item>
+        <item>Attempt to fix unreadable Smart Lock account picker dialog.</item>
+        <item>Add themed remove button in account view for new G+.</item>
+        <item>Add new trebuchet folder backgrounds.</item>
+        <item>Attempt to fix G+ FC due to default user icon changed.</item>
+        <item>MM6.0: Change orange clock accent to pink like before. I like pink..</item>
+        <item>Fix Dropbox Item Selected Action Bar Color.</item>
+        <item>Update Google Play for New Layout Design.</item>
+        <item>Reroute Pushbullet style to commons\' Appcompat style.</item>
+        <item>Revamp + rebuild workable copy of common\'s appcompat styles.</item>
+        <item>cdt activator: Add Appcompat Styles to commons folder.</item>
+        <item>Change Google Keep Text Color and Fix Invisible Accent.</item>
+        <item>MM6.0: Update default placeholder colors for Gallery3d.</item>
+        <item>MM6.0: Fix black divider on Google Now On Tap Cards.</item>
+        <item>Add more themed resources for Hangouts 6.0 (Fab Labels, Fix Divider).</item>
+        <item>Begin supporting Hangouts 6.0 (dialog background fix).</item>
+        <item>Let\'s change all problematic G+ text/actionbar/accent colors.</item>
+        <item>Update G+ Overlay to 6.8.</item>
+        <item>Change all Boxer\'s reply icons to blue to fix notification buttons.</item>
+        <item>Update Play Store for new design revamp.</item>
+        <item>Add darkened Chromecast launchBG for tablet/phone DPI.</item>
+        <item>MM6.0: Theme Zen Mode Introduction Message BG + Text.</item>
+        <item>MM6.0: Gallery delete dialog accent needed to be fixed.</item>
+        <item>Fix DU-Updater Alert Dialog Icon.</item>
+        <item>MM6.0: Add Fingerprint Introduction Icons.</item>
+        <item>MM6.0: Get ready for my commit on CM to be merged for Immersive Mode.</item>
+        <item>Change back to original name for Arcus\' internal build fixed this.</item>
+        <item>MM6.0: Theme Settings Sounds icons through Framework.</item>
+        <item>MM6.0: Prepare v23 colors with light/dark status bar icon colors.</item>
+        <item>Add support for Arcus installation on donate package.</item>
+        <item>Add launchBG for Google Play Music.</item>
+        <item>Remove WhatsApp avatar images to prevent anymore crashes.</item>
+        <item>MM6.0: Add themed Memory Icon in Settings.</item>
+        <item>MM6.0: Darken Fingerprint Tutorial Device Locator Drawable.</item>
+        <item>MM6.0: Add missing lockscreen shortcut icons.</item>
+        <item>MM6.0: Add support for one state text/icon colors for DocumentsUI drawer (v23 only).</item>
+        <item>Add themed About DU app.</item>
+        <item>Theme Google TTS to fix white on white background.</item>
+        <item>MM6.0: Add new SystemUI drawables for volume panel icons and set colors.</item>
+        <item>Add themed Chromium developer preview overlay based on Chrome.</item>
+        <item>MM6.0: Add missing screenshot delete/share icons in SystemUI.</item>
+        <item>MM6.0: Add revamped AOSP Messaging (com.android.messaging) overlay.</item>
+        <item>MM6.0: Update Google App for Now On Tap.</item>
+        <item>MM6.0: Fix themed checkboxes not appearing by overriding the main VectorAnimation XML.</item>
+        <item>MM6.0: Completely finish Settings Overlay (for 5X/6P devices).</item>
+        <item>Add support for MM6.0 Package Installer.</item>
+        <item>Clean up Boxer overlay.</item>
+        <item>Add themed BoxerCM overlay.</item>
+        <item>Duplicate AOSP Dialer for Cyngn Dialer Overlay.</item>
+        <item>SystemUI: Move MM specifics to their own drawable-v23 folder.</item>
+        <item>Add themed new stories button in Facebook timeline.</item>
     </string-array>
     <string-array name="v107">
         <item>hundertsieben &#8212; final cm-only build</item>
