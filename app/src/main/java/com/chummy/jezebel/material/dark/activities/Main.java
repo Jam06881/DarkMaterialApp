@@ -406,7 +406,7 @@ public class Main extends ActionBarActivity {
                         try {
                             File bootanimDirectory = new File(Environment.getExternalStorageDirectory() + "/DarkMaterial/BootAnimation/");
                             bootanimDirectory.mkdirs();
-                            in = assetManager.open("bootanimation/" + "bootanimation.zip");
+                            in = assetManager.open("DarkMaterial/" + "bootanimation.zip");
                             out = new FileOutputStream(Environment.getExternalStorageDirectory().toString() + "/DarkMaterial/BootAnimation/" + "bootanimation.zip");
                             copyFile(in, out);
                             out.flush();

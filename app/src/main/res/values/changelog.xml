@@ -53,7 +53,7 @@
         <item>@array/v46</item>
     </string-array>
     <string-array name="v108">
-        <item>cent huit &#8212; cmte-only release</item>
+        <item>cent huit &#8212; cmte + layers beta build!</item>
         <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
         <item>MM6.0: Fix DocumentsUI grey background.</item>
         <item>CM13: More SystemUI Tuner Tweaks.</item>

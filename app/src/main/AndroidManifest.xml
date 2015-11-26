@@ -11,7 +11,7 @@
 
     <uses-feature
         android:name="org.cyanogenmod.theme"
-        android:required="true" />
+        android:required="false" />
 
     <meta-data
         android:name="org.cyanogenmod.theme.name"
