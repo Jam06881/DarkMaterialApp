@@ -36,7 +36,7 @@
 
     <!--Main Screen Cards-->
     <string name="welcome_title">welcome to lollipop, darkened!</string>
-    <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with monthly design updates and bug fixes - installed by more than 400,000 users with over 75,000 active users on play! having over 145 original app overlays, this is the most complete theme available on the play store!\n\nnow available for both cmte and layers (beta) for lollipop and marshmallow devices!</string>
+    <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with monthly design updates and bug fixes - installed by more than 400,000 users with over 75,000 active users on play! having over 160 original app overlays, this is the most complete theme available on the play store!</string>
 
     <string name="play_card_title">chummy development team</string>
     <string name="play_card_content">"if you haven't already, please check out our other themes and boot animations on Play!"</string>
@@ -92,9 +92,6 @@
     <string name="section_fourteen">About Dark Material</string>
     <string name="section_fifteen">Apply Icon Pack</string>
     <string name="section_sixteen">Full Changelog</string>
-    <string name="section_seventeen">Install BootAnimation</string>
-    <string name="section_eighteen">Restore BootAnimation</string>
-    <string name="section_nineteen">Backup BootAnimation</string>
 
     <!--About Dark Material-->
     <string name="about_title">why \'dark material\'?</string>
@@ -183,11 +180,11 @@
 
     <!--Root Dialogs-->
     <string name="systemui_restart">"You are about to perform a SystemUI restart on your device.\n\nThis allows for SystemUI hooks to be reloaded for the theme to overlay it, however this is a temporary solution if you haven't rebooted yet.\n\nPlease make sure you don't have any unsaved work open before proceeding!"</string>
-    <string name="reboot">"You are about to perform a system reboot on your device.\n\nCMTE: Perform this twice.\nLayers: Immediately reboot after applying.\n\nPlease make sure you don't have any unsaved work open before proceeding!"</string>
+    <string name="reboot">"You are about to perform a system reboot on your device. Perform this twice.\n\nPlease make sure you don't have any unsaved work open before proceeding!"</string>
 
     <!--What is Themed-->
     <string name="wit_title">what is themed?</string>
-    <string name="wit_description">we have over 153 apps overlaid in both our cm and layers version of dark material. carefully categorized below</string>
+    <string name="wit_description">we have over 160 apps overlaid in dark material. carefully categorized below</string>
 
     <!--Logcat-->
     <string name="logcat_toast">With this app, you can monitor the errors that you may be getting (if the app gets forcibly uninstalled). Save the log and email it to me please!</string>
@@ -230,31 +227,27 @@
     <string name="help_q_1">why does this app need root?</string>
     <string name="help_a_1">as android requires root for you to use certain permissions, the three buttons on the home screen include \'restart systemui\' and \'restart device\', which require root access.</string>
     <string name="help_q_2">why does this app have so many permissions?</string>
-    <string name="help_a_2">the app comes with:\na wallpaper downloading section (network permissions)\nafter download the wallpaper can be immediately set as wallpaper (set wallpaper permission)\nwallpaper/bootanimation saving on internal storage (modify/delete contents permission).</string>
-    <string name="help_q_3">how do i use the boot animation installer in this app to set a custom bootanimation (layers)?\n\n[Restore BootAnimation secondary feature]\n</string>
-    <string name="help_a_3">all you have to do is navigate to /emulated/0/DarkMaterial/BootAnimation/ and put your bootanimation inside, named "original_bootanimation.zip" (without quotes). the installer will automatically recognize and transfer your bootanimation to /system/media/, correctly setting all permissions. this tool will need root to work.</string>
+    <string name="help_a_2">the app comes with:\na wallpaper downloading section (network permissions)\nafter download the wallpaper can be immediately set as wallpaper (set wallpaper permission)\nwallpaper saving on internal storage (modify/delete contents permission).</string>
 
     <!--FAQ-->
-    <string name="faq_q_1">esfileexplorer unreadable? (cmte/layers)</string>
+    <string name="faq_q_1">esfileexplorer unreadable?</string>
     <string name="faq_a_1">take off the theme, go into esfileexplorer, open the drawer and press the theme button. click on default theme and adjust the theme so that everything is inverted on a black theme. re-apply dark material then you\'re done!</string>
-    <string name="faq_q_2">some aspects of the device is not themed (cmte/layers)</string>
+    <string name="faq_q_2">some aspects of the device is not themed</string>
     <string name="faq_a_2">make sure you restarted your device twice (cm theme engine). if it remains unthemed, email me the name of your rom, attach a screenshot and tell me how to replicate this issue (if on a third party app).</string>
-    <string name="faq_q_3">there\'s an unthemed icon in settings...what should I do? (cmte/layers)</string>
+    <string name="faq_q_3">there\'s an unthemed icon in settings...what should I do?</string>
     <string name="faq_a_3">if you are on a rom with an icon that is not themed inside Settings, email me the name of your rom, and attach a screenshot.</string>
-    <string name="faq_q_4">notifications are white text on white background (cmte)"</string>
+    <string name="faq_q_4">notifications are white text on white background"</string>
     <string name="faq_a_4">you must apply a dark theme\'s style and status bar together. if you do not apply both you will have unreadable texts in the notification drawer.</string>
-    <string name="faq_q_5">notifications are white text on white background (layers)"</string>
-    <string name="faq_a_5">you must apply a dark theme\'s framework and systemui together. if you do not apply both you will have unreadable texts in the notification drawer.</string>
-    <string name="faq_q_6">applying the theme causes a bootloop (cmte)</string>
+    <string name="faq_q_5">constantly failed to install?"</string>
+    <string name="faq_a_5">first make sure you do not have GoogleDeskClock installed, do not freeze it using tibu. you must completely remove it from the phone. if it still remains, please send me a log.</string>
+    <string name="faq_q_6">applying the theme causes a bootloop</string>
     <string name="faq_a_6">please read the description on the play store and follow the several solutions there.</string>
-    <string name="faq_q_7">status bar is not theming even though i picked to theme it (cmte)</string>
+    <string name="faq_q_7">status bar is not theming even though i picked to theme it</string>
     <string name="faq_a_7">please read the description on the play store and follow the link to a youtube video, i have provided a solution there.</string>
-    <string name="faq_q_8">nav bar isn\'t theming properly, it keeps reverting back to stock! (cmte)</string>
+    <string name="faq_q_8">nav bar isn\'t theming properly, it keeps reverting back to stock!</string>
     <string name="faq_a_8">apply default theme\'s navigation bar, then apply dark material\'s navigation bar. this is a bug with cmte.</string>
-    <string name="faq_q_9">do you have a version of the theme without custom icons? (cmte)</string>
+    <string name="faq_q_9">do you have a version of the theme without custom icons?</string>
     <string name="faq_a_9">there\'s a regression theme for all my cmte themes available on play store, you can check them out.</string>
-    <string name="faq_q_10">constantly failed to install?</string>
-    <string name="faq_a_10">first make sure you do not have GoogleDeskClock installed, do not freeze it using tibu. you must completely remove it from the phone. if it still remains, please send me a log.</string>
 
     <!--What Is Themed-->
     <string name="card_one_title">"android system base requirements"</string>

@@ -157,19 +157,11 @@ public class Home extends Fragment {
                 launch_cos_theme.setComponent(new ComponentName("com.cyngn.theme.chooser", "com.cyngn.theme.chooser.ChooserActivity"));
                 launch_cos_theme.putExtra("pkgName", context.getPackageName());
                 Intent intent_cyanogenmod = getActivity().getPackageManager().getLaunchIntentForPackage("org.cyanogenmod.theme.chooser");
-                Intent intent_rrolayers = getActivity().getPackageManager().getLaunchIntentForPackage("com.lovejoy777.rroandlayersmanager");
                 Intent intent_settings = getActivity().getPackageManager().getLaunchIntentForPackage("com.android.settings");
                 if (intent_cyanogenmod == null) {
                     if (!isAppInstalled(getActivity(), "com.cyngn.theme.chooser")) {
-                        if (intent_rrolayers == null) {
                             Toast.makeText(getActivity(), getString(R.string.cm_not_configured), Toast.LENGTH_SHORT).show();
                             startActivity(intent_settings);
-                        } else {
-                            actionA.setTitle("Layers Manager");
-                            actionA.setIcon(R.drawable.layers);
-                            Toast.makeText(getActivity(), getString(R.string.theme_installed_rro), Toast.LENGTH_LONG).show();
-                            startActivity(intent_rrolayers);
-                        }
                     } else {
                         actionA.setTitle("App Themer");
                         actionA.setIcon(R.drawable.theme_chooser);

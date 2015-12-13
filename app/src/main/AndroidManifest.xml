@@ -11,7 +11,7 @@
 
     <uses-feature
         android:name="org.cyanogenmod.theme"
-        android:required="false" />
+        android:required="true" />
 
     <meta-data
         android:name="org.cyanogenmod.theme.name"
@@ -63,33 +63,5 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.DetailedWallpaper" />
         </activity>
-
-        <service
-            android:name=".Overlay"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.layers.plugins.PICK_OVERLAYS" />
-                <category android:name="Overlay" />
-            </intent-filter>
-        </service>
-
-        <meta-data
-            android:name="Layers_Name"
-            android:value="@string/layers_name" />
-        <meta-data
-            android:name="Layers_Developer"
-            android:value="@string/team" />
-        <meta-data
-            android:name="Layers_Colors"
-            android:value="" />
-        <meta-data
-            android:name="Layers_Description"
-            android:value="@string/welcome_title" />
-        <meta-data
-            android:name="Layers_OverlayNames"
-            android:value="@string/layers_overlays" />
-        <meta-data
-            android:name="Layers_WhatsNew"
-            android:value="@string/layers_changelog" />
     </application>
 </manifest>
