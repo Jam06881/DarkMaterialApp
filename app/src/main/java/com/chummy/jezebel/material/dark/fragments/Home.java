@@ -160,8 +160,8 @@ public class Home extends Fragment {
                 Intent intent_settings = getActivity().getPackageManager().getLaunchIntentForPackage("com.android.settings");
                 if (intent_cyanogenmod == null) {
                     if (!isAppInstalled(getActivity(), "com.cyngn.theme.chooser")) {
-                            Toast.makeText(getActivity(), getString(R.string.cm_not_configured), Toast.LENGTH_SHORT).show();
-                            startActivity(intent_settings);
+                        Toast.makeText(getActivity(), getString(R.string.cm_not_configured), Toast.LENGTH_SHORT).show();
+                        startActivity(intent_settings);
                     } else {
                         actionA.setTitle("App Themer");
                         actionA.setIcon(R.drawable.theme_chooser);

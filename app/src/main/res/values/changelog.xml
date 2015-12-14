@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-        <item>@array/v108</item>
+        <item>@array/v110</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v110</item>
+        <item>@array/v109</item>
         <item>@array/v108</item>
         <item>@array/v107</item>
         <item>@array/v106</item>
@@ -51,6 +53,87 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v110">
+        <item>ekato deka &#8212; final/stable build</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Allow SystemUI nav ripple to be themed in Akzent.</item>
+        <item>Change all #4a777777 values to common ripple color.</item>
+        <item>Change Cyanogen OS Dialer dialpad button to accent.</item>
+        <item>Theme DU Deskclock Notification Text and Icon Colors.</item>
+        <item>Fix failed to install issue with Google Dialer Overlay.</item>
+        <item>Add themed DU Gallery, DU Clock and maintain consistency on SystemUI tile.</item>
+        <item>MM6.0: Remove Fingerprint Icons in SystemUI due to preference of Animated Vector Drawable.</item>
+        <item>Update theme with Arcus internal exposed theming build.</item>
+    </string-array>
+    <string-array name="v109">
+        <item>ekato arithmoi &#8212; layers separation build</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Futureproof my theme for Arcus overlay.</item>
+        <item>Change quantum_white_100 from black to red to combat unreadable texts.</item>
+        <item>Allow the tab divider lines to be themed using Arcus for Dialer and Contacts.</item>
+        <item>Fix up overly large icons on Launcher3.</item>
+        <item>Add new colored launcher icons.</item>
+        <item>Change name of lime green to verdant.</item>
+        <item>Let\'s add 10 new colors for Arcus, and make the theme look good.</item>
+        <item>DU/EOS: Complete revert of Fling/Pulse mods.</item>
+        <item>Add whitened Search and Back Icons for Launcher 3.</item>
+        <item>Add themed OmniSwitch Overlay.</item>
+        <item>MM6.0: Add themed elements for Launcher3.</item>
+        <item>Fix unreadable text in Google Play Music.</item>
+        <item>Add Contacts back Icon tint impending commit.</item>
+        <item>Fix nine patch assignment on Silent Mode Indicator.</item>
+        <item>Modify cdt base activator and split them up, make it easier for Akzent.</item>
+        <item>Fix orange status bar in Tapatalk Tablet DPI.</item>
+        <item>Completely make Tapatalk inverted!</item>
+        <item>Add inverted GroupMe Overlay (Thanks to @xdnax).</item>
+        <item>Complete theme rebase, clean up and optimization of code.</item>
+        <item>Touch up new Google Play Services v8.4.</item>
+        <item>Push SystemUI style fix found by @moelle89.</item>
+        <item>Fix unreadable media reroute dialog and yellow accents in Chromecast.</item>
+        <item>Theme Swype Blackbird theme.</item>
+        <item>MM6.0: Theme Credential Verification Background.</item>
+        <item>Add new uninstall icon for COS Theme Chooser.</item>
+        <item>MM6.0: Add a few themed exposed colors and dimensions on SystemUI.</item>
+        <item>Add inverted Chromecast overlay.</item>
+        <item>MM6.0: Merge in my new commit colors for Settings.</item>
+        <item>Theme MX Player + Pro\'s Notification Text Colors.</item>
+        <item>Add themed notification reply button for Google Messenger.</item>
+        <item>Let\'s target Marshmallow from now on.....</item>
+        <item>Rebase the remainder of cdt base activator.</item>
+        <item>Remove un-needed colors from cdt base activator.</item>
+        <item>MM6.0: Fix final issues with SystemUI and Framework.</item>
+        <item>Adjust G+ Suggest Communities Section Header Background.</item>
+        <item>MM6.0: Adjust Browser tab background colors and text.</item>
+        <item>MM6.0: Adjust Archived MMS Action Bar Background.</item>
+        <item>MM6.0: Update Zen Panel Detail Text Colors.</item>
+        <item>Update new Marshmallow version of QSB in Nova Launcher Settings.</item>
+        <item>Add vectorized QS settings icon instead of drawable PNG.</item>
+        <item>Remove Wallpapers and BootAnimations from Color themes.</item>
+        <item>DU/EOS: Add themed vectorized fling icon.</item>
+        <item>Update Inbox overlay with dark drawer and fab menu background.</item>
+        <item>MM6.0: Fix up Settings commits a bit more.</item>
+        <item>MM6.0: Merge all my CM commit values to DM.</item>
+        <item>Change FB Metal Wrapper\'s Notification Icons from Black to White.</item>
+        <item>Dropbox: Fix unreadable selected file bg and button bg text.</item>
+        <item>Update Google Camera Overlay with 5X/6P UI.</item>
+        <item>Fix unreadable AOSP MMS Group Member Background.</item>
+        <item>Revert back to black action bar on G+.</item>
+        <item>Add Rafalense\'s Plus Themes overlay.</item>
+        <item>Add themed Telegram Plus overlay.</item>
+        <item>5X/6P: Add grey fingerprint icons for Play Store.</item>
+        <item>MM6.0: Add visible Tap&amp;Pay icons in Settings.</item>
+        <item>MM6.0: Remove backgroundTint, it causes issues with colorAccent.</item>
+        <item>MM6.0: Fix RecentsTheme.</item>
+        <item>Make Trebuchet\'s folder icon have a thinner stroke.</item>
+        <item>MM6.0: Add support for SlimLauncher.</item>
+        <item>MM6.0: Add themed PackageInstaller Tab Background.</item>
+        <item>Fix unreadable Hangouts dialer text background.</item>
+        <item>Add v21 support on Gmail conversation item background.</item>
+        <item>Fix unreadable popup background color on AOSP Email.</item>
+        <item>MM6.0: Fix unreadable Storage Summary Text Colors.</item>
+        <item>MM6.0: Add support for SlimLauncher.</item>
+        <item>MM6.0: Add themed Multiwindow Dialog + Drawables in SystemUI.</item>
     </string-array>
     <string-array name="v108">
         <item>cent huit &#8212; cmte + layers beta build!</item>

@@ -7,10 +7,10 @@ android {
     defaultConfig {
         applicationId "com.chummy.jezebel.material.dark"
         minSdkVersion 21
-        maxSdkVersion 22
-        targetSdkVersion 21
-        versionCode 108
-        versionName "cent huit"
+        maxSdkVersion 23
+        targetSdkVersion 23
+        versionCode 110
+        versionName "ekato deka"
     }
     buildTypes {
         release {
