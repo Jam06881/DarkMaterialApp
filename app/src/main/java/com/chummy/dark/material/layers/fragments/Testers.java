@@ -1,4 +1,4 @@
-package com.chummy.jezebel.material.dark.fragments;
+package com.chummy.dark.material.layers.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.chummy.jezebel.material.dark.R;
+import com.chummy.dark.material.layers.R;
 
 /**
  * Created by Nicholas on 11/07/2015.

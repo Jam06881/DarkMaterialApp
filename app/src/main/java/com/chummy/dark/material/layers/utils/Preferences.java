@@ -1,4 +1,4 @@
-package com.chummy.jezebel.material.dark.utils;
+package com.chummy.dark.material.layers.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -23,7 +23,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.chummy.jezebel.material.dark.MainActivity"
+            android:name="com.chummy.dark.material.layers.MainActivity"
             android:label="@string/launcher_name"
             android:noHistory="true">
             <intent-filter>
@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.chummy.jezebel.material.dark.activities.Main"
+            android:name="com.chummy.dark.material.layers.activities.Main"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.PICK" />
@@ -42,16 +42,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.chummy.jezebel.material.dark.activities.DetailedWallpaper"
+            android:name="com.chummy.dark.material.layers.activities.DetailedWallpaper"
             android:label="@string/title_activity_detailed_wallpaper"
             android:theme="@style/Default">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.chummy.jezebel.material.dark.activities.DetailedWallpaper" />
+                android:value="com.chummy.dark.material.layers.activities.DetailedWallpaper" />
         </activity>
 
         <service
-            android:name="com.chummy.jezebel.material.dark.Overlay"
+            android:name="com.chummy.dark.material.layers.Overlay"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.layers.plugins.PICK_OVERLAYS" />

@@ -1,4 +1,4 @@
-package com.chummy.jezebel.material.dark.fragments;
+package com.chummy.dark.material.layers.fragments;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -18,7 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.chummy.jezebel.material.dark.R;
+import com.chummy.dark.material.layers.R;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 
 import eu.chainfire.libsuperuser.Shell;

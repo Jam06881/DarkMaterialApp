@@ -1,4 +1,4 @@
-package com.chummy.jezebel.material.dark.utils;
+package com.chummy.dark.material.layers.utils;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.chummy.jezebel.material.dark.R;
+import com.chummy.dark.material.layers.R;
 
 public class ChangelogAdapter extends BaseAdapter {
 

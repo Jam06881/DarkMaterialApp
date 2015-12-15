@@ -1,4 +1,4 @@
-package com.chummy.jezebel.material.dark;
+package com.chummy.dark.material.layers;
 
 import android.app.Service;
 import android.content.Intent;

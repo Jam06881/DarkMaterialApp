@@ -1,4 +1,4 @@
-package com.chummy.jezebel.material.dark.activities;
+package com.chummy.dark.material.layers.activities;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -26,9 +26,9 @@ import android.widget.AdapterView;
 import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.chummy.jezebel.material.dark.R;
-import com.chummy.jezebel.material.dark.utils.ChangelogAdapter;
-import com.chummy.jezebel.material.dark.utils.Preferences;
+import com.chummy.dark.material.layers.R;
+import com.chummy.dark.material.layers.utils.ChangelogAdapter;
+import com.chummy.dark.material.layers.utils.Preferences;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.accountswitcher.AccountHeader;
