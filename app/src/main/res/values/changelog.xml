@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-        <item>@array/v110</item>
+        <item>@array/v111</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v111</item>
         <item>@array/v110</item>
         <item>@array/v109</item>
         <item>@array/v108</item>
@@ -53,6 +54,13 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v111">
+        <item>ekato enteka &#8212; final/stable build</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Change forced Deskclock statusBarColor to transparent.</item>
+        <item>Fix up all Chrome Overlay\'s Status Bars once using Black Theme.</item>
+        <item>Update Inbox Overlay to 1.16 (109935855) (arm64).</item>
     </string-array>
     <string-array name="v110">
         <item>ekato deka &#8212; final/stable build</item>
