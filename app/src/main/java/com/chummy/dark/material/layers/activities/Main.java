@@ -579,7 +579,7 @@ public class Main extends ActionBarActivity {
         getSupportActionBar().setTitle(title);
         FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
         tx.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
-        tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.chummy.jezebel.material.dark.fragments." + fragment));
+        tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.chummy.dark.material.layers.fragments." + fragment));
         tx.commit();
     }
 
