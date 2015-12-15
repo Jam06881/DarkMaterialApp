@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.chummy.jezebel.material.dark">
+    package="com.chummy.dark.material.layers">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -8,20 +8,6 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <uses-feature
-        android:name="org.cyanogenmod.theme"
-        android:required="false" />
-
-    <meta-data
-        android:name="org.cyanogenmod.theme.name"
-        android:value="@string/app_name" />
-    <meta-data
-        android:name="org.cyanogenmod.theme.author"
-        android:value="@string/team" />
-    <meta-data
-        android:name="org.cyanogenmod.theme.email"
-        android:value="@string/email_id" />
 
     <supports-screens
         android:anyDensity="true"
@@ -37,7 +23,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.chummy.jezebel.material.dark.MainActivity"
             android:label="@string/launcher_name"
             android:noHistory="true">
             <intent-filter>
@@ -47,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.Main"
+            android:name="com.chummy.jezebel.material.dark.activities.Main"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.PICK" />
@@ -56,16 +42,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.DetailedWallpaper"
+            android:name="com.chummy.jezebel.material.dark.activities.DetailedWallpaper"
             android:label="@string/title_activity_detailed_wallpaper"
             android:theme="@style/Default">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.DetailedWallpaper" />
+                android:value="com.chummy.jezebel.material.dark.activities.DetailedWallpaper" />
         </activity>
 
         <service
-            android:name=".Overlay"
+            android:name="com.chummy.jezebel.material.dark.Overlay"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.layers.plugins.PICK_OVERLAYS" />

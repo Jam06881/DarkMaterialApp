@@ -4,7 +4,7 @@
     <string name="version_code">cent huit</string>
 
     <!-- Main Strings -->
-    <string name="app_name">"Nicholas\' Dark Material"</string>
+    <string name="app_name">"Dark Material Layers"</string>
     <string name="launcher_name">"dark material"</string>
     <string name="package_name">"com.chummy.jezebel.material.dark"</string>
     <string name="theme_name">"Dark Material"</string>
