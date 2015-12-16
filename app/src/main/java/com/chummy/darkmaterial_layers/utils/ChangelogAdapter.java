@@ -1,4 +1,4 @@
-package com.chummy.dark.material.layers.utils;
+package com.chummy.darkmaterial_layers.utils;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.chummy.dark.material.layers.R;
+import com.chummy.darkmaterial_layers.R;
 
 public class ChangelogAdapter extends BaseAdapter {
 

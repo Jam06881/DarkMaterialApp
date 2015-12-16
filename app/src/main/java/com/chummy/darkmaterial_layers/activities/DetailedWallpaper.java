@@ -1,4 +1,4 @@
-package com.chummy.dark.material.layers.activities;
+package com.chummy.darkmaterial_layers.activities;
 
 import android.app.WallpaperManager;
 import android.content.Context;
@@ -18,7 +18,7 @@ import android.widget.ProgressBar;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.chummy.dark.material.layers.R;
+import com.chummy.darkmaterial_layers.R;
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 import com.squareup.picasso.Callback;

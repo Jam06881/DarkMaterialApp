@@ -1,4 +1,4 @@
-package com.chummy.dark.material.layers;
+package com.chummy.darkmaterial_layers;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,7 +10,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent = new Intent(MainActivity.this, com.chummy.dark.material.layers.activities.Main.class);
+        Intent intent = new Intent(MainActivity.this, com.chummy.darkmaterial_layers.activities.Main.class);
         startActivity(intent);
     }
 }

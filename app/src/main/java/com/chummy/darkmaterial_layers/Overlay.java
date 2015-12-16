@@ -1,4 +1,4 @@
-package com.chummy.dark.material.layers;
+package com.chummy.darkmaterial_layers;
 
 import android.app.Service;
 import android.content.Intent;

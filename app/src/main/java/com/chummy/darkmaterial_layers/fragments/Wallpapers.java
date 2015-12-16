@@ -1,4 +1,4 @@
-package com.chummy.dark.material.layers.fragments;
+package com.chummy.darkmaterial_layers.fragments;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -18,9 +18,9 @@ import android.widget.GridView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.chummy.dark.material.layers.R;
-import com.chummy.dark.material.layers.activities.DetailedWallpaper;
-import com.chummy.dark.material.layers.utils.JSONParser;
+import com.chummy.darkmaterial_layers.R;
+import com.chummy.darkmaterial_layers.activities.DetailedWallpaper;
+import com.chummy.darkmaterial_layers.utils.JSONParser;
 
 import org.json.JSONArray;
 import org.json.JSONException;

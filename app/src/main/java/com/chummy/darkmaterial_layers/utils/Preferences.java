@@ -1,4 +1,4 @@
-package com.chummy.dark.material.layers.utils;
+package com.chummy.darkmaterial_layers.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

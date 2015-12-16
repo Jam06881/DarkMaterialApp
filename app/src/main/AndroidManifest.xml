@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.chummy.dark.material.layers">
+    package="com.chummy.darkmaterial_layers">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -23,7 +23,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.chummy.dark.material.layers.MainActivity"
+            android:name="com.chummy.darkmaterial_layers.MainActivity"
             android:label="@string/launcher_name"
             android:noHistory="true">
             <intent-filter>
@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.chummy.dark.material.layers.activities.Main"
+            android:name="com.chummy.darkmaterial_layers.activities.Main"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.PICK" />
@@ -42,40 +42,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.chummy.dark.material.layers.activities.DetailedWallpaper"
+            android:name="com.chummy.darkmaterial_layers.activities.DetailedWallpaper"
             android:label="@string/title_activity_detailed_wallpaper"
             android:theme="@style/Default">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.chummy.dark.material.layers.activities.DetailedWallpaper" />
+                android:value="com.chummy.darkmaterial_layers.activities.DetailedWallpaper" />
         </activity>
-
-        <service
-            android:name="com.chummy.dark.material.layers.Overlay"
-            android:exported="true">
+        <service android:exported="true" android:name="com.chummy.darkmaterial_layers.Overlay">
             <intent-filter>
-                <action android:name="com.layers.plugins.PICK_OVERLAYS" />
-                <category android:name="Overlay" />
+                <action android:name="com.layers.plugins.PICK_OVERLAYS"/>
+                <category android:name="Overlay"/>
             </intent-filter>
         </service>
-
-        <meta-data
-            android:name="Layers_Name"
-            android:value="@string/layers_name" />
-        <meta-data
-            android:name="Layers_Developer"
-            android:value="@string/team" />
-        <meta-data
-            android:name="Layers_Colors"
-            android:value="" />
-        <meta-data
-            android:name="Layers_Description"
-            android:value="@string/welcome_title" />
-        <meta-data
-            android:name="Layers_OverlayNames"
-            android:value="@string/layers_overlays" />
-        <meta-data
-            android:name="Layers_WhatsNew"
-            android:value="@string/layers_changelog" />
+        <meta-data android:name="Layers_Name" android:value="@string/ThemeName"/>
+        <meta-data android:name="Layers_Developer" android:value="@string/ThemeDeveloper"/>
+        <meta-data android:name="Layers_Description" android:value="@string/ThemeDescription"/>
+        <meta-data android:name="Layers_WhatsNew" android:value="@string/ThemeWhatsNew"/>
+        <meta-data android:name="Layers_NormalOverlays" android:value="@string/NormalOverlays"/>
+        <meta-data android:name="Layers_StyleSpecificOverlays" android:value="@string/StyleSpecificOverlays"/>
+        <meta-data android:name="Layers_Colors" android:value="@string/Colors"/>
+        <meta-data android:name="Layers_PluginVersion" android:value="@string/PluginVersion"/>
     </application>
 </manifest>

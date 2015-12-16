@@ -1,4 +1,4 @@
-package com.chummy.dark.material.layers.activities;
+package com.chummy.darkmaterial_layers.activities;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -26,9 +26,9 @@ import android.widget.AdapterView;
 import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.chummy.dark.material.layers.R;
-import com.chummy.dark.material.layers.utils.ChangelogAdapter;
-import com.chummy.dark.material.layers.utils.Preferences;
+import com.chummy.darkmaterial_layers.R;
+import com.chummy.darkmaterial_layers.utils.ChangelogAdapter;
+import com.chummy.darkmaterial_layers.utils.Preferences;
 import com.mikepenz.google_material_typeface_library.GoogleMaterial;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.accountswitcher.AccountHeader;
@@ -579,7 +579,7 @@ public class Main extends ActionBarActivity {
         getSupportActionBar().setTitle(title);
         FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
         tx.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
-        tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.chummy.dark.material.layers.fragments." + fragment));
+        tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.chummy.darkmaterial_layers.fragments." + fragment));
         tx.commit();
     }
 
@@ -628,7 +628,7 @@ public class Main extends ActionBarActivity {
             case R.id.share:
                 Intent sharingIntent = new Intent(Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
-                String shareBody = "Check out " + getResources().getString(R.string.theme_name) + " by " + getResources().getString(R.string.nicholas_short) + "!\n\nDownload it here!: " + getResources().getString(R.string.play_store_link);
+                String shareBody = "Check out " + getResources().getString(R.string.theme_name) + " by Chummy Development Team !\n\nDownload it here!: " + getResources().getString(R.string.play_store_link);
                 sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
                 startActivity(Intent.createChooser(sharingIntent, (getResources().getString(R.string.share_title))));
                 break;

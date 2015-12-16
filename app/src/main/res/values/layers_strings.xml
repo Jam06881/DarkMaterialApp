@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="layers_name">"dark material // layers beta"</string>
-    <string name="layers_overlays">"AOSP Calculator,AOSP Contacts,AOSP Dialer,AOSP Keyboard,Es File Explorer,Facebook,Facebook Messenger,Framework,Google Camera,Google Chrome,Google Contacts,Google Dialer,Google Docs,Google Gms,Google Hangouts,Google Inbox,Google Keep,Google Keyboard,Google Messenger,Google NowLauncher,Google PlayGames,Google PlayMusic,Google PlayStore,Google Plus,Google Sheets,Google Slides,Google Velvet,Google Youtube,Greenify,Instagram,Kernel Adiutor,MusixMatch,Og Youtube,Settings,Snapchat,Softkeys,Spotify,Super User,SystemUI,Titanium Backup,Twitter,Viber,Whatsapp,"</string>
-    <string name="layers_changelog">"v108 - cent huit
-
-        Initial CM + Layers Release
-
-        - See Dark Material App for the extensive changelog!
-
-Theme Maintained by Aditya Gupta. If you have any issues with the beta theme, please contact Aditya directly at ebizeraditya@gmail.com.
-Please do not rate the theme low because \'it doesn\'t work\'.
-
-This theme is still in experimental stages, if you are having problems, delete the overlay from TWRP\'s file manager.
-        "</string>
+    <string name="NormalOverlays" />
+    <string name="PluginVersion">3</string>
+    <string name="StyleSpecificOverlays" />
+    <string name="Colors" />
+    <string name="ThemeDeveloper">Aditya Gupta</string>
+    <string name="ThemeWhatsNew">v4.6 \n- Bug Fixes\n- More than 120 apps Themed :).\nHave Fun :)\n- Added Layers Manager\n- SystemUI Changed :)</string>
+    <string name="ThemeDescription">"Original Dark MaterialUI,Now for Layers :)"</string>
+    <string name="ThemeName">Dark Material</string>
 </resources>

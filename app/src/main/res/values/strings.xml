@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!--Change this on every version-->
-    <string name="version_code">cent huit</string>
+    <string name="version_code">diecisiete</string>
 
     <!-- Main Strings -->
     <string name="app_name">"Dark Material Layers"</string>
     <string name="launcher_name">"Dark Material"</string>
-    <string name="package_name">"com.chummy.jezebel.material.dark"</string>
+    <string name="package_name">"com.chummy.darkmaterial_layers"</string>
     <string name="theme_name">"Dark Material"</string>
 
     <string name="team">"chummy development team"</string>
@@ -28,7 +28,7 @@
     <string name="json_file_url">"http://pastebin.com/raw.php?i=hvKBvrXD"</string>
 
     <!--Email attributes-->
-    <string name="email_id">chummydevteam@gmail.com</string>
+    <string name="email_id">ebizeraditya@gmail.com</string>
     <string name="email_subject">"Dark Material - Theme UI (From the App)"</string>
     <string name="email_subject_cm">"Dark Material - CM12/CM12.1/13 Theme UI (From the App)"</string>
     <string name="email_subject_cos">"Dark Material - COS12/COS12.1 Theme UI (From the App)"</string>
@@ -119,9 +119,9 @@
     <!--Strings for Dropdown Menu & Requests-->
     <string name="share">Share this theme!</string>
     <string name="share_title">Share Dark Material through...</string>
-    <string name="send_title">Contact Nicholas through...</string>
+    <string name="send_title">Contact Aditya through...</string>
     <string name="rate">Rate theme</string>
-    <string name="sendemail">Contact Nicholas directly</string>
+    <string name="sendemail">Contact Aditya directly</string>
     <string name="request_precontent">"These apps are not themed. Thanks in advance.</string>
     <string name="changelog">View recent changelog</string>
 

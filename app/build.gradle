@@ -5,12 +5,11 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.chummy.dark.material.layers"
+        applicationId "com.chummy.darkmaterial_layers"
         minSdkVersion 21
-        maxSdkVersion 22
         targetSdkVersion 21
-        versionCode 108
-        versionName "cent huit"
+        versionCode 17
+        versionName "diecisiete"
     }
     buildTypes {
         release {

@@ -1,4 +1,4 @@
-package com.chummy.dark.material.layers.fragments;
+package com.chummy.darkmaterial_layers.fragments;
 
 import android.content.Context;
 import android.graphics.Point;
@@ -16,14 +16,14 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.chummy.dark.material.layers.R;
-import com.chummy.dark.material.layers.utils.PaletteTransformation;
+import com.chummy.darkmaterial_layers.R;
+import com.chummy.darkmaterial_layers.utils.PaletteTransformation;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import static com.chummy.dark.material.layers.utils.PaletteTransformation.PaletteCallback;
+import static com.chummy.darkmaterial_layers.utils.PaletteTransformation.PaletteCallback;
 
 public class WallsGridAdapter extends BaseAdapter {
 

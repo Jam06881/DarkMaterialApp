@@ -1,4 +1,4 @@
-package com.chummy.dark.material.layers.fragments;
+package com.chummy.darkmaterial_layers.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,23 +9,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.chummy.dark.material.layers.R;
+import com.chummy.darkmaterial_layers.R;
 
 /**
  * Created by Nicholas on 11/07/2015.
  */
-public class Help extends Fragment {
+public class About extends Fragment {
 
     private Context context;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_help, null);
+        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_about, null);
 
         context = getActivity();
 
         ActionBar toolbar = ((ActionBarActivity) context).getSupportActionBar();
-        toolbar.setTitle(R.string.section_thirteen);
+        toolbar.setTitle(R.string.section_fourteen);
         return root;
     }
 
