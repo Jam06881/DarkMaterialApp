@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-        <item>@array/v17</item>
+        <item>@array/v18</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v18</item>
         <item>@array/v17</item>
+    </string-array>
+    <string-array name="v18">
+        <item>Dark Material - Layers v18</item>
+        <item>Added Google Photos</item>
+        <item>Revamped Google Now</item>
+        <item>Fixed Chromecast</item>
+        <item>Fixed Google Play Games</item>
+        <item>Fixed Contacts</item>
+        <item>Fixed Dialer</item>
+        <item>Fixed Settings</item>
     </string-array>
     <string-array name="v17">
         <item>Dark Material - Layers</item>
-        <item>First Build</item>
+        <item>First Build with App</item>
     </string-array>
 </resources>
