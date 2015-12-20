@@ -9,8 +9,8 @@ android {
         minSdkVersion 21
         maxSdkVersion 23
         targetSdkVersion 23
-        versionCode 110
-        versionName "ekato deka"
+        versionCode 112
+        versionName "ekato dwdeka"
     }
     buildTypes {
         release {

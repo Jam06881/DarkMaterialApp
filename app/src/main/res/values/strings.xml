@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!--Change this on every version-->
-    <string name="version_code">ekato enteka</string>
+    <string name="version_code">ekato dwdeka</string>
 
     <!-- Main Strings -->
     <string name="app_name">"Nicholas\' Dark Material"</string>
@@ -36,7 +36,7 @@
 
     <!--Main Screen Cards-->
     <string name="welcome_title">welcome to lollipop, darkened!</string>
-    <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with monthly design updates and bug fixes - installed by more than 400,000 users with over 75,000 active users on play! having over 160 original app overlays, this is the most complete theme available on the play store!</string>
+    <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with monthly design updates and bug fixes - installed by more than 400,000 users with over 75,000 active users on play! having over 165 original app overlays, this is the most complete theme available on the play store!</string>
 
     <string name="play_card_title">chummy development team</string>
     <string name="play_card_content">"if you haven't already, please check out our other themes and boot animations on Play!"</string>
@@ -109,7 +109,7 @@
     <string name="contributor_title">official list of contributors</string>
     <string name="title_libraries">list of implemented library authors</string>
     <string name="list_of_testers">"\nAkki Mahajan (Androizer)\nVignesh Ravi (BATVIC)\n</string>
-    <string name="list_of_contributors">"\nPneuma Anonymous (Pneuma1985)\nManuel Möllmann (_moelle)\nMark Bencze (markbencze\nJon West (electrikjesus)\nVivek Neel (Vivek_Neel\nTeddy Tan (ted77usa)\nGiulio Fagioli &amp; Lorenzo Salani\nFranck Rohée (franzyroy)\nKevin Dixson (Punchieo)"</string>
+    <string name="list_of_contributors">"\nPneuma Anonymous (Pneuma1985)\nManuel Möllmann (_moelle)\nMark Bencze (markbencze\nJon West (electrikjesus)\nVivek Neel (Vivek_Neel\nTeddy Tan (ted77usa)\nGiulio Fagioli &amp; Lorenzo Salani\nFranck Rohée (franzyroy)\nKevin Dixson (Punchieo)\nMike (xdnax)"</string>
     <string name="list_of_implemeted_libraries">\nMelnykov\nAidan Follestad\nMike Penz\nSquare\nBalys Valentukevicius</string>
 
 
@@ -322,7 +322,9 @@
         \nMusic (com.google.android.music)
         \nNewsstand/Magazines (com.google.android.apps.magazines)
         \nPackage Installer (com.google.android.packageinstaller)
+        \nPhotos (com.google.android.apps.photos)
         \nPlay Services (com.google.android.gms)
+        \nRewards (com.google.android.apps.paidtasks)
         \nTranslate (com.google.android.apps.translate)
         \nYoutube (com.google.android.youtube)</string>
     <string name="card_six_title">"third party app support"</string>
@@ -336,6 +338,7 @@
         \nBlackPlayer EX + BlackPlayer Free (com.kodarkooperativet.blackplayerex)
         \nTricksterMod (com.bigeyes0x0.trickstermod)
         \nBzzapp Reminders (com.bzzzapp)
+        \nColor Picker (com.nauj27.android.colorpicker)
         \nDelayed Lock (de.j4velin.delayedlock2.trial)
         \nDropbox + Dropbox Material (com.dropbox.android)
         \nEbay (com.ebay.mobile)
@@ -361,6 +364,7 @@
         \nPandora (com.pandora.android)
         \nPandora Patcher (com.hunterx.pandorapatcher)
         \nPhonograph (com.kabouzeid.gramophone)
+        \nPipette (com.ochs.pipette)
         \nPlayerPro + Trial (com.tbig.playerpro)
         \nPocket MAL (com.g.pocketmal)
         \nPushbullet (com.pushbullet.android)

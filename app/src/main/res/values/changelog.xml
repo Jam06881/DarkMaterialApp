@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-        <item>@array/v111</item>
+        <item>@array/v112</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v112</item>
         <item>@array/v111</item>
         <item>@array/v110</item>
         <item>@array/v109</item>
@@ -54,6 +55,18 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v112">
+        <item>ekato dwdeka &#8212; stable build</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Tapatalk: Fix overlay circle on top of check all icon for both Dark and Light themes.</item>
+        <item>Revamp GroupMe according to Blue Faded by @xdnax.</item>
+        <item>Add themed apps by @xdnax.</item>
+        <item>Fix invisible accent color in Google Keep.</item>
+        <item>Fix BetterBatteryStats popup background color for Light Theme.</item>
+        <item>Add inverted Google Photos overlay.</item>
+        <item>Telegram+: Remove -v4 and change TabUI Background to Black.</item>
+        <item>MM6.0: Add whitened Share icon to Google Now On Tap launch shortcut.</item>
     </string-array>
     <string-array name="v111">
         <item>ekato enteka &#8212; final/stable build</item>
