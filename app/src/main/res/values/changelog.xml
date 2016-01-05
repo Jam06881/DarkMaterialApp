@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-        <item>@array/v112</item>
+        <item>@array/v113</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v113</item>
         <item>@array/v112</item>
         <item>@array/v111</item>
         <item>@array/v110</item>
@@ -55,6 +56,91 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v113">
+        <item>baek yeol set &#8212; happy new year! (2016)</item>
+        <item>IMPORTANT: If you haven\'t rebooted yet, REBOOT IN 2 MINUTES AFTER APPLYING/UPDATING!</item>
+        <item>Completely invert Google Messenger Overlay.</item>
+        <item>Naturalize Google Dialer\'s Colors.xml.</item>
+        <item>Merge in native Themable Google Contacts Support (AKZENT).</item>
+        <item>Merge in native Themable Google Dialer Support (AKZENT).</item>
+        <item>Brighten Dialer\'s icon colors.</item>
+        <item>Add more widget resources for MusixMatch.</item>
+        <item>Force hardcode Hangouts Snackbar to Translucent Black.</item>
+        <item>Fix opaque launcher background on Trebuchet.</item>
+        <item>Add missing unthemed icon for widget on MusixMatch.</item>
+        <item>MM6.0: Reroute MM Wifi Icons in Settings to LP-themed icons.</item>
+        <item>Properly change alpha values of colorAccents on Switch Toggles.</item>
+        <item>Brighten up all Chrome variant\'s main text color.</item>
+        <item>Revert "Lighten up Chrome main texts".</item>
+        <item>Change up framework toggles for akzent colors.</item>
+        <item>Add themable Google Apps as an Arcus package (AKZENT).</item>
+        <item>Theme unreadable Moovit\'s notification text colors.</item>
+        <item>Fix up non-buildable styles on DocumentsUI.</item>
+        <item>Remove CodeAurora Beta SWE Overlay.</item>
+        <item>Add themed SWE Chromium (JSwart) Overlay.</item>
+        <item>Add missing style items to DocumentsUI.</item>
+        <item>Add themed Cyanogen Theme Store.</item>
+        <item>Add themed + inverted MusixMatch Overlay.</item>
+        <item>Theme up Google Keep\'s ActionMode background.</item>
+        <item>Remove unused low dpi switch track drawable.</item>
+        <item>Add themed Pushbullet Portal overlay.</item>
+        <item>Add themed Simple Reboot overlay.</item>
+        <item>Clone Cyanogen OS Browser Overlay to SWE Browser.</item>
+        <item>Revert "Attempt to fix G+ and Nova Launcher FC's AGAIN" .</item>
+        <item>Add inverted Soundcloud Overlay.</item>
+        <item>Complete revamp of framework toggles.</item>
+        <item>Let\'s change up the spinner animation for Material style.</item>
+        <item>Add themed static performance QS tile.</item>
+        <item>Add themed Exodus Profiles QS Tile.</item>
+        <item>Attempt to fix G+ and Nova Launcher FC\'s AGAIN.</item>
+        <item>Fix WhatsApp secondary text to fix chip dropdown unreadable text.</item>
+        <item>Change search highlight text for dropdown search highlight in WhatsApp.</item>
+        <item>Fix Google Keep\'s Trash ActionBar Colors.</item>
+        <item>Update SD Maid overlay with latest beta.</item>
+        <item>Remove all drawables for SD Maid.</item>
+        <item>Add themed AOSP Calendar Overlay.</item>
+        <item>Fix copyright for Google Settings Icon.</item>
+        <item>Let\'s merge in more @moelle89 apps (mApps)!!!</item>
+        <item>MM6.0: Theme Profile QS Tile.</item>
+        <item>MM6.0: Add themed new revamped CM Sound Recorder.</item>
+        <item>Not fixing WhatsApp, but I added the missing style.......</item>
+        <item>Theme Tooleap Catlog using Catlog overlay.</item>
+        <item>Theme Dialer\'s Search Back Arrow.</item>
+        <item>Fix up themed icons in XDA Labs.</item>
+        <item>Fix VLC unnecessary backgroundTint styling and don\'t touch light theme.</item>
+        <item>Change XDA Labs header color.</item>
+        <item>Use lighter theme color to distinguish Eleven\'s album header color.</item>
+        <item>Change Play Store to brighter green from @moelle89.</item>
+        <item>Fix XDA Labs FAB Color.</item>
+        <item>Lighten up Chrome main texts.</item>
+        <item>Reverse accent colors for Google Play Services.</item>
+        <item>Add support for Bliss MM6.0 Settings Icons.</item>
+        <item>Add themed aspects for Legacy Theme.</item>
+        <item>Huge overlay merging commit thanks to @moelle89 (SQUASHED x22).</item>
+        <item>Try a different approach to remove list dividers thanks to @moelle89.</item>
+        <item>MM6.0: Add themed Google icon in Settings.</item>
+        <item>Add themed AK Kernel Updater Overlay.</item>
+        <item>Change cards background in DU Updater to a lighter theme color.</item>
+        <item>Fix Bookmarks for all Chrome variants.</item>
+        <item>MM6.0: Re-add SystemUI edit tiles header titles.</item>
+        <item>Fix up unreadable search results in Trebuchet.</item>
+        <item>Remove forced dark theme on BetterBatteryStats (XDA + Pro).</item>
+        <item>Fix unreadable Google Photos text color in assistant cards.</item>
+        <item>FP: Theme Contacts search background.</item>
+        <item>Make changes to an incorrectly named commons color.</item>
+        <item>Change QuickContact Default Photo Background Color.</item>
+        <item>Let\'s brighten up Contacts a bit, no more gloomy colors.</item>
+        <item>MM6.0: Fix unreadable Contacts hint text during Contact creation.</item>
+        <item>MM6.0: Add support for PackageInstaller\'s Permission Dialog Page Numbers.</item>
+        <item>Remove Google Sprite Sheets.</item>
+        <item>FP: Add new color for Contacts Back Arrow Icon Tint (Search).</item>
+        <item>Shorten name of theme for Arcus installs﻿.</item>
+        <item>Change name of theme again and use brand new icon (AKZENT).</item>
+        <item>Change up Themable Gapps Banner to show which apps are themed.</item>
+        <item>Add 6 colors requested by @remicks based on Aura.</item>
+        <item>Let Arcus handle Themable Google Apps from now on.</item>
+        <item>Add @remicks\' user requested Bayside color scheme to Akzent.</item>
     </string-array>
     <string-array name="v112">
         <item>ekato dwdeka &#8212; stable build</item>

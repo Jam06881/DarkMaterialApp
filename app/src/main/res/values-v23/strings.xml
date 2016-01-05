@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="email_subject_cm">"Dark Material - CM13 Theme UI (From the App)"</string>
+    <string name="email_subject_cos">"Dark Material - CM13 Theme UI (From the App) [APP THEMER]"</string>
     <!--Main Screen Cards-->
     <string name="welcome_title">welcome to marshmallow, darkened!</string>
 </resources>

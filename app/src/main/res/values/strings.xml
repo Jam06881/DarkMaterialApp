@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!--Change this on every version-->
-    <string name="version_code">ekato dwdeka</string>
+    <string name="version_code">baek yeol set</string>
 
     <!-- Main Strings -->
     <string name="app_name">"Nicholas\' Dark Material"</string>
@@ -30,13 +30,13 @@
     <!--Email attributes-->
     <string name="email_id">chummydevteam@gmail.com</string>
     <string name="email_subject">"Dark Material - Theme UI (From the App)"</string>
-    <string name="email_subject_cm">"Dark Material - CM12/CM12.1/13 Theme UI (From the App)"</string>
-    <string name="email_subject_cos">"Dark Material - COS12/COS12.1 Theme UI (From the App)"</string>
+    <string name="email_subject_cm">"Dark Material - CM12 Theme UI (From the App)"</string>
+    <string name="email_subject_cos">"Dark Material - COS12 Theme UI (From the App)"</string>
     <string name="email_subject_rro">"Dark Material - Layers Theme UI (From the App)"</string>
 
     <!--Main Screen Cards-->
     <string name="welcome_title">welcome to lollipop, darkened!</string>
-    <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with monthly design updates and bug fixes - installed by more than 400,000 users with over 75,000 active users on play! having over 165 original app overlays, this is the most complete theme available on the play store!</string>
+    <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with monthly design updates and bug fixes - installed by more than 600,000 users with over 90,000 active users on play! having over 200 original app overlays, this is the most complete theme available on the play store!</string>
 
     <string name="play_card_title">chummy development team</string>
     <string name="play_card_content">"if you haven't already, please check out our other themes and boot animations on Play!"</string>
