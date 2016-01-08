@@ -61,7 +61,7 @@
     <string name="walls_save_location">"/DarkMaterial/Wallpapers/"</string>
     <string name="walls_prefix_name">"DarkMaterial_"</string>
 
-    <string name="theme_installed_cm">After applying/updating the theme (after one minute), REBOOT YOUR PHONE TWICE.</string>
+    <string name="theme_installed_cm">One to two minutes after applying the theme, please REBOOT YOUR PHONE TWICE.</string>
     <string name="theme_installed_rro">Please be sure you apply a dark themed framework with a dark themed SystemUI overlay, or else you will get unreadable texts!</string>
     <string name="cm_not_configured">Traditional Theme Engine not found. Rerouting to Settings for other options.</string>
     <string name="license_failed">"You are not downloading our theme from the Google Play Store. You have two options only:"</string>
