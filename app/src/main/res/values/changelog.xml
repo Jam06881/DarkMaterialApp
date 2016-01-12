@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-        <item>@array/v113</item>
+        <item>@array/v114</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v114</item>
         <item>@array/v113</item>
         <item>@array/v112</item>
         <item>@array/v111</item>
@@ -56,6 +57,34 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v114">
+        <item>baek yeol net &#8212; lollipop hotfix build</item>
+        <item>IMPORTANT: One to two minutes after updating the theme, please REBOOT YOUR PHONE TWICE!</item>
+        <item>Unify Gmail Conversation Selected ActionBar Color.</item>
+        <item>Fix invisible add button in SWE Browser.</item>
+        <item>Partial revert of Chrome themable commit to fix ninepatch rendering.</item>
+        <item>Add missing CandyRoms Settings Icons.</item>
+        <item>Revert back to previous spinners completely, except make it look thinner.</item>
+        <item>Update Google Play Music to 6.2.2224U.2493459.</item>
+        <item>Revert "Let\'s change up the spinner animation for Material style".</item>
+        <item>Fix Google Photos Collections ActionBar Grey Icons.</item>
+        <item>DU: Add themed SmartBar tints for icons and text colors.</item>
+        <item>Fix SystemUI endless rebooting by reverting hardcoded black to a HEX.</item>
+        <item>Make all Chrome variants themable using XML tinting.</item>
+        <item>Add themed Screw\'d ROM Settings Icon.</item>
+        <item>Fix SwitchBar on ThemeOverlay colors.</item>
+        <item>Complete revert of Dropbox. Clean up remnants of failed revert..</item>
+        <item>Revert "Revamp Dropbox Overlay with dark background".</item>
+        <item>Reorganize all transparent color xmls to use cdt base activator.</item>
+        <item>Merge in Projekt Klar Animations for Theme.Material.Wallpaper.</item>
+        <item>Move VLC beta to a different API level.</item>
+        <item>Fix unreadable GMS Help About App Title and Copyright.</item>
+        <item>Fix unreadable text for Empty List View in Dialer.</item>
+        <item>Bring Google Dialer out of Arcus-only State.</item>
+        <item>Let theme color determine the bottom bar of Google Keep.</item>
+        <item>Total transparency towards notification dividers, thanks to @xdnax.</item>
+        <item>Merge in alpha tinted accent colors.</item>
     </string-array>
     <string-array name="v113">
         <item>baek yeol set &#8212; happy new year! (2016)</item>
