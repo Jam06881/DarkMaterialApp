@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-        <item>@array/v114</item>
+        <item>@array/v116</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v116</item>
+        <item>@array/v115</item>
         <item>@array/v114</item>
         <item>@array/v113</item>
         <item>@array/v112</item>
@@ -57,6 +59,24 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v116">
+        <item>baek yeol yeo seot &#8212; final/stable build</item>
+        <item>IMPORTANT: One to two minutes after updating the theme, please REBOOT YOUR PHONE TWICE!</item>
+        <item>Unify status bar color with action bar color in Lockscreen Changer CM13.</item>
+        <item>Add inverted Google Cantonese Input Keyboard.</item>
+        <item>Add inverted Google Drive Overlay thanks to @moelle89.</item>
+        <item>Add themed MatLog and Lockscreen Changer CM13.</item>
+        <item>Fix Google Photos Album Creation ActionBar Create Button.</item>
+        <item>Fix GroupMe Event Creation and Invisible Close Button.</item>
+        <item>Let\'s thicken the progress spinners by a bit, shall we?.</item>
+        <item>MM6.0: Let\'s get #DUCertified!.</item>
+        <item>Partial revert of commons alpha files for black. Use hex instead (to fix Solid Explorer).</item>
+    </string-array>
+    <string-array name="v115">
+        <item>baek yeol da seot &#8212; wallpaper hotfix build</item>
+        <item>IMPORTANT: One to two minutes after updating the theme, please REBOOT YOUR PHONE TWICE!</item>
+        <item>Revert "Merge in Projekt Klar Animations for Theme.Material.Wallpaper" fixing wallpapers not being set.</item>
     </string-array>
     <string-array name="v114">
         <item>baek yeol net &#8212; lollipop hotfix build</item>
