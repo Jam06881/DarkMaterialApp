@@ -11,6 +11,7 @@ import android.content.res.AssetManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -50,7 +51,7 @@ public class Main extends ActionBarActivity {
 
     public Drawer.Result result = null;
     public AccountHeader.Result headerResult = null;
-    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits, thaTesters, thaWhatIsThemed, thaContactUs, thaLogcat, thaFAQ, thaHelp, thaAbout, thaIconPack, thaFullChangelog, thaBootAnimInstall, thaBootAnimRestore, thaBootAnimBackup;
+    public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits, thaTesters, thaWhatIsThemed, thaContactUs, thaLogcat, thaFAQ, thaHelp, thaAbout, thaIconPack, thaFullChangelog, thaRebuild;
     public String version, drawerVersion;
     public int currentItem;
     private boolean firstrun, enable_features;
@@ -86,6 +87,7 @@ public class Main extends ActionBarActivity {
         thaAbout = getResources().getString(R.string.section_fourteen);
         thaIconPack = getResources().getString(R.string.section_fifteen);
         thaFullChangelog = getResources().getString(R.string.section_sixteen);
+        thaRebuild = getResources().getString(R.string.section_seventeen);
 
         drawerVersion = getResources().getString(R.string.version_code);
 
@@ -108,6 +110,7 @@ public class Main extends ActionBarActivity {
                 .withToolbar(toolbar)
                 .withAccountHeader(headerResult)
                 .withHeaderDivider(false)
+                .withDrawerWidthDp(400)
                 .addDrawerItems(
                         new SectionDrawerItem().withName("Main"),
                         new PrimaryDrawerItem().withName(thaHome).withIcon(GoogleMaterial.Icon.gmd_home).withIdentifier(1),
@@ -120,6 +123,7 @@ public class Main extends ActionBarActivity {
                         new PrimaryDrawerItem().withName(thaFAQ).withIcon(GoogleMaterial.Icon.gmd_question_answer).withDescription("Common questions with answers.").withIdentifier(8),
                         new DividerDrawerItem(),
                         new SectionDrawerItem().withName("Tools & Utilities"),
+                        new PrimaryDrawerItem().withName(thaRebuild).withIcon(GoogleMaterial.Icon.gmd_sync).withDescription("A rebuild a day keeps the RRs away!").withCheckable(false).withBadge("ROOT ★").withIdentifier(13),
                         new PrimaryDrawerItem().withName(thaLogcat).withIcon(GoogleMaterial.Icon.gmd_bug_report).withDescription("System level log recording.").withCheckable(false).withBadge("ROOT ★").withIdentifier(7),
                         new DividerDrawerItem(),
                         new SectionDrawerItem().withName("The Developers"),
@@ -265,6 +269,14 @@ public class Main extends ActionBarActivity {
                                     break;
                                 case 12:
                                     fullchangelog();
+                                    break;
+                                case 13:
+                                    if (Shell.SU.available()) {
+                                        rebuildThemeCache();
+                                    } else {
+                                        Toast toast = Toast.makeText(getApplicationContext(), "Unfortunately, this feature is only available for root users.", Toast.LENGTH_LONG);
+                                        toast.show();
+                                    }
                                     break;
                             }
                         }
@@ -520,6 +532,36 @@ public class Main extends ActionBarActivity {
                 .show();
     }
 
+    private void rebuildThemeCache() {
+
+        new MaterialDialog.Builder(this)
+                .title("Rebuild Theme Engine Cache")
+                .content(getResources().getString(R.string.rebuild_disclaimer))
+                .positiveText("PROCEED")
+                .negativeText("CANCEL")
+                .callback(new MaterialDialog.ButtonCallback() {
+                    @Override
+                    public void onPositive(MaterialDialog dialog) {
+                        String[] commands_mount3 = {"mount -o remount,rw /system"};
+                        String[] commands_backup = {"rm -r /data/resource-cache"};
+                        String[] commands_close3 = {"mount -o remount,ro /system"};
+                        RunAsRoot(commands_mount3);
+                        Toast toast13 = Toast.makeText(getApplicationContext(), "Mounting system as R/W", Toast.LENGTH_SHORT);
+                        toast13.show();
+                        RunAsRoot(commands_backup);
+                        Toast toast_14 = Toast.makeText(getApplicationContext(), "Destroying all theme caches made by CM Theme Engine...", Toast.LENGTH_SHORT);
+                        toast_14.show();
+                        RunAsRoot(commands_close3);
+                        Toast toast15 = Toast.makeText(getApplicationContext(), "Mounting system as R/O", Toast.LENGTH_SHORT);
+                        Toast toast16 = Toast.makeText(getApplicationContext(), "All caches cleared!", Toast.LENGTH_SHORT);
+                        toast15.show();
+                        toast16.show();
+                        showThreadCloserDialogReboot();
+                    }
+                })
+                .show();
+    }
+
     private void showChangelogDialog() {
 
         String launchinfo = getSharedPreferences("PrefsFile", MODE_PRIVATE).getString("version", "0");
@@ -617,5 +659,55 @@ public class Main extends ActionBarActivity {
         });
     }
 
+    public void showThreadCloserDialogReboot() {
+        new MaterialDialog.Builder(context)
+                .title("A reboot is necessary...")
+                .content("Please wait for all the toasts to completely vanish from the bottom of your screen, then click Proceed.")
+                .positiveText("Proceed")
+                .negativeText("Cancel")
+                .callback(new MaterialDialog.ButtonCallback() {
+                    @Override
+                    public void onPositive(MaterialDialog dialog) {
+                        (new StartUp()).setContext(dialog.getContext()).execute("reboot");
+                    }
+                })
+                .show();
+    }
+
+    private class StartUp extends AsyncTask<String, Void, Void> {
+
+
+        boolean suAvailable = false;
+        private Context context = null;
+
+        public StartUp setContext(Context context) {
+            this.context = context;
+            return this;
+        }
+
+        @Override
+        protected Void doInBackground(String... params) {
+            suAvailable = Shell.SU.available();
+            if (suAvailable) {
+                switch (params[0]) {
+                    case "reboot":
+                        Shell.SU.run("reboot");
+                        break;
+                    case "recov":
+                        Shell.SU.run("reboot recovery");
+                        break;
+                    case "shutdown":
+                        Shell.SU.run("reboot -p");
+                        break;
+                    case "sysui":
+                        Shell.SU.run("pkill com.android.systemui");
+                        break;
+                }
+            }
+
+            return null;
+        }
+
+    }
 
 }
