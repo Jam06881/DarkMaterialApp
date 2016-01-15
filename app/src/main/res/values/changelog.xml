@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-        <item>@array/v116</item>
+        <item>@array/v118</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v118</item>
         <item>@array/v116</item>
         <item>@array/v115</item>
         <item>@array/v114</item>
@@ -59,6 +60,16 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v118">
+        <item>baek yeol yeo deol &#8212; final/stable build</item>
+        <item>IMPORTANT: One to two minutes after updating the theme, please REBOOT YOUR PHONE TWICE!</item>
+        <item>Update GroupMe Overlay fixing unreadable events card, as well as fix excess white fade during attachment popup.</item>
+        <item>Add themed AboutBliss Overlay (my own app).</item>
+        <item>Add themed AICP OTA overlay (95%).</item>
+        <item>Add themed DU Certified app overlay (from internal closed beta).</item>
+        <item>Add themed and whitened RR Settings Icons.</item>
+        <item>Segregate all Google Drive Apps with separate API levels (this fixes Failed to Install issues on early LP based CM Theme Engine stages).</item>
     </string-array>
     <string-array name="v116">
         <item>baek yeol yeo seot &#8212; final/stable build</item>
