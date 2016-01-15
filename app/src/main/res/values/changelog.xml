@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
+        <item>@array/v119</item>
         <item>@array/v118</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v119</item>
         <item>@array/v118</item>
         <item>@array/v116</item>
         <item>@array/v115</item>
@@ -60,6 +62,12 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v119">
+        <item>baek yeol ahop &#8212; final build</item>
+        <item>IMPORTANT: One to two minutes after updating the theme, please REBOOT YOUR PHONE TWICE!</item>
+        <item>Add support for PureNexus CMTE Settings Icon.</item>
+        <item>Fix Resurrection Remix Settings FC.</item>
     </string-array>
     <string-array name="v118">
         <item>baek yeol yeo deol &#8212; final/stable build</item>
