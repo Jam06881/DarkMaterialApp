@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!--Change this on every version-->
-    <string name="version_code">baek yeol ahop</string>
+    <string name="version_code">baek seu mul hana</string>
 
     <!-- Main Strings -->
     <string name="app_name">"Nicholas\' Dark Material"</string>
@@ -36,7 +36,7 @@
 
     <!--Main Screen Cards-->
     <string name="welcome_title">welcome to lollipop, darkened!</string>
-    <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with monthly design updates and bug fixes - installed by more than 600,000 users with over 90,000 active users on play! having over 200 original app overlays, this is the most complete theme available on the play store!</string>
+    <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with monthly design updates and bug fixes - installed by more than 600,000 users with over 90,000 active users on play! having over 210 original app overlays, this is the most complete theme available on the play store!</string>
 
     <string name="play_card_title">chummy development team</string>
     <string name="play_card_content">"if you haven't already, please check out our other themes and boot animations on Play!"</string>
@@ -275,7 +275,10 @@
         \nTeleService (com.android.server.telecom)
         \nPhone (com.android.phone)</string>
     <string name="card_three_title">"rom specific app support"</string>
-    <string name="card_three_list">BlissOTA (com.chummy.blissroms.updates)
+    <string name="card_three_list">About Bliss (bliss.about)
+        \nAICP OTA (com.aicp.aicpota)
+        \nAICP Tweaks (com.lordclockan)
+        \nBlissOTA (com.chummy.blissroms.updates)
         \nBlissPapers (com.death2all110.blisspapers)
         \nDevice Control (org.namelessrom.devicecontrol)
         \nDU About (com.dirtyunicorns.about)
@@ -283,6 +286,7 @@
         \nEuphoria Mahdi TouchControl (com.mahdi.touchcontrol)
         \nEuphoria Updater (com.euphoria.ota)
         \nLiquid Updater (com.liquid.updater)
+        \nPureNexusSettings (com.android.purenexussettings)
         \nSlim Device (com.slim.device)
         \nSlimLauncher (com.slim.slimlauncher)
         \nTemasek OTA (com.ota.updates)</string>
@@ -298,6 +302,7 @@
         \nSnap Browser (com.cyngn.browser)
         \nThemeChooser - CyanogenMod 12/12.1 (org.cyanogenmod.theme.chooser)
         \nThemeChooser - Cyanogen OS 12 (com.cyngn.theme.chooser)
+        \nTheme Store (com.cyngn.themestore)
         \nTrebuchet (com.cyanogenmod.trebuchet)
         \nUpdater (com.cyanogenmod.updater)</string>
     <string name="card_five_title">"google app support"</string>
@@ -314,6 +319,7 @@
         \nGoogle Now Launcher (com.google.android.launcher)
         \nGoogle Search (com.google.android.googlequicksearchbox)
         \nGoogle Keyboard (com.google.android.inputmethod.latin)
+        \nGoogle Keyboard - Cantonese (com.google.android.apps.inputmethod.cantonese)
         \nGoogle+ (com.google.android.apps.plus)
         \nGoogle Camera (com.google.android.GoogleCamera)
         \nGoogle TTS (com.google.android.tts)
@@ -328,9 +334,16 @@
         \nPlay Services (com.google.android.gms)
         \nRewards (com.google.android.apps.paidtasks)
         \nTranslate (com.google.android.apps.translate)
-        \nYoutube (com.google.android.youtube)</string>
+        \nYoutube (com.google.android.youtube)
+        \nYoutube Gaming (com.google.android.apps.youtube.gaming)</string>
     <string name="card_six_title">"third party app support"</string>
-    <string name="card_six_list">Audials + Audials Free (com.audials.paid)
+    <string name="card_six_list">Advanced Download Manager (com.dv.adm)
+        \nAK Kernel Updater (com.callmealdy.kernelupdater)
+        \nAmazon Fire TV Remote (com.amazon.storm.lightning.client.aosp)
+        \nAmazon MP3 (com.amazon.mp3)
+        \nAmazon Video (com.amazon.avod.thirdpartyclient)
+        \nApollo (com.andrew.apollo)
+        \nAudials + Audials Free (com.audials.paid)
         \nA Better Camera Unlocked (com.almalence.opencam_plus)
         \nAlarmSolo (net.maicas.android.alarmsolo)
         \nApex Launcher (com.anddoes.launcher)
@@ -338,16 +351,23 @@
         \nBetterBatteryStats Play (com.asksven.betterbatterystats)
         \nBetterBatteryStats XDA (com.asksven.betterbatterystats_xdaedition)
         \nBlackPlayer EX + BlackPlayer Free (com.kodarkooperativet.blackplayerex)
-        \nTricksterMod (com.bigeyes0x0.trickstermod)
+        \nBlueMail (me.bluemail.mail)
         \nBzzapp Reminders (com.bzzzapp)
+        \nCatLog (com.nolanlawson.logcat)
+        \nClean Master Security (com.cleanmaster.security)
         \nColor Picker (com.nauj27.android.colorpicker)
+        \nCortana (com.microsoft.cortana)
         \nDelayed Lock (de.j4velin.delayedlock2.trial)
+        \nDU Certified (com.dirtyunicorns.certified)
         \nDropbox + Dropbox Material (com.dropbox.android)
         \nEbay (com.ebay.mobile)
         \nES File Explorer (com.estrongs.android.pop)
         \nFacebook (com.facebook.katana)
         \nFacebook Messenger (com.facebook.orca)
+        \nFeedly (com.devhd.feedly)
+        \nFX Explorer (nextapp.fx)
         \nGravityBoxLP (com.ceco.lollipop.gravitybox)
+        \nGravityBoxMM (com.ceco.marshmallow.gravitybox)
         \nGreenify (com.oasisfeng.greenify)
         \nGroupMe (com.groupme.android)
         \nInstagram (com.instagram.android)
@@ -356,6 +376,9 @@
         \nKik (kik.android)
         \nLiveboot (eu.chainfire.liveboot)
         \nLightflow (com.rageconsulting.android.lightflow)
+        \nLockscreen Changer CM13 (com.alicantedevelopers.lockscreenchangercm13)
+        \nMatLog (com.pluscubed.matlog)
+        \nMoovit (com.tranzmate)
         \nMultiROM Manager (com.tassadar.multirommgr)
         \nMusixMatch (com.musixmatch.android.lyrify)
         \nNoChromo (com.metalasfook.nochromo)
@@ -369,31 +392,50 @@
         \nPipette (com.ochs.pipette)
         \nPlayerPro + Trial (com.tbig.playerpro)
         \nPocket MAL (com.g.pocketmal)
+        \nPowerAMP (com.maxmpz.audioplayer)
         \nPushbullet (com.pushbullet.android)
+        \nPushbullet Portal (com.pushbullet.android.portal)
+        \nPushover (net.superblock.pushover)
+        \nQuickPic (com.alensw.PicFolder)
         \nRecently (eu.chainfire.recently)
         \nReddit Sync (com.laurencedawson.reddit_sync)
         \nRelay for Reddit (reddit.news)
+        \nSDMaid (eu.thedarken.sdm)
         \nSetCPU (com.mhuang.overclocking)
         \nShuttle+ (com.simplecity.amp_pro)
+        \nSimple Reboot (simple.reboot.com)
         \nSlack (com.Slack)
+        \nSkype (com.skype.raider)
         \nSnapchat (com.snapchat.android)
+        \nSolid Explorer (pl.solidexplorer2)
         \nSony Sketch (com.sonymobile.sketch)
+        \nSony Video (com.sonyericsson.video)
+        \nSony Walkmann (com.sonyericsson.music)
         \nSuperSU (eu.chainfire.supersu)
+        \nSWE Jswarts Browser (org.notphenom.swe.browser)
         \nSwype (com.nuance.swype.dtc)
         \nTapatalk (com.quoord.tapatalkpro.activity)
+        \nTeslaUnread (com.teslacoilsw.notifier)
         \nTexdroiderDPI (com.texdroider.texdroider_dpi)
         \nTextNow (com.enflick.android.TextNow)
+        \nTextra (com.textra)
         \nTextSecure (org.thoughtcrime.securesms)
         \nThreema (ch.threema.app)
         \nTinfoil for Facebook (com.danvelazco.fbwrapper)
         \nTitaniumBackup (com.keramidas.TitaniumBackup)
+        \nTooleap CatLog (com.tooleap.logcat)
         \nTricksterMod (com.bigeyes0x0.trickstermod)
         \nTwitter (com.twitter.android)
         \nViber (com.viber.voip)
         \nVindicator OTA (com.mcswainsoftware.vindicator.ota)
         \nViper4Android (com.vipercn.viper4android_v2)
+        \nVLC (org.videolan.vlc)
+        \nVLC Debug (org.videolan.vlc.debug)
         \nWeatherBug (com.aws.android)
+        \nWeather Timeline (com.samruston.weather)
         \nWhatsApp + WhatsApp Material (com.whatsapp)
         \nWhisperPush (org.whispersystems.whisperpush)
-        \nXDA One (com.xda.one)</string>
+        \nXDA Labs (com.xda.labs)
+        \nXDA One (com.xda.one)
+        \nXposed Installer (de.robv.android.xposed.installer)</string>
 </resources>
