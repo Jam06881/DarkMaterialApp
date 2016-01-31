@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-        <item>@array/v121</item>
-        <item>@array/v120</item>
+        <item>@array/v123</item>
+        <item>@array/v122</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v123</item>
+        <item>@array/v122</item>
         <item>@array/v121</item>
         <item>@array/v120</item>
         <item>@array/v119</item>
@@ -64,6 +66,22 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v123">
+        <item>baek seu mul set &#8212; final build</item>
+        <item>IMPORTANT: One to two minutes after updating the theme, please REBOOT YOUR PHONE TWICE!</item>
+        <item>Revert complete SoundCloud Overlay (due to heavy, unreadable objects on latest update).</item>
+        <item>Let DU Cert ActionBar take on theme color again.</item>
+    </string-array>
+    <string-array name="v122">
+        <item>baek seu mul dul &#8212; hotfix build</item>
+        <item>IMPORTANT: One to two minutes after updating the theme, please REBOOT YOUR PHONE TWICE!</item>
+        <item>Fix up problematic Play/Pause button in Google Photos (Video.</item>
+        <item>Revert "Remove background circle for unread count on G+ communities".</item>
+        <item>Add themed Messaging QuickMessage Popup (as of 30/1/2016).</item>
+        <item>Fix Serenity Purple not building in Arcus.</item>
+        <item>Fix up invisible accent color in Google Keep.</item>
+        <item>Fix up copypasta for Akzent colors, removing duplicate accent.</item>
     </string-array>
     <string-array name="v121">
         <item>baek seu mul hana &#8212; final build</item>
