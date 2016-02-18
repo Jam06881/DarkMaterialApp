@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-        <item>@array/v123</item>
-        <item>@array/v122</item>
+        <item>@array/v128</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v128</item>
+        <item>@array/v126</item>
         <item>@array/v123</item>
         <item>@array/v122</item>
         <item>@array/v121</item>
@@ -66,6 +67,52 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v128">
+        <item>baek seu mul yeo deol &#8212; overlay update build</item>
+        <item>IMPORTANT: One to two minutes after updating the theme, please REBOOT YOUR PHONE TWICE!</item>
+        <item>Update Gmail Overlay to 5.11.114210608.</item>
+        <item>Add readable notification text for Metal for Facebook.</item>
+        <item>Fix unreadable account text color in drawer for Chromecast App.</item>
+        <item>Add themed Google Pinyin Overlay based on Cantonese Input.</item>
+        <item>Partial fix for Youtube unreadable dialog.</item>
+        <item>AICP: Add themed Recents ClearAll Nav Button.</item>
+        <item>MM6.0/CM13: Add themed Caffeine QS Tile.</item>
+        <item>MM6.0/DU: Add expanded desktop nav bar button.</item>
+        <item>Change all blues to theme color in Twitter.</item>
+        <item>Brighten up shift key on AOSP/Google Keyboards.</item>
+        <item>Fix Boxer\'s Account Set Up Unreadable Texts (95%).</item>
+        <item>MM6.0/DU: Add BT and Notification Panel Nav Bar Buttons.</item>
+        <item>Fix failed to install due to Sony Walkmann.</item>
+        <item>Add themed ResurrectionOTA overlay.</item>
+        <item>Reshift reboot power menu icon animation.</item>
+        <item>Fix ResurrectionRemix Configurations FC in System App Remover.</item>
+        <item>Fix unreadable attachment box in Gmail.</item>
+        <item>Fix mis-merge on notification background.</item>
+        <item>MM6.0: Make Dialer block action consistent with other buttons.</item>
+        <item>Add invisible notification icon in Metal (Only notification icon).</item>
+        <item>Add themed StatusBarColor for FB Messenger 58.0.0.23.78.</item>
+        <item>Theme MediaRouter Dialog in YouTube.</item>
+        <item>Update Google Messenger to 1.7.049 (2550558-49.phone).</item>
+        <item>Fix invisible YouTube Actionbar Search Controls.</item>
+        <item>Bliss6.0: Add tintable Settings icons for cLock and System App Remover.</item>
+        <item>Fix invisible Google Messenger Resend Actionbar Button.</item>
+        <item>Change notification big picture background color to new color.</item>
+        <item>Fix unreadable Subject editor bubble in Google Messenger.</item>
+        <item>Fix Play Store button sizes.</item>
+        <item>Add themed chips downdown in AOSP Email thanks to @daveyannihilation.</item>
+        <item>DU: Update QS tiles (Themes, Fling and SmartBar).</item>
+        <item>SystemUI: Change brightness dialog background to primary background.</item>
+        <item>MM6.0: Remove buggy SystemUI notification swipe due to new notifications.</item>
+    </string-array>
+    <string-array name="v126">
+        <item>baek seu mul yeo seot &#8212; staged rollout build</item>
+        <item>IMPORTANT: One to two minutes after updating the theme, please REBOOT YOUR PHONE TWICE!</item>
+        <item>MM6.0: Make the notification panel completely flat, no roundness!.</item>
+        <item>Remove Google Keep Ink Sheet BG coloring.</item>
+        <item>MM6.0/CM13: Add new Expanded Desktop Settings Icons.</item>
+        <item>MM6.0/CM13: Retheme new Status Bar Settings Icon.</item>
+        <item>Let\'s add a v23 exclusive notification style thanks to @moelle89.</item>
     </string-array>
     <string-array name="v123">
         <item>baek seu mul set &#8212; final build</item>
