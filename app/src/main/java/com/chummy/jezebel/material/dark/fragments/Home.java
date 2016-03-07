@@ -65,6 +65,67 @@ public class Home extends Fragment {
         ActionBar toolbar = ((ActionBarActivity) context).getSupportActionBar();
         toolbar.setTitle(R.string.app_name);
 
+        CardView arcus = (CardView) root.findViewById(R.id.arcus);
+        arcus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent devPlay = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_arcus)));
+                Intent intent_arcus = getActivity().getPackageManager().getLaunchIntentForPackage("pixkart.arcus");
+                boolean blackedout_arcused = isAppInstalled(getActivity(), "pixkart.arcus.user.darkmaterialblackedout");
+                if (intent_arcus == null) {
+                    if (blackedout_arcused) {
+                        Intent launch_arcus = new Intent("android.intent.action.MAIN");
+                        launch_arcus.setComponent(new ComponentName("org.cyanogenmod.theme.chooser", "org.cyanogenmod.theme.chooser.ChooserActivity"));
+                        launch_arcus.putExtra("pkgName", "pixkart.arcus.user.darkmaterialblackedout");
+
+                        Intent launch_arcus_cos = new Intent("android.intent.action.MAIN");
+                        launch_arcus_cos.setComponent(new ComponentName("com.cyngn.theme.chooser", "com.cyngn.theme.chooser.ChooserActivity"));
+                        launch_arcus_cos.putExtra("pkgName", "pixkart.arcus.user.darkmaterialblackedout");
+
+                        if (isAppInstalled(getActivity(), "org.cyanogenmod.theme.chooser")) {
+                            startActivity(launch_arcus);
+                        } else {
+                            if (isAppInstalled(getActivity(), "com.cyngn.theme.chooser")) {
+                                Toast toast = Toast.makeText(getContext(), "Select 'dark material // blacked out' and click Apply.", Toast.LENGTH_LONG);
+                                toast.show();
+                                startActivity(launch_arcus_cos);
+                            } else {
+                                startActivity(launch_arcus);
+                            }
+                        }
+                    }
+                    else {
+                        startActivity(devPlay);
+                    }
+                } else {
+                    if (blackedout_arcused) {
+                        Intent launch_arcus = new Intent("android.intent.action.MAIN");
+                        launch_arcus.setComponent(new ComponentName("org.cyanogenmod.theme.chooser", "org.cyanogenmod.theme.chooser.ChooserActivity"));
+                        launch_arcus.putExtra("pkgName", "pixkart.arcus.user.darkmaterialblackedout");
+
+                        Intent launch_arcus_cos = new Intent("android.intent.action.MAIN");
+                        launch_arcus_cos.setComponent(new ComponentName("com.cyngn.theme.chooser", "com.cyngn.theme.chooser.ChooserActivity"));
+                        launch_arcus_cos.putExtra("pkgName", "pixkart.arcus.user.darkmaterialblackedout");
+
+                        if (isAppInstalled(getActivity(), "org.cyanogenmod.theme.chooser")) {
+                            startActivity(launch_arcus);
+                        } else {
+                            if (isAppInstalled(getActivity(), "com.cyngn.theme.chooser")) {
+                                Toast toast = Toast.makeText(getContext(), "Select 'dark material // blacked out' and click Apply.", Toast.LENGTH_LONG);
+                                toast.show();
+                                startActivity(launch_arcus_cos);
+                            } else {
+                                startActivity(launch_arcus);
+                            }
+                        }
+                    }
+                    else {
+                        startActivity(intent_arcus);
+                    }
+                }
+            }
+        });
+
         CardView whicons = (CardView) root.findViewById(R.id.whicons);
         whicons.setOnClickListener(new View.OnClickListener() {
             @Override

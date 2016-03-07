@@ -4,12 +4,14 @@
     <string name="version_code">baek seu mul yeo deol</string>
 
     <!-- Main Strings -->
-    <string name="app_name">"Nicholas\' Dark Material"</string>
+    <string name="app_name">"dark material // blacked out"</string>
+    <string name="arcus_theme_name">"dark material //"</string>
     <string name="launcher_name">"dark material"</string>
     <string name="package_name">"com.chummy.jezebel.material.dark"</string>
     <string name="theme_name">"Dark Material"</string>
 
     <string name="team">"chummy development team"</string>
+    <string name="theme_author">"chummy development team"</string>
     <string name="developer_name">Nicholas Philip Chum</string>
     <string name="developer_link">http://forum.xda-developers.com/member.php?u=3605033</string>
 
@@ -18,6 +20,9 @@
     <string name="play_store_link_regression">https://play.google.com/store/apps/details?id=com.chummy.jezebel.material.dark.regression</string>
     <string name="play_store_dev_link">https://play.google.com/store/apps/dev?id=6772568782420610939</string>
     <string name="play_store_link_logcat">https://play.google.com/store/apps/details?id=com.nolanlawson.logcat</string>
+
+    <!--Arcus-->
+    <string name="play_store_arcus">https://play.google.com/store/apps/details?id=pixkart.arcus</string>
 
     <!--Recommended Icon Pack (Whicons)-->
     <string name="play_store_whicons">https://play.google.com/store/apps/details?id=com.whicons.iconpack</string>
@@ -29,14 +34,17 @@
 
     <!--Email attributes-->
     <string name="email_id">chummydevteam@gmail.com</string>
-    <string name="email_subject">"Dark Material - Theme UI (From the App)"</string>
-    <string name="email_subject_cm">"Dark Material - CM12 Theme UI (From the App)"</string>
-    <string name="email_subject_cos">"Dark Material - COS12 Theme UI (From the App)"</string>
-    <string name="email_subject_rro">"Dark Material - Layers Theme UI (From the App)"</string>
+    <string name="email_subject">"dark material // blacked out - Theme UI (From the App)"</string>
+    <string name="email_subject_cm">"dark material // blacked out - CM12 Theme UI (From the App)"</string>
+    <string name="email_subject_cos">"dark material // blacked out - COS12 Theme UI (From the App)"</string>
+    <string name="email_subject_rro">"dark material // blacked out - Layers Theme UI (From the App)"</string>
 
     <!--Main Screen Cards-->
     <string name="welcome_title">welcome to lollipop, darkened!</string>
-    <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with monthly design updates and bug fixes - installed by more than 600,000 users with over 90,000 active users on play! having over 210 original app overlays, this is the most complete theme available on the play store!</string>
+    <string name="theme_description">\ndark material is cm12/cm12.1/cm13\'s first and original dark theme, with monthly design updates and bug fixes - installed by more than 700,000 users with over 100,000 active users on play! having over 210 original app overlays, this is the most complete theme available on the play store!\n\n now supporting arcus installs for blacked out!</string>
+
+    <string name="arcus">switch over to blacked out!</string>
+    <string name="arcus_description">"blacked out is now an addon to dark material through the app arcus, click here to check it out!"</string>
 
     <string name="play_card_title">chummy development team</string>
     <string name="play_card_content">"if you haven't already, please check out our other themes and boot animations on Play!"</string>
@@ -89,7 +97,7 @@
     <string name="section_eleven">Take LogCat</string>
     <string name="section_twelve">Frequently Asked Questions</string>
     <string name="section_thirteen">Help</string>
-    <string name="section_fourteen">About Dark Material</string>
+    <string name="section_fourteen">About Dark Material Series</string>
     <string name="section_fifteen">Apply Icon Pack</string>
     <string name="section_sixteen">Full Changelog</string>
     <string name="section_seventeen">Rebuild Theme Engine Cache</string>
@@ -109,14 +117,14 @@
     <string name="testers_title">official list of beta testers</string>
     <string name="contributor_title">official list of contributors</string>
     <string name="title_libraries">list of implemented library authors</string>
-    <string name="list_of_testers">"\nAkki Mahajan (Androizer)\nVignesh Ravi (BATVIC)\n</string>
+    <string name="list_of_testers">"\nAkki Mahajan (Androizer)\nVignesh Ravi (BATVIC)\nNathan Chancellor (nathanchance)\nVatsal Koradia (Vatsal)\nBryan Clay (remicks)\nSanyam Jain (Men_in_black007)\nJeremy Llewellyn (UniqueGlitch)\nKuba Schenk\n</string>
     <string name="list_of_contributors">"\nPneuma Anonymous (Pneuma1985)\nManuel Möllmann (_moelle)\nMark Bencze (markbencze\nJon West (electrikjesus)\nVivek Neel (Vivek_Neel\nTeddy Tan (ted77usa)\nGiulio Fagioli &amp; Lorenzo Salani\nFranck Rohée (franzyroy)\nKevin Dixson (Punchieo)\nMike (xdnax)"</string>
     <string name="list_of_implemeted_libraries">\nMelnykov\nAidan Follestad\nMike Penz\nSquare\nBalys Valentukevicius</string>
 
 
     <!--Strings for Dropdown Menu & Requests-->
     <string name="share">Share this theme!</string>
-    <string name="share_title">Share Dark Material through...</string>
+    <string name="share_title">Share \'dark material // blacked out\' through...</string>
     <string name="send_title">Contact Nicholas through...</string>
     <string name="rate">Rate theme</string>
     <string name="sendemail">Contact Nicholas directly</string>
