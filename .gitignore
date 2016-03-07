@@ -51,3 +51,12 @@ Temporary Items
 .DS_Store
 /build
 /captures
+
+/app/src/main/assets/alarms/
+/app/src/main/assets/bootanimation/
+/app/src/main/assets/fonts/
+/app/src/main/assets/lockscreen/
+/app/src/main/assets/notifications/
+/app/src/main/assets/overlays/
+/app/src/main/assets/ringtones/
+/app/src/main/assets/wallpapers/
