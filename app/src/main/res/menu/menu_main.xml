@@ -17,4 +17,10 @@
         android:orderInCategory="300"
         android:title="@string/changelog"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/hide_launcher"
+        android:checkable="true"
+        android:orderInCategory="300"
+        app:showAsAction="never"
+        android:title="@string/hide_launcher" />
 </menu>

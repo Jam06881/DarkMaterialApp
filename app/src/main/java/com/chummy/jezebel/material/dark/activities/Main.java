@@ -431,6 +431,7 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        menu.findItem(R.id.hide_launcher).setChecked(!isLauncherIconEnabled());
         return true;
     }
 
@@ -509,8 +510,40 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
             case R.id.changelog:
                 changelog();
                 break;
+
+            case R.id.hide_launcher:
+                boolean checked = item.isChecked();
+                if (!checked) {
+                    new MaterialDialog.Builder(this)
+                            .title(R.string.warning)
+                            .content(R.string.hide_action)
+                            .positiveText(R.string.nice)
+                            .show();
+                }
+                item.setChecked(!checked);
+                setLauncherIconEnabled(checked);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
         }
         return true;
+    }
+
+    public boolean isLauncherIconEnabled() {
+        PackageManager pm = getPackageManager();
+        return (pm.getComponentEnabledSetting(new ComponentName(this, com.chummy.jezebel.material.dark.LauncherActivity.class)) != PackageManager.COMPONENT_ENABLED_STATE_DISABLED);
+    }
+
+    public void setLauncherIconEnabled(boolean enabled) {
+        int newState;
+        PackageManager pm = getPackageManager();
+        if (enabled) {
+            newState = PackageManager.COMPONENT_ENABLED_STATE_ENABLED;
+        } else {
+            newState = PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
+        }
+        pm.setComponentEnabledSetting(new ComponentName(this, com.chummy.jezebel.material.dark.LauncherActivity.class), newState, PackageManager.DONT_KILL_APP);
     }
 
     public void addItemsToDrawer() {

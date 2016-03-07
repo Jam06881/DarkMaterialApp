@@ -130,6 +130,11 @@
     <string name="sendemail">Contact Nicholas directly</string>
     <string name="request_precontent">"These apps are not themed. Thanks in advance.</string>
     <string name="changelog">View recent changelog</string>
+    <string name="hide_launcher">Hide Launcher Icon</string>
+
+    <!--Strings for Hide Launcher Icon Warning-->
+    <string name="warning">WARNING!</string>
+    <string name="hide_action">If you want to get the icon back, use a custom launcher such as Nova and set a shortcut to .activities.Main (dark material // blacked out). After setting a shortcut to the activity, unhide the app using the popup menu.</string>
 
     <!--Changelog Dialog Content-->
     <string name="changelog_dialog_title">Recent Changelog</string>
