@@ -1,5 +1,6 @@
 package com.chummy.jezebel.material.dark.activities;
 
+import android.app.AlertDialog;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -14,8 +15,10 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -47,8 +50,9 @@ import java.io.OutputStream;
 
 import eu.chainfire.libsuperuser.Shell;
 
-public class Main extends ActionBarActivity {
+public class Main extends ActionBarActivity implements ActivityCompat.OnRequestPermissionsResultCallback {
 
+    private static final int PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 1;
     public Drawer.Result result = null;
     public AccountHeader.Result headerResult = null;
     public String thaApp, thaHome, thaPreviews, thaApply, thaWalls, thaRequest, thaCredits, thaTesters, thaWhatIsThemed, thaContactUs, thaLogcat, thaFAQ, thaHelp, thaAbout, thaIconPack, thaFullChangelog, thaRebuild;
@@ -287,13 +291,53 @@ public class Main extends ActionBarActivity {
 
         result.getListView().setVerticalScrollBarEnabled(false);
 
-        runLicenseChecker();
+        // Check for permissions first so that we don't have any issues down the road
+        int permissionCheck = ContextCompat.checkSelfPermission(getApplicationContext(),
+                android.Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        if (permissionCheck == PackageManager.PERMISSION_GRANTED) {
+            // permission already granted, allow the program to continue running
+            runLicenseChecker();
+        } else {
+            // permission not granted, request it from the user
+            ActivityCompat.requestPermissions(this,
+                    new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                    PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE);
+        }
 
         if (savedInstanceState == null) {
             result.setSelectionByIdentifier(1);
         }
 
     }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[],
+                                           int[] grantResults) {
+        switch (requestCode) {
+            case PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE: {
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // permission already granted, allow the program to continue running
+                    runLicenseChecker();
+                } else {
+                    // permission was not granted, show closing dialog
+                    new AlertDialog.Builder(this)
+                            .setTitle(R.string.permission_not_granted_dialog_title)
+                            .setMessage(R.string.permission_not_granted_dialog_message)
+                            .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    // do nothing
+                                }
+                            })
+                            .show();
+                    return;
+                }
+                break;
+            }
+        }
+    }
+
 
     private void copyAssets() {
         AssetManager assetManager = getAssets();

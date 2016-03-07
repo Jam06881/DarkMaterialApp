@@ -251,6 +251,10 @@
     <string name="faq_q_9">do you have a version of the theme without custom icons?</string>
     <string name="faq_a_9">there\'s a regression theme for all my cmte themes available on play store, you can check them out.</string>
 
+    <string name="permission_not_granted_dialog_title">Storage permissions not granted</string>
+    <string name="permission_not_granted_dialog_message">The app has built in wallpaper downloading features, without granting storage permissions, this feature will be disabled.</string>
+    <string name="dialog_ok">OK</string>
+
     <!--What Is Themed-->
     <string name="card_one_title">"android system base requirements"</string>
     <string name="card_one_list">"Framework-res (com.android)
