@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-        <item>@array/v128</item>
+        <item>@array/v129</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v129</item>
         <item>@array/v128</item>
         <item>@array/v126</item>
         <item>@array/v123</item>
@@ -67,6 +68,49 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v129">
+        <item>baek seu mul a hop &#8212; convergence build</item>
+        <item>IMPORTANT: One to two minutes after updating the theme, please REBOOT YOUR PHONE TWICE!</item>
+        <item>ATTENTION: Welcome to the convergence build! Blacked Out and Dark Material are now part of the same package. To switch to Blacked Out!, please install Arcus and build Blacked Out!</item>
+        <item>ATTENTION: You can also hide the app launcher icon from the launcher, click the overflow menu for more info! PLEASE READ THE DISCLAIMER!</item>
+        <item>blakz: Remove transparency from G+.</item>
+        <item>Add missing styles to Settings.</item>
+        <item>Make DU unicorn take on accent color.</item>
+        <item>Let\'s also give some colourful love to Dirty Unicorns!</item>
+        <item>Let\'s give some colourful love to PureNexus!</item>
+        <item>Fix unreadable popup on DU Certified.</item>
+        <item>Abandon ship on Google Play Games!.</item>
+        <item>Add themed Airwatch Email Notification Styles.</item>
+        <item>New Settings Category Title Design.</item>
+        <item>Add brand new switches thanks to @adityaakadynamo.</item>
+        <item>Fix up unreadable AOSP Email Account Setup Text.</item>
+        <item>Fix up Google Music Unreadable Texts (FINISHED COMMIT) - thanks to +David Wilson, +Bryan Owens and +Jay Rod.</item>
+        <item>Fix invisible clock hands in AOSP Calendar.</item>
+        <item>Add support for AOKP ROM Control App and Settings Icon.</item>
+        <item>Allow Boxer in-mail overflow menu texts to be readable.</item>
+        <item>Fix up unreadable texts in Google Drive + Upgrade Button.</item>
+        <item>Fix unreadable Gmail Account Setup.</item>
+        <item>Let MusixMatch Accent be themed.</item>
+        <item>Update GitSkarios for Dark Theme.</item>
+        <item>Fix Launcher3\'s Settings Accent.</item>
+        <item>Theme Launcher3\'s Settings.</item>
+        <item>Theme MediaRouter Dialog in YouTube.</item>
+        <item>Update Google Messenger to 1.7.049 (2550558-49.phone).</item>
+        <item>Fix broken styles in LockClock to counter alert dialog thanks to @remicks.</item>
+        <item>Theme Gmail Spam Alert Background.</item>
+        <item>Fix Chromecast Unreadable Card Text and Remove YouTube Logo.</item>
+        <item>Theme TeleService Dialogs and Styles.</item>
+        <item>Fix Google Keep invisible actionbar close button.</item>
+        <item>Fix invisible Google+ Settings Fragment Icon.</item>
+        <item>Add rethemed About DU overlay thanks +Alex Cruz for the heads up.</item>
+        <item>Add Screw\'d Settings icons support thanks to @dsmitty166.</item>
+        <item>DU: Fix tealized DPI warning icon to white.</item>
+        <item>Fix invisible filetype icon in DocumentsUI.</item>
+        <item>Reinitialize project using APKTool v2.0.3.</item>
+        <item>Make Google Keep\'s Places Text Input somewhat readable again.</item>
+        <item>Fix unreadable texts in Google Keep.</item>
+        <item>Update Google Play Music Overlay (UNFINISHED).</item>
     </string-array>
     <string-array name="v128">
         <item>baek seu mul yeo deol &#8212; overlay update build</item>

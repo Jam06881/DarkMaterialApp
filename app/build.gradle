@@ -9,8 +9,8 @@ android {
         minSdkVersion 21
         maxSdkVersion 23
         targetSdkVersion 23
-        versionCode 128
-        versionName "baek seu mul yeo deol"
+        versionCode 129
+        versionName "baek seu mul a hop"
     }
     buildTypes {
         release {

@@ -93,8 +93,7 @@ public class Home extends Fragment {
                                 startActivity(launch_arcus);
                             }
                         }
-                    }
-                    else {
+                    } else {
                         startActivity(devPlay);
                     }
                 } else {
@@ -118,8 +117,7 @@ public class Home extends Fragment {
                                 startActivity(launch_arcus);
                             }
                         }
-                    }
-                    else {
+                    } else {
                         startActivity(intent_arcus);
                     }
                 }

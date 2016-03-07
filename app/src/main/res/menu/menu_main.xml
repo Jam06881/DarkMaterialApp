@@ -21,6 +21,6 @@
         android:id="@+id/hide_launcher"
         android:checkable="true"
         android:orderInCategory="300"
-        app:showAsAction="never"
-        android:title="@string/hide_launcher" />
+        android:title="@string/hide_launcher"
+        app:showAsAction="never" />
 </menu>
