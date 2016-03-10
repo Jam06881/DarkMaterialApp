@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -27,9 +28,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.chummy.jezebel.material.dark.AsyncResponse;
+import com.chummy.jezebel.material.dark.MainActivity;
 import com.chummy.jezebel.material.dark.R;
 import com.chummy.jezebel.material.dark.utils.ChangelogAdapter;
 import com.chummy.jezebel.material.dark.utils.Preferences;
@@ -44,14 +48,22 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.BufferedOutputStream;
+import java.io.BufferedWriter;
 import java.io.DataOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.net.URL;
+
+import com.azeesoft.lib.colorpicker.ColorPickerDialog;
 
 import eu.chainfire.libsuperuser.Shell;
 
@@ -70,11 +82,11 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
     private boolean firstrun, enable_features;
     private Preferences mPrefs;
     private boolean withLicenseChecker = false;
-    private Context context;
-    private static Context  s_sharedContext;
+    public Context context;
+    public String color_picked;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -294,13 +306,7 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
                                     }
                                     break;
                                 case 14:
-                                    try {
-                                        compileAndSign();
-                                        Log.e("TEST", "dkljskldjksljdk");
-                                    } catch (Exception e) {
-                                        Log.e("ERROR", "YOU FUCKED UP");
-                                    }
-
+                                    pickColor();
                                     break;
                             }
                         }
@@ -327,6 +333,21 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
         if (savedInstanceState == null) {
             result.setSelectionByIdentifier(1);
         }
+
+    }
+    public void pickColor(){
+
+        final ColorPickerDialog colorPickerDialog = ColorPickerDialog.createColorPickerDialog(Main.this, ColorPickerDialog.DARK_THEME);
+        colorPickerDialog.setHexaDecimalTextColor(Color.parseColor("#ffffff"));
+        colorPickerDialog.hideOpacityBar(); // wtf FUCK THE README
+        colorPickerDialog.setOnColorPickedListener(new ColorPickerDialog.OnColorPickedListener() {
+            @Override
+            public void onColorPicked(int color, String hexVal) {
+                color_picked = colorPickerDialog.getCurrentColorAsHexa();
+                createXMLfile();
+            }
+        });
+        colorPickerDialog.show();
 
     }
 
@@ -358,9 +379,41 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
         }
     }
 
+    private void createXMLfile() {
+        try{
+            File root = new File(getFilesDir(), "/res/values-v23/cdt_colors.xml");
+            if (!root.exists()) {
+                root.createNewFile();
+            }
+            FileWriter fw = new FileWriter(root);
+            BufferedWriter bw = new BufferedWriter(fw);
+            PrintWriter pw = new PrintWriter(bw);
+            String xmlTags = ("<?xml version=\"1.0\" encoding=\"utf-8\"?>" + "\n");
+            String xmlRes1 = ("<resources>" + "\n");
+            String xmlFile = ("    <color name="+ "\"" + "theme_color_accent" + "\">"  + color_picked + "</color>" + "\n");
+            String xmlRes2 = ("</resources>");
+            pw.write(xmlTags);
+            pw.write(xmlRes1);
+            pw.write(xmlFile);
+            pw.write(xmlRes2);
+            pw.close();
+            bw.close();
+            fw.close();
+            try {
+                compileAndSign();
+            } catch (Exception e) {
+                //
+            }
+        } catch (IOException e) {
+            Log.e("FileWriter Error", "Failed to create new file.");
+        }
+
+    }
+
     private void createTempFolder() {
         copyAssetFolder(getAssets(), "aapt",
-                "/data/data/com.chummy.jezebel.material.dark/files");
+
+                getFilesDir().toString());
     }
 
     private static boolean copyAssetFolder(AssetManager assetManager,
@@ -426,7 +479,7 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
         deleteRecursive(dir);
     }
 
-    void deleteRecursive(File fileOrDirectory) {
+    private void deleteRecursive(File fileOrDirectory) {
         if (fileOrDirectory.isDirectory())
             for (File child : fileOrDirectory.listFiles())
                 deleteRecursive(child);
@@ -495,6 +548,9 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
         menu.findItem(R.id.hide_launcher).setChecked(!isLauncherIconEnabled());
         return true;
     }
+
+
+
 
     private boolean isAppInstalled(String uri) {
         PackageManager pm = getPackageManager();
@@ -812,41 +868,37 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
                 .show();
     }
 
+    private void setPermissionsAAPT() throws IOException {
+        String command = new String ("chmod 777 /data/data/com.chummy.jezebel.material.dark/files/aapt");
+        Process nativeApp = Runtime.getRuntime().exec(command);
+
+    }
+
     private void compileAndSign() throws Exception {
 
-        File appt = new File(context.getCacheDir() + "/aapt");
+        setPermissionsAAPT();
+        Log.e("STEP 5.3", "PASS");
 
-        String tempManifest =
-                IOUtils.toString(context.getAssets().open("AndroidManifest.xml"))
-                        .replace("<<PACKAGE_NAME>>", "common");
+        File aapt = new File(context.getFilesDir(), "/aapt");
+        Log.e("STEP 5.5", aapt.getAbsolutePath().toString());
+        String commands = new String ("cd /data/data/com.chummy.jezebel.material.dark/files/\n" +
+                "aapt p -M /data/data/com.chummy.jezebel.material.dark/files/AndroidManifest.xml -S /data/data/com.chummy.jezebel.material.dark/files/res -I /data/data/com.chummy.jezebel.material.dark/files/builder.jar -F /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk\n");
+        Log.e("STEP 5.7", "PASS");
 
-        Log.e("STEP 1", "PASS");
-        FileUtils.writeStringToFile(new File(context.getCacheDir() + "/cdt/" + getPackageName() + "/AndroidManifest.xml"), tempManifest);
-
-        Log.e("STEP 2", "PASS");
-        if (!new File(context.getCacheDir() + "/cdt/" + getPackageName() + "/res").exists()) {
-            return;
-        }
-
-        Log.e("STEP 3", "PASS");
-        File unsignedApp = new File(context.getCacheDir() + "/cdt/unsigned." + getPackageName() + ".apk");
-        Log.e("STEP 4", "PASS");
-        File signedApp = new File(context.getCacheDir() + "/cdt/signed." + getPackageName() + ".apk");
-        Log.e("STEP 5", "PASS");
-
-        Process nativeApp = Runtime.getRuntime().exec(new String[]{
-                appt.getAbsolutePath(), "p",
-                "-M", context.getCacheDir() + "/tempFolder/" + getPackageName() + "/AndroidManifest.xml",
-                "-S", context.getCacheDir() + "/tempFolder/" + getPackageName() + "/res",
-                "-I", "data/resource-cache/com.chummy.jezebel.material.dark/common",
-                "-F", unsignedApp.getAbsolutePath()});
-        Log.e("STEP 6", "PASS");
-
+        Process nativeApp = Runtime.getRuntime().exec(commands);
         IOUtils.toString(nativeApp.getInputStream());
         IOUtils.toString(nativeApp.getErrorStream());
 
         nativeApp.waitFor();
 
+        Log.e("STEP 6", "PASS");
+
+        /*
+        IOUtils.toString(nativeApp.getInputStream());
+        IOUtils.toString(nativeApp.getErrorStream());
+
+        nativeApp.waitFor();
+*/
         Log.d("Signing start", "");
         /*
 
@@ -892,6 +944,50 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
             return null;
         }
 
+    }
+    public static class InstallOverlaysBetterWay extends AsyncTask<Void, String, Void> {
+
+        Context context;
+
+        public InstallOverlaysBetterWay(Context context) {
+            this.context = context;
+        }
+
+        @Override
+        public Void doInBackground(Void... params) {
+            File aapt = new File(context.getFilesDir().toString());
+            if (context.getFilesDir() == null){
+                Log.e("SSSSSSSSSSSSSS", "FUCKED!");
+            }
+            for (String url : aaptUrls) {
+
+                try {
+                    FileUtils.copyURLToFile(new URL(url), aapt);
+
+                    Process checkAapt = Runtime.getRuntime().exec(new String[]{
+                            aapt.getAbsolutePath(), "v"});
+
+                    String data = IOUtils.toString(checkAapt.getInputStream());
+                    String error = IOUtils.toString(checkAapt.getErrorStream());
+
+                    checkAapt.waitFor();
+
+                    if (StringUtils.isEmpty(error)) {
+                        Log.d("AAPT", data);
+                        break;
+                    }
+
+
+                } catch (IOException | InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+
+            }
+
+
+            return null;
+        }
     }
 
 }

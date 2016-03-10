@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.chummy.jezebel.material.dark">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -35,7 +36,8 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/arcus_theme_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
         <meta-data
             android:name="arcus.support"
             android:value="true" />
@@ -65,8 +67,7 @@
             android:theme="@style/Default">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ac
-                tivities.DetailedWallpaper" />
+                android:value=".activities.DetailedWallpaper" />
         </activity>
         <activity
             android:name=".LauncherActivity"
