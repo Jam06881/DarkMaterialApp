@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dialog_color_dark">#ff000000</color>
+    <color name="dialog_color_light">#ffeeeeee</color>
+    <color name="qs_header_color">@android:color/black</color>
+    <color name="notification_background">@android:color/black</color>
+    <color name="settings_switchbar_background">@android:color/black</color>
+    <color name="theme_color">@color/theme_color_hardcoded_color</color>
+    <color name="theme_color_alpha">#cc000000</color>
+    <color name="theme_color_lighter">#ff000000</color>
+    <color name="theme_color_hardcoded_color">#ff000000</color>
+    <color name="theme_color_hardcoded_translucent_black">@color/black_color_alpha_70</color>
+    <color name="theme_color_dark_material">@color/theme_color_hardcoded_color</color>
+    <color name="theme_color_settings_switchbar_background">#ff000000</color>
+</resources>

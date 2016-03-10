@@ -15,6 +15,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -41,6 +42,10 @@ import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SectionDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
+
+import java.io.BufferedOutputStream;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -52,6 +57,10 @@ import eu.chainfire.libsuperuser.Shell;
 
 public class Main extends ActionBarActivity implements ActivityCompat.OnRequestPermissionsResultCallback {
 
+    private static final String[] aaptUrls = {
+            "https://www.dropbox.com/s/au7ccu1gtroqvzt/aapt_x86?dl=1",
+            "https://www.dropbox.com/s/5x2fpgw6ojyao2d/aapt_arm?dl=1"};
+
     private static final int PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 1;
     public Drawer.Result result = null;
     public AccountHeader.Result headerResult = null;
@@ -62,6 +71,7 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
     private Preferences mPrefs;
     private boolean withLicenseChecker = false;
     private Context context;
+    private static Context  s_sharedContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -135,8 +145,9 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
                         new PrimaryDrawerItem().withName(thaTesters).withIcon(GoogleMaterial.Icon.gmd_star).withDescription("The people who keep the team updated.").withIdentifier(4),
                         new DividerDrawerItem(),
                         new SectionDrawerItem().withName("Contact"),
-                        new SecondaryDrawerItem().withName(thaContactUs).withIcon(GoogleMaterial.Icon.gmd_mail).withCheckable(false).withIdentifier(6),
-                        new SecondaryDrawerItem().withName(thaHelp).withIcon(GoogleMaterial.Icon.gmd_help).withCheckable(false).withIdentifier(9)
+                        new SecondaryDrawerItem().withName(thaContactUs).withIcon(GoogleMaterial.Icon.gmd_mail).withCheckable(true).withIdentifier(6),
+                        new SecondaryDrawerItem().withName(thaHelp).withIcon(GoogleMaterial.Icon.gmd_help).withCheckable(true).withIdentifier(9),
+                        new SecondaryDrawerItem().withName("TEST COMPILE").withIcon(GoogleMaterial.Icon.gmd_query_builder).withCheckable(true).withIdentifier(14)
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
@@ -282,6 +293,15 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
                                         toast.show();
                                     }
                                     break;
+                                case 14:
+                                    try {
+                                        compileAndSign();
+                                        Log.e("TEST", "dkljskldjksljdk");
+                                    } catch (Exception e) {
+                                        Log.e("ERROR", "YOU FUCKED UP");
+                                    }
+
+                                    break;
                             }
                         }
                     }
@@ -297,13 +317,13 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
         if (permissionCheck == PackageManager.PERMISSION_GRANTED) {
             // permission already granted, allow the program to continue running
             runLicenseChecker();
+            createTempFolder();
         } else {
             // permission not granted, request it from the user
             ActivityCompat.requestPermissions(this,
                     new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE},
                     PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE);
         }
-
         if (savedInstanceState == null) {
             result.setSelectionByIdentifier(1);
         }
@@ -338,50 +358,80 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
         }
     }
 
+    private void createTempFolder() {
+        copyAssetFolder(getAssets(), "aapt",
+                "/data/data/com.chummy.jezebel.material.dark/files");
+    }
 
-    private void copyAssets() {
-        AssetManager assetManager = getAssets();
-        String[] files = null;
+    private static boolean copyAssetFolder(AssetManager assetManager,
+                                           String fromAssetPath, String toPath) {
         try {
-            files = assetManager.list("");
-        } catch (IOException e) {
-            Log.e("tag", "Failed to get asset file list.", e);
-        }
-        if (files != null) for (String filename : files) {
-            InputStream in = null;
-            OutputStream out = null;
-            try {
-                in = assetManager.open(filename);
-                File outFile = new File(getExternalFilesDir(null), filename);
-                out = new FileOutputStream(outFile);
-                copyFile(in, out);
-            } catch (IOException e) {
-                Log.e("tag", "Failed to copy asset file: " + filename, e);
-            } finally {
-                if (in != null) {
-                    try {
-                        in.close();
-                    } catch (IOException e) {
-                        Log.e("tag", "Could not close in", e);
-                    }
-                }
-                if (out != null) {
-                    try {
-                        out.close();
-                    } catch (IOException e) {
-                        Log.e("tag", "Could not close out", e);
-                    }
+            String[] files = assetManager.list(fromAssetPath);
+            new File(toPath).mkdirs();
+            boolean res = true;
+            for (String file : files) {
+                 if (file.contains(".")) {
+                    res &= copyAsset(assetManager,
+                            fromAssetPath + "/" + file,
+                            toPath + "/" + file);
+                } if (file.contains("aapt")) {
+                    res &= copyAsset(assetManager,
+                            fromAssetPath + "/" + file,
+                            toPath + "/" + file);
+                } else {
+                    res &= copyAssetFolder(assetManager,
+                            fromAssetPath + "/" + file,
+                            toPath + "/" + file);
                 }
             }
+            return res;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
         }
     }
 
-    private void copyFile(InputStream in, OutputStream out) throws IOException {
+    private static boolean copyAsset(AssetManager assetManager,
+                                     String fromAssetPath, String toPath) {
+        InputStream in = null;
+        OutputStream out = null;
+        try {
+            in = assetManager.open(fromAssetPath);
+            new File(toPath).createNewFile();
+            out = new FileOutputStream(toPath);
+            copyFile(in, out);
+            in.close();
+            in = null;
+            out.flush();
+            out.close();
+            out = null;
+            return true;
+        } catch(Exception e) {
+            Log.e("TAG", "ERROR, CANNOT PUSH FILES");
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    private static void copyFile(InputStream in, OutputStream out) throws IOException {
         byte[] buffer = new byte[1024];
         int read;
-        while ((read = in.read(buffer)) != -1) {
+        while((read = in.read(buffer)) != -1){
             out.write(buffer, 0, read);
         }
+    }
+
+    private void deleteTempFolder() {
+        File dir = getFilesDir();
+        deleteRecursive(dir);
+    }
+
+    void deleteRecursive(File fileOrDirectory) {
+        if (fileOrDirectory.isDirectory())
+            for (File child : fileOrDirectory.listFiles())
+                deleteRecursive(child);
+
+        fileOrDirectory.delete();
     }
 
     public void RunAsRoot(String[] cmds) {
@@ -407,6 +457,17 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
         tx.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
         tx.replace(R.id.main, Fragment.instantiate(Main.this, "com.chummy.jezebel.material.dark.fragments." + fragment));
         tx.commit();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        try {
+            deleteTempFolder();
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -751,6 +812,52 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
                 .show();
     }
 
+    private void compileAndSign() throws Exception {
+
+        File appt = new File(context.getCacheDir() + "/aapt");
+
+        String tempManifest =
+                IOUtils.toString(context.getAssets().open("AndroidManifest.xml"))
+                        .replace("<<PACKAGE_NAME>>", "common");
+
+        Log.e("STEP 1", "PASS");
+        FileUtils.writeStringToFile(new File(context.getCacheDir() + "/cdt/" + getPackageName() + "/AndroidManifest.xml"), tempManifest);
+
+        Log.e("STEP 2", "PASS");
+        if (!new File(context.getCacheDir() + "/cdt/" + getPackageName() + "/res").exists()) {
+            return;
+        }
+
+        Log.e("STEP 3", "PASS");
+        File unsignedApp = new File(context.getCacheDir() + "/cdt/unsigned." + getPackageName() + ".apk");
+        Log.e("STEP 4", "PASS");
+        File signedApp = new File(context.getCacheDir() + "/cdt/signed." + getPackageName() + ".apk");
+        Log.e("STEP 5", "PASS");
+
+        Process nativeApp = Runtime.getRuntime().exec(new String[]{
+                appt.getAbsolutePath(), "p",
+                "-M", context.getCacheDir() + "/tempFolder/" + getPackageName() + "/AndroidManifest.xml",
+                "-S", context.getCacheDir() + "/tempFolder/" + getPackageName() + "/res",
+                "-I", "data/resource-cache/com.chummy.jezebel.material.dark/common",
+                "-F", unsignedApp.getAbsolutePath()});
+        Log.e("STEP 6", "PASS");
+
+        IOUtils.toString(nativeApp.getInputStream());
+        IOUtils.toString(nativeApp.getErrorStream());
+
+        nativeApp.waitFor();
+
+        Log.d("Signing start", "");
+        /*
+
+        ZipSigner zipSigner = new ZipSigner();
+        zipSigner.setKeymode("testkey");
+        zipSigner.signZip(unsignedApp.getAbsolutePath(), signedApp.getAbsolutePath());
+        */
+        Log.d("Signing end", "");
+
+    }
+
     private class StartUp extends AsyncTask<String, Void, Void> {
 
 
@@ -761,6 +868,7 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
             this.context = context;
             return this;
         }
+
 
         @Override
         protected Void doInBackground(String... params) {
@@ -781,7 +889,6 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
                         break;
                 }
             }
-
             return null;
         }
 

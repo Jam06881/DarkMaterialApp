@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="calculator_advanced">@android:color/black</color>
+    <color name="calculator_background">@android:color/black</color>
+    <color name="calculator_medium">@android:color/black</color>
+</resources>

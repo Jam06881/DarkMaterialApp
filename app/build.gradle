@@ -18,6 +18,13 @@ android {
         }
     }
     useLibrary 'org.apache.http.legacy'
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'LICENSE.txt'
+    }
 }
 
 dependencies {
@@ -41,4 +48,8 @@ dependencies {
     compile 'com.melnykov:floatingactionbutton:1.2.0'
     compile 'com.getbase:floatingactionbutton:1.10.1'
     compile 'eu.chainfire:libsuperuser:1.0.0.+'
+    compile 'commons-io:commons-io:2.4'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile files ('src/main/libs/RootTools.jar')
+
 }

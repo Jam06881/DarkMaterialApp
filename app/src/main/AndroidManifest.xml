@@ -65,7 +65,8 @@
             android:theme="@style/Default">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.DetailedWallpaper" />
+                android:value=".ac
+                tivities.DetailedWallpaper" />
         </activity>
         <activity
             android:name=".LauncherActivity"
