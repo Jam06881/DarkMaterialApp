@@ -953,17 +953,30 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
         from1.renameTo(to1);
         from2.renameTo(to2);
         from3.renameTo(to3);
+
+        Shell.SU.run("mount -o remount,rw /");
+        Shell.SU.run("mkdir /res/color-v14");
+        Shell.SU.run("cp /data/data/com.chummy.jezebel.material.dark/files/res/color-v14/accent_color_dark.xml /res/color-v14/accent_color_dark.xml");
+        Shell.SU.run("cp /data/data/com.chummy.jezebel.material.dark/files/res/color-v14/accent_color_light.xml /res/color-v14/accent_color_light.xml");
+        Shell.SU.run("cp /data/data/com.chummy.jezebel.material.dark/files/res/color-v14/accent_color.xml /res/color-v14/accent_color.xml");
+
         Log.e("STEP 5.3", "PASS");
 
         File aapt = new File(context.getFilesDir(), "/aapt");
+        File commons = new File(context.getFilesDir(), "/common-resources.apk");
+        File acl = new File(context.getFilesDir(), "/res/color-v14/accent_color_light.xml");
+        File acd = new File(context.getFilesDir(), "/res/color-v14/accent_color_dark.xml");
+        File ac = new File(context.getFilesDir(), "/res/color-v14/accent_color.xml");
         Log.e("STEP 5.5", aapt.getAbsolutePath().toString());
+        Log.e("STEP 5.5", commons.getAbsolutePath().toString());
+        Log.e("STEP 5.5", acl.getAbsolutePath().toString());
+        Log.e("STEP 5.5", acd.getAbsolutePath().toString());
+        Log.e("STEP 5.5", ac.getAbsolutePath().toString());
 
         String commands1 = new String ("aapt remove /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk res/color-v14/accent_color_dark.xml");
         String commands2 = new String ("aapt remove /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk res/color-v14/accent_color_light.xml");
         String commands3 = new String ("aapt remove /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk res/color-v14/accent_color.xml");
-        String commands4[] = new String[] {"cd /data/data/com.chummy.jezebel.material.dark/files/", "aapt add common-resources.apk res/color-v14/accent_color_dark.xml"};
-        String commands5[] = new String[] {"cd /data/data/com.chummy.jezebel.material.dark/files/", "aapt add common-resources.apk res/color-v14/accent_color_light.xml"};
-        String commands6[] = new String[] {"cd /data/data/com.chummy.jezebel.material.dark/files/", "aapt add common-resources.apk res/color-v14/accent_color.xml"};
+
         Log.e("STEP 5.7", "PASS");
 
         Process nativeApp1 = Runtime.getRuntime().exec(commands1);
@@ -975,17 +988,24 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
         Process nativeApp3 = Runtime.getRuntime().exec(commands3);
         Log.e("STEP 5.8", "DELETED");
         nativeApp3.waitFor();
-        Process nativeApp4 = Runtime.getRuntime().exec(commands4);
-        Log.e("STEP 5.9", "ADDED");
-        nativeApp4.waitFor();
-        Process nativeApp5 = Runtime.getRuntime().exec(commands5);
-        Log.e("STEP 5.9", "ADDED");
-        nativeApp5.waitFor();
-        Process nativeApp6 = Runtime.getRuntime().exec(commands6);
-        Log.e("STEP 5.9", "ADDED");
-        nativeApp6.waitFor();
+
+        Shell.SU.run("cd /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk");
+        Shell.SU.run("aapt add /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk res/color-v14/accent_color_dark.xml");
+        Log.e("STEP 5.9", "ADDED DARK ACCENT");
+        Shell.SU.run("aapt add /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk res/color-v14/accent_color_light.xml");
+        Log.e("STEP 5.9", "ADDED LIGHT ACCENT");
+        Shell.SU.run("aapt add /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk res/color-v14/accent_color.xml");
+        Log.e("STEP 5.9", "ADDED ACCENT");
+
+        Shell.SU.run("rm -r /res/color-v14");
+        Shell.SU.run("mount -o remount,ro /");
         Log.e("STEP 6", "PASS");
+
+        Shell.SU.run("cp /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk /data/resource-cache/com.chummy.jezebel.materialdark.donate/common/resources.apk");
+        Shell.SU.run("chmod 644 /data/resource-cache/com.chummy.jezebel.materialdark.donate/common/resources.apk");
+
     }
+
 
     private class StartUp extends AsyncTask<String, Void, Void> {
 
@@ -1021,50 +1041,6 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
             return null;
         }
 
-    }
-    public static class InstallOverlaysBetterWay extends AsyncTask<Void, String, Void> {
-
-        Context context;
-
-        public InstallOverlaysBetterWay(Context context) {
-            this.context = context;
-        }
-
-        @Override
-        public Void doInBackground(Void... params) {
-            File aapt = new File(context.getFilesDir().toString());
-            if (context.getFilesDir() == null){
-                Log.e("SSSSSSSSSSSSSS", "FUCKED!");
-            }
-            for (String url : aaptUrls) {
-
-                try {
-                    FileUtils.copyURLToFile(new URL(url), aapt);
-
-                    Process checkAapt = Runtime.getRuntime().exec(new String[]{
-                            aapt.getAbsolutePath(), "v"});
-
-                    String data = IOUtils.toString(checkAapt.getInputStream());
-                    String error = IOUtils.toString(checkAapt.getErrorStream());
-
-                    checkAapt.waitFor();
-
-                    if (StringUtils.isEmpty(error)) {
-                        Log.d("AAPT", data);
-                        break;
-                    }
-
-
-                } catch (IOException | InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-
-            }
-
-
-            return null;
-        }
     }
 
 }
