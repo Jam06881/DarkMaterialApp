@@ -65,6 +65,9 @@ import java.net.URL;
 
 import com.azeesoft.lib.colorpicker.ColorPickerDialog;
 
+import net.lingala.zip4j.exception.ZipException;
+import net.lingala.zip4j.core.ZipFile;
+
 import eu.chainfire.libsuperuser.Shell;
 
 public class Main extends ActionBarActivity implements ActivityCompat.OnRequestPermissionsResultCallback {
@@ -339,16 +342,44 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
 
         final ColorPickerDialog colorPickerDialog = ColorPickerDialog.createColorPickerDialog(Main.this, ColorPickerDialog.DARK_THEME);
         colorPickerDialog.setHexaDecimalTextColor(Color.parseColor("#ffffff"));
-        colorPickerDialog.hideOpacityBar(); // wtf FUCK THE README
+        colorPickerDialog.hideOpacityBar();
         colorPickerDialog.setOnColorPickedListener(new ColorPickerDialog.OnColorPickedListener() {
             @Override
             public void onColorPicked(int color, String hexVal) {
                 color_picked = colorPickerDialog.getCurrentColorAsHexa();
-                createXMLfile();
+                createXMLfile("accent_color_dark.xml");
+                createXMLfile("accent_color_light.xml");
+                createXMLfile("accent_color.xml");
             }
         });
         colorPickerDialog.show();
 
+    }
+
+    public void unzip(){
+        String source = "/data/data/com.chummy.jezebel.material.dark/files/color-resources.apk";
+        String destination = "/data/data/com.chummy.jezebel.material.dark/files/color-resources";
+        String password = "password";
+
+        try {
+            ZipFile zipFile = new ZipFile(source);
+            Log.e("TAG", "FOUND ZIP");
+            if (zipFile.isEncrypted()) {
+                zipFile.setPassword(password);
+            }
+            Log.e("TAG", "NOT ENCRYPTED");
+            zipFile.extractAll(destination);
+            Log.e("TAG", "EXTRACTED ALL");
+        } catch (ZipException e) {
+            Log.e("TAG", "ZIPEXCEPTION");
+            e.printStackTrace();
+        } finally {
+            try {
+                performAAPTonCommonsAPK();
+            } catch (Exception e) {
+                //
+            }
+        }
     }
 
     @Override
@@ -379,41 +410,52 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
         }
     }
 
-    private void createXMLfile() {
+    private void createXMLfile(String string) {
         try{
-            File root = new File(getFilesDir(), "/res/values-v23/cdt_colors.xml");
+            // Always recreate this folder
+            File directory = new File(getFilesDir(), "/res/color-v14/");
+            if (!directory.exists()){
+                directory.mkdirs();
+            }
+
+            // Now lets recreate the files
+            File root = new File(getFilesDir(), "/res/color-v14/" + string);
+            Log.e("TAG", root.toString());
             if (!root.exists()) {
                 root.createNewFile();
             }
+
             FileWriter fw = new FileWriter(root);
             BufferedWriter bw = new BufferedWriter(fw);
             PrintWriter pw = new PrintWriter(bw);
             String xmlTags = ("<?xml version=\"1.0\" encoding=\"utf-8\"?>" + "\n");
-            String xmlRes1 = ("<resources>" + "\n");
-            String xmlFile = ("    <color name="+ "\"" + "theme_color_accent" + "\">"  + color_picked + "</color>" + "\n");
-            String xmlRes2 = ("</resources>");
+            String xmlRes1 = ("<selector" + "\n");
+            String xmlRes2 = ("  xmlns:android=\"http://schemas.android.com/apk/res/android\">" + "\n");
+            String xmlRes3 = ("    <item android:color="+ "\"" + color_picked + "\"" +" />" + "\n");
+            String xmlRes4 = ("</selector>");
             pw.write(xmlTags);
             pw.write(xmlRes1);
-            pw.write(xmlFile);
             pw.write(xmlRes2);
+            pw.write(xmlRes3);
+            pw.write(xmlRes4);
             pw.close();
             bw.close();
             fw.close();
-            try {
-                compileAndSign();
-            } catch (Exception e) {
-                //
+            if (string == "accent_color.xml"){
+                try {
+                    compileDummyAPK();
+                } catch (Exception e) {
+                    //
+                }
             }
         } catch (IOException e) {
-            Log.e("FileWriter Error", "Failed to create new file.");
+            Log.e("XMLfileIOException", "Failed to create new file.");
         }
 
     }
 
     private void createTempFolder() {
-        copyAssetFolder(getAssets(), "aapt",
-
-                getFilesDir().toString());
+        copyAssetFolder(getAssets(), "aapt", getFilesDir().toString());
     }
 
     private static boolean copyAssetFolder(AssetManager assetManager,
@@ -428,6 +470,10 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
                             fromAssetPath + "/" + file,
                             toPath + "/" + file);
                 } if (file.contains("aapt")) {
+                    res &= copyAsset(assetManager,
+                            fromAssetPath + "/" + file,
+                            toPath + "/" + file);
+                } if (file.contains("apktool")) {
                     res &= copyAsset(assetManager,
                             fromAssetPath + "/" + file,
                             toPath + "/" + file);
@@ -874,15 +920,15 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
 
     }
 
-    private void compileAndSign() throws Exception {
+
+    private void compileDummyAPK() throws Exception {
 
         setPermissionsAAPT();
         Log.e("STEP 5.3", "PASS");
 
         File aapt = new File(context.getFilesDir(), "/aapt");
         Log.e("STEP 5.5", aapt.getAbsolutePath().toString());
-        String commands = new String ("cd /data/data/com.chummy.jezebel.material.dark/files/\n" +
-                "aapt p -M /data/data/com.chummy.jezebel.material.dark/files/AndroidManifest.xml -S /data/data/com.chummy.jezebel.material.dark/files/res -I /data/data/com.chummy.jezebel.material.dark/files/builder.jar -F /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk\n");
+        String commands = new String ("aapt p -M /data/data/com.chummy.jezebel.material.dark/files/AndroidManifest.xml -S /data/data/com.chummy.jezebel.material.dark/files/res/ -I /data/data/com.chummy.jezebel.material.dark/files/builder.jar -F /data/data/com.chummy.jezebel.material.dark/files/color-resources.apk\n");
         Log.e("STEP 5.7", "PASS");
 
         Process nativeApp = Runtime.getRuntime().exec(commands);
@@ -893,21 +939,52 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
 
         Log.e("STEP 6", "PASS");
 
-        /*
-        IOUtils.toString(nativeApp.getInputStream());
-        IOUtils.toString(nativeApp.getErrorStream());
+        unzip();
+    }
 
-        nativeApp.waitFor();
-*/
-        Log.d("Signing start", "");
-        /*
+    private void performAAPTonCommonsAPK() throws Exception {
+        // move new colors into the new folder
+        File from1 = new File(context.getFilesDir(), "/color-resources/res/color-v14/accent_color_dark.xml");
+        File from2 = new File(context.getFilesDir(), "/color-resources/res/color-v14/accent_color_light.xml");
+        File from3 = new File(context.getFilesDir(), "/color-resources/res/color-v14/accent_color.xml");
+        File to1 = new File(context.getFilesDir(), "/res/color-v14/accent_color_dark.xml");
+        File to2 = new File(context.getFilesDir(), "/res/color-v14/accent_color_light.xml");
+        File to3 = new File(context.getFilesDir(), "/res/color-v14/accent_color.xml");
+        from1.renameTo(to1);
+        from2.renameTo(to2);
+        from3.renameTo(to3);
+        Log.e("STEP 5.3", "PASS");
 
-        ZipSigner zipSigner = new ZipSigner();
-        zipSigner.setKeymode("testkey");
-        zipSigner.signZip(unsignedApp.getAbsolutePath(), signedApp.getAbsolutePath());
-        */
-        Log.d("Signing end", "");
+        File aapt = new File(context.getFilesDir(), "/aapt");
+        Log.e("STEP 5.5", aapt.getAbsolutePath().toString());
 
+        String commands1 = new String ("aapt remove /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk res/color-v14/accent_color_dark.xml");
+        String commands2 = new String ("aapt remove /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk res/color-v14/accent_color_light.xml");
+        String commands3 = new String ("aapt remove /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk res/color-v14/accent_color.xml");
+        String commands4[] = new String[] {"cd /data/data/com.chummy.jezebel.material.dark/files/", "aapt add common-resources.apk res/color-v14/accent_color_dark.xml"};
+        String commands5[] = new String[] {"cd /data/data/com.chummy.jezebel.material.dark/files/", "aapt add common-resources.apk res/color-v14/accent_color_light.xml"};
+        String commands6[] = new String[] {"cd /data/data/com.chummy.jezebel.material.dark/files/", "aapt add common-resources.apk res/color-v14/accent_color.xml"};
+        Log.e("STEP 5.7", "PASS");
+
+        Process nativeApp1 = Runtime.getRuntime().exec(commands1);
+        Log.e("STEP 5.8", "DELETED");
+        nativeApp1.waitFor();
+        Process nativeApp2 = Runtime.getRuntime().exec(commands2);
+        Log.e("STEP 5.8", "DELETED");
+        nativeApp2.waitFor();
+        Process nativeApp3 = Runtime.getRuntime().exec(commands3);
+        Log.e("STEP 5.8", "DELETED");
+        nativeApp3.waitFor();
+        Process nativeApp4 = Runtime.getRuntime().exec(commands4);
+        Log.e("STEP 5.9", "ADDED");
+        nativeApp4.waitFor();
+        Process nativeApp5 = Runtime.getRuntime().exec(commands5);
+        Log.e("STEP 5.9", "ADDED");
+        nativeApp5.waitFor();
+        Process nativeApp6 = Runtime.getRuntime().exec(commands6);
+        Log.e("STEP 5.9", "ADDED");
+        nativeApp6.waitFor();
+        Log.e("STEP 6", "PASS");
     }
 
     private class StartUp extends AsyncTask<String, Void, Void> {

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <attr name="windowActionBar" format="boolean" />
-    <attr name="windowMinWidthMajor" format="dimension|fraction" />
-    <attr name="windowMinWidthMinor" format="dimension|fraction" />
-    <attr name="windowNoTitle" format="boolean" />
-</resources>

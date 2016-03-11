@@ -57,6 +57,7 @@ dependencies {
     compile 'commons-io:commons-io:2.4'
     compile 'org.apache.commons:commons-lang3:3.4'
     compile files ('src/main/libs/RootTools.jar')
+    compile files ('src/main/libs/zip4j_1.3.2.jar')
     compile 'com.azeesoft.lib.colorpicker:colorpicker:1.0.8@aar'
 
 }
