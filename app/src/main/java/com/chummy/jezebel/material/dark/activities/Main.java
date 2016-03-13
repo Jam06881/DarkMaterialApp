@@ -454,6 +454,10 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
 
     }
 
+    private void copyCommonsFile() {
+        copyAssetFolder("/data/resource-cache/com.chummy.jezebel.blackedout.donate.", "aapt", getFilesDir().toString());
+    }
+
     private void createTempFolder() {
         copyAssetFolder(getAssets(), "aapt", getFilesDir().toString());
     }
@@ -1001,8 +1005,8 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
         Shell.SU.run("mount -o remount,ro /");
         Log.e("STEP 6", "PASS");
 
-        Shell.SU.run("cp /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk /data/resource-cache/com.chummy.jezebel.materialdark.donate/common/resources.apk");
-        Shell.SU.run("chmod 644 /data/resource-cache/com.chummy.jezebel.materialdark.donate/common/resources.apk");
+        Shell.SU.run("cp /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk /data/resource-cache/com.chummy.jezebel.blackedout.donate/common/resources.apk");
+        Shell.SU.run("chmod 644 /data/resource-cache/com.chummy.jezebel.blackedout.donate/common/resources.apk");
 
     }
 
