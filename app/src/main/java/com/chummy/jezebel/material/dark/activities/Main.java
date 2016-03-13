@@ -326,6 +326,7 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
         if (permissionCheck == PackageManager.PERMISSION_GRANTED) {
             // permission already granted, allow the program to continue running
             runLicenseChecker();
+            copyCommonsFile();
             createTempFolder();
         } else {
             // permission not granted, request it from the user
@@ -455,7 +456,20 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
     }
 
     private void copyCommonsFile() {
-        copyAssetFolder("/data/resource-cache/com.chummy.jezebel.blackedout.donate.", "aapt", getFilesDir().toString());
+        String sourcePath = "/data/resource-cache/com.chummy.jezebel.materialdark.donate/common/resources.apk";
+        File source = new File(sourcePath);
+
+        String destinationPath = "/data/data/com.chummy.jezebel.material.dark/files/common-resources.apk";
+        File destination = new File(destinationPath);
+        try
+        {
+            FileUtils.copyFile(source, destination);
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        Log.e("INITIAL RUN", "Successfully copied commons apk from resource-cache to work directory");
     }
 
     private void createTempFolder() {
@@ -1005,8 +1019,10 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
         Shell.SU.run("mount -o remount,ro /");
         Log.e("STEP 6", "PASS");
 
-        Shell.SU.run("cp /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk /data/resource-cache/com.chummy.jezebel.blackedout.donate/common/resources.apk");
-        Shell.SU.run("chmod 644 /data/resource-cache/com.chummy.jezebel.blackedout.donate/common/resources.apk");
+        Shell.SU.run("cp /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk /data/resource-cache/com.chummy.jezebel.materialdark.donate/common/resources.apk");
+        Shell.SU.run("chmod 644 /data/resource-cache/com.chummy.jezebel.materialdark.donate/common/resources.apk");
+
+        Log.e("STEP 7", "PASS");
 
     }
 
