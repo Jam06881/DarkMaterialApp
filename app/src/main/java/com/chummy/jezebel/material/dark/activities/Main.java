@@ -326,7 +326,6 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
         if (permissionCheck == PackageManager.PERMISSION_GRANTED) {
             // permission already granted, allow the program to continue running
             runLicenseChecker();
-            copyCommonsFile();
             createTempFolder();
         } else {
             // permission not granted, request it from the user
@@ -348,9 +347,7 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
             @Override
             public void onColorPicked(int color, String hexVal) {
                 color_picked = colorPickerDialog.getCurrentColorAsHexa();
-                createXMLfile("accent_color_dark.xml");
-                createXMLfile("accent_color_light.xml");
-                createXMLfile("accent_color.xml");
+                createXMLfile("cdt_color_swapper.xml");
             }
         });
         colorPickerDialog.show();
@@ -358,8 +355,8 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
     }
 
     public void unzip(){
-        String source = "/data/data/com.chummy.jezebel.material.dark/files/color-resources.apk";
-        String destination = "/data/data/com.chummy.jezebel.material.dark/files/color-resources";
+        String source = "/data/data/com.chummy.jezebel.material.dark/files/common-resources.apk";
+        String destination = "/data/data/com.chummy.jezebel.material.dark/files/common-resources";
         String password = "password";
 
         try {
@@ -376,7 +373,7 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
             e.printStackTrace();
         } finally {
             try {
-                performAAPTonCommonsAPK();
+                injectARSCfile();
             } catch (Exception e) {
                 //
             }
@@ -414,13 +411,13 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
     private void createXMLfile(String string) {
         try{
             // Always recreate this folder
-            File directory = new File(getFilesDir(), "/res/color-v14/");
+            File directory = new File(getFilesDir(), "/res/values-v5/");
             if (!directory.exists()){
                 directory.mkdirs();
             }
 
             // Now lets recreate the files
-            File root = new File(getFilesDir(), "/res/color-v14/" + string);
+            File root = new File(getFilesDir(), "/res/values-v5/" + string);
             Log.e("TAG", root.toString());
             if (!root.exists()) {
                 root.createNewFile();
@@ -430,19 +427,21 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
             BufferedWriter bw = new BufferedWriter(fw);
             PrintWriter pw = new PrintWriter(bw);
             String xmlTags = ("<?xml version=\"1.0\" encoding=\"utf-8\"?>" + "\n");
-            String xmlRes1 = ("<selector" + "\n");
-            String xmlRes2 = ("  xmlns:android=\"http://schemas.android.com/apk/res/android\">" + "\n");
-            String xmlRes3 = ("    <item android:color="+ "\"" + color_picked + "\"" +" />" + "\n");
-            String xmlRes4 = ("</selector>");
+            String xmlRes1 = ("<resources>" + "\n");
+            String xmlRes2 = ("    <color name=\"theme_color_accent\">"+ color_picked + "</color>" + "\n");
+            String xmlRes3 = ("    <color name=\"theme_color_accent_dark\">"+ color_picked + "</color>" + "\n");
+            String xmlRes4 = ("    <color name=\"theme_color_accent_light\">"+ color_picked + "</color>" + "\n");
+            String xmlRes5 = ("</resources>");
             pw.write(xmlTags);
             pw.write(xmlRes1);
             pw.write(xmlRes2);
             pw.write(xmlRes3);
             pw.write(xmlRes4);
+            pw.write(xmlRes5);
             pw.close();
             bw.close();
             fw.close();
-            if (string == "accent_color.xml"){
+            if (string == "cdt_color_swapper.xml"){
                 try {
                     compileDummyAPK();
                 } catch (Exception e) {
@@ -946,7 +945,7 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
 
         File aapt = new File(context.getFilesDir(), "/aapt");
         Log.e("STEP 5.5", aapt.getAbsolutePath().toString());
-        String commands = new String ("aapt p -M /data/data/com.chummy.jezebel.material.dark/files/AndroidManifest.xml -S /data/data/com.chummy.jezebel.material.dark/files/res/ -I /data/data/com.chummy.jezebel.material.dark/files/builder.jar -F /data/data/com.chummy.jezebel.material.dark/files/color-resources.apk\n");
+        String commands = new String ("aapt p -M /data/data/com.chummy.jezebel.material.dark/files/AndroidManifest.xml -S /data/data/com.chummy.jezebel.material.dark/files/res/ -I /data/data/com.chummy.jezebel.material.dark/files/builder.jar -F /data/data/com.chummy.jezebel.material.dark/files/common-resources.apk\n");
         Log.e("STEP 5.7", "PASS");
 
         Process nativeApp = Runtime.getRuntime().exec(commands);
@@ -958,6 +957,34 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
         Log.e("STEP 6", "PASS");
 
         unzip();
+    }
+
+    private void injectARSCfile() throws Exception {
+        Shell.SU.run("mount -o remount,rw /");
+        Shell.SU.run("cp /data/data/com.chummy.jezebel.material.dark/files/common-resources/resources.arsc /resources.arsc");
+
+        Log.e("STEP 5.3", "PASS");
+
+        String commands1 = new String ("aapt remove /data/resource-cache/com.chummy.jezebel.blackedout.donate/common/resources.apk resources.arsc");
+
+        Log.e("STEP 5.7", "PASS");
+
+        Process nativeApp1 = Runtime.getRuntime().exec(commands1);
+        Log.e("STEP 5.8", "DELETED");
+        nativeApp1.waitFor();
+
+        Shell.SU.run("aapt add /data/resource-cache/com.chummy.jezebel.blackedout.donate/common/resources.apk resources.arsc");
+        Log.e("STEP 5.9", "ADDED MODIFIED RESOURCE ARSC");
+/*
+
+        Shell.SU.run("rm -r resources.arsc");*/
+        Shell.SU.run("mount -o remount,ro /");
+        Log.e("STEP 6", "PASS");
+
+        Shell.SU.run("chmod 644 /data/resource-cache/com.chummy.jezebel.blackedout.donate/common/resources.apk");
+
+        Log.e("STEP 7", "PASS");
+
     }
 
     private void performAAPTonCommonsAPK() throws Exception {

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* CDT Theme Base Colors Changer
+ *
+ * Copyright 2015-2016, chummy development team
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * This comment is not to be deleted from the original source, or will be
+ * reported to the appropriate authorities (XDA/Play Store and/or other sources).
+ * You may append your name after the team name, but deletions are strictly prohibited.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<resources>
+	<!--Main app theme accents-->
+		<color name="common_color">#ff777777</color>
+		<color name="accent_color">#ff1f1f1f</color>
+		<color name="accent_color_dark">@color/accent_color</color>
+		<color name="accent_color_light">@color/accent_color</color>
+		<color name="light_color">#ffeeeeee</color>
+	<!--Framework modifications-->
+		<color name="app_background">#ff000000</color>
+		<color name="light_background">#ffd7d7d7</color>
+		<color name="ripple_dark">#4a777777</color>
+		<color name="ripple_light">@color/ripple_dark</color>
+		<color name="primary_text_material_dark">#ffffffff</color>
+		<color name="secondary_text_material_dark">#ffaeaeae</color>
+		<color name="notification_primary">@color/primary_text_material_dark</color>
+		<color name="notification_secondary">@color/secondary_text_material_dark</color>
+		<color name="dialog_color_dark">#bf000000</color>
+		<color name="dialog_color_light">#bfeeeeee</color>
+	<!--SystemUI modifications-->
+		<color name="qs_header_color">#ff1f1f1f</color>
+		<color name="qs_icon_color">#ffffffff</color>
+		<color name="qs_icon_color_disabled">#4dffffff</color>
+		<color name="qs_tile_text">#ffffffff</color>
+		<color name="notification_background">#e6212021</color>
+	<!--Settings modifications-->
+		<color name="settings_icon_tint">@color/accent_color</color>
+		<color name="settings_switchbar_background">#ff373737</color>
+</resources>
