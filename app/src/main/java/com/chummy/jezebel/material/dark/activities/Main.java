@@ -136,7 +136,7 @@ public class Main extends ActionBarActivity implements ActivityCompat.OnRequestP
                         new DividerDrawerItem(),
                         new SectionDrawerItem().withName("Contact"),
                         new SecondaryDrawerItem().withName(thaContactUs).withIcon(GoogleMaterial.Icon.gmd_mail).withCheckable(false).withIdentifier(6),
-                        new SecondaryDrawerItem().withName(thaHelp).withIcon(GoogleMaterial.Icon.gmd_help).withCheckable(false).withIdentifier(9)
+                        new SecondaryDrawerItem().withName(thaHelp).withIcon(GoogleMaterial.Icon.gmd_help).withCheckable(true).withIdentifier(9)
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
