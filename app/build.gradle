@@ -17,6 +17,9 @@ android {
             minifyEnabled false
         }
     }
+	lintOptions {
+		abortOnError false
+	}
     useLibrary 'org.apache.http.legacy'
 }
 
