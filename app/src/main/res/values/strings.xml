@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!--Change this on every version-->
-    <string name="version_code">baek seu mul a hop</string>
+    <string name="version_code">baek seu reun</string>
 
     <!-- Main Strings -->
     <string name="app_name">"dark material // blacked out"</string>
-    <string name="arcus_theme_name">"dark material //"</string>
+    <string name="arcus_theme_name">"dm // bo"</string>
     <string name="launcher_name">"dark material"</string>
     <string name="package_name">"com.chummy.jezebel.material.dark"</string>
     <string name="theme_name">"Dark Material"</string>

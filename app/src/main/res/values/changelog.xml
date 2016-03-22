@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-        <item>@array/v129</item>
+        <item>@array/v130</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v130</item>
         <item>@array/v129</item>
         <item>@array/v128</item>
         <item>@array/v126</item>
@@ -68,6 +69,26 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v130">
+        <item>baek seu reun &#8212; final/stable build</item>
+        <item>IMPORTANT: One to two minutes after updating the theme, please REBOOT YOUR PHONE TWICE!</item>
+        <item>ATTENTION: Welcome to the convergence build! Blacked Out and Dark Material are now part of the same package. To switch to Blacked Out!, please install Arcus and build Blacked Out!</item>
+        <item>ATTENTION: You can also hide the app launcher icon from the launcher, click the overflow menu for more info! PLEASE READ THE DISCLAIMER!</item>
+        <item>Add exposed Settings Power Usage Tint.</item>
+        <item>Update TeleService\'s Problematic Styles.</item>
+        <item>Fix unreadable Bluetooth pairing request dialog text.</item>
+        <item>Update CAF Deskclock Overlay with Exposed Commits.</item>
+        <item>Update Fling icon for Resurrection Remix.</item>
+        <item>Update Hangouts Overlay to v8.0.</item>
+        <item>Update WhatsApp Overlay to 2.12.540.</item>
+        <item>Update Gmail Overlay (Popup Menu + Chips Dropdown).</item>
+        <item>Fix unreadable Google Drive text in Search File Type.</item>
+        <item>Revert toast offset as it\'s not the same as pre-CM\'s AppToastInfo.</item>
+        <item>Update Settings\' Colors with Exposed Values.</item>
+        <item>Finalize DUI resources for Screw\'d (QS Tiles).</item>
+        <item>Merge in DUI resources for Screw\'d.</item>
+        <item>Let QS tiles text take on akzents.</item>
     </string-array>
     <string-array name="v129">
         <item>baek seu mul a hop &#8212; convergence build</item>
