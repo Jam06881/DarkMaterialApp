@@ -4,11 +4,11 @@
     <string name="version_code">baek ma heun</string>
 
     <!-- Main Strings -->
-    <string name="app_name">"dark material // blacked out"</string>
-    <string name="arcus_theme_name">"dm // bo"</string>
-    <string name="launcher_name">"dark material"</string>
-    <string name="package_name">"com.chummy.jezebel.material.dark"</string>
-    <string name="theme_name">"Dark Material"</string>
+    <string name="app_name">"dark regression //"</string>
+    <string name="arcus_theme_name">"dmr // bor"</string>
+    <string name="launcher_name">"dark regression"</string>
+    <string name="package_name">"com.chummy.jezebel.material.dark.regression"</string>
+    <string name="theme_name">"dark regression"</string>
 
     <string name="team">"chummy development team"</string>
     <string name="theme_author">"chummy development team"</string>
@@ -16,8 +16,7 @@
     <string name="developer_link">http://forum.xda-developers.com/member.php?u=3605033</string>
 
     <!--Play Store-->
-    <string name="play_store_link">https://play.google.com/store/apps/details?id=com.chummy.jezebel.material.dark</string>
-    <string name="play_store_link_regression">https://play.google.com/store/apps/details?id=com.chummy.jezebel.material.dark.regression</string>
+    <string name="play_store_link">https://play.google.com/store/apps/details?id=com.chummy.jezebel.material.dark.regression</string>
     <string name="play_store_dev_link">https://play.google.com/store/apps/dev?id=6772568782420610939</string>
     <string name="play_store_link_logcat">https://play.google.com/store/apps/details?id=com.nolanlawson.logcat</string>
 
@@ -34,10 +33,10 @@
 
     <!--Email attributes-->
     <string name="email_id">chummydevteam@gmail.com</string>
-    <string name="email_subject">"dark material // blacked out - Theme UI (From the App)"</string>
-    <string name="email_subject_cm">"dark material // blacked out - CM12 Theme UI (From the App)"</string>
-    <string name="email_subject_cos">"dark material // blacked out - COS12 Theme UI (From the App)"</string>
-    <string name="email_subject_rro">"dark material // blacked out - Layers Theme UI (From the App)"</string>
+    <string name="email_subject">"dark regression // - Theme UI (From the App)"</string>
+    <string name="email_subject_cm">"dark regression // - CM12 Theme UI (From the App)"</string>
+    <string name="email_subject_cos">"dark regression // - COS12 Theme UI (From the App)"</string>
+    <string name="email_subject_rro">"dark regression // - Layers Theme UI (From the App)"</string>
 
     <!--Main Screen Cards-->
     <string name="welcome_title">welcome to lollipop, darkened!</string>
@@ -65,9 +64,9 @@
     <string name="community_link">"https://plus.google.com/u/0/communities/104086528025432169285"</string>
     <string name="xda_link">"http://forum.xda-developers.com/android/themes/cm12-dark-material-cm12-theme-engine-wip-t3005868"</string>
 
-    <string name="request_save_location">"/DarkMaterial/Requests/"</string>
-    <string name="walls_save_location">"/DarkMaterial/Wallpapers/"</string>
-    <string name="walls_prefix_name">"DarkMaterial_"</string>
+    <string name="request_save_location">"/DarkMaterialRegression/Requests/"</string>
+    <string name="walls_save_location">"/DarkMaterialRegression/Wallpapers/"</string>
+    <string name="walls_prefix_name">"DarkMaterialRegression_"</string>
 
     <string name="theme_installed_cm">One to two minutes after applying the theme, please REBOOT YOUR PHONE TWICE.</string>
     <string name="theme_installed_rro">Please be sure you apply a dark themed framework with a dark themed SystemUI overlay, or else you will get unreadable texts!</string>
@@ -75,7 +74,7 @@
     <string name="license_failed">"You are not downloading our theme from the Google Play Store. You have two options only:"</string>
     <string name="license_success">"Thank you for purchasing our awesome icon pack. If you like this icon pack, don't forget to Rate and Write a review at Google Play Store."</string>
 
-    <string name="replace_one">"Dark Material"</string>
+    <string name="replace_one">"dark regression //"</string>
     <string name="replace_two">"Lines"</string>
     <string name="replace_three">"Circles"</string>
     <string name="replace_four">"Text"</string>

@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="blackedout_name">blacked out</string>
+    <string name="blackedout_name">blacked out regression</string>
 </resources>

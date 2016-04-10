@@ -48,9 +48,7 @@ public class Home extends Fragment {
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.section_home, null);
 
         context = getActivity();
-
-        regression_view = root.findViewById(R.id.regression);
-        regression_view.setVisibility(View.GONE);
+        
         famBg = root.findViewById(R.id.famBg);
         famBg.setVisibility(View.GONE);
 
@@ -171,15 +169,6 @@ public class Home extends Fragment {
             public void onClick(View v) {
                 Intent appthree = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.app_three_link)));
                 startActivity(appthree);
-            }
-        });
-
-        TextView regression = (TextView) root.findViewById(R.id.regression);
-        regression.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent rate = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.play_store_link_regression)));
-                startActivity(rate);
             }
         });
 
