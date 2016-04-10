@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-        <item>@array/v130</item>
+        <item>@array/v140</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v140</item>
+        <item>@array/v131</item>
         <item>@array/v130</item>
         <item>@array/v129</item>
         <item>@array/v128</item>
@@ -69,6 +71,50 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v140">
+        <item>baek ma heun &#8212; final revamp build</item>
+        <item>IMPORTANT: One to two minutes after updating the theme, please REBOOT YOUR PHONE TWICE!</item>
+        <item>ATTENTION: Welcome to the convergence build! Blacked Out and Dark Material are now part of the same package. To switch to Blacked Out!, please install Arcus and build Blacked Out!</item>
+        <item>ATTENTION: You can also hide the app launcher icon from the launcher, click the overflow menu for more info! PLEASE READ THE DISCLAIMER!</item>
+        <item>Update Nova Launcher Overlay to Beta Stream (Dark Mode!)</item>
+        <item>Add support for TS CM13 Build in Settings</item>
+        <item>Complete set of Resurrection Remix QS Tiles</item>
+        <item>Add themed Headset Status Bar Icon</item>
+        <item>Update CM Messaging App</item>
+        <item>Fix invisible Chrome Find in Page Actionbar Text</item>
+        <item>Fix the overstretched "tagged people" icon in Instagram</item>
+        <item>Fix unreadable Remove Attachment Icon in Gmail</item>
+        <item>Fix incorrectly displayed performance icon in BeanStalk MM6.0</item>
+        <item>Re-add Collection title Blue Text Color in G+</item>
+        <item>Update Google Play Music overlay for visualizer and colors</item>
+        <item>Change SystemUI Tuner Icon to use Settings Accent</item>
+        <item>Revamp G+ Overlay Again!</item>
+        <item>Revert Project Klar Framework</item>
+        <item>Revert "MM6.0: Inject v23 patch for Google+ (Perma FC Fix)"</item>
+        <item>Temporarily remove Google Photos Overlay</item>
+        <item>Expose Battery History Chart Color (DU First)</item>
+        <item>Add unthemed Gestures icon in Settings</item>
+    </string-array>
+    <string-array name="v131">
+        <item>baek seu reun hana &#8212; bug fix/feature build</item>
+        <item>IMPORTANT: One to two minutes after updating the theme, please REBOOT YOUR PHONE TWICE!</item>
+        <item>ATTENTION: Welcome to the convergence build! Blacked Out and Dark Material are now part of the same package. To switch to Blacked Out!, please install Arcus and build Blacked Out!</item>
+        <item>ATTENTION: You can also hide the app launcher icon from the launcher, click the overflow menu for more info! PLEASE READ THE DISCLAIMER!</item>
+        <item>MM6.0: Inject v23 patch for Google+ (Perma FC Fix).</item>
+        <item>Update commons resources (colors).</item>
+        <item>Slim down Arcus packages even more!.</item>
+        <item>Apply v21 patch on Instagram\'s Styles (prevent FCs).</item>
+        <item>MM6.0: Inject v23 patch for Google Photos (prevent FCs).</item>
+        <item>Fix unreadable Twitter DM bubble.</item>
+        <item>Fix invisible verified badge in G+.</item>
+        <item>Fix invisible pen icon in Google Keep 3.3.102.0.</item>
+        <item>Make popup background stroke take on accent colors too!</item>
+        <item>Introduce new main wallpaper by +customworx.</item>
+        <item>Update Settings\' Colors with Exposed Values.</item>
+        <item>Finalize DUI resources for Screw\'d (QS Tiles).</item>
+        <item>Merge in DUI resources for Screw\'d.</item>
+        <item>Let QS tiles text take on akzents.</item>
     </string-array>
     <string-array name="v130">
         <item>baek seu reun &#8212; final/stable build</item>
