@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="newchangelog">
-        <item>@array/v140</item>
+        <item>@array/v141</item>
     </string-array>
     <string-array name="fullchangelog">
+        <item>@array/v141</item>
         <item>@array/v140</item>
         <item>@array/v131</item>
         <item>@array/v130</item>
@@ -71,6 +72,14 @@
         <item>@array/v48</item>
         <item>@array/v47</item>
         <item>@array/v46</item>
+    </string-array>
+    <string-array name="v141">
+        <item>baek ma heun hana &#8212; hotfix build</item>
+        <item>IMPORTANT: One to two minutes after updating the theme, please REBOOT YOUR PHONE TWICE!</item>
+        <item>ATTENTION: Welcome to the convergence build! Blacked Out and Dark Material are now part of the same package. To switch to Blacked Out!, please install Arcus and build Blacked Out!</item>
+        <item>ATTENTION: You can also hide the app launcher icon from the launcher, click the overflow menu for more info! PLEASE READ THE DISCLAIMER!</item>
+        <item>Fix SystemUI FC for Resurrection Remix based devices</item>
+        <item>Fix MusixMatch Dialog Accent Color</item>
     </string-array>
     <string-array name="v140">
         <item>baek ma heun &#8212; final revamp build</item>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="email_subject_cm">"Dark Material - CM12.1 Theme UI (From the App)"</string>
-    <string name="email_subject_cos">"Dark Material - COS12.1 Theme UI (From the App)"</string>
+    <string name="email_subject_cm">"dark material // blacked out - CM12.1 Theme UI (From the App)"</string>
+    <string name="email_subject_cos">"dark material // blacked out - COS12.1 Theme UI (From the App)"</string>
 </resources>
